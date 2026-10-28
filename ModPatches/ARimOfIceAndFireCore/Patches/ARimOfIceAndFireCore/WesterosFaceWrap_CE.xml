@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Thin headwear: CE textile hat scaling, without changing the 3x cold insulation. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosFaceWrap"]/statBases/StuffEffectMultiplierArmor</xpath>
+    <value>
+      <StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosFaceWrap"]/statBases</xpath>
+    <value>
+      <Bulk>1</Bulk>
+      <WornBulk>0.2</WornBulk>
+    </value>
+  </Operation>
+</Patch>

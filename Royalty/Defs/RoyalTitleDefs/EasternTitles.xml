@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RoyalTitleDef Name="ARIOIAF_EasternTitleBase" Abstract="True">
+    <tags><li>ARIOIAF_EasternTitle</li></tags>
+    <awardThought>GainedTitle</awardThought>
+    <lostThought>LostTitle</lostThought>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <canBeInherited>true</canBeInherited>
+    <allowDignifiedMeditationFocus>false</allowDignifiedMeditationFocus>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_EasternTitleBase">
+    <defName>ARIOIAF_EasternTitle_Squire</defName><label>Squire</label>
+    <description>A sworn attendant learning the duties of arms and service. The first honor earned in service to the Vale. Vale titles confer standing, not psychic powers, and never forbid honest work.</description>
+    <seniority>10</seniority><favorCost>6</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_EasternTitleBase">
+    <defName>ARIOIAF_EasternTitle_HedgeKnight</defName><label>Hedge Knight</label>
+    <description>A landless knight whose courage and service have earned recognition from the houses of the Vale.</description>
+    <seniority>20</seniority><favorCost>8</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_EasternTitleBase">
+    <defName>ARIOIAF_EasternTitle_LandedKnight</defName><label>Landed Knight</label>
+    <description>A knight recognized as worthy of a landed household and its duties. This honor grants standing, not a new settlement.</description>
+    <seniority>30</seniority><favorCost>12</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_EasternTitleBase">
+    <defName>ARIOIAF_EasternTitle_Lord</defName><label>Lord</label><labelFemale>Lady</labelFemale>
+    <description>A recognized head of a house of the Vale, bound to protect its people and honor sworn obligations.</description>
+    <seniority>40</seniority><favorCost>16</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_EasternTitleBase">
+    <defName>ARIOIAF_EasternTitle_HighLord</defName><label>High Lord</label><labelFemale>Great Lady</labelFemale>
+    <description>A High Lord, also called a Great Lord, commands the respect of lesser houses and carries greater responsibility for the Vale.</description>
+    <seniority>50</seniority><favorCost>24</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_EasternTitleBase">
+    <defName>ARIOIAF_EasternTitle_LordParamount</defName><label>Lord Paramount</label><labelFemale>Lady Paramount</labelFemale>
+    <description>A paramount ruler honored above the great houses of the Vale for exceptional service and leadership.</description>
+    <seniority>60</seniority><favorCost>32</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_EasternTitleBase">
+    <defName>ARIOIAF_EasternTitle_WardenOfTheEast</defName><label>Warden of the East</label>
+    <description>The Vale's highest honor, recognizing a military guardian of the East and defender of its borders. It grants your House standing without replacing the Vale's Warden or transferring the Vale's lands.</description>
+    <seniority>70</seniority><favorCost>40</favorCost>
+  </RoyalTitleDef>
+</Defs>

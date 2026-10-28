@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_MarketUI_Search>Search</ARIO_MarketUI_Search>
+  <ARIO_MarketUI_Clear>Clear</ARIO_MarketUI_Clear>
+  <ARIO_MarketUI_SortName>Sort by name</ARIO_MarketUI_SortName>
+  <ARIO_MarketUI_SortType>Sort by type</ARIO_MarketUI_SortType>
+  <ARIO_MarketUI_Ascending>A–Z</ARIO_MarketUI_Ascending>
+  <ARIO_MarketUI_Descending>Z–A</ARIO_MarketUI_Descending>
+  <ARIO_MarketUI_Up>▲</ARIO_MarketUI_Up>
+  <ARIO_MarketUI_Down>▼</ARIO_MarketUI_Down>
+  <ARIO_MarketUI_Type>Type</ARIO_MarketUI_Type>
+  <ARIO_MarketUI_Results>Showing {0} of {1} item types</ARIO_MarketUI_Results>
+  <ARIO_MarketUI_CategoryCount>{0} ({1})</ARIO_MarketUI_CategoryCount>
+  <ARIO_MarketUI_Category_All>All</ARIO_MarketUI_Category_All>
+  <ARIO_MarketUI_Category_Food>Food</ARIO_MarketUI_Category_Food>
+  <ARIO_MarketUI_Category_Medicine>Medicine</ARIO_MarketUI_Category_Medicine>
+  <ARIO_MarketUI_Category_Weapons>Weapons</ARIO_MarketUI_Category_Weapons>
+  <ARIO_MarketUI_Category_Apparel>Apparel</ARIO_MarketUI_Category_Apparel>
+  <ARIO_MarketUI_Category_Resources>Resources</ARIO_MarketUI_Category_Resources>
+  <ARIO_MarketUI_Category_Furniture>Furniture</ARIO_MarketUI_Category_Furniture>
+  <ARIO_MarketUI_Category_Other>Other</ARIO_MarketUI_Category_Other>
+  <ARIO_MarketUI_NoQuality>—</ARIO_MarketUI_NoQuality>
+  <ARIO_MarketRumorsHeadingCount>Rumors ({0})</ARIO_MarketRumorsHeadingCount>
+  <ARIO_MarketRumorsExpand>Show every market rumor.</ARIO_MarketRumorsExpand>
+  <ARIO_MarketRumorsCollapse>Collapse to the latest rumor only.</ARIO_MarketRumorsCollapse>
+  <ARIO_MarketUI_Empty>No merchandise is stocked here. Designate a market area and stock it with goods. Silver is currency and is never listed for sale.</ARIO_MarketUI_Empty>
+  <ARIO_MarketUI_NoMatches>No items match this search and category. Clear the search or choose All.</ARIO_MarketUI_NoMatches>
+  <ARIO_MarketUI_RowTip>{0}\nType: {1}\nQuantity: {2}\nEstimated base stock value: {3} silver (before rumors and upselling).\n\nThe for-sale setting applies to this item type across all market areas. Packed furniture shares one setting.</ARIO_MarketUI_RowTip>
+  <ARIO_MarketUI_DragHint>Click the For Sale circle, then drag through rows to give those item types the same on/off setting. Only rows in the current search and category are affected.</ARIO_MarketUI_DragHint>
+</LanguageData>

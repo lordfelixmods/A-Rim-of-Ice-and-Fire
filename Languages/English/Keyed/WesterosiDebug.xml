@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIOIAF_DebugSpawnCaravans>Spawn mod faction caravans</ARIOIAF_DebugSpawnCaravans>
+  <ARIOIAF_DebugCaravanSpawned>{0}: trade caravan arrived. Use its arrival letter to jump to the traders.</ARIOIAF_DebugCaravanSpawned>
+  <ARIOIAF_DebugCaravanMissing>{0}: skipped; this faction is absent or defeated in this world.</ARIOIAF_DebugCaravanMissing>
+  <ARIOIAF_DebugCaravanHostile>{0}: skipped; this faction is hostile to the colony. Relations were not changed.</ARIOIAF_DebugCaravanHostile>
+  <ARIOIAF_DebugCaravanFailed>{0}: caravan arrival failed. Check map access and the debug log.</ARIOIAF_DebugCaravanFailed>
+  <ARIOIAF_DebugCaravanException>{0}: an error occurred while generating the caravan; see the debug log.</ARIOIAF_DebugCaravanException>
+</LanguageData>

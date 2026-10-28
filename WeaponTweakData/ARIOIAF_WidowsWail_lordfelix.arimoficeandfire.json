@@ -1,0 +1,15 @@
+{
+  "TextureModID": "lordfelix.arimoficeandfire",
+  "ItemDefName": "ARIOIAF_WidowsWail",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.3058,
+  "OffY": 0.0012,
+  "Rotation": 45.0,
+  "ScaleX": 0.88,
+  "ScaleY": 0.88,
+  "HandsMode": 1,
+  "BladeStart": 0.0919,
+  "BladeEnd": 0.7482,
+  "MeleeWeaponType": 48
+}

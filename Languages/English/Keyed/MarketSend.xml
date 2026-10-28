@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_SendMarketLabel>Send to market</ARIO_SendMarketLabel>
+  <ARIO_SendMarketTitle>Send to market</ARIO_SendMarketTitle>
+  <ARIO_SendMarketDesc>Choose a quantity and stall. Haulers deliver the items; nothing moves until collected. Full stalls wait for space.</ARIO_SendMarketDesc>
+  <ARIO_SendMarketDestination>Stall: {0}</ARIO_SendMarketDestination>
+  <ARIO_SendMarketQuantity>Quantity (available: {0})</ARIO_SendMarketQuantity>
+  <ARIO_SendMarketOneItem>One item</ARIO_SendMarketOneItem>
+  <ARIO_SendMarketChooseStall>Choose a market stall</ARIO_SendMarketChooseStall>
+  <ARIO_SendMarketCancel>Cancel</ARIO_SendMarketCancel>
+  <ARIO_SendMarketSend>Send</ARIO_SendMarketSend>
+  <ARIO_SendMarketQueued>Queued {0} × {1} for delivery to {2}.</ARIO_SendMarketQueued>
+  <ARIO_SendMarketUnavailable>This item is no longer available for hauling.</ARIO_SendMarketUnavailable>
+  <ARIO_SendMarketStale>Return to the item's original map to send it.</ARIO_SendMarketStale>
+  <ARIO_SendMarketNotOwned>This item or its storage is not player-owned.</ARIO_SendMarketNotOwned>
+  <ARIO_SendMarketForbidden>Allow this item before sending it to market.</ARIO_SendMarketForbidden>
+  <ARIO_SendMarketAlreadyQueued>This stack is already fully queued for delivery.</ARIO_SendMarketAlreadyQueued>
+  <ARIO_SendMarketNoStall>Build a market stall on this map first.</ARIO_SendMarketNoStall>
+  <ARIO_SendMarketMissingItem>Item no longer available</ARIO_SendMarketMissingItem>
+  <ARIO_SendMarketDisabledTip>{0}\n{1}</ARIO_SendMarketDisabledTip>
+</LanguageData>

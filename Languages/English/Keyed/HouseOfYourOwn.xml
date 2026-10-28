@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIOIAF_HouseOfYourOwnFounderSummary>The first starting colonist has the Bastard trait. When settled, their surname reflects the chosen Westerosi region.</ARIOIAF_HouseOfYourOwnFounderSummary>
+  <ARIO_FounderSurnameUnavailable>Could not apply the founder's regional bastard surname: {0}</ARIO_FounderSurnameUnavailable>
+  <ARIOIAF_DynamicHouseName>House {0}</ARIOIAF_DynamicHouseName>
+  <ARIOIAF_HouseOfYourOwnApparelSummary>Starting colonists wear a Westeros tunic.</ARIOIAF_HouseOfYourOwnApparelSummary>
+  <ARIOIAF_HouseOfYourOwnFallbackName>New Dawn</ARIOIAF_HouseOfYourOwnFallbackName>
+  <ARIOIAF_HouseOfYourOwnGameStart>You were born a bastard, with no lands, no inheritance, and little chance of ever carrying a name of your own.\n\nRather than spend your life beneath another House&apos;s banner, you left with your friends who chose to follow you. Together, you traveled beyond the settled lands with a few weapons, some supplies, and enough silver to begin again.\n\nThere is no castle waiting for you. No village. No title worth boasting of.\n\nOnly three companions, open land, and a banner for a House that does not yet exist.\n\nBuild your home, gather settlers, and make a name the realm will remember.\n\nNot yet.</ARIOIAF_HouseOfYourOwnGameStart>
+</LanguageData>

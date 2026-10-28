@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIOIAF_BannerChoose>Choose banner</ARIOIAF_BannerChoose>
+  <ARIOIAF_BannerChooseDesc>Choose one of the seven regional faction standards for this spear, or automatically follow its wielder's faction. This changes heraldry, not dye or weapon stats.</ARIOIAF_BannerChooseDesc>
+  <ARIOIAF_BannerAutomatic>Automatic: wielder's faction</ARIOIAF_BannerAutomatic>
+  <ARIOIAF_BannerBlank>unmarked</ARIOIAF_BannerBlank>
+
+  <!-- Player commands: plant a carried standard, and re-blazon a planted one. -->
+  <ARIO_BannerPlant>Plant banner</ARIO_BannerPlant>
+  <ARIO_BannerPlantDesc>Choose a spot for the standard. This colonist will carry it there and drive it into the ground, giving up the spear until the banner is taken down again. Its material, quality, condition and heraldry are kept inside the standard.</ARIO_BannerPlantDesc>
+  <ARIO_BannerPlantUnable>This colonist cannot plant a standard right now.</ARIO_BannerPlantUnable>
+  <ARIO_BannerPlantBlocked>There is no room to plant the standard there.</ARIO_BannerPlantBlocked>
+  <ARIO_PlantedBannerChooseDesc>Choose one of the seven regional faction standards for this planted banner, or let it follow the faction of whoever last carried it. This changes heraldry only; the spear inside keeps its material, quality and condition.</ARIO_PlantedBannerChooseDesc>
+  <ARIO_BannerCommandsFailed>[A Rim of Ice and Fire] The banner commands could not install: {0}</ARIO_BannerCommandsFailed>
+  <ARIOIAF_BannerCurrent>Banner: {0}</ARIOIAF_BannerCurrent>
+  <ARIOIAF_PlantedBannerInspect>Contains: {0}\nUninstall to relocate the standard intact, or deconstruct it to recover this same weapon.</ARIOIAF_PlantedBannerInspect>
+  <ARIOIAF_PlantedBannerMissing>No banner spear is secured inside this standard.</ARIOIAF_PlantedBannerMissing>
+</LanguageData>

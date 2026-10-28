@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Biotech children cannot wear an adult tunic (vanilla apparel defaults to
+       developmentalStageFilter=Adult). Use the SAME original Westeros art in a
+       child-sized, registered garment instead of forcing a tribal outfit. -->
+  <ThingDef ParentName="ChildApparelMakeableBase" MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>ARIOIAF_ExistingHouseChildTunic</defName>
+    <label>young House tunic</label>
+    <description>A child's everyday Westerosi tunic, cut in the manner of their House.</description>
+    <techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/WesterosTunic/WesterosTunic_Male_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7, 0.7)</drawSize>
+    </graphicData>
+    <costStuffCount>30</costStuffCount>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints><WorkToMake>1500</WorkToMake><Mass>0.3</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups><li>Torso</li><li>Legs</li><li>Feet</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/WesterosTunic/WesterosTunic</wornGraphicPath>
+      <tags Inherit="False"><li>ARIOIAF_ExistingHouseChild</li></tags>
+      <defaultOutfitTags><li>Worker</li><li>Soldier</li></defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <recipeMaker><displayPriority>202</displayPriority></recipeMaker>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- This adds one no-op-for-other-maps worker to the abstract source list.
+       The chosen player seat alone builds a castle before FindPlayerStartSpot and
+       ScenParts; no replacement of Base_Player or a provider's generator. -->
+  <Operation Class="PatchOperationInsert">
+    <xpath>/Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps/li[.="FindPlayerStartSpot"]</xpath>
+    <order>Prepend</order>
+    <value><li>ARIO_ExistingHouseCastle</li></value>
+  </Operation>
+</Patch>

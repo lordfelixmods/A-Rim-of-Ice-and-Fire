@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef Name="ARIOIAF_ValyrianBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionDef>ARIOIAF_Valyria</defaultFactionDef>
+    <minGenerationAge>18</minGenerationAge><maxGenerationAge>65</maxGenerationAge>
+    <initialResistanceRange>12~25</initialResistanceRange><initialWillRange>1~3</initialWillRange>
+    <backstoryFilters><li><categories><li>ARIOIAF_Backstory_Valyria</li></categories></li></backstoryFilters>
+    <apparelMoney>0</apparelMoney>
+    <!-- Every kind inherits exactly the same seven pieces, in every season. -->
+    <apparelRequired>
+      <li>ARIOIAF_WesterosTunic</li><li>ARIOIAF_WesterosGambeson</li><li>ARIOIAF_WesterosFaceWrap</li>
+      <li>ARIOIAF_WesterosBlackBelt</li><li>ARIOIAF_RiverlandsScaleArmor</li><li>ARIOIAF_ValyrianArmor</li><li>ARIOIAF_ValyrianHelmet</li>
+    </apparelRequired>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons><ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+    <allowRoyalApparelRequirements>false</allowRoyalApparelRequirements><allowRoyalRoomRequirements>false</allowRoyalRoomRequirements>
+    <weaponMoney>300~600</weaponMoney><weaponTags><li>NeolithicMelee</li><li>MedievalMeleeDecent</li><li>ARIOIAF_WesterosMeleeDecent</li></weaponTags>
+    <invFoodDef>Pemmican</invFoodDef><invNutrition>2.55</invNutrition><gearHealthRange>0.8~1</gearHealthRange>
+    <modExtensions><li Class="ARimOfIceAndFireCore.ValyrianOutfitExtension" /></modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="ARIOIAF_ValyrianBase">
+    <defName>ARIOIAF_Valyria_Levy</defName><label>Valyrian levy</label><forcedTraits><ARIOIAF_Trait_Levy>0</ARIOIAF_Trait_Levy></forcedTraits><combatPower>100</combatPower><itemQuality>Poor</itemQuality>
+    <skills><li><skill>Melee</skill><range>3~7</range></li></skills>
+  </PawnKindDef>
+  <PawnKindDef ParentName="ARIOIAF_ValyrianBase">
+    <defName>ARIOIAF_Valyria_Bowman</defName><label>Valyrian bowman</label><labelFemale>Valyrian bowwoman</labelFemale><forcedTraits><ARIOIAF_Trait_ManAtArms>0</ARIOIAF_Trait_ManAtArms></forcedTraits><combatPower>140</combatPower>
+    <weaponTags Inherit="False"><li>NeolithicRanged</li><li>ARIOIAF_WesterosCrossbowLight</li><li>ARIOIAF_WesterosCrossbowMilitary</li><li>ARIOIAF_WesterosArbalest</li></weaponTags>
+    <skills><li><skill>Shooting</skill><range>7~12</range></li></skills>
+  </PawnKindDef>
+  <PawnKindDef ParentName="ARIOIAF_ValyrianBase" Name="ARIOIAF_ValyrianSoldierBase" Abstract="True">
+    <weaponTags Inherit="False"><li>MedievalMeleeDecent</li><li>ARIOIAF_WesterosMeleeDecent</li></weaponTags>
+    <skills><li><skill>Melee</skill><range>7~12</range></li></skills>
+  </PawnKindDef>
+  <PawnKindDef ParentName="ARIOIAF_ValyrianSoldierBase">
+    <defName>ARIOIAF_Valyria_Footman</defName><label>Valyrian footman</label><labelFemale>Valyrian footwoman</labelFemale><forcedTraits><ARIOIAF_Trait_ManAtArms>0</ARIOIAF_Trait_ManAtArms></forcedTraits><combatPower>150</combatPower>
+  </PawnKindDef>
+  <PawnKindDef ParentName="ARIOIAF_ValyrianSoldierBase" Name="ARIOIAF_ValyrianEliteBase" Abstract="True">
+    <weaponTags Inherit="False"><li>MedievalMeleeAdvanced</li><li>ARIOIAF_WesterosMeleeAdvanced</li></weaponTags><itemQuality>Good</itemQuality>
+    <skills Inherit="False"><li><skill>Melee</skill><range>10~15</range></li></skills>
+  </PawnKindDef>
+  <PawnKindDef ParentName="ARIOIAF_ValyrianEliteBase">
+    <defName>ARIOIAF_Valyria_Houseguard</defName><label>Valyrian houseguard</label><forcedTraits><ARIOIAF_Trait_Knight>0</ARIOIAF_Trait_Knight></forcedTraits><combatPower>190</combatPower><royalTitleChance>1</royalTitleChance>
+    <titleSelectOne MayRequire="Ludeon.RimWorld.Royalty"><li>ARIOIAF_ValyrianTitle_Knight</li><li>ARIOIAF_ValyrianTitle_LandedKnight</li></titleSelectOne>
+  </PawnKindDef>
+  <PawnKindDef ParentName="ARIOIAF_ValyrianEliteBase">
+    <defName>ARIOIAF_Valyria_Officer</defName><label>Valyrian officer</label><forcedTraits><ARIOIAF_Trait_LandedKnight>0</ARIOIAF_Trait_LandedKnight></forcedTraits><combatPower>220</combatPower><maxPerGroup>2</maxPerGroup>
+    <apparelRequired Inherit="False">
+      <li>ARIOIAF_WesterosTunic</li><li>ARIOIAF_WesterosGambeson</li><li>ARIOIAF_WesterosFaceWrap</li>
+      <li>ARIOIAF_RiverlandsScaleArmor</li><li>ARIOIAF_DragonriderArmor</li><li>ARIOIAF_DragonriderGorget</li>
+      <li>ARIOIAF_WesterosCloak</li><li>ARIOIAF_DragonriderHelmet</li>
+    </apparelRequired>
+    <skills Inherit="False"><li><skill>Melee</skill><range>11~16</range></li><li><skill>Social</skill><range>8~13</range></li></skills>
+    <royalTitleChance>1</royalTitleChance>
+    <titleSelectOne MayRequire="Ludeon.RimWorld.Royalty"><li>ARIOIAF_ValyrianTitle_LandedKnight</li><li>ARIOIAF_ValyrianTitle_Lord</li><li>ARIOIAF_ValyrianTitle_HighLord</li></titleSelectOne>
+  </PawnKindDef>
+  <PawnKindDef ParentName="ARIOIAF_ValyrianSoldierBase">
+    <defName>ARIOIAF_Valyria_CaravanLeader</defName><label>Valyrian caravan leader</label><forcedTraits><ARIOIAF_Trait_HedgeKnight>0</ARIOIAF_Trait_HedgeKnight></forcedTraits><combatPower>150</combatPower><trader>true</trader>
+    <skills Inherit="False"><li><skill>Melee</skill><range>6~10</range></li><li><skill>Social</skill><range>10~16</range></li></skills>
+    <royalTitleChance>1</royalTitleChance>
+    <titleSelectOne MayRequire="Ludeon.RimWorld.Royalty"><li>ARIOIAF_ValyrianTitle_Squire</li><li>ARIOIAF_ValyrianTitle_Knight</li><li>ARIOIAF_ValyrianTitle_LandedKnight</li></titleSelectOne>
+  </PawnKindDef>
+  <PawnKindDef ParentName="ARIOIAF_ValyrianEliteBase">
+    <defName>ARIOIAF_Valyria_LordParamount</defName><label>Valyrian lord paramount</label><labelFemale>Valyrian lady paramount</labelFemale><forcedTraits><ARIOIAF_Trait_LordLady>0</ARIOIAF_Trait_LordLady></forcedTraits><combatPower>270</combatPower>
+    <factionLeader>true</factionLeader><itemQuality>Excellent</itemQuality>
+    <apparelRequired Inherit="False">
+      <li>ARIOIAF_WesterosTunic</li><li>ARIOIAF_WesterosGambeson</li><li>ARIOIAF_WesterosFaceWrap</li>
+      <li>ARIOIAF_RiverlandsScaleArmor</li><li>ARIOIAF_DragonriderArmor</li><li>ARIOIAF_DragonriderGorget</li>
+      <li>ARIOIAF_WesterosCloak</li><li>ARIOIAF_DragonriderHelmet</li>
+    </apparelRequired>
+    <titleRequired MayRequire="Ludeon.RimWorld.Royalty">ARIOIAF_ValyrianTitle_LordParamount</titleRequired>
+    <skills Inherit="False"><li><skill>Melee</skill><range>13~18</range></li><li><skill>Social</skill><range>13~18</range></li></skills>
+  </PawnKindDef>
+</Defs>

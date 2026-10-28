@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Reuse existing Valyrian steel CE material stats. Do not widen the stuff category. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ARIOIAF_DragonriderArmor"]/statBases/StuffEffectMultiplierArmor</xpath>
+    <value><StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="ARIOIAF_DragonriderArmor"]/statBases</xpath>
+    <value><Bulk>45</Bulk><WornBulk>4.5</WornBulk></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ARIOIAF_DragonriderArmor"]/equippedStatOffsets/MoveSpeed</xpath>
+    <value><MeleeDodgeChance>-0.025</MeleeDodgeChance></value>
+  </Operation>
+</Patch>

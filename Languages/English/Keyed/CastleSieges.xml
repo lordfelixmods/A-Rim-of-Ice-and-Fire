@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_SiegeEstablished>{0} is blockaded at every open entrance. Defenders have roughly {1} days of pantry rations, plus any physical food still on the map. Hold the gate or break through.</ARIO_SiegeEstablished>
+  <ARIO_SiegeLow>{0} is running low on provisions: about {1} days of pantry rations remain. Expect a stronger attempt to break the blockade.</ARIO_SiegeLow>
+  <ARIO_SiegeOut>{0}'s pantry reserves are exhausted. Remaining physical food may still sustain defenders; starving soldiers can now be defeated without an assault.</ARIO_SiegeOut>
+  <ARIO_SiegeOpen>{0}'s supply route is open again. The siege timer resets and provisions recover gradually; no existing map items are replaced.</ARIO_SiegeOpen>
+  <ARIO_ReliefSpotted>A relief caravan carrying food for {0} has entered the map. Stop it before it reaches the castle pantry.</ARIO_ReliefSpotted>
+  <ARIO_ReliefSpottedTroops>A relief caravan carrying food and potential reinforcements for {0} has entered the map. Intercept it before it reaches the castle.</ARIO_ReliefSpottedTroops>
+  <ARIO_ReliefDelivered>Relief supplies reached {0}. Real food was delivered inside the castle; any surviving reinforcements may join the defenders.</ARIO_ReliefDelivered>
+</LanguageData>

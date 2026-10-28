@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Relief couriers defend themselves and push through a guarded gate, but never
+       assault the player's map-wide buildings or acquire distant targets. -->
+  <DutyDef>
+    <defName>ARIO_CastleReliefTravel</defName>
+    <alwaysShowWeapon>true</alwaysShowWeapon>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="JobGiver_AIFightEnemies"><targetAcquireRadius>12</targetAcquireRadius><targetKeepRadius>16</targetKeepRadius></li>
+        <li Class="JobGiver_GotoTravelDestination"><maxDanger>Deadly</maxDanger><locomotionUrgency>Jog</locomotionUrgency><wanderOnArrival>false</wanderOnArrival></li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+  <DutyDef>
+    <defName>ARIO_CastleGuard</defName>
+    <alwaysShowWeapon>true</alwaysShowWeapon>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="ARimOfIceAndFire.Castles.ThinkNode_CastleCalm">
+          <subNodes><li Class="ThinkNode_ForbidOutsideFlagRadius"><maxDistToSquadFlag>12</maxDistToSquadFlag><subNodes><li Class="ThinkNode_Subtree"><treeDef>SatisfyBasicNeedsAndWork</treeDef></li></subNodes></li></subNodes>
+        </li>
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CastleReposition" />
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CastleSiegeFood" />
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CastleSiegeRest"><minCategory>VeryTired</minCategory></li>
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CastleFight" />
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CastleReturn" />
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CastleWait" />
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+  <DutyDef>
+    <defName>ARIO_CastleShelter</defName>
+    <threatDisabled>true</threatDisabled>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="ARimOfIceAndFire.Castles.ThinkNode_CastleCalm">
+          <subNodes><li Class="ThinkNode_ForbidOutsideFlagRadius"><maxDistToSquadFlag>8</maxDistToSquadFlag><subNodes><li Class="ThinkNode_Subtree"><treeDef>SatisfyBasicNeedsAndWork</treeDef></li></subNodes></li></subNodes>
+        </li>
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CastleSiegeFood" />
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CastleSiegeRest"><minCategory>VeryTired</minCategory></li>
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CastleReturn" />
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CastleWait" />
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+  <!-- Neutral townsfolk have no colonist think tree: meet hunger, safe sleep and warmth needs
+       BEFORE the otherwise-always-available wander job, or they freeze outside a lit room. -->
+  <DutyDef>
+    <defName>ARIO_CastleCivilian</defName>
+    <threatDisabled>true</threatDisabled>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CivilianFood"><minCategory>Hungry</minCategory></li>
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CastleSiegeFood" />
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CastleSiegeRest"><minCategory>VeryTired</minCategory></li>
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CivilianRest" />
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CivilianRecreation" />
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CivilianSeekWarmth">
+          <requiresInjury>false</requiresInjury>
+          <waitInSafeTemp>true</waitInSafeTemp>
+        </li>
+        <li Class="JobGiver_WanderNearDutyLocation">
+          <wanderRadius>10</wanderRadius>
+          <locomotionUrgencyOutsideRadius>Walk</locomotionUrgencyOutsideRadius>
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+  <!-- Holding villagers share the same LordJob and panic transition. Food/safe rest precede
+       warmth so waiting indoors doesn't block needs; warmth precedes wandering so civilians
+       return to shelter rather than leave it to suffer hypothermia. -->
+  <DutyDef>
+    <defName>ARIO_HoldingCivilian</defName>
+    <threatDisabled>true</threatDisabled>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CivilianFood">
+          <minCategory>Hungry</minCategory>
+        </li>
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CivilianRest" />
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CivilianRecreation" />
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CivilianSeekWarmth">
+          <requiresInjury>false</requiresInjury>
+          <waitInSafeTemp>true</waitInSafeTemp>
+        </li>
+        <li Class="JobGiver_WanderNearDutyLocation">
+          <wanderRadius>4</wanderRadius>
+          <locomotionUrgencyOutsideRadius>Walk</locomotionUrgencyOutsideRadius>
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+  <DutyDef>
+    <defName>ARIO_CastlePanicRun</defName>
+    <threatDisabled>true</threatDisabled>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CastleSiegeFood" />
+        <li Class="ARimOfIceAndFire.Castles.JobGiver_CastleSiegeRest"><minCategory>VeryTired</minCategory></li>
+        <li Class="JobGiver_WanderAnywhere">
+          <maxDanger>Deadly</maxDanger>
+          <locomotionUrgency>Sprint</locomotionUrgency>
+          <ticksBetweenWandersRange>20~70</ticksBetweenWandersRange>
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+  <JobDef>
+    <defName>ARIO_CastleEatRation</defName>
+    <driverClass>ARimOfIceAndFire.Castles.JobDriver_CastleEatRation</driverClass>
+    <reportString>eating from the castle pantry</reportString>
+    <casualInterruptible>true</casualInterruptible>
+  </JobDef>
+  <!-- Vanilla fallback: physical low-cover apertures, not a fake shoot-through solid wall.
+       When CE is active the generator uses its own CE_Embrasure instead. -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>ARIO_CastleLoophole</defName>
+    <label>castle firing slit</label>
+    <description>A stone defensive aperture. Blocks movement while allowing shots through with partial cover. This is a ground-level firing position, not an elevated battlement.</description>
+    <graphicData>
+      <texPath>Things/Building/Castles/Loophole</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <passability>Impassable</passability>
+    <fillPercent>0.65</fillPercent>
+    <rotatable>false</rotatable>
+    <blockWind>true</blockWind>
+    <holdsRoof>true</holdsRoof>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories><li>Stony</li></stuffCategories>
+    <costStuffCount>8</costStuffCount>
+    <statBases><MaxHitPoints>360</MaxHitPoints><WorkToBuild>600</WorkToBuild><Flammability>0</Flammability><Beauty>-1</Beauty></statBases>
+    <building><isInert>true</isInert><ai_chillDestination>false</ai_chillDestination></building>
+  </ThingDef>
+</Defs>

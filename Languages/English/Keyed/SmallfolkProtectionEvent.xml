@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_SettlerEventStory>Landless families have come to your gates, asking for land and protection. In return, they offer their labor, loyalty and future taxes.</ARIO_SettlerEventStory>
+  <ARIO_SettlerEventUnavailable>[A Rim of Ice and Fire] The illustrated smallfolk event could not be enabled; standard requests remain available: {0}</ARIO_SettlerEventUnavailable>
+  <ARIO_SettlerEventFailed>[A Rim of Ice and Fire] The smallfolk event could not finish this action; the offer has not been discarded: {0}</ARIO_SettlerEventFailed>
+</LanguageData>

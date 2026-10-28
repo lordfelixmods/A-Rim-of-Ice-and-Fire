@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>ARIOIAF_WesterosClothing</defName>
+    <label>Westeros clothing</label>
+    <description>Study the tailoring traditions of Westeros to produce its tunics, quilted gambesons, heavy cloaks, utility belts, and warm face wraps.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>ComplexClothing</li>
+    </prerequisites>
+    <researchViewX>1.5</researchViewX>
+    <researchViewY>7</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>ARIOIAF_WesterosArmory</defName>
+    <label>Westeros armory</label>
+    <description>Master the armoring and weaponsmithing traditions of Westeros to forge elite steel arms, regional helmets, gorgets, chainmail, scale armor, plated leather, and full plate.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>ARIOIAF_WesterosClothing</li>
+      <li>PlateArmor</li>
+    </prerequisites>
+    <researchViewX>3.5</researchViewX>
+    <researchViewY>7</researchViewY>
+  </ResearchProjectDef>
+</Defs>

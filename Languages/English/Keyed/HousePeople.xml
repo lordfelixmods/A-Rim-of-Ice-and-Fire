@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_PeopleHeading>Dynastic people agreements</ARIO_PeopleHeading>
+  <ARIO_PeopleKindNone>None</ARIO_PeopleKindNone>
+  <ARIO_PeopleKindMarriage>Marriage</ARIO_PeopleKindMarriage>
+  <ARIO_PeopleKindBetrothal>Betrothal</ARIO_PeopleKindBetrothal>
+  <ARIO_PeopleKindFoster>Fostering</ARIO_PeopleKindFoster>
+  <ARIO_PeopleKindSquire>Squire service</ARIO_PeopleKindSquire>
+  <ARIO_PeopleStagePledged>signed; awaiting dispatch</ARIO_PeopleStagePledged>
+  <ARIO_PeopleStageAwaitingEscort>awaiting caravan escort</ARIO_PeopleStageAwaitingEscort>
+  <ARIO_PeopleStageTravellingIn>travelling to your keep</ARIO_PeopleStageTravellingIn>
+  <ARIO_PeopleStageVisiting>staying at your keep</ARIO_PeopleStageVisiting>
+  <ARIO_PeopleStageAbroad>living at the foreign seat</ARIO_PeopleStageAbroad>
+  <ARIO_PeopleStageReturning>return journey; awaiting safe arrival</ARIO_PeopleStageReturning>
+  <ARIO_PeopleStageLeaving>return due; awaiting safe departure</ARIO_PeopleStageLeaving>
+  <ARIO_PeopleStageFinished>concluded</ARIO_PeopleStageFinished>
+  <ARIO_PeopleStatus>{0}: {1}
+{2} — {3}</ARIO_PeopleStatus>
+  <ARIO_PeopleChooseKind>Choose an agreement</ARIO_PeopleChooseKind>
+  <ARIO_PeopleIncoming>Join or stay with your House</ARIO_PeopleIncoming>
+  <ARIO_PeopleOutgoing>Leave for their House</ARIO_PeopleOutgoing>
+  <ARIO_PeopleOurPerson>Choose your person</ARIO_PeopleOurPerson>
+  <ARIO_PeopleTheirPerson>Choose their dynast</ARIO_PeopleTheirPerson>
+  <ARIO_PeopleCandidate>{0} — age {1}, {2}</ARIO_PeopleCandidate>
+  <ARIO_PeopleSeat>Choose their seat</ARIO_PeopleSeat>
+  <ARIO_PeopleDowry>Dowry offered by your House: {0} silver</ARIO_PeopleDowry>
+  <ARIO_PeopleWardTerms>Stay: {0} days. Refundable service/care bond: {1} silver.</ARIO_PeopleWardTerms>
+  <ARIO_PeopleConsent>Marriage requires both people to be at least 18 biologically and chronologically, mutually attracted and not hostile in opinion. Existing other partners are respected. Signing does not marry or transfer anyone; dispatch requires a second confirmation and rechecks willingness. Dowry is paid only when the marriage completes.</ARIO_PeopleConsent>
+  <ARIO_PeoplePledgeOnly>A political marriage contract can be signed from biological age 8, with at most a ten-year age gap. It reserves the match but creates NO romantic relation; both remain with their birth House and no dowry is collected. It may stay political after adulthood. Both must be adults and willingly reconfirm before an adult marriage or transfer. No automatic wedding occurs on a birthday.</ARIO_PeoplePledgeOnly>
+  <ARIO_PeopleCare>Wards are temporary protected guests, not recruits or soldiers. Supply beds, food, shelter and medical care; normal needs, wounds and death remain real. They cannot be drafted, sold or assigned a House headship/outpost. Three consecutive hourly checks of severe hunger/exhaustion warn you; twelve trigger recall, bond forfeiture and a loss of 4 Integrity and 8 goodwill. Safe departure waits for recovery and an open route. Player-inflicted violence (except self-defense against an aggressive mental state) triggers recall, forfeits the bond and costs 4 Integrity and 8 goodwill once per visit. Death in your care or taking a guest captive forfeits the bond and costs 10 Integrity and 20 goodwill. A completed stay returns the bond, grants 2 Integrity and 6 goodwill, and modest Social training (plus Melee training for a squire).</ARIO_PeopleCare>
+  <ARIO_PeopleLimits>At most four active agreements, one per foreign House; each person can belong to only one agreement. Fostering ages 4–17; squires 13–25. Outbound people need a real caravan escort, with another free adult remaining. Head and designated heir cannot be sent away. Inbound and return journeys take two days and wait for a loaded, reachable keep. No substitute pawns are generated.</ARIO_PeopleLimits>
+  <ARIO_PeopleFactor>Dynastic agreement and dowry</ARIO_PeopleFactor>
+  <ARIO_PeopleUnavailable>These people or terms are unavailable. Check age, current faction, other partners, mutual adult willingness, reservation, a peaceful unloaded foreign seat and the four-agreement limit. Open the foreign chooser to use existing dynasty members.</ARIO_PeopleUnavailable>
+  <ARIO_PeopleDispatch>Confirm consent and dispatch</ARIO_PeopleDispatch>
+  <ARIO_PeopleDispatchConfirm>Dispatch {0}?
+
+Direction: {1}
+Escrow now: {2} silver.
+Foreign seat: {3}.
+
+Wards return after their signed stay. Marriage permanently changes which House the travelling spouse belongs to. Biological family relations are retained. Outbound travel requires a caravan escort. An incoming spouse must meet their intended partner at the keep. Both adults' willingness is checked again; no other relationship is forcibly broken.</ARIO_PeopleDispatchConfirm>
+  <ARIO_PeopleNoConsent>The marriage cannot proceed: both people must be free, willing adults without another partner, and the foreign dynast must still be available. No silver was spent.</ARIO_PeopleNoConsent>
+  <ARIO_PeopleHeadCannotLeave>The House head or designated heir cannot be sent away. Choose a successor first.</ARIO_PeopleHeadCannotLeave>
+  <ARIO_PeopleFunds>The loaded keep does not have enough accessible silver for the agreed deposit.</ARIO_PeopleFunds>
+  <ARIO_PeopleCancel>Cancel / recall agreement</ARIO_PeopleCancel>
+  <ARIO_PeopleCancelConfirm>Cancel this agreement for 4 Integrity (waived for blocked inbound arrival or an invalid foreign seat)? Unspent dowries and eligible bonds are refunded. Anyone already abroad will return, and hosted guests will depart when safe. This does not erase existing marriages, wounds or captivity.</ARIO_PeopleCancelConfirm>
+  <ARIO_PeopleCouple>{0} and {1}</ARIO_PeopleCouple>
+  <ARIO_PeopleConfirmWard>{0}: {1}.
+Direction: {2}. Stay: {3} days. Foreign seat: {4}.
+
+This signs terms only. Confirm dispatch afterward to fund a 300-silver refundable bond and arrange travel. Temporary wards must be cared for and returned; actual injury/death and custody consequences apply.</ARIO_PeopleConfirmWard>
+  <ARIO_PeopleConfirmMarriage>{0}: {1} and {2}.
+Direction: {3}. Dowry offered by your House: {4} silver. Foreign seat: {5}.
+
+Signing alone does not marry or move anyone. Confirm consent and dispatch separately. A completed adult marriage permanently transfers the travelling spouse and pays the dowry. A political contract keeps both at their birth House without romance, travel or dowry collection. An adult marriage requires separate willing reconfirmation.</ARIO_PeopleConfirmMarriage>
+  <ARIO_PeopleSigned>Your House and {2} have signed a people agreement involving {0} {1}. Open Dynastic people agreements to confirm consent and arrange dispatch. No person or silver has moved yet.</ARIO_PeopleSigned>
+  <ARIO_PeopleArrived>{0} {1} has arrived from {2} for a {3}-day stay. Provide food, beds, shelter and medical care. This is a temporary guest, not a permanent recruit.</ARIO_PeopleArrived>
+  <ARIO_PeopleMarried>{0} and {1} have willingly married. The travelling spouse has joined the agreed House; the dowry is paid. Their original family relations remain intact.</ARIO_PeopleMarried>
+  <ARIO_PeoplePledgeReady>{0} and {1} of {2} are both adults. Their political contract does not force romance or travel. It can remain political, or you may open the agreement and explicitly confirm adult marriage and dispatch if both willingly pass the checks.</ARIO_PeoplePledgeReady>
+  <ARIO_PeopleJourneyWaiting>The journey involving {0} {1} of {2} is waiting. A free, available traveller and a reachable loaded keep are needed. Incoming spouses also need their willing partner at the keep. Captives and other travellers are never teleported from their current holders. You can cancel or recall neutrally blocked travel through the agreement controls (voluntary cancellation normally costs 4 Integrity).</ARIO_PeopleJourneyWaiting>
+  <ARIO_PeopleReturned>The agreed visit of {0} {1} of {2} has concluded. They have returned safely. Any eligible bond is queued for delivery at your keep.</ARIO_PeopleReturned>
+  <ARIO_PeopleCareWarning>{0} {1}, the guest from {2}, has suffered serious hunger or exhaustion for three consecutive hourly checks. Improve their care. Twelve consecutive poor checks will trigger recall and forfeit the bond.</ARIO_PeopleCareWarning>
+  <ARIO_PeopleCareRecall>{2} has recalled {0} {1} after sustained poor care. The bond is forfeit, with 4 Integrity and 8 goodwill lost. They will leave when safe; normal wounds and needs remain.</ARIO_PeopleCareRecall>
+  <ARIO_PeopleHarmed>{0} {1}, the protected guest from {2}, has been harmed by your forces. The bond is forfeit, with 4 Integrity and 8 goodwill lost. The guest has been recalled and will leave when safe. Further death or captivity has additional consequences.</ARIO_PeopleHarmed>
+  <ARIO_PeopleLost>The agreement involving {0} {1} of {2} can no longer continue. Deaths and existing injuries are not undone. Eligible unspent funds will be returned to the keep.</ARIO_PeopleLost>
+  <ARIO_PeopleReturnWaiting>The stay of {0} {1} of {2} is ending. Their safe return may need a reachable map edge, recovery from injury or mental state, release from captivity, or bringing them home from a caravan. They remain protected while waiting.</ARIO_PeopleReturnWaiting>
+  <ARIO_PeopleEscort>Escort agreed person to {0}</ARIO_PeopleEscort>
+  <ARIO_PeopleWardNotSoldier>Foster guests and squires are under diplomatic protection and cannot be drafted.</ARIO_PeopleWardNotSoldier>
+</LanguageData>

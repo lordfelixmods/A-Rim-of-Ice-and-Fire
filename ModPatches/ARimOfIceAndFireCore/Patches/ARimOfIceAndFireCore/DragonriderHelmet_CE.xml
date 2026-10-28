@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- CE simple-helmet scaling; the existing alloy supplies Valyrian protection. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ARIOIAF_DragonriderHelmet"]/statBases/StuffEffectMultiplierArmor</xpath>
+    <value>
+      <StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+      <Bulk>3</Bulk>
+      <WornBulk>1</WornBulk>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>ARIOIAF_DragonriderHelmet</defName>
+    <!-- The sole allowed stuff supplies the 'Valyrian steel' item-name prefix. -->
+    <label>dragonrider helmet</label>
+    <description>Enclosed Valyrian steel dragon helm. Protects the whole head at exceptional strength for its weight. Cannot be dyed.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/DragonriderHelmet/DragonriderHelmet_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <ignoreThingDrawColor>true</ignoreThingDrawColor>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <techLevel>Medieval</techLevel>
+    <stuffCategories Inherit="False"><li>ARIOIAF_ValyrianSteelOnly</li></stuffCategories>
+    <costStuffCount>45</costStuffCount>
+    <thingCategories Inherit="False"><li>ARIOIAF_WesterosArmoryCategory</li></thingCategories>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Mass>2.5</Mass>
+      <StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>ARIOIAF_WesterosArmory</researchPrerequisite>
+      <skillRequirements><Crafting>8</Crafting></skillRequirements>
+      <recipeUsers><li>ElectricSmithy</li><li>FueledSmithy</li></recipeUsers>
+      <displayPriority>248</displayPriority>
+      <defaultIngredientFilter Inherit="False">
+        <thingDefs><li>TLN_ValyrianSteel</li></thingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups><li>FullHead</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/DragonriderHelmet/DragonriderHelmet</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <layers><li>Overhead</li></layers>
+      <tags><li>ARIOIAF_DragonriderHelmet</li></tags>
+      <defaultOutfitTags><li>Soldier</li></defaultOutfitTags>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <comps Inherit="False">
+      <li Class="CompProperties_Forbiddable" />
+      <li><compClass>CompQuality</compClass></li>
+      <li Class="CompProperties_Styleable" />
+    </comps>
+  </ThingDef>
+</Defs>

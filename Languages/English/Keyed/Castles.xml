@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_CastleDefending>Defending the castle.</ARIO_CastleDefending>
+  <ARIO_CastleSheltering>Sheltering in the keep.</ARIO_CastleSheltering>
+  <ARIO_CastleLiving>Going about castle life.</ARIO_CastleLiving>
+  <ARIO_CastlePanicking>Running from the fighting.</ARIO_CastlePanicking>
+  <ARIO_CastleCiviliansPanicking>The castle townsfolk are fleeing the fighting!</ARIO_CastleCiviliansPanicking>
+  <ARIO_CastleCivilianKilled>Killing a castle civilian damaged your House's standing: {0} goodwill, {1} integrity, {2} honor.</ARIO_CastleCivilianKilled>
+  <ARIO_DebugLevyReset>Reset {0} deployed levy count across {1} holdings and cleared {2} active levy records.</ARIO_DebugLevyReset>
+  <ARIO_DebugLevyResetNone>No deployed levy counts or active levy records needed resetting.</ARIO_DebugLevyResetNone>
+</LanguageData>

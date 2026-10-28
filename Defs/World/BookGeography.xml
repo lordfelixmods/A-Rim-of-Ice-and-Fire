@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Book-based topology adapted to the existing atlas (324 x 617 reference units).
+       These are gameplay approximations, not survey coordinates. Political faction identities
+       remain compatible with the preserved core. Local coastal corrections use a separate atlas
+       copy selected only for book worlds; the original atlas file is never changed. -->
+  <ARimOfIceAndFire.Geography.BookGeographyDef>
+    <defName>ARIO_BookGeography</defName>
+    <atlasPatches>
+      <!-- Open the Bay of Crabs south of the Vale to the Trident and Maidenpool. -->
+      <li><id>CrabsOuterBay</id><center>(224, 370)</center><radius>(15, 7)</radius><region>0</region></li>
+      <li><id>CrabsInnerBay</id><center>(209, 367)</center><radius>(11, 6)</radius><region>0</region></li>
+      <!-- Oldtown's estuary opens into the existing southern coast, not an inland ocean. -->
+      <li><id>WhisperingSound</id><center>(88, 566)</center><radius>(6, 10)</radius><region>0</region></li>
+      <li><id>HoneywineEstuary</id><center>(85, 554)</center><radius>(4, 12)</radius><region>0</region></li>
+      <!-- The Sisters belong to the Vale, and are islands in the Bite. -->
+      <li><id>SistersStrait</id><center>(204, 277)</center><radius>(24, 11)</radius><region>0</region></li>
+      <li><id>LittleSister</id><center>(190, 278)</center><radius>(3, 3)</radius><region>3</region></li>
+      <li><id>Sweetsister</id><center>(202, 276)</center><radius>(4, 3)</radius><region>3</region></li>
+      <li><id>Longsister</id><center>(215, 274)</center><radius>(4, 3)</radius><region>3</region></li>
+      <li><id>ClawIsleStrait</id><center>(242, 384)</center><radius>(9, 12)</radius><region>0</region></li>
+      <li><id>ClawIsle</id><center>(242, 382)</center><radius>(3.5, 4.5)</radius><region>8</region></li>
+      <li><id>GulletDriftmarkChannel</id><center>(264, 416)</center><radius>(8, 5)</radius><region>0</region></li>
+      <!-- Iron Islands enlargement. Region is sampled from the existing islands, never a hardcoded
+           palette index, so the new land is genuinely Ironborn. Kept west of the Westerlands coast
+           so no mainland seat, river mouth or coastline changes. -->
+      <li><id>PykeBroadened</id><center>(56, 320)</center><radius>(6, 5)</radius><regionFrom>(64, 315)</regionFrom></li>
+      <li><id>HarlawBroadened</id><center>(72, 331)</center><radius>(6, 5)</radius><regionFrom>(64, 315)</regionFrom></li>
+      <li><id>GreatWyk</id><center>(60, 311)</center><radius>(6, 4)</radius><regionFrom>(64, 315)</regionFrom></li>
+      <li><id>OldWyk</id><center>(66, 337)</center><radius>(5, 4)</radius><regionFrom>(64, 315)</regionFrom></li>
+      <li><id>Orkmont</id><center>(80, 322)</center><radius>(5, 4)</radius><regionFrom>(64, 315)</regionFrom></li>
+      <li><id>Saltcliffe</id><center>(52, 331)</center><radius>(4, 4)</radius><regionFrom>(64, 315)</regionFrom></li>
+      <li><id>BlacktydeIsle</id><center>(74, 313)</center><radius>(4, 4)</radius><regionFrom>(64, 315)</regionFrom></li>
+    </atlasPatches>
+    <ridges>
+      <li><id>Frostfangs</id><width>15</width><height>2300</height><points><li>(119, 23)</li><li>(143, 46)</li><li>(157, 69)</li><li>(150, 88)</li></points></li>
+      <li><id>NorthernMountains</id><width>15</width><height>1700</height><points><li>(151, 89)</li><li>(155, 111)</li><li>(145, 136)</li><li>(151, 157)</li></points></li>
+      <li><id>Skagos</id><width>8</width><height>1250</height><points><li>(264, 57)</li><li>(266, 72)</li></points></li>
+      <li><id>Rills</id><width>23</width><height>320</height><points><li>(65, 185)</li><li>(77, 202)</li><li>(105, 211)</li></points></li>
+      <li><id>WolfswoodUplands</id><width>24</width><height>400</height><points><li>(108, 150)</li><li>(109, 175)</li><li>(126, 187)</li></points></li>
+      <li><id>BrokenBranchUplands</id><width>14</width><height>360</height><points><li>(228, 181)</li><li>(238, 199)</li><li>(225, 218)</li></points></li>
+      <li><id>MoonWesternWall</id><width>13</width><height>2200</height><points><li>(195, 289)</li><li>(191, 307)</li><li>(189, 329)</li><li>(205, 345)</li><li>(228, 353)</li></points></li>
+      <li><id>GiantLance</id><width>12</width><height>2450</height><points><li>(207, 300)</li><li>(218, 316)</li><li>(220, 322)</li></points></li>
+      <li><id>ValeNorthernRidges</id><width>10</width><height>1300</height><points><li>(221, 289)</li><li>(239, 298)</li><li>(253, 298)</li></points></li>
+      <li><id>WesterlandHills</id><width>20</width><height>900</height><points><li>(94, 351)</li><li>(108, 369)</li><li>(112, 388)</li><li>(103, 411)</li></points></li>
+      <li><id>CasterlyRock</id><width>5</width><height>1200</height><points><li>(61, 388)</li><li>(63, 394)</li></points></li>
+      <li><id>GoldenTooth</id><width>9</width><height>1350</height><points><li>(119, 350)</li><li>(125, 365)</li><li>(130, 378)</li></points></li>
+      <li><id>ReachUplands</id><width>18</width><height>330</height><points><li>(145, 423)</li><li>(172, 429)</li><li>(181, 447)</li></points></li>
+      <li><id>RedMountainsWest</id><width>12</width><height>2000</height><points><li>(105, 550)</li><li>(121, 539)</li><li>(140, 528)</li><li>(153, 511)</li></points></li>
+      <li><id>RedMountainsEast</id><width>12</width><height>1850</height><points><li>(155, 518)</li><li>(171, 515)</li><li>(183, 530)</li></points></li>
+      <li><id>DornishFoothills</id><width>17</width><height>550</height><points><li>(146, 550)</li><li>(171, 553)</li><li>(195, 564)</li></points></li>
+      <li><id>StormlandHills</id><width>22</width><height>580</height><points><li>(202, 463)</li><li>(221, 484)</li><li>(235, 502)</li></points></li>
+      <li><id>IronIslands</id><width>19</width><height>460</height><points><li>(51, 323)</li><li>(74, 329)</li><li>(87, 322)</li></points></li>
+    </ridges>
+    <passes>
+      <li><id>BloodyGate</id><center>(194, 333)</center><radius>(10, 5)</radius></li>
+      <li><id>PrincesPass</id><center>(137, 531)</center><radius>(6, 16)</radius></li>
+      <li><id>Boneway</id><center>(174, 521)</center><radius>(5, 14)</radius></li>
+      <li><id>GoldenToothRoad</id><center>(123, 357)</center><radius>(9, 4)</radius></li>
+      <li><id>EyrieApproach</id><center>(225, 328)</center><radius>(7, 8)</radius><strength>0.65</strength></li>
+    </passes>
+    <forests>
+      <li><id>Wolfswood</id><center>(110, 169)</center><radius>(40, 38)</radius></li>
+      <li><id>HauntedForest</id><center>(197, 61)</center><radius>(35, 20)</radius></li>
+      <li><id>Hornwood</id><center>(218, 188)</center><radius>(22, 27)</radius></li>
+      <li><id>Kingswood</id><center>(216, 447)</center><radius>(26, 23)</radius></li>
+      <li><id>Rainwood</id><center>(244, 499)</center><radius>(28, 24)</radius></li>
+      <li><id>Crackclaw</id><center>(226, 387)</center><radius>(21, 17)</radius><strength>0.7</strength></li>
+    </forests>
+    <wetlands>
+      <li><id>Neck</id><center>(142, 278)</center><radius>(23, 23)</radius></li>
+      <li><id>TridentLowlands</id><center>(175, 352)</center><radius>(24, 21)</radius><strength>0.5</strength></li>
+      <li><id>CapeWrath</id><center>(250, 510)</center><radius>(22, 10)</radius><strength>0.45</strength></li>
+    </wetlands>
+    <!-- Main stems first; tributary endpoints are snapped to their named receiving river. -->
+    <rivers>
+      <li><id>Trident</id><riverDef>LargeRiver</riverDef><sourceHeight>105</sourceHeight><points><li>(178, 350)</li><li>(190, 357)</li><li>(198, 360)</li><li>(204, 365)</li></points></li>
+      <li><id>RedFork</id><joins>Trident</joins><sourceHeight>320</sourceHeight><mouthHeight>105</mouthHeight><points><li>(123, 360)</li><li>(148, 347)</li><li>(164, 348)</li><li>(178, 350)</li></points></li>
+      <li><id>Tumblestone</id><riverDef>Creek</riverDef><joins>RedFork</joins><sourceHeight>460</sourceHeight><mouthHeight>240</mouthHeight><points><li>(116, 338)</li><li>(131, 340)</li><li>(148, 347)</li></points></li>
+      <li><id>GreenFork</id><joins>Trident</joins><sourceHeight>310</sourceHeight><mouthHeight>105</mouthHeight><points><li>(153, 294)</li><li>(158, 307)</li><li>(164, 326)</li><li>(178, 350)</li></points></li>
+      <li><id>BlueFork</id><riverDef>Creek</riverDef><joins>Trident</joins><sourceHeight>240</sourceHeight><mouthHeight>105</mouthHeight><points><li>(143, 318)</li><li>(152, 329)</li><li>(164, 341)</li><li>(178, 350)</li></points></li>
+      <li><id>Blackwater</id><riverDef>LargeRiver</riverDef><sourceHeight>540</sourceHeight><points><li>(132, 395)</li><li>(153, 411)</li><li>(176, 420)</li><li>(196, 422)</li><li>(214, 418)</li><li>(231, 415)</li></points></li>
+      <li><id>GodsEyeOutlet</id><joins>Blackwater</joins><lakeSource>true</lakeSource><sourceHeight>135</sourceHeight><mouthHeight>65</mouthHeight><points><li>(185, 395)</li><li>(186, 407)</li><li>(196, 422)</li></points></li>
+      <li><id>Mander</id><riverDef>LargeRiver</riverDef><sourceHeight>400</sourceHeight><points><li>(175, 429)</li><li>(161, 440)</li><li>(148, 457)</li><li>(122, 466)</li><li>(99, 477)</li><li>(72, 484)</li><li>(59, 488)</li></points></li>
+      <li><id>Blueburn</id><riverDef>Creek</riverDef><joins>Mander</joins><sourceHeight>410</sourceHeight><mouthHeight>230</mouthHeight><points><li>(174, 474)</li><li>(152, 467)</li><li>(148, 457)</li></points></li>
+      <li><id>Honeywine</id><sourceHeight>350</sourceHeight><points><li>(132, 501)</li><li>(116, 515)</li><li>(101, 526)</li><li>(85, 541)</li><li>(85, 545)</li></points></li>
+      <li><id>WhiteKnife</id><riverDef>LargeRiver</riverDef><sourceHeight>540</sourceHeight><points><li>(170, 145)</li><li>(186, 161)</li><li>(191, 183)</li><li>(185, 206)</li><li>(177, 225)</li><li>(183, 235)</li></points></li>
+      <li><id>LastRiver</id><sourceHeight>580</sourceHeight><points><li>(173, 98)</li><li>(198, 105)</li><li>(222, 113)</li><li>(248, 111)</li><li>(277, 112)</li></points></li>
+      <li><id>WeepingWater</id><riverDef>Creek</riverDef><sourceHeight>400</sourceHeight><points><li>(207, 147)</li><li>(230, 161)</li><li>(246, 161)</li><li>(260, 161)</li></points></li>
+      <li><id>BrokenBranch</id><sourceHeight>460</sourceHeight><points><li>(224, 179)</li><li>(231, 194)</li><li>(225, 216)</li><li>(216, 237)</li></points></li>
+      <li><id>BarrowRiver</id><riverDef>Creek</riverDef><sourceHeight>290</sourceHeight><points><li>(129, 189)</li><li>(116, 207)</li><li>(110, 218)</li><li>(99, 237)</li></points></li>
+      <li><id>Milkwater</id><riverDef>Creek</riverDef><sourceHeight>850</sourceHeight><points><li>(139, 28)</li><li>(148, 45)</li><li>(158, 63)</li><li>(154, 82)</li><li>(140, 103)</li></points></li>
+      <li><id>Greenblood</id><sourceHeight>85</sourceHeight><points><li>(202, 568)</li><li>(232, 571)</li><li>(258, 575)</li><li>(283, 578)</li></points></li>
+      <li><id>Scourge</id><riverDef>Creek</riverDef><joins>Greenblood</joins><sourceHeight>420</sourceHeight><mouthHeight>85</mouthHeight><points><li>(162, 539)</li><li>(181, 552)</li><li>(202, 568)</li></points></li>
+      <li><id>Vaith</id><riverDef>Creek</riverDef><joins>Greenblood</joins><sourceHeight>310</sourceHeight><mouthHeight>85</mouthHeight><points><li>(154, 569)</li><li>(179, 573)</li><li>(202, 568)</li></points></li>
+      <li><id>Torentine</id><sourceHeight>750</sourceHeight><points><li>(133, 541)</li><li>(126, 556)</li><li>(122, 571)</li><li>(119, 591)</li></points></li>
+      <li><id>Slayne</id><riverDef>Creek</riverDef><sourceHeight>450</sourceHeight><points><li>(210, 490)</li><li>(224, 505)</li><li>(237, 514)</li><li>(246, 525)</li></points></li>
+      <li><id>Wendwater</id><sourceHeight>380</sourceHeight><points><li>(205, 453)</li><li>(222, 442)</li><li>(239, 434)</li><li>(251, 427)</li></points></li>
+    </rivers>
+    <seats>
+      <li><seat>Winterfell</seat><maxDistance>9</maxDistance></li>
+      <li><seat>Mormont</seat><coast>true</coast><island>true</island></li>
+      <li><seat>Reed</seat><wetland>true</wetland></li>
+      <li><seat>Manderly</seat><river>WhiteKnife</river><coast>true</coast></li>
+      <li><seat>Bolton</seat><river>WeepingWater</river></li>
+      <li><seat>Dustin</seat><river>BarrowRiver</river></li>
+      <li><seat>Flint</seat><coast>true</coast></li>
+      <li><seat>Eyrie</seat><mountain>true</mountain><maxDistance>8</maxDistance></li>
+      <li><seat>Grafton</seat><coast>true</coast></li>
+      <li><seat>Royce</seat><coast>true</coast></li>
+      <li><seat>Sunderland</seat><position>(202, 276)</position><coast>true</coast><island>true</island><maxDistance>6</maxDistance></li>
+      <li><seat>Riverrun</seat><river>RedFork</river><maxDistance>8</maxDistance></li>
+      <li><seat>Frey</seat><river>GreenFork</river></li>
+      <li><seat>Mallister</seat><coast>true</coast></li>
+      <li><seat>Mooton</seat><coast>true</coast><maxDistance>18</maxDistance></li>
+      <li><seat>CasterlyRock</seat><position>(62, 391)</position><coast>true</coast><mountain>true</mountain></li>
+      <li><seat>Farman</seat><coast>true</coast><island>true</island></li>
+      <li><seat>Prester</seat><coast>true</coast></li>
+      <li><seat>Banefort</seat><coast>true</coast></li>
+      <li><seat>Westerling</seat><coast>true</coast></li>
+      <li><seat>Highgarden</seat><river>Mander</river><maxDistance>8</maxDistance></li>
+      <li><seat>Caswell</seat><river>Mander</river></li>
+      <li><seat>Fossoway</seat><river>Mander</river></li>
+      <li><seat>Hightower</seat><river>Honeywine</river><coast>true</coast></li>
+      <li><seat>Beesbury</seat><river>Honeywine</river></li>
+      <li><seat>Redwyne</seat><coast>true</coast><island>true</island></li>
+      <li><seat>StormsEnd</seat><coast>true</coast></li>
+      <li><seat>Tarth</seat><coast>true</coast><island>true</island></li>
+      <li><seat>Estermont</seat><coast>true</coast><island>true</island></li>
+      <li><seat>Connington</seat><coast>true</coast></li>
+      <li><seat>Swann</seat><river>Slayne</river></li>
+      <li><seat>Dragonstone</seat><coast>true</coast><island>true</island></li>
+      <li><seat>Velaryon</seat><coast>true</coast><island>true</island></li>
+      <li><seat>Celtigar</seat><position>(242, 382)</position><coast>true</coast><island>true</island></li>
+    </seats>
+  </ARimOfIceAndFire.Geography.BookGeographyDef>
+</Defs>

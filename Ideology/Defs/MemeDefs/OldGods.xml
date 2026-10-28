@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <MemeDef>
+    <defName>ARIOIAF_Structure_OldGods</defName>
+    <label>The Old Gods</label>
+    <description>Countless, nameless gods dwell in forest, stream, and stone. Worshippers pray silently before heart trees, believing the gods watch through their carved faces. There are no holy scriptures, named deities, or formal priesthood.</description>
+    <category>Structure</category>
+    <groupDef>ARIOIAF_WesterosiFaiths</groupDef>
+    <iconPath>UI/Ideology/OldGods</iconPath>
+    <impact>0</impact>
+    <worshipRoomLabel>Godswood</worshipRoomLabel>
+    <deityCount>0</deityCount>
+    <allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+    <symbolPackOverride>true</symbolPackOverride>
+    <generalRules>
+      <rulesStrings>
+        <li>memeCreed-&gt;old faith</li>
+        <li>memeConcept-&gt;the old gods</li>
+        <li>memeConcept-&gt;the godswood</li>
+        <li>memeConcept-&gt;remembrance</li>
+        <li>memeLeaderNoun-&gt;lord</li>
+        <li>memeMoralist-&gt;elder</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <patterns>
+        <li><def>AnimistDescription</def></li>
+      </patterns>
+      <constants>
+        <li><key>structure_animist</key><value>true</value></li>
+      </constants>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <ideoName>The Old Gods</ideoName>
+        <theme>old gods</theme>
+        <adjective>Old Gods</adjective>
+        <member>Old Gods Worshipper</member>
+      </li>
+    </symbolPacks>
+    <thingStyleCategories>
+      <li>
+        <category>Animalist</category>
+        <priority>1</priority>
+      </li>
+    </thingStyleCategories>
+    <!-- Identity-defining only (was 8). Execution, marriage name and ideo diversity are not
+         Old Gods doctrine, and rough living is already Winter Is Coming's; all four are now
+         suggested via associatedMemes instead. What remains is the First Men: no slaves, no
+         man-flesh, indifferent to skulls on spikes and to the dead themselves. -->
+    <requireOne>
+      <li><li>Slavery_Abhorrent</li></li>
+      <li><li>Cannibalism_Abhorrent</li></li>
+      <li><li>ARIOIAF_Skullspike_DontCare</li></li>
+      <li><li>Corpses_DontCare</li></li>
+    </requireOne>
+    <requiredRituals>
+      <li>
+        <precept>ARIOIAF_RemembranceOfTheDeparted</precept>
+        <pattern>FuneralStandard</pattern>
+      </li>
+    </requiredRituals>
+  </MemeDef>
+
+  <MemeDef>
+    <defName>ARIOIAF_SacredOaths</defName>
+    <label>Sacred Oaths</label>
+    <description>Promises sworn before the gods bind the soul. Keeping one proves honor; failing or abandoning it is deliberate oathbreaking.\n\nCompleting an accepted quest grants +4 mood for 5 days. Breaking it gives -8 for 8 days, and ordering secret intrigue gives -5 for 5 days. Followers also consider charity important and respect execution only when guilt is established.</description>
+    <iconPath>UI/Memes/SacredOaths</iconPath>
+    <groupDef>ARIOIAF_WesterosiTraditions</groupDef>
+    <impact>2</impact>
+    <renderOrder>76</renderOrder>
+    <requireOne>
+      <li><li>Charity_Important</li></li>
+      <li><li>Execution_RespectedIfGuilty</li></li>
+      <li><li>ARIOIAF_Intrigue_Dishonorable</li></li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective-&gt;sworn</li>
+        <li>memeAdjective-&gt;steadfast</li>
+        <li>memeConcept-&gt;oaths</li>
+        <li>memeConcept-&gt;honor</li>
+        <li>memeLeaderNoun-&gt;oathkeeper</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <rules>
+        <rulesStrings>
+          <li>lesson(tag=meme_ARIOIAF_SacredOaths)-&gt;a promise made before the gods binds the soul</li>
+          <li>lessonReinforcement(tag=meme_ARIOIAF_SacredOaths)-&gt;The old gods remember every oath, whether kept or broken.</li>
+        </rulesStrings>
+      </rules>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <theme>oaths</theme>
+        <adjective>sworn</adjective>
+        <member>oathkeeper</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+
+  <MemeDef>
+    <defName>ARIOIAF_WinterIsComing</defName>
+    <label>Winter Is Coming</label>
+    <description>Summer's plenty must be guarded against winter's hunger. The prepared endure through discipline, hard living and shared stores.\n\nOn maps with truly cold winters, storing at least 10 days of food per colonist at winter's onset grants +3 mood; reserves below 3 days give -3. Followers welcome rough living, tolerate harsh temperatures, abhor slavery and are untroubled by death. Snow beauty and other survival precepts remain strongly suggested.</description>
+    <iconPath>UI/Memes/WinterIsComing</iconPath>
+    <groupDef>ARIOIAF_WesterosiTraditions</groupDef>
+    <impact>2</impact>
+    <renderOrder>77</renderOrder>
+    <!-- Identity-defining only. Comfort_Ignored, Expectations_Low, Fungus, nutrient paste,
+         Corpses, Raiding and Snow were demoted to strongly-suggested (associatedMemes):
+         stacking them all as hard requirements both removed player choice and piled four
+         separate hardiness bonuses onto one meme. -->
+    <requireOne>
+      <li><li>RoughLiving_Welcomed</li></li>
+      <li><li>Slavery_Abhorrent</li></li>
+      <li><li>Temperature_Tough</li></li>
+      <li><li>ARIOIAF_Death_DontCare</li></li>
+    </requireOne>
+    <agreeableTraits>
+      <li><def>Tough</def></li>
+      <li><def>Bloodlust</def></li>
+      <li><def>Masochist</def></li>
+    </agreeableTraits>
+    <disagreeableTraits>
+      <li><def>Kind</def></li>
+    </disagreeableTraits>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective-&gt;prepared</li>
+        <li>memeAdjective-&gt;enduring</li>
+        <li>memeConcept-&gt;winter</li>
+        <li>memeConcept-&gt;survival</li>
+        <li>memeLeaderNoun-&gt;warden</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <rules>
+        <rulesStrings>
+          <li>lesson(tag=meme_ARIOIAF_WinterIsComing)-&gt;summer's plenty must be guarded against winter's hunger</li>
+          <li>lessonReinforcement(tag=meme_ARIOIAF_WinterIsComing)-&gt;Prepare together, endure together, and the cold will not claim the community.</li>
+        </rulesStrings>
+      </rules>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <theme>winter</theme>
+        <adjective>enduring</adjective>
+        <member>winterkeeper</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+</Defs>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ARIO_WartimeBridgeUnavailable>[A Rim of Ice and Fire] Wartime incidents are unavailable because the core diplomacy API could not be found: {0}</ARIO_WartimeBridgeUnavailable>
+
+  <!-- Enemy strength descriptions, derived from storyteller threat points. -->
+  <ARIO_StrengthSmall>a raiding party</ARIO_StrengthSmall>
+  <ARIO_StrengthModerate>a fighting company</ARIO_StrengthModerate>
+  <ARIO_StrengthLarge>a war band of considerable size</ARIO_StrengthLarge>
+  <ARIO_StrengthHost>a full host</ARIO_StrengthHost>
+
+  <!-- Wartime incidents. -->
+  <ARIO_SkirmishTitle>Border skirmish</ARIO_SkirmishTitle>
+  <ARIO_SkirmishBody>Outriders from {FACTION} have crossed into your lands. Scouts count {STRENGTH}.\n\nThis is the ordinary grind of war - patrols meeting patrols - but blades are out and your people are in their path.</ARIO_SkirmishBody>
+
+  <ARIO_MajorBattleTitle>Major field battle</ARIO_MajorBattleTitle>
+  <ARIO_MajorBattleBody>{FACTION} has committed to the field. Banners are up and the line is coming on: {STRENGTH}.\n\nThis is no patrol clash. Everyone who can hold a weapon will be needed, and those who live through it will not be the same afterwards.</ARIO_MajorBattleBody>
+
+  <ARIO_ScoutsTitle>Scouts report enemy army</ARIO_ScoutsTitle>
+  <ARIO_ScoutsBody>Riders from {FACTION} have been spotted nearby. Your scouts estimate {STRENGTH}.\n\nThey will be on you within half a day. You have time to prepare - use it.</ARIO_ScoutsBody>
+
+  <ARIO_DesertersTitle>Deserters</ARIO_DesertersTitle>
+  <ARIO_DesertersBody>{COUNT} soldier(s) have slipped away from {FACTION}'s host and thrown themselves on your mercy. They have had their fill of the war and ask only for a roof and work.\n\nThey have joined your House.</ARIO_DesertersBody>
+
+  <ARIO_CallToArmsTitle>Your liege calls the banners</ARIO_CallToArmsTitle>
+  <ARIO_CallToArmsBody>{LIEGE} has summoned your household to war and demands that you raise your banner against {FACTION}.\n\nThe enemy fields {STRENGTH}. If you answer, {LIEGE} will send troops to fight beside you - and the battle will be joined here, on your ground.\n\nRefusing will not be forgotten.</ARIO_CallToArmsBody>
+  <ARIO_CallToArmsAccept>Raise the banner - fight here</ARIO_CallToArmsAccept>
+  <ARIO_CallToArmsSend>Send a detachment instead</ARIO_CallToArmsSend>
+  <ARIO_CallToArmsRefuse>Refuse the call</ARIO_CallToArmsRefuse>
+  <ARIO_CallToArmsRefused>You refused {0}'s call to arms. Your liege will remember it.</ARIO_CallToArmsRefused>
+  <ARIO_CallToArmsAnswered>You answered the call. {0} sends {1} troops to fight beside you.</ARIO_CallToArmsAnswered>
+
+  <!-- Ambush and requisition. -->
+  <ARIO_AmbushTitle>Ambush</ARIO_AmbushTitle>
+  <ARIO_AmbushBody>{FACTION} slipped past your watch. There was no warning and there is no time to form up - {STRENGTH} is already on your ground.</ARIO_AmbushBody>
+
+  <ARIO_RequisitionTitle>War requisition</ARIO_RequisitionTitle>
+  <ARIO_RequisitionBody>{LIEGE} has taken {COUNT} of your stores for the war effort. Food and medicine go where the fighting is, and no one asked your leave.</ARIO_RequisitionBody>
+  <ARIO_RequisitionWarEffort>The war effort</ARIO_RequisitionWarEffort>
+
+  <!-- Sending a detachment to fight the battle without you. -->
+  <ARIO_DetachmentTitle>Choose your detachment</ARIO_DetachmentTitle>
+  <ARIO_DetachmentBlurb>Pick who marches. They will be away for about {DAYS} days and will return wounded, changed, or not at all. At least {MIN} must go, and you cannot send everyone.</ARIO_DetachmentBlurb>
+  <ARIO_DetachmentSkills>melee {0}, shooting {1}</ARIO_DetachmentSkills>
+  <ARIO_DetachmentSend>Send {0}</ARIO_DetachmentSend>
+  <ARIO_DetachmentCancel>Cancel</ARIO_DetachmentCancel>
+  <ARIO_DetachmentTooFew>At least {0} able fighters must march.</ARIO_DetachmentTooFew>
+  <ARIO_DetachmentTooMany>Someone must stay to hold the colony.</ARIO_DetachmentTooMany>
+  <ARIO_DetachmentBusy>A detachment is already in the field.</ARIO_DetachmentBusy>
+  <ARIO_DetachmentUnavailable>No detachment can be raised right now.</ARIO_DetachmentUnavailable>
+  <ARIO_DetachmentDeparted>{0} marched off to war. Expect them in about {1} days.</ARIO_DetachmentDeparted>
+
+  <ARIO_CampaignWonTitle>The detachment returns victorious</ARIO_CampaignWonTitle>
+  <ARIO_CampaignWonBody>Of the {SENT} you sent, the field was won. {DEAD} did not come home.</ARIO_CampaignWonBody>
+  <ARIO_CampaignLostTitle>The detachment returns broken</ARIO_CampaignLostTitle>
+  <ARIO_CampaignLostBody>Of the {SENT} you sent, the battle was lost. {DEAD} did not come home.</ARIO_CampaignLostBody>
+  <ARIO_CampaignFallen>Fallen: {0}</ARIO_CampaignFallen>
+
+  <!-- Battle aftermath and earned traits. -->
+  <ARIO_BattleOverWonTitle>The field is held</ARIO_BattleOverWonTitle>
+  <ARIO_BattleOverWonBody>The enemy is broken and the field is yours. Those who fought carry it with them:\n\n{NOTES}</ARIO_BattleOverWonBody>
+  <ARIO_BattleOverLostTitle>The field is lost</ARIO_BattleOverLostTitle>
+  <ARIO_BattleOverLostBody>The fighting is over and it did not go your way. What it left behind:\n\n{NOTES}</ARIO_BattleOverLostBody>
+  <ARIO_BattleTraitLine>{0} is now {1}.</ARIO_BattleTraitLine>
+
+  <ARIO_TraitWarrior>a warrior</ARIO_TraitWarrior>
+  <ARIO_TraitVeteran>a veteran</ARIO_TraitVeteran>
+  <ARIO_TraitScarred>battle-scarred</ARIO_TraitScarred>
+  <ARIO_TraitTraumatized>war-shaken</ARIO_TraitTraumatized>
+
+</LanguageData>

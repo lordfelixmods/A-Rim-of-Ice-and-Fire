@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PreceptDef ParentName="FuneralBase">
+    <defName>ARIOIAF_RemembranceOfTheDeparted</defName>
+    <label>Remembrance of the Departed</label>
+    <description>Worshippers gather before a grave or memorial to remember the departed in silence beneath the gaze of the old gods. If the body is lost, an empty grave may be used.</description>
+    <extraTextPawnDeathLetter>{PAWN_nameDef} should be buried and given a Remembrance of the Departed so the community may keep {PAWN_possessive} memory before the old gods.</extraTextPawnDeathLetter>
+    <requiredMemes>
+      <li>ARIOIAF_Structure_OldGods</li>
+    </requiredMemes>
+  </PreceptDef>
+
+  <IssueDef>
+    <defName>ARIOIAF_Snow</defName>
+    <label>Snow</label>
+    <iconPath>UI/Memes/WinterIsComing</iconPath>
+  </IssueDef>
+
+  <PreceptDef>
+    <defName>ARIOIAF_Snow_Beautiful</defName>
+    <issue>ARIOIAF_Snow</issue>
+    <label>beautiful</label>
+    <description>Snow blankets the world in austere beauty and reminds everyone that winter must be respected.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    <requiredMemes>
+      <li>ARIOIAF_WinterIsComing</li>
+    </requiredMemes>
+    <associatedMemes>
+      <li>ARIOIAF_WinterIsComing</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>ARIOIAF_SnowBeautiful</thought>
+        <description>Snow-covered surroundings</description>
+      </li>
+    </comps>
+  </PreceptDef>
+
+
+  <IssueDef>
+    <defName>ARIOIAF_IntrigueConduct</defName>
+    <label>Intrigue</label>
+    <iconPath>UI/Memes/SacredOaths</iconPath>
+  </IssueDef>
+
+  <PreceptDef>
+    <defName>ARIOIAF_Intrigue_Dishonorable</defName>
+    <issue>ARIOIAF_IntrigueConduct</issue>
+    <label>dishonorable</label>
+    <description>Secret manipulation, bribery, sabotage, poisoning, and abduction stain the honor of those who order them.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    <requiredMemes>
+      <li>ARIOIAF_SacredOaths</li>
+    </requiredMemes>
+    <associatedMemes>
+      <li>ARIOIAF_SacredOaths</li>
+    </associatedMemes>
+  </PreceptDef>
+</Defs>

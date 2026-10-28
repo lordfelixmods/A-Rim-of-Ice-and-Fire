@@ -1,0 +1,15 @@
+{
+  "TextureModID": "lordfelix.arimoficeandfire",
+  "ItemDefName": "ARIOIAF_Heartsbane",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.5373,
+  "OffY": 0.0021,
+  "Rotation": 45.0,
+  "ScaleX": 1.48,
+  "ScaleY": 1.48,
+  "HandsMode": 0,
+  "BladeStart": 0.1954,
+  "BladeEnd": 1.406,
+  "MeleeWeaponType": 6
+}

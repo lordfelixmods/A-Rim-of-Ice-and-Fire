@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>ARIO_MarketStall</defName>
+    <label>market stall</label>
+    <description>A market stand holding up to 36 stacks. Choose stock in the House market; colonists must deliver it before shoppers can buy.</description>
+    <thingClass>ARimOfIceAndFire.MarketUI.Building_MarketStall</thingClass>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories><li>BuildingsFurniture</li></thingCategories>
+    <graphicData>
+      <texPath>Things/Building/MarketStall/Empty</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <!-- The painted stall occupies ~63% of its transparent source width. A 4.8-wide
+           sprite paints a three-tile-wide stand while keeping the 640x384 aspect ratio. -->
+      <drawSize>(4.8,2.88)</drawSize>
+      <!-- Align the painted feet with the southern edge of the 3x1 footprint.
+           The empty 640x384 sprite ends near row 283; size/height remain unchanged. -->
+      <drawOffset>(0,0,0.19)</drawOffset>
+    </graphicData>
+    <size>(3,1)</size>
+    <rotatable>false</rotatable>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.35</fillPercent>
+    <altitudeLayer>Building</altitudeLayer>
+    <surfaceType>Item</surfaceType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.75</staticSunShadowHeight>
+    <useHitPoints>true</useHitPoints>
+    <costList><WoodLog>95</WoodLog></costList>
+    <statBases>
+      <MaxHitPoints>190</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>18</Mass>
+      <Flammability>1</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <building>
+      <blueprintClass>Blueprint_Storage</blueprintClass>
+      <maxItemsInCell>12</maxItemsInCell>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+    </building>
+    <designationCategory>Misc</designationCategory>
+    <uiOrder>2070</uiOrder>
+  </ThingDef>
+  <JobDef>
+    <defName>ARIO_HaulToMarketStall</defName>
+    <driverClass>ARimOfIceAndFire.MarketUI.JobDriver_MarketStallHaul</driverClass>
+    <reportString>stocking the market stall with TargetA.</reportString>
+    <suspendable>false</suspendable>
+  </JobDef>
+  <WorkGiverDef>
+    <defName>ARIO_StockMarketStall</defName>
+    <label>stock market stall</label>
+    <giverClass>ARimOfIceAndFire.MarketUI.WorkGiver_StockMarketStall</giverClass>
+    <workType>Hauling</workType>
+    <verb>stock</verb>
+    <gerund>stocking market stalls</gerund>
+    <priorityInType>16</priorityInType>
+    <requiredCapacities><li>Manipulation</li></requiredCapacities>
+  </WorkGiverDef>
+</Defs>

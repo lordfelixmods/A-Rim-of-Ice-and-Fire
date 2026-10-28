@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+    Our faiths were sitting inside vanilla's Mild/Strong bands, mixed in with Unity Family and
+    Techno-utopians. IdeoPresetCategoryDef carries its own groupLabel, which the picker renders
+    as a separate heading, so the Westerosi faiths get their own area rather than being buried
+    among the RimWorld presets.
+  -->
+  <IdeoPresetCategoryDef>
+    <defName>ARIOIAF_Westeros</defName>
+    <label>Westeros</label>
+    <description>The faiths of the Seven Kingdoms. Each mirrors what a Westerosi House already believes, so a colony taking one shares its culture's creed.</description>
+    <groupLabel>Westerosi faiths</groupLabel>
+  </IdeoPresetCategoryDef>
+</Defs>

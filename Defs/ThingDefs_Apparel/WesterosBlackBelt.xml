@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>ARIOIAF_WesterosBlackBelt</defName>
+    <label>Westeros black belt</label>
+    <description>A black leather belt for tools and traveling gear, helping its wearer shoulder a larger load. Cannot be dyed. Does not fit the fat body type.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/WesterosBlackBelt/WesterosBlackBelt_Male_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <ignoreThingDrawColor>true</ignoreThingDrawColor>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>20</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>1500</WorkToMake>
+      <Mass>0.4</Mass>
+      <StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <CarryingCapacity>10</CarryingCapacity>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+      <displayPriority>254</displayPriority>
+    </recipeMaker>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <wornGraphicPath />
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <renderNodeProperties>
+        <li Class="ARimOfIceAndFire.WesterosGarmentNodeProperties">
+          <nodeClass>ARimOfIceAndFire.PawnRenderNode_WesterosGarment</nodeClass>
+          <workerClass>ARimOfIceAndFire.PawnRenderNodeWorker_TabardCoveredBelt</workerClass>
+          <parentTagDef>ApparelBody</parentTagDef>
+          <!-- Actual depth follows native worn apparel: above armor, below cloak. -->
+          <textureStem>Things/Pawn/Humanlike/Apparel/WesterosBlackBelt/WesterosBlackBelt</textureStem>
+          <hideUnderTabard>true</hideUnderTabard>
+        </li>
+      </renderNodeProperties>
+      <layers>
+        <li>ARIOIAF_WesterosBeltLayer</li>
+      </layers>
+      <drawData>
+        <dataNorth>
+          <layer>88.25</layer>
+        </dataNorth>
+      </drawData>
+      <tags>
+        <li>ARIOIAF_WesterosMilitaryApparel</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <tradeTags>
+      <li>Clothing</li>
+    </tradeTags>
+    <comps Inherit="False">
+      <li Class="CompProperties_Forbiddable" />
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Styleable" />
+    </comps>
+  </ThingDef>
+</Defs>

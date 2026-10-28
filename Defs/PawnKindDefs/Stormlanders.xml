@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef Name="ARIOIAF_StormlanderBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionDef>ARIOIAF_Stormlanders</defaultFactionDef>
+    <minGenerationAge>18</minGenerationAge>
+    <maxGenerationAge>65</maxGenerationAge>
+    <initialResistanceRange>12~25</initialResistanceRange>
+    <initialWillRange>1~3</initialWillRange>
+    <backstoryFilters><li><categories><li>ARIOIAF_Backstory_Stormlands</li></categories></li></backstoryFilters>
+    <apparelMoney>0</apparelMoney>
+    <apparelRequired><li>ARIOIAF_WesterosTunic</li><li>ARIOIAF_WesterosGambeson</li><li>ARIOIAF_WesterosBelt</li></apparelRequired>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+    <allowRoyalApparelRequirements>false</allowRoyalApparelRequirements>
+    <allowRoyalRoomRequirements>false</allowRoyalRoomRequirements>
+    <weaponMoney>300~600</weaponMoney>
+    <weaponTags><li>NeolithicMelee</li><li>MedievalMeleeDecent</li><li>ARIOIAF_WesterosMeleeDecent</li></weaponTags>
+    <invFoodDef>Pemmican</invFoodDef>
+    <invNutrition>2.55</invNutrition>
+    <gearHealthRange>0.8~1</gearHealthRange>
+    <modExtensions><li Class="ARimOfIceAndFireCore.StormlanderOutfitExtension" /></modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_StormlanderBase">
+    <defName>ARIOIAF_Stormlanders_Levy</defName><label>Stormlander levy</label>
+    <forcedTraits><ARIOIAF_Trait_Levy>0</ARIOIAF_Trait_Levy></forcedTraits>
+    <combatPower>45</combatPower>
+    <skills><li><skill>Melee</skill><range>3~7</range></li></skills>
+    <itemQuality>Poor</itemQuality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_StormlanderBase">
+    <defName>ARIOIAF_Stormlanders_Bowman</defName><label>Stormlander bowman</label><labelFemale>Stormlander bowwoman</labelFemale>
+    <forcedTraits><ARIOIAF_Trait_ManAtArms>0</ARIOIAF_Trait_ManAtArms></forcedTraits>
+    <combatPower>70</combatPower>
+    <weaponTags Inherit="False"><li>NeolithicRanged</li><li>ARIOIAF_WesterosCrossbowLight</li><li>ARIOIAF_WesterosCrossbowMilitary</li><li>ARIOIAF_WesterosArbalest</li></weaponTags>
+    <apparelRequired><li>ARIOIAF_StormlandsHelmet</li></apparelRequired>
+    <skills><li><skill>Shooting</skill><range>7~12</range></li></skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_StormlanderBase" Name="ARIOIAF_StormlanderSoldierBase" Abstract="True">
+    <apparelRequired><li>ARIOIAF_StormlandsHelmet</li><li>ARIOIAF_StormlanderGorget</li></apparelRequired>
+    <weaponTags Inherit="False"><li>MedievalMeleeDecent</li><li>ARIOIAF_WesterosMeleeDecent</li></weaponTags>
+    <skills><li><skill>Melee</skill><range>7~12</range></li></skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_StormlanderSoldierBase">
+    <defName>ARIOIAF_Stormlanders_Footman</defName><label>Stormlander footman</label><labelFemale>Stormlander footwoman</labelFemale>
+    <forcedTraits><ARIOIAF_Trait_ManAtArms>0</ARIOIAF_Trait_ManAtArms></forcedTraits>
+    <combatPower>90</combatPower>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_StormlanderSoldierBase" Name="ARIOIAF_StormlanderEliteBase" Abstract="True">
+    <weaponTags Inherit="False"><li>MedievalMeleeAdvanced</li><li>ARIOIAF_WesterosMeleeAdvanced</li></weaponTags>
+    <itemQuality>Good</itemQuality>
+    <skills Inherit="False"><li><skill>Melee</skill><range>10~15</range></li></skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_StormlanderEliteBase">
+    <defName>ARIOIAF_Stormlanders_Houseguard</defName><label>Stormlander houseguard</label>
+    <forcedTraits><ARIOIAF_Trait_Knight>0</ARIOIAF_Trait_Knight></forcedTraits>
+    <combatPower>130</combatPower>
+    <royalTitleChance>1</royalTitleChance>
+    <titleSelectOne MayRequire="Ludeon.RimWorld.Royalty"><li>ARIOIAF_StormlanderTitle_Knight</li><li>ARIOIAF_StormlanderTitle_LandedKnight</li></titleSelectOne>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_StormlanderEliteBase">
+    <defName>ARIOIAF_Stormlanders_Officer</defName><label>Stormlander officer</label>
+    <forcedTraits><ARIOIAF_Trait_LandedKnight>0</ARIOIAF_Trait_LandedKnight></forcedTraits>
+    <combatPower>165</combatPower><maxPerGroup>2</maxPerGroup>
+    <skills Inherit="False"><li><skill>Melee</skill><range>11~16</range></li><li><skill>Social</skill><range>8~13</range></li></skills>
+    <royalTitleChance>1</royalTitleChance>
+    <titleSelectOne MayRequire="Ludeon.RimWorld.Royalty"><li>ARIOIAF_StormlanderTitle_LandedKnight</li><li>ARIOIAF_StormlanderTitle_Lord</li><li>ARIOIAF_StormlanderTitle_HighLord</li></titleSelectOne>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_StormlanderSoldierBase">
+    <defName>ARIOIAF_Stormlanders_CaravanLeader</defName><label>Stormlander caravan leader</label>
+    <forcedTraits><ARIOIAF_Trait_HedgeKnight>0</ARIOIAF_Trait_HedgeKnight></forcedTraits>
+    <combatPower>95</combatPower><trader>true</trader>
+    <skills Inherit="False"><li><skill>Melee</skill><range>6~10</range></li><li><skill>Social</skill><range>10~16</range></li></skills>
+    <royalTitleChance>1</royalTitleChance>
+    <titleSelectOne MayRequire="Ludeon.RimWorld.Royalty"><li>ARIOIAF_StormlanderTitle_Squire</li><li>ARIOIAF_StormlanderTitle_Knight</li><li>ARIOIAF_StormlanderTitle_LandedKnight</li></titleSelectOne>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_StormlanderEliteBase">
+    <defName>ARIOIAF_Stormlanders_LordParamount</defName><label>Stormlander lord paramount</label><labelFemale>Stormlander lady paramount</labelFemale>
+    <forcedTraits><ARIOIAF_Trait_LordLady>0</ARIOIAF_Trait_LordLady></forcedTraits>
+    <combatPower>200</combatPower><factionLeader>true</factionLeader>
+    <itemQuality>Excellent</itemQuality>
+    <titleRequired MayRequire="Ludeon.RimWorld.Royalty">ARIOIAF_StormlanderTitle_LordParamount</titleRequired>
+    <skills Inherit="False"><li><skill>Melee</skill><range>13~18</range></li><li><skill>Social</skill><range>13~18</range></li></skills>
+  </PawnKindDef>
+</Defs>

@@ -1,0 +1,15 @@
+{
+  "TextureModID": "lordfelix.arimoficeandfire",
+  "ItemDefName": "ARIOIAF_TwoHandedWarSword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.5528,
+  "OffY": 0.0021,
+  "Rotation": 45.0,
+  "ScaleX": 1.45,
+  "ScaleY": 1.45,
+  "HandsMode": 0,
+  "BladeStart": 0.2092,
+  "BladeEnd": 1.4179,
+  "MeleeWeaponType": 6
+}

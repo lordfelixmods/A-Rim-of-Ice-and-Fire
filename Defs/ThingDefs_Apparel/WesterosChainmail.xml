@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ArmorSmithableBase">
+    <defName>ARIOIAF_WesterosChainmail</defName>
+    <label>Westerosi chainmail</label>
+    <description>Dark mail protecting the torso, shoulders, arms and legs. Worn over a gambeson and beneath plate armor; cannot be worn together with scale armor. Fits all adult body types.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/WesterosChainmail/WesterosChainmail_Male_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <ignoreThingDrawColor>true</ignoreThingDrawColor>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <!-- No generic apparel/trader/environment pool. Fresh regional military NPCs receive
+         role-specific mail through the scoped outfit adapter; native crafting stays unchanged. -->
+    <generateCommonality>0</generateCommonality>
+    <generateAllowChance>0</generateAllowChance>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>90</costStuffCount>
+    <thingCategories>
+      <li>ARIOIAF_WesterosArmoryCategory</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <MaxHitPoints>210</MaxHitPoints>
+      <Mass>6</Mass>
+      <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>6</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.15</MoveSpeed>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <researchPrerequisite>ARIOIAF_WesterosArmory</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>242</displayPriority>
+      <recipeUsers Inherit="False">
+        <li>ARIOIAF_WesterosiArmorersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <tradeTags Inherit="False" />
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/WesterosChainmail/WesterosChainmail</wornGraphicPath>
+      <!-- Black masks preserve the supplied ring artwork when metal colors differ. -->
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>ARIOIAF_ScaleArmor</li>
+      </layers>
+      <!-- Same rear ordering as scale armor: beneath Shell-layer plate. -->
+      <drawData><dataNorth><layer>87</layer></dataNorth></drawData>
+      <tags Inherit="False" />
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyVacuumResistance>false</canBeGeneratedToSatisfyVacuumResistance>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <comps Inherit="False">
+      <li Class="CompProperties_Forbiddable" />
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Styleable" />
+    </comps>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FeatureDef>
+    <defName>ARIO_BookMapFeature</defName>
+    <label>geographic feature</label>
+    <description>A named geographic feature of Westeros.</description>
+    <workerClass>ARimOfIceAndFire.Geography.BookMapFeatureWorker</workerClass>
+    <order>1000</order>
+  </FeatureDef>
+</Defs>

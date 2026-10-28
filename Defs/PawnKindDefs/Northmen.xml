@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef Name="ARIOIAF_NorthmanBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionDef>ARIOIAF_Northmen</defaultFactionDef>
+    <minGenerationAge>18</minGenerationAge>
+    <maxGenerationAge>65</maxGenerationAge>
+    <initialResistanceRange>12~25</initialResistanceRange>
+    <initialWillRange>1~3</initialWillRange>
+    <backstoryFilters><li><categories><li>ARIOIAF_Backstory_North</li></categories></li></backstoryFilters>
+    <apparelMoney>0</apparelMoney>
+    <apparelRequired><li>ARIOIAF_WesterosTunic</li><li>ARIOIAF_WesterosGambeson</li></apparelRequired>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+    <allowRoyalApparelRequirements>false</allowRoyalApparelRequirements>
+    <allowRoyalRoomRequirements>false</allowRoyalRoomRequirements>
+    <weaponMoney>300~600</weaponMoney>
+    <weaponTags><li>NeolithicMelee</li><li>MedievalMeleeDecent</li><li>ARIOIAF_WesterosMeleeDecent</li></weaponTags>
+    <invFoodDef>Pemmican</invFoodDef>
+    <invNutrition>2.55</invNutrition>
+    <gearHealthRange>0.8~1</gearHealthRange>
+    <modExtensions><li Class="ARimOfIceAndFireCore.NorthmenOutfitExtension" /></modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_NorthmanBase">
+    <defName>ARIOIAF_Northmen_Levy</defName><label>northern levy</label>
+    <forcedTraits><ARIOIAF_Trait_Levy>0</ARIOIAF_Trait_Levy></forcedTraits>
+    <combatPower>45</combatPower>
+    <skills><li><skill>Melee</skill><range>3~7</range></li></skills>
+    <itemQuality>Poor</itemQuality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_NorthmanBase">
+    <defName>ARIOIAF_Northmen_Bowman</defName><label>northern bowman</label><labelFemale>northern bowwoman</labelFemale>
+    <forcedTraits><ARIOIAF_Trait_ManAtArms>0</ARIOIAF_Trait_ManAtArms></forcedTraits>
+    <combatPower>65</combatPower>
+    <weaponTags Inherit="False"><li>NeolithicRanged</li><li>ARIOIAF_WesterosCrossbowLight</li><li>ARIOIAF_WesterosCrossbowMilitary</li></weaponTags>
+    <apparelRequired><li>ARIOIAF_NorthmenHelmet</li></apparelRequired>
+    <skills><li><skill>Shooting</skill><range>6~11</range></li></skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_NorthmanBase" Name="ARIOIAF_NorthernSoldierBase" Abstract="True">
+    <apparelRequired><li>ARIOIAF_NorthmenHelmet</li><li>ARIOIAF_NorthernHeavyGorget</li></apparelRequired>
+    <weaponTags Inherit="False"><li>MedievalMeleeDecent</li><li>ARIOIAF_WesterosMeleeDecent</li></weaponTags>
+    <skills><li><skill>Melee</skill><range>7~12</range></li></skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_NorthernSoldierBase">
+    <defName>ARIOIAF_Northmen_Footman</defName><label>northern footman</label><labelFemale>northern footwoman</labelFemale>
+    <forcedTraits><ARIOIAF_Trait_ManAtArms>0</ARIOIAF_Trait_ManAtArms></forcedTraits>
+    <combatPower>90</combatPower>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_NorthernSoldierBase">
+    <defName>ARIOIAF_Northmen_Houseguard</defName><label>northern houseguard</label>
+    <forcedTraits><ARIOIAF_Trait_Knight>0</ARIOIAF_Trait_Knight></forcedTraits>
+    <combatPower>140</combatPower>
+    <apparelRequired><li>ARIOIAF_WesterosPlateArmor</li></apparelRequired>
+    <weaponTags Inherit="False"><li>MedievalMeleeAdvanced</li><li>ARIOIAF_WesterosMeleeAdvanced</li></weaponTags>
+    <itemQuality>Good</itemQuality>
+    <skills Inherit="False"><li><skill>Melee</skill><range>10~15</range></li></skills>
+    <royalTitleChance>1</royalTitleChance>
+    <titleSelectOne MayRequire="Ludeon.RimWorld.Royalty"><li>ARIOIAF_Title_HedgeKnight</li><li>ARIOIAF_Title_LandedKnight</li></titleSelectOne>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_NorthernSoldierBase" Name="ARIOIAF_NorthernOfficerBase" Abstract="True">
+    <apparelRequired><li>ARIOIAF_WesterosPlateArmor</li><li>ARIOIAF_NorthCloak</li></apparelRequired>
+    <weaponTags Inherit="False"><li>MedievalMeleeAdvanced</li><li>ARIOIAF_WesterosMeleeAdvanced</li></weaponTags>
+    <itemQuality>Good</itemQuality>
+    <skills Inherit="False"><li><skill>Melee</skill><range>11~16</range></li><li><skill>Social</skill><range>8~13</range></li></skills>
+    <modExtensions Inherit="False"><li Class="ARimOfIceAndFireCore.NorthmenOutfitExtension"><alwaysCloak>true</alwaysCloak></li></modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_NorthernOfficerBase">
+    <defName>ARIOIAF_Northmen_Officer</defName><label>northern officer</label>
+    <forcedTraits><ARIOIAF_Trait_LandedKnight>0</ARIOIAF_Trait_LandedKnight></forcedTraits>
+    <combatPower>170</combatPower><maxPerGroup>2</maxPerGroup>
+    <royalTitleChance>1</royalTitleChance>
+    <titleSelectOne MayRequire="Ludeon.RimWorld.Royalty"><li>ARIOIAF_Title_LandedKnight</li><li>ARIOIAF_Title_Lord</li><li>ARIOIAF_Title_HighLord</li></titleSelectOne>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_NorthernSoldierBase">
+    <defName>ARIOIAF_Northmen_CaravanLeader</defName><label>northern caravan leader</label>
+    <forcedTraits><ARIOIAF_Trait_HedgeKnight>0</ARIOIAF_Trait_HedgeKnight></forcedTraits>
+    <combatPower>100</combatPower><trader>true</trader>
+    <apparelRequired><li>ARIOIAF_NorthCloak</li></apparelRequired>
+    <skills Inherit="False"><li><skill>Melee</skill><range>6~10</range></li><li><skill>Social</skill><range>10~16</range></li></skills>
+    <modExtensions Inherit="False"><li Class="ARimOfIceAndFireCore.NorthmenOutfitExtension"><alwaysCloak>true</alwaysCloak></li></modExtensions>
+    <royalTitleChance>1</royalTitleChance>
+    <titleSelectOne MayRequire="Ludeon.RimWorld.Royalty"><li>ARIOIAF_Title_Squire</li><li>ARIOIAF_Title_HedgeKnight</li><li>ARIOIAF_Title_LandedKnight</li></titleSelectOne>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_NorthernOfficerBase">
+    <defName>ARIOIAF_Northmen_Ruler</defName><label>ruler of the North</label>
+    <forcedTraits><ARIOIAF_Trait_LordLady>0</ARIOIAF_Trait_LordLady></forcedTraits>
+    <combatPower>220</combatPower><factionLeader>true</factionLeader>
+    <itemQuality>Excellent</itemQuality>
+    <titleRequired MayRequire="Ludeon.RimWorld.Royalty">ARIOIAF_Title_KingInTheNorth</titleRequired>
+    <skills Inherit="False"><li><skill>Melee</skill><range>13~18</range></li><li><skill>Social</skill><range>13~18</range></li></skills>
+  </PawnKindDef>
+</Defs>

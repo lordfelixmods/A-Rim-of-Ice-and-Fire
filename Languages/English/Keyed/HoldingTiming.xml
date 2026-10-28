@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_HoldingTimingHeading>Holding timing</ARIO_HoldingTimingHeading>
+  <ARIO_HoldingTimingScope>Applies to current and future games. Existing progress is kept; changing timing grants no immediate construction or taxes.</ARIO_HoldingTimingScope>
+  <ARIO_HoldingArrivalLabel>Smallfolk arrival interval: {0}</ARIO_HoldingArrivalLabel>
+  <ARIO_HoldingArrivalNative>Standard (first 3 days, then 5–10 days)</ARIO_HoldingArrivalNative>
+  <ARIO_HoldingArrivalTip>Choose how often smallfolk ask to found a village: 1–60 days, or the standard first request after 3 days followed by 5–10 days between accepted requests.\n\nPending offers still need an answer. Postponing a request normally delays the next check by 5 days; declining delays it by 30 days. Changing this setting keeps sooner requests and progress already made. In older saves where the reason for a wait was not recorded, a custom choice may shorten the remaining wait to the chosen interval.\n\nThis does not change diplomatic travel, the number of map residents or the four settler-founded holding limit.</ARIO_HoldingArrivalTip>
+  <ARIO_HoldingConstructionLabel>Village construction duration: {0}</ARIO_HoldingConstructionLabel>
+  <ARIO_HoldingConstructionTip>Village construction: 1–60 days; default 5 days. Keeps existing progress. A 15-day tax exemption follows completion. Other construction and upgrade timers are unchanged.</ARIO_HoldingConstructionTip>
+  <ARIO_HoldingTaxLabel>Holding tax assessment interval: {0}</ARIO_HoldingTaxLabel>
+  <ARIO_HoldingTaxTip>Tax interval: 1–60 days; default 15. Shorter intervals collect smaller batches and do not increase daily production. Earned taxes and usual restrictions remain. The separate 5-day Honour and Integrity cycle is unchanged.</ARIO_HoldingTaxTip>
+  <ARIO_HoldingTimingDay>{0} day</ARIO_HoldingTimingDay>
+  <ARIO_HoldingTimingDays>{0} days</ARIO_HoldingTimingDays>
+  <ARIO_HoldingSettlerSchedule>Settler-founded holdings: {0}/{1} · Requests every {2} days.</ARIO_HoldingSettlerSchedule>
+  <ARIO_HoldingArrivalDue>Next request: {0}.</ARIO_HoldingArrivalDue>
+  <ARIO_HoldingArrivalCooldown>Requests delayed: {0}.</ARIO_HoldingArrivalCooldown>
+  <ARIO_HoldingArrivalAtCap>Settler-founded holding limit reached.</ARIO_HoldingArrivalAtCap>
+  <ARIO_HoldingArrivalNotScheduled>Choose a keep to begin village requests.</ARIO_HoldingArrivalNotScheduled>
+  <ARIO_HoldingTimingDisabled>Custom holding timing is unavailable. Your choices have been kept, but standard timing will be used. See the log for details.</ARIO_HoldingTimingDisabled>
+  <ARIO_HoldingTimingReset>Reset holding timing to defaults</ARIO_HoldingTimingReset>
+  <ARIO_HoldingTimingInstalled>[A Rim of Ice and Fire] Holding timing settings installed; native completion and tax accounting retained.</ARIO_HoldingTimingInstalled>
+  <ARIO_HoldingTimingUnavailable>[A Rim of Ice and Fire] Holding timing settings are unavailable; native timing retained: {0}</ARIO_HoldingTimingUnavailable>
+  <ARIO_HoldingTimingApplyFailed>[A Rim of Ice and Fire] Could not safely update existing holding countdowns: {0}</ARIO_HoldingTimingApplyFailed>
+</LanguageData>

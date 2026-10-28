@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <MemeDef>
+    <defName>ARIOIAF_BloodOfTheDragon</defName>
+    <label>Blood of the Dragon</label>
+    <description>Followers claim descent from Valyria's dragonlords and hold their blood to be a sacred inheritance that must remain undiluted.\n\nConsenting adult blood relatives may form romantic partnerships without the usual taboo, whatever their Westerosi faith; attraction and ordinary relationship choices still apply. A follower partnered with blood kin gains +3 mood, while one partnered outside the bloodline suffers -4. Royal blood must be exalted.</description>
+    <category>Normal</category><groupDef>ARIOIAF_WesterosiTraditions</groupDef><impact>2</impact><renderOrder>76</renderOrder>
+    <iconPath>UI/Memes/BloodOfTheDragon</iconPath>
+    <!-- Player-selectable. It used to carry hiddenInChooseMemes plus a factionWhitelist of
+         ARIOIAF_Valyria, which together made it unpickable: Dialog_ChooseMemes.CanUseMeme
+         rejects hidden memes outright, and then IdeoUtility.IsMemeAllowedFor rejects anything
+         whose factionWhitelist excludes the player's faction def. Both had to go.
+
+         Valyria still receives it unconditionally - it is in that faction's requiredMemes, and
+         IsMemeAllowedFor returns true for a required meme before it ever reaches the whitelist
+         check, so dropping the whitelist costs Valyria nothing.
+
+         randomizationSelectionWeightFactor stays 0 on purpose: this should be a deliberate
+         choice, not something a randomly generated NPC faith rolls into.
+
+         The supplemental kin-relationship patch lets followers of this meme OR the Kept Pure
+         precept use the preserved core adult-only kin romance and opinion rules, independently
+         of faith structure. Royal rank and other ideology requirements remain separate. -->
+    <!-- Two requirements, and the second is the one that pays for the meme.
+
+         Royalty: exalted - dragonlords holding themselves above common men must at least exalt
+         royal rank. It also satisfies Feudalism's "one of exalted/respected", so the two never
+         fight - which is exactly why it is not a real cost on its own.
+
+         Lineage: kept pure - the actual price. Both of the core assembly's dragon-blood patches
+         REMOVE penalties (full romance chance between kin, and the incest opinion hit stripped),
+         so without this the meme was 2 impact of pure upside. This turns "you may marry kin"
+         into "you are expected to": marrying outside the bloodline now carries a standing mood
+         penalty, so pairing colonists off becomes a decision with a cost.
+
+         Rightful rule and disapproval of other faiths stay suggested rather than forced
+         (associatedMemes in Ideology/Patches/MemeAssociations.xml), so the meme remains a
+         tradition layered on the Seven rather than a second doctrine. -->
+    <requireOne>
+      <li><li>ARIOIAF_Royalty_Exalted</li></li>
+      <li><li>ARIOIAF_Lineage_Pure</li></li>
+    </requireOne>
+
+    <!-- The pride of the dragonlords, as a mild net-negative pull on generated followers. -->
+    <agreeableTraits>
+      <li><def>Abrasive</def></li>
+      <li><def>Greedy</def></li>
+    </agreeableTraits>
+    <disagreeableTraits>
+      <li><def>Kind</def></li>
+    </disagreeableTraits>
+    <randomizationSelectionWeightFactor>0</randomizationSelectionWeightFactor>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective-&gt;dragon-blooded</li>
+        <li>memeAdjective-&gt;dragonborn</li>
+        <li>memeConcept-&gt;ancestry</li>
+        <li>memeConcept-&gt;dynasty</li>
+        <li>memeConcept-&gt;the bloodline</li>
+        <li>memeLeaderNoun-&gt;dragonlord</li>
+      </rulesStrings>
+    </generalRules>
+    <symbolPacks>
+      <li>
+        <theme>dragons</theme>
+        <adjective>dragon-blooded</adjective>
+        <member>dragonlord</member>
+      </li>
+    </symbolPacks>
+    <descriptionMaker><rules><rulesStrings><li>lesson(tag=meme_ARIOIAF_BloodOfTheDragon)-&gt;the blood of the dragon follows its own traditions</li></rulesStrings></rules></descriptionMaker>
+  </MemeDef>
+</Defs>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IssueDef>
+    <defName>ARIOIAF_KnightlyConduct</defName><label>Knightly conduct</label>
+    <iconPath>UI/Memes/ChivalricHonor</iconPath>
+  </IssueDef>
+  <IssueDef>
+    <defName>ARIOIAF_Oathkeeping</defName><label>Oathkeeping</label>
+    <iconPath>UI/Memes/ChivalricHonor</iconPath>
+  </IssueDef>
+  <IssueDef>
+    <defName>ARIOIAF_Authority</defName><label>Authority</label>
+    <iconPath>UI/Memes/Feudalism</iconPath>
+  </IssueDef>
+  <IssueDef>
+    <defName>ARIOIAF_FeudalAllegiance</defName><label>Feudal allegiance</label>
+    <iconPath>UI/Memes/Feudalism</iconPath>
+  </IssueDef>
+  <IssueDef>
+    <defName>ARIOIAF_RightfulRule</defName><label>Rightful rule</label>
+    <iconPath>UI/Memes/Feudalism</iconPath>
+  </IssueDef>
+
+  <PreceptDef>
+    <defName>ARIOIAF_KnightlyConduct_Honorable</defName>
+    <issue>ARIOIAF_KnightlyConduct</issue><label>honorable</label>
+    <description>Rescuing a downed colonist or allied human grants +4 mood for 3 days. Personally defeating a standing hostile human in combat grants +3 for 2 days. Prisoners, slaves, already downed enemies and executions never count as honorable victories. Each memory is limited to one instance and is not refreshed while active.</description>
+    <impact>Medium</impact><displayOrderInIssue>10</displayOrderInIssue><defaultSelectionWeight>1</defaultSelectionWeight>
+    <requiredMemes><li>ARIOIAF_ChivalricHonor</li></requiredMemes>
+    <associatedMemes><li>ARIOIAF_ChivalricHonor</li></associatedMemes>
+  </PreceptDef>
+  <PreceptDef>
+    <defName>ARIOIAF_Oathkeeping_Required</defName>
+    <issue>ARIOIAF_Oathkeeping</issue><label>required</label>
+    <description>Breaking the House's sworn fealty, betraying an active treaty, abandoning a trade pact or paid contract, missing agreed tribute, or failing an accepted supply delivery gives believing colonists -10 mood for 6 days. Refusing or ignoring a liege's tax or banner obligation also breaks the oath of service. Agreements that expire, end for reasons beyond your control, or are broken by the enemy do not count. Nor does defeat in a campaign your House fought to completion. This memory cannot stack or refresh while active.</description>
+    <impact>High</impact><displayOrderInIssue>10</displayOrderInIssue><defaultSelectionWeight>1</defaultSelectionWeight>
+    <requiredMemes><li>ARIOIAF_ChivalricHonor</li></requiredMemes>
+    <associatedMemes><li>ARIOIAF_ChivalricHonor</li></associatedMemes>
+  </PreceptDef>
+  <PreceptDef>
+    <defName>ARIOIAF_Authority_Respected</defName>
+    <issue>ARIOIAF_Authority</issue><label>respected</label>
+    <description>Once a player House has been founded, its followers gain +2 mood while a living, free member of the colony holds the office of House head. A vacant or captive head leaves them at -2 instead. Colonies without an established House are unaffected. No Royalty DLC title is required.</description>
+    <impact>Low</impact><displayOrderInIssue>10</displayOrderInIssue><defaultSelectionWeight>1</defaultSelectionWeight>
+    <requiredMemes><li>ARIOIAF_Feudalism</li></requiredMemes>
+    <associatedMemes><li>ARIOIAF_Feudalism</li></associatedMemes>
+    <comps><li Class="PreceptComp_SituationalThought"><thought>ARIOIAF_RespectedAuthority</thought><description>Recognized House authority</description><tooltipShowMoodRange>true</tooltipShowMoodRange></li></comps>
+  </PreceptDef>
+  <PreceptDef>
+    <defName>ARIOIAF_FeudalAllegiance_Honorable</defName>
+    <issue>ARIOIAF_FeudalAllegiance</issue><label>honorable</label>
+    <description>Fulfilling a liege's tax, supply delivery or completed banner campaign gives believing colonists +4 mood for 4 days. The memory cannot stack or refresh while active. Independent Houses are not penalized, and merely swearing and renouncing fealty earns no reward.</description>
+    <impact>Low</impact><displayOrderInIssue>10</displayOrderInIssue><defaultSelectionWeight>1</defaultSelectionWeight>
+    <requiredMemes><li>ARIOIAF_Feudalism</li></requiredMemes>
+    <associatedMemes><li>ARIOIAF_Feudalism</li></associatedMemes>
+  </PreceptDef>
+  <PreceptDef>
+    <defName>ARIOIAF_RightfulRule_Essential</defName>
+    <issue>ARIOIAF_RightfulRule</issue><label>essential</label>
+    <description>An established House must have a living, free House head and follow its named heir or normal family succession order. A vacant or captive head causes -6 mood. Replacing a living head, or passing over an eligible lawful successor, gives -8 mood for 6 days. Lawful succession gives +4 mood for 4 days. Founding the House and nominating an heir are permitted; memories cannot stack or refresh while active. Independent rulers are legitimate without an outside liege or Royalty title.</description>
+    <impact>High</impact><displayOrderInIssue>10</displayOrderInIssue><defaultSelectionWeight>1</defaultSelectionWeight>
+    <requiredMemes><li>ARIOIAF_Feudalism</li></requiredMemes>
+    <associatedMemes><li>ARIOIAF_Feudalism</li></associatedMemes>
+    <comps><li Class="PreceptComp_SituationalThought"><thought>ARIOIAF_RuleVacant</thought><description>A legitimate House head is required</description></li></comps>
+  </PreceptDef>
+</Defs>

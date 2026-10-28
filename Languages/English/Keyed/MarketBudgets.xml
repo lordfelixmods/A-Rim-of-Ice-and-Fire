@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_MarketBudgetInstallFailed>[A Rim of Ice and Fire] Shared market budgets could not be installed. Automatic market purchases are disabled to prevent unlimited spending. Details: {0}</ARIO_MarketBudgetInstallFailed>
+  <ARIO_MarketVisitBudgetInspect>Shared market budget: {0} / {1} silver remaining this visit</ARIO_MarketVisitBudgetInspect>
+  <ARIO_MarketWealthyPatronLabel>Wealthy patron</ARIO_MarketWealthyPatronLabel>
+  <ARIO_MarketWealthyPatronText>A visitor of means has come to your market with {0}, and carries a purse of some {1} silver.
+
+They can afford what ordinary custom cannot. If you have treasure to sell — Valyrian steel, fine plate, anything an ordinary shopper walks past — put it out for sale while they are still here.</ARIO_MarketWealthyPatronText>
+</LanguageData>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_SlotTunic>Tunic</ARIO_SlotTunic>
+  <ARIO_SlotUnderArmor>Under armor</ARIO_SlotUnderArmor>
+  <ARIO_SlotBelt>Belt</ARIO_SlotBelt>
+  <ARIO_SlotTabard>Tabard</ARIO_SlotTabard>
+  <ARIO_SlotCloak>Cloak</ARIO_SlotCloak>
+  <ARIO_SlotRangedWeapon>Ranged weapon</ARIO_SlotRangedWeapon>
+  <ARIO_LevyRangedHelp>Choose a gun while Industrialised Westeros is enabled. CE levies receive matching starter ammunition and can fetch colony supplies.</ARIO_LevyRangedHelp>
+  <ARIO_LevyAmmoUnavailable>[A Rim of Ice and Fire] Levy ammunition support is unavailable; weapon choices remain available: {0}</ARIO_LevyAmmoUnavailable>
+  <ARIO_LevyAmmoIssueFailed>[A Rim of Ice and Fire] Could not issue ammunition to one levy: {0}</ARIO_LevyAmmoIssueFailed>
+  <ARIO_StallPrioritizeStocking>Prioritize stocking</ARIO_StallPrioritizeStocking>
+  <ARIO_StallPrioritizeStockingDesc>Move this stall's pending deliveries to the front and send an available hauler. Normal hauling rules still apply.</ARIO_StallPrioritizeStockingDesc>
+  <ARIO_StallStockingPrioritized>Stocking prioritized. Deliveries wait for an available hauler if needed.</ARIO_StallStockingPrioritized>
+  <ARIO_StallNothingToStock>No pending stocking orders for this stall.</ARIO_StallNothingToStock>
+</LanguageData>

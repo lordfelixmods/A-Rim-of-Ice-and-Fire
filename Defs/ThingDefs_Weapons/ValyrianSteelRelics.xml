@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ARIOIAF_ValyrianRelicWeaponBase">
+    <defName>ARIOIAF_Blackfyre</defName>
+    <label>Blackfyre</label>
+    <description>The ancestral Valyrian-steel sword of House Targaryen, borne by kings before rebellion made its name a rival claim to the realm. Only one can exist, and it must be recovered through a relic-hunt quest.</description>
+    <graphicData><texPath>Things/Weapons/ValyrianRelics/Blackfyre</texPath><drawSize>(1.1,1.1)</drawSize></graphicData>
+    <relicChance>3</relicChance>
+  </ThingDef>
+  <ThingDef ParentName="ARIOIAF_ValyrianRelicWeaponBase">
+    <defName>ARIOIAF_Brightroar</defName>
+    <label>Brightroar</label>
+    <description>The lost ancestral Valyrian-steel sword of House Lannister, famed for its golden fittings and the doomed voyage that carried it toward Valyria. Only one can exist, and it must be recovered through a relic-hunt quest.</description>
+    <graphicData><texPath>Things/Weapons/ValyrianRelics/Brightroar</texPath><drawSize>(1.06,1.06)</drawSize></graphicData>
+    <relicChance>3</relicChance>
+  </ThingDef>
+  <ThingDef ParentName="ARIOIAF_ValyrianRelicWeaponBase">
+    <defName>ARIOIAF_Heartsbane</defName>
+    <label>Heartsbane</label>
+    <description>The ancestral Valyrian-steel sword of House Tarly, a severe old blade carried by generations of marcher lords. Only one can exist, and it must be recovered through a relic-hunt quest.</description>
+    <graphicData><texPath>Things/Weapons/ValyrianRelics/Heartsbane</texPath><drawSize>(1.48,1.48)</drawSize></graphicData>
+    <relicChance>3</relicChance>
+  </ThingDef>
+  <ThingDef ParentName="ARIOIAF_ValyrianRelicWeaponBase">
+    <defName>ARIOIAF_Ice</defName>
+    <label>Ice</label>
+    <description>The ancestral Valyrian-steel greatsword of House Stark, an austere symbol of justice and the old Kings of Winter. Its broad blade is a solemn reminder of the duty owed by those who pass judgment. Only one can exist, and it must be recovered through a relic-hunt quest.</description>
+    <graphicData><texPath>Things/Weapons/ValyrianRelics/Ice</texPath><drawSize>(1.5,1.5)</drawSize></graphicData>
+    <relicChance>3</relicChance>
+  </ThingDef>
+  <ThingDef ParentName="ARIOIAF_ValyrianRelicWeaponBase">
+    <defName>ARIOIAF_LadyForlorn</defName>
+    <label>Lady Forlorn</label>
+    <description>The ancestral Valyrian-steel sword of House Corbray, recognizable by the heart-shaped ruby set into its pommel. Only one can exist, and it must be recovered through a relic-hunt quest.</description>
+    <graphicData><texPath>Things/Weapons/ValyrianRelics/LadyForlorn</texPath><drawSize>(1.11,1.11)</drawSize></graphicData>
+    <relicChance>3</relicChance>
+  </ThingDef>
+  <ThingDef ParentName="ARIOIAF_ValyrianRelicWeaponBase">
+    <defName>ARIOIAF_Lamentation</defName>
+    <label>Lamentation</label>
+    <description>The lost Valyrian-steel sword of House Royce, remembered in bronze-rune chronicles and the violence of the Dance. Only one can exist, and it must be recovered through a relic-hunt quest.</description>
+    <graphicData><texPath>Things/Weapons/ValyrianRelics/Lamentation</texPath><drawSize>(1.07,1.07)</drawSize></graphicData>
+    <relicChance>3</relicChance>
+  </ThingDef>
+  <ThingDef ParentName="ARIOIAF_ValyrianRelicWeaponBase">
+    <defName>ARIOIAF_Longclaw</defName>
+    <label>Longclaw</label>
+    <description>The Valyrian-steel bastard sword of House Mormont, fitted with a pale wolf pommel and suited to the long wars of the North. Only one can exist, and it must be recovered through a relic-hunt quest.</description>
+    <graphicData><texPath>Things/Weapons/ValyrianRelics/Longclaw</texPath><drawSize>(1.11,1.11)</drawSize></graphicData>
+    <relicChance>3</relicChance>
+  </ThingDef>
+  <ThingDef ParentName="ARIOIAF_ValyrianRelicWeaponBase">
+    <defName>ARIOIAF_Nightfall</defName>
+    <label>Nightfall</label>
+    <description>A dark Valyrian-steel blade held by House Harlaw, carrying the hard reputation of the Iron Islands. Only one can exist, and it must be recovered through a relic-hunt quest.</description>
+    <graphicData><texPath>Things/Weapons/ValyrianRelics/Nightfall</texPath><drawSize>(1.08,1.08)</drawSize></graphicData>
+    <relicChance>3</relicChance>
+  </ThingDef>
+  <ThingDef ParentName="ARIOIAF_ValyrianRelicWeaponBase">
+    <defName>ARIOIAF_Oathkeeper</defName>
+    <label>Oathkeeper</label>
+    <description>A crimson-rippled Valyrian-steel sword reforged from Ice and named for the promises bound to its bearer. Only one can exist, and it must be recovered through a relic-hunt quest.</description>
+    <graphicData><texPath>Things/Weapons/ValyrianRelics/Oathkeeper</texPath><drawSize>(1.07,1.07)</drawSize></graphicData>
+    <relicChance>3</relicChance>
+  </ThingDef>
+  <ThingDef ParentName="ARIOIAF_ValyrianRelicWeaponBase">
+    <defName>ARIOIAF_OrphanMaker</defName>
+    <label>Orphan-Maker</label>
+    <description>The ancestral Valyrian-steel sword of House Roxton, a grimly named weapon with a plain dark blade and red grip. Only one can exist, and it must be recovered through a relic-hunt quest.</description>
+    <graphicData><texPath>Things/Weapons/ValyrianRelics/OrphanMaker</texPath><drawSize>(1.08,1.08)</drawSize></graphicData>
+    <relicChance>3</relicChance>
+  </ThingDef>
+  <ThingDef ParentName="ARIOIAF_ValyrianRelicWeaponBase">
+    <defName>ARIOIAF_RedRain</defName>
+    <label>Red Rain</label>
+    <description>A blood-rippled Valyrian-steel sword claimed by House Drumm, its red edge and jewel-like pommel recalling a violent history. Only one can exist, and it must be recovered through a relic-hunt quest.</description>
+    <graphicData><texPath>Things/Weapons/ValyrianRelics/RedRain</texPath><drawSize>(1.07,1.07)</drawSize></graphicData>
+    <relicChance>3</relicChance>
+  </ThingDef>
+  <ThingDef ParentName="ARIOIAF_ValyrianRelicWeaponBase">
+    <defName>ARIOIAF_Truth</defName>
+    <label>Truth</label>
+    <description>A slender Valyrian-steel sword associated with House Rogare of Lys, elegant in form and merciless in purpose. Only one can exist, and it must be recovered through a relic-hunt quest.</description>
+    <graphicData><texPath>Things/Weapons/ValyrianRelics/Truth</texPath><drawSize>(1.08,1.08)</drawSize></graphicData>
+    <relicChance>3</relicChance>
+  </ThingDef>
+  <ThingDef ParentName="ARIOIAF_ValyrianRelicWeaponBase">
+    <defName>ARIOIAF_Vigilance</defName>
+    <label>Vigilance</label>
+    <description>The ancestral Valyrian-steel sword of House Hightower, a watchful symbol of Oldtown's ancient power. Only one can exist, and it must be recovered through a relic-hunt quest.</description>
+    <graphicData><texPath>Things/Weapons/ValyrianRelics/Vigilance</texPath><drawSize>(1.07,1.07)</drawSize></graphicData>
+    <relicChance>3</relicChance>
+  </ThingDef>
+  <ThingDef ParentName="ARIOIAF_ValyrianRelicWeaponBase">
+    <defName>ARIOIAF_WidowsWail</defName>
+    <label>Widow's Wail</label>
+    <description>A compact crimson-rippled Valyrian-steel sword reforged from Ice and named with cruel courtly humor. Only one can exist, and it must be recovered through a relic-hunt quest.</description>
+    <graphicData><texPath>Things/Weapons/ValyrianRelics/WidowsWail</texPath><drawSize>(0.88,0.88)</drawSize></graphicData>
+    <relicChance>3</relicChance>
+  </ThingDef>
+</Defs>

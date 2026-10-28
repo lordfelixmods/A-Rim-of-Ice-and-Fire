@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!--
+    requiredMemes is an OR list: a precept is offered when the ideo holds ANY meme in it.
+    Corpses: don't care is gated behind PainIsVirtue/Cannibal/Supremacist/Raider/Inhuman, and
+    the Drowned God requires it, so the structure must also be a route to it - otherwise the
+    meme would demand a precept the ideoligion is not allowed to take.
+
+    Raiding: respected, Slavery: acceptable, Execution: respected if guilty and Fishing: sacred
+    all have empty requiredMemes already, so they need no unlock.
+  -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PreceptDef[defName="Corpses_DontCare"]/requiredMemes</xpath>
+    <value><li>ARIOIAF_Structure_DrownedGod</li></value>
+  </Operation>
+
+  <!--
+    Suggested, not required. associatedMemes raises a precept's weight when an ideoligion is
+    generated with that meme. Fishing comes from Odyssey, so these are wrapped in a mod check:
+    a hard reference would break the meme for anyone without that DLC.
+  -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Odyssey</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PreceptDef[defName="Fishing_Sacred"]/associatedMemes</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/PreceptDef[defName="Fishing_Sacred"]/associatedMemes</xpath>
+            <value><li>ARIOIAF_ChildrenOfTheSea</li></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/PreceptDef[defName="Fishing_Sacred"]</xpath>
+            <value><associatedMemes><li>ARIOIAF_ChildrenOfTheSea</li></associatedMemes></value>
+          </nomatch>
+        </li>
+
+        <!-- Children of the Sea remains useful without Odyssey; when fishing exists, its own
+             required sea-reverence precept adds the same modest +10% yield as Fishing: sacred.
+             Taking both reaches +20%, appropriate for a deliberate fishing-centered faith. -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="ARIOIAF_Sea_Revered"]</xpath>
+          <value>
+            <statOffsets>
+              <FishingYield>0.1</FishingYield>
+            </statOffsets>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

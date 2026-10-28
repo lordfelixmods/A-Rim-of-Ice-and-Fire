@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Only the occasional variant is unlocked by Feudalism. Preserve vanilla's
+       Proselytizer route and do not loosen the other proselytizing levels. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PreceptDef[defName="Proselytizing_Occasionally"]</xpath>
+    <value>
+      <requiredMemes Inherit="False"><li>Proselytizer</li><li>ARIOIAF_Feudalism</li></requiredMemes>
+      <associatedMemes Inherit="False"><li>Proselytizer</li><li>ARIOIAF_Feudalism</li></associatedMemes>
+    </value>
+  </Operation>
+</Patch>

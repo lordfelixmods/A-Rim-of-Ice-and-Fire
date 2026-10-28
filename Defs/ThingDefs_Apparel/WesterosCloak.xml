@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>ARIOIAF_WesterosCloak</defName>
+    <label>Westeros cloak</label>
+    <description>A heavy cloak draped over armor for the road or the watch. Its solid cloth can carry the wearer's House colors or a chosen dye, while leaving a gorget visible. Cannot be worn with Valyrian armor.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/WesterosCloak/WesterosCloak_Male_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>80</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToMake>4500</WorkToMake>
+      <Mass>1.5</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <!-- Cold budget: cloak + face wrap = 1.65x stuff, so the pair reaches -40C in top-tier fur. -->
+      <StuffEffectMultiplierInsulation_Cold>1.4</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/WesterosCloak/WesterosCloak</wornGraphicPath>
+      <layers>
+        <li>ARIOIAF_WesterosCloakLayer</li>
+      </layers>
+      <drawData>
+        <dataNorth>
+          <layer>88.5</layer>
+        </dataNorth>
+      </drawData>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <comps>
+      <li Class="ARimOfIceAndFire.CompProperties_CloakPattern" />
+    </comps>
+    <recipeMaker>
+      <displayPriority>224</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

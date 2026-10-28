@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef Name="ARIOIAF_RiverlanderBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionDef>ARIOIAF_Riverlanders</defaultFactionDef>
+    <minGenerationAge>18</minGenerationAge>
+    <maxGenerationAge>65</maxGenerationAge>
+    <initialResistanceRange>12~25</initialResistanceRange>
+    <initialWillRange>1~3</initialWillRange>
+    <backstoryFilters><li><categories><li>ARIOIAF_Backstory_Riverlands</li></categories></li></backstoryFilters>
+    <apparelMoney>0</apparelMoney>
+    <apparelRequired><li>ARIOIAF_WesterosTunic</li><li>ARIOIAF_WesterosGambeson</li><li>ARIOIAF_WesterosBelt</li></apparelRequired>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+    <allowRoyalApparelRequirements>false</allowRoyalApparelRequirements>
+    <allowRoyalRoomRequirements>false</allowRoyalRoomRequirements>
+    <weaponMoney>300~600</weaponMoney>
+    <weaponTags><li>NeolithicMelee</li><li>MedievalMeleeDecent</li><li>ARIOIAF_WesterosMeleeDecent</li></weaponTags>
+    <invFoodDef>Pemmican</invFoodDef>
+    <invNutrition>2.55</invNutrition>
+    <gearHealthRange>0.8~1</gearHealthRange>
+    <modExtensions><li Class="ARimOfIceAndFireCore.RiverlanderOutfitExtension" /></modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_RiverlanderBase">
+    <defName>ARIOIAF_Riverlanders_Levy</defName><label>Riverlander levy</label>
+    <forcedTraits><ARIOIAF_Trait_Levy>0</ARIOIAF_Trait_Levy></forcedTraits>
+    <combatPower>45</combatPower>
+    <skills><li><skill>Melee</skill><range>3~7</range></li></skills>
+    <itemQuality>Poor</itemQuality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_RiverlanderBase">
+    <defName>ARIOIAF_Riverlanders_Bowman</defName><label>Riverlander bowman</label><labelFemale>Riverlander bowwoman</labelFemale>
+    <forcedTraits><ARIOIAF_Trait_ManAtArms>0</ARIOIAF_Trait_ManAtArms></forcedTraits>
+    <combatPower>75</combatPower>
+    <weaponTags Inherit="False"><li>NeolithicRanged</li><li>ARIOIAF_WesterosCrossbowLight</li><li>ARIOIAF_WesterosCrossbowMilitary</li><li>ARIOIAF_WesterosArbalest</li></weaponTags>
+    <apparelRequired><li>ARIOIAF_RiverlandsHelmet</li></apparelRequired>
+    <skills><li><skill>Shooting</skill><range>7~12</range></li></skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_RiverlanderBase" Name="ARIOIAF_RiverlanderSoldierBase" Abstract="True">
+    <apparelRequired><li>ARIOIAF_RiverlandsHelmet</li><li>ARIOIAF_RiverlandsScaleArmor</li><li>ARIOIAF_NorthernHeavyGorget</li></apparelRequired>
+    <weaponTags Inherit="False"><li>MedievalMeleeDecent</li><li>ARIOIAF_WesterosMeleeDecent</li></weaponTags>
+    <skills><li><skill>Melee</skill><range>7~12</range></li></skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_RiverlanderSoldierBase">
+    <defName>ARIOIAF_Riverlanders_Footman</defName><label>Riverlander footman</label><labelFemale>Riverlander footwoman</labelFemale>
+    <forcedTraits><ARIOIAF_Trait_ManAtArms>0</ARIOIAF_Trait_ManAtArms></forcedTraits>
+    <combatPower>110</combatPower>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_RiverlanderSoldierBase" Name="ARIOIAF_RiverlanderEliteBase" Abstract="True">
+    <weaponTags Inherit="False"><li>MedievalMeleeAdvanced</li><li>ARIOIAF_WesterosMeleeAdvanced</li></weaponTags>
+    <itemQuality>Good</itemQuality>
+    <skills Inherit="False"><li><skill>Melee</skill><range>10~15</range></li></skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_RiverlanderEliteBase">
+    <defName>ARIOIAF_Riverlanders_Houseguard</defName><label>Riverlander houseguard</label>
+    <forcedTraits><ARIOIAF_Trait_Knight>0</ARIOIAF_Trait_Knight></forcedTraits>
+    <combatPower>150</combatPower>
+    <royalTitleChance>1</royalTitleChance>
+    <titleSelectOne MayRequire="Ludeon.RimWorld.Royalty"><li>ARIOIAF_RiverlanderTitle_Knight</li><li>ARIOIAF_RiverlanderTitle_LandedKnight</li></titleSelectOne>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_RiverlanderEliteBase">
+    <defName>ARIOIAF_Riverlanders_Officer</defName><label>Riverlander officer</label>
+    <forcedTraits><ARIOIAF_Trait_LandedKnight>0</ARIOIAF_Trait_LandedKnight></forcedTraits>
+    <combatPower>175</combatPower><maxPerGroup>2</maxPerGroup>
+    <skills Inherit="False"><li><skill>Melee</skill><range>11~16</range></li><li><skill>Social</skill><range>8~13</range></li></skills>
+    <royalTitleChance>1</royalTitleChance>
+    <titleSelectOne MayRequire="Ludeon.RimWorld.Royalty"><li>ARIOIAF_RiverlanderTitle_LandedKnight</li><li>ARIOIAF_RiverlanderTitle_Lord</li><li>ARIOIAF_RiverlanderTitle_HighLord</li></titleSelectOne>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_RiverlanderSoldierBase">
+    <defName>ARIOIAF_Riverlanders_CaravanLeader</defName><label>Riverlander caravan leader</label>
+    <forcedTraits><ARIOIAF_Trait_HedgeKnight>0</ARIOIAF_Trait_HedgeKnight></forcedTraits>
+    <combatPower>110</combatPower><trader>true</trader>
+    <skills Inherit="False"><li><skill>Melee</skill><range>6~10</range></li><li><skill>Social</skill><range>10~16</range></li></skills>
+    <royalTitleChance>1</royalTitleChance>
+    <titleSelectOne MayRequire="Ludeon.RimWorld.Royalty"><li>ARIOIAF_RiverlanderTitle_Squire</li><li>ARIOIAF_RiverlanderTitle_Knight</li><li>ARIOIAF_RiverlanderTitle_LandedKnight</li></titleSelectOne>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_RiverlanderEliteBase">
+    <defName>ARIOIAF_Riverlanders_LordParamount</defName><label>Riverlander lord paramount</label><labelFemale>Riverlander lady paramount</labelFemale>
+    <forcedTraits><ARIOIAF_Trait_LordLady>0</ARIOIAF_Trait_LordLady></forcedTraits>
+    <combatPower>220</combatPower><factionLeader>true</factionLeader>
+    <itemQuality>Excellent</itemQuality>
+    <titleRequired MayRequire="Ludeon.RimWorld.Royalty">ARIOIAF_RiverlanderTitle_LordParamount</titleRequired>
+    <skills Inherit="False"><li><skill>Melee</skill><range>13~18</range></li><li><skill>Social</skill><range>13~18</range></li></skills>
+  </PawnKindDef>
+</Defs>

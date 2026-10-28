@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ARIO_IntrigueHeading>Intrigue</ARIO_IntrigueHeading>
+  <ARIO_IntrigueTitle>Whispers</ARIO_IntrigueTitle>
+  <ARIO_IntrigueExplanation>Agents work quietly and unilaterally: no House agrees to be spied on. Silver is spent when the operation is launched, the outcome is fixed then, and reloading cannot change it. At most {0} operations run across the realm at once. Being caught costs honour and goodwill, and invites an answer in kind.</ARIO_IntrigueExplanation>
+
+  <ARIO_IntrigueSpy>Place a spy</ARIO_IntrigueSpy>
+  <ARIO_IntrigueBribe>Bribe a lord</ARIO_IntrigueBribe>
+  <ARIO_IntrigueSabotage>Incite unrest</ARIO_IntrigueSabotage>
+  <ARIO_IntrigueFavour>Befriend the House Head</ARIO_IntrigueFavour>
+  <ARIO_IntriguePoison>Hire a courtier to poison</ARIO_IntriguePoison>
+  <ARIO_IntrigueAbduct>Abduct a courtier</ARIO_IntrigueAbduct>
+
+  <ARIO_IntrigueSummarySpy>Reveal this House's coffers and improve negotiations temporarily.</ARIO_IntrigueSummarySpy>
+  <ARIO_IntrigueSummaryBribe>Pay a named court member to support your proposals.</ARIO_IntrigueSummaryBribe>
+  <ARIO_IntrigueSummarySabotage>Damage this House's treasury and one available garrison.</ARIO_IntrigueSummarySabotage>
+  <ARIO_IntrigueSummaryFavour>Build a useful friendship between both House Heads.</ARIO_IntrigueSummaryFavour>
+  <ARIO_IntrigueSummaryPoison>Make a named court member nonlethally ill for several days.</ARIO_IntrigueSummaryPoison>
+  <ARIO_IntrigueSummaryAbduct>Bring a named court member unconscious to your keep.</ARIO_IntrigueSummaryAbduct>
+  <ARIO_IntrigueTarget>Target: {0}</ARIO_IntrigueTarget>
+  <ARIO_IntrigueChooseTarget>Choose a court member</ARIO_IntrigueChooseTarget>
+  <ARIO_IntrigueLaunch>Launch operation</ARIO_IntrigueLaunch>
+  <ARIO_IntrigueActiveCount>Active intrigue effects or threats: {0}</ARIO_IntrigueActiveCount>
+  <ARIO_IntrigueRulesTooltip>Silver is spent and both rolls are fixed when launched. Discovery is separate from success and costs goodwill and House Integrity; it may provoke a hostile plot. At most {0} operations may run realm-wide and only one may target a House. A loaded keep, sufficient silver and any required eligible adult target are mandatory. Sacred Oaths and Chivalric Honor followers dislike using intrigue.</ARIO_IntrigueRulesTooltip>
+
+  <ARIO_IntrigueTipSpy>Your agent reads their ledgers and quietly prepares your approach. Their exact coffers become visible and proposals involving this House gain 10 acceptance points for fifteen days. Takes {0} days.</ARIO_IntrigueTipSpy>
+  <ARIO_IntrigueTipBribe>Bribe a lord or influential courtier to secretly support your interests. Proposals involving this House gain 15 acceptance points for twenty days. Takes {0} days.</ARIO_IntrigueTipBribe>
+  <ARIO_IntrigueTipSabotage>Unrest in their lands drains a quarter of their coffers and weakens one of their garrisons. Takes {0} days.</ARIO_IntrigueTipSabotage>
+  <ARIO_IntrigueTipFavour>Build a personal, non-romantic friendship between your House Head and theirs. Goodwill improves immediately and proposals gain 10 acceptance points for thirty days. Takes {0} days.</ARIO_IntrigueTipFavour>
+  <ARIO_IntrigueTipPoison>Pay someone at court to secretly poison the selected character. The resulting illness lasts several days and is not lethal on its own. Takes {0} days.</ARIO_IntrigueTipPoison>
+  <ARIO_IntrigueTipAbduct>Attempt to abduct a selected member of their court and bring them unconscious to your keep. You will need to secure the captive on arrival; they do not join your House automatically. Takes {0} days.</ARIO_IntrigueTipAbduct>
+
+  <ARIO_IntrigueOption>{0} — {1} silver · {2} success · {3} discovery</ARIO_IntrigueOption>
+  <ARIO_IntrigueConfirm>Send an agent against {1}?\n\nOperation: {0}\nCost: {2} silver, taken from your keep now\nTime: {3} days\nChance of success: {4}\nChance of being caught: {5}\nTarget: {6}\n\nThe outcome is decided when the agent leaves; reloading will not change it. Success and discovery are separate risks, so even a successful operation can be traced back to your House.</ARIO_IntrigueConfirm>
+  <ARIO_IntrigueLaunched>{0} against {1}: your agent leaves tonight and should report in {2} days.</ARIO_IntrigueLaunched>
+  <ARIO_IntrigueRunning>Operation under way: {0} — {1} remaining. Target: {2}</ARIO_IntrigueRunning>
+  <ARIO_IntrigueNoTargetNeeded>the House itself</ARIO_IntrigueNoTargetNeeded>
+  <ARIO_IntrigueAbandon>Recall the agent</ARIO_IntrigueAbandon>
+  <ARIO_IntrigueAbandonConfirm>Recall your agent before the work is done? The silver you spent is returned and nothing is attempted. Nobody learns of it and no honour is lost.</ARIO_IntrigueAbandonConfirm>
+  <ARIO_IntrigueAbandoned>Your agent in the lands of {0} has been recalled. Nothing came of it and the silver was returned.</ARIO_IntrigueAbandoned>
+
+  <ARIO_IntrigueResult>{0} against {1}: {2}\n\n{3}</ARIO_IntrigueResult>
+  <ARIO_IntrigueSucceeded>the work is done</ARIO_IntrigueSucceeded>
+  <ARIO_IntrigueFailed>the work came to nothing</ARIO_IntrigueFailed>
+  <ARIO_IntrigueFailedDetail>Your agent found no opening and withdrew. The silver is spent.</ARIO_IntrigueFailedDetail>
+  <ARIO_IntrigueSpyDetail>Their coffers hold about {0} silver. You will see their true figure and gain leverage in negotiations for {1} days.</ARIO_IntrigueSpyDetail>
+  <ARIO_IntrigueBribeDetail>{0} has taken your silver and will secretly support your interests for {1} days.</ARIO_IntrigueBribeDetail>
+  <ARIO_IntrigueSabotageDetail>Unrest cost them about {0} silver and the garrison of {1} is weakened.</ARIO_IntrigueSabotageDetail>
+  <ARIO_IntrigueNoHolding>one of their holdings</ARIO_IntrigueNoHolding>
+  <ARIO_IntrigueFavourDetail>{0} is a friend to your House. Negotiations are easier for {1} days.</ARIO_IntrigueFavourDetail>
+  <ARIO_IntriguePoisonDetail>{0} has fallen ill and will be abed for several days.</ARIO_IntriguePoisonDetail>
+  <ARIO_IntrigueAbductDetail>{0} lies unconscious outside your keep. What happens next is up to you — and to the usual rules of captivity.</ARIO_IntrigueAbductDetail>
+  <ARIO_IntrigueExposed>{0}: your hand was traced. {1} knows. Your House loses {2} honour and {3} goodwill, and any friend you had at their court is finished.</ARIO_IntrigueExposed>
+
+  <ARIO_IntrigueSpyActive>Your spy reveals their coffers and strengthens proposals for {0}.</ARIO_IntrigueSpyActive>
+  <ARIO_IntrigueBribeActive>A bribed lord supports you for {0}.</ARIO_IntrigueBribeActive>
+  <ARIO_IntrigueFavourActive>The two House Heads share a personal friendship for {0}.</ARIO_IntrigueFavourActive>
+  <ARIO_IntriguePlotActive>They are moving against you: {0} to answer.</ARIO_IntriguePlotActive>
+
+  <ARIO_IntrigueUnavailable>Only a Westerosi House can be worked against this way.</ARIO_IntrigueUnavailable>
+  <ARIO_IntrigueBusyHouse>An operation against this House is already under way.</ARIO_IntrigueBusyHouse>
+  <ARIO_IntrigueBusyRealm>You can only run {0} operations at once.</ARIO_IntrigueBusyRealm>
+  <ARIO_IntrigueNoKeep>Your keep must be loaded to pay and brief an agent.</ARIO_IntrigueNoKeep>
+  <ARIO_IntrigueNoSilver>Your keep needs {0} silver for this.</ARIO_IntrigueNoSilver>
+  <ARIO_IntrigueNoTarget>No eligible adult at their court is free for this.</ARIO_IntrigueNoTarget>
+  <ARIO_IntrigueNoHead>Their current House Head is not available for this.</ARIO_IntrigueNoHead>
+
+  <ARIO_PlotTitle>{0} moves against you</ARIO_PlotTitle>
+  <ARIO_PlotTheftBody>{0} has sent people of their own after your House. Your informants say they mean to take about {1} silver from your keep.\n\nPaying {2} silver to your informants now foils it. Doing nothing for {3} days lets it happen.</ARIO_PlotTheftBody>
+  <ARIO_PlotSabotageBody>{0} has sent people of their own after your House. Your informants say the target is {1}.\n\nPaying {2} silver to your informants now foils it. Doing nothing for {3} days lets it happen.</ARIO_PlotSabotageBody>
+  <ARIO_PlotCounter>Pay the informants</ARIO_PlotCounter>
+  <ARIO_PlotAccept>Let them come</ARIO_PlotAccept>
+  <ARIO_PlotCountered>Your informants found {0}'s people first. Nothing came of their plot.</ARIO_PlotCountered>
+  <ARIO_PlotIgnored>You have decided to let {0}'s people try.</ARIO_PlotIgnored>
+  <ARIO_PlotTheftDone>{0}'s people got away with {1} silver.</ARIO_PlotTheftDone>
+  <ARIO_PlotSabotageDone>{0}'s people struck at {1}. Its garrison and prosperity have suffered.</ARIO_PlotSabotageDone>
+
+  <ARIO_DiploFactorCourt>Influence within their court</ARIO_DiploFactorCourt>
+  <ARIO_DiploHouseCoffersVague>Their coffers: {0}</ARIO_DiploHouseCoffersVague>
+  <ARIO_CofferBandThin>said to be thin</ARIO_CofferBandThin>
+  <ARIO_CofferBandModest>said to be modest</ARIO_CofferBandModest>
+  <ARIO_CofferBandDeep>said to be deep</ARIO_CofferBandDeep>
+  <ARIO_CofferBandVast>said to be vast</ARIO_CofferBandVast>
+
+  <ARIO_IntrigueDebugResolve>House: resolve intrigue now</ARIO_IntrigueDebugResolve>
+  <ARIO_IntrigueDebugExpose>House: expose the current operation</ARIO_IntrigueDebugExpose>
+  <ARIO_IntrigueDebugNone>No operation is running.</ARIO_IntrigueDebugNone>
+  <ARIO_IntrigueDebugDone>{0}: {1}</ARIO_IntrigueDebugDone>
+
+</LanguageData>

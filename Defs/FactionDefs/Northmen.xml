@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef ParentName="FactionBase">
+    <defName>ARIOIAF_Northmen</defName>
+    <label>Northmen</label>
+    <description>Northern houses and free folk who keep the old gods. Hardy infantry, bowmen and household guards. Starts at peace and sends merchants with escorts. With Royalty, service earns titles from Squire to King or Queen in the North.</description>
+    <fixedName>Northmen</fixedName>
+    <pawnSingular>northman</pawnSingular>
+    <pawnsPlural>northmen</pawnsPlural>
+    <categoryTag>ARIOIAF_Northmen</categoryTag>
+    <techLevel>Medieval</techLevel>
+    <basicMemberKind>ARIOIAF_Northmen_Levy</basicMemberKind>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>75</configurationListOrderPriority>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>ruler of the North</leaderTitle>
+    <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+    <fixedLeaderKinds><li>ARIOIAF_Northmen_Ruler</li></fixedLeaderKinds>
+    <factionIconPath>UI/Factions/Northmen</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <colorSpectrum><li>(0.78,0.80,0.82)</li></colorSpectrum>
+    <allowedArrivalTemperatureRange>-55~40</allowedArrivalTemperatureRange>
+    <backstoryFilters><li><categories><li>Tribal</li></categories></li></backstoryFilters>
+    <apparelStuffFilter>
+      <thingDefs><li>Cloth</li><li>WoolMuffalo</li><li>Leather_Plain</li><li>Leather_Heavy</li><li>Leather_Wolf</li><li>Steel</li></thingDefs>
+    </apparelStuffFilter>
+    <allowedCultures><li>Rustican</li></allowedCultures>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_Structure_OldGods</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_SacredOaths</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_WinterIsComing</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_Feudalism</li>
+    </requiredMemes>
+    <allowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_Structure_OldGods</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_SacredOaths</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_WinterIsComing</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_Feudalism</li>
+    </allowedMemes>
+    <structureMemeWeights><ARIOIAF_Structure_OldGods MayRequire="Ludeon.RimWorld.Ideology">1</ARIOIAF_Structure_OldGods></structureMemeWeights>
+    <royalFavorLabel MayRequire="Ludeon.RimWorld.Royalty">honor</royalFavorLabel>
+    <royalFavorIconPath MayRequire="Ludeon.RimWorld.Royalty">UI/Icons/RoyalFavor</royalFavorIconPath>
+    <royalTitleTags MayRequire="Ludeon.RimWorld.Royalty"><li>ARIOIAF_NorthernTitle</li></royalTitleTags>
+    <royalTitleInheritanceWorkerClass MayRequire="Ludeon.RimWorld.Royalty">RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+    <royalTitleInheritanceRelations MayRequire="Ludeon.RimWorld.Royalty"><li>Child</li><li>Grandchild</li><li>Spouse</li><li>Sibling</li><li>Parent</li></royalTitleInheritanceRelations>
+    <caravanTraderKinds><li>Caravan_Neolithic_BulkGoods</li><li>Caravan_Neolithic_WarMerchant</li></caravanTraderKinds>
+    <visitorTraderKinds><li>Visitor_Neolithic_Standard</li></visitorTraderKinds>
+    <baseTraderKinds><li>Base_Neolithic_Standard</li></baseTraderKinds>
+    <maxPawnCostPerTotalPointsCurve>
+      <points><li>(0,45)</li><li>(150,90)</li><li>(400,140)</li><li>(700,220)</li><li>(2000,10000)</li></points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options><ARIOIAF_Northmen_Levy>4</ARIOIAF_Northmen_Levy><ARIOIAF_Northmen_Bowman>4</ARIOIAF_Northmen_Bowman><ARIOIAF_Northmen_Footman>6</ARIOIAF_Northmen_Footman><ARIOIAF_Northmen_Houseguard>2</ARIOIAF_Northmen_Houseguard><ARIOIAF_Northmen_Officer>1</ARIOIAF_Northmen_Officer></options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options><ARIOIAF_Northmen_Levy>5</ARIOIAF_Northmen_Levy><ARIOIAF_Northmen_Bowman>3</ARIOIAF_Northmen_Bowman><ARIOIAF_Northmen_Officer>1</ARIOIAF_Northmen_Officer></options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders><ARIOIAF_Northmen_CaravanLeader>1</ARIOIAF_Northmen_CaravanLeader></traders>
+        <carriers><Muffalo>6</Muffalo><Alpaca>2</Alpaca></carriers>
+        <guards><ARIOIAF_Northmen_Bowman>3</ARIOIAF_Northmen_Bowman><ARIOIAF_Northmen_Footman>6</ARIOIAF_Northmen_Footman><ARIOIAF_Northmen_Houseguard>2</ARIOIAF_Northmen_Houseguard><ARIOIAF_Northmen_Officer>1</ARIOIAF_Northmen_Officer></guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options><ARIOIAF_Northmen_Levy>3</ARIOIAF_Northmen_Levy><ARIOIAF_Northmen_Bowman>4</ARIOIAF_Northmen_Bowman><ARIOIAF_Northmen_Footman>6</ARIOIAF_Northmen_Footman><ARIOIAF_Northmen_Houseguard>3</ARIOIAF_Northmen_Houseguard><ARIOIAF_Northmen_Officer>1</ARIOIAF_Northmen_Officer></options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+</Defs>

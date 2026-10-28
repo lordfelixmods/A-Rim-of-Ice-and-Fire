@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_HousePrefix>House</ARIO_HousePrefix>
+  <ARIO_HouseTitle>House {0}</ARIO_HouseTitle>
+  <ARIO_HouseMotto>Dynasty • Duty • Dominion</ARIO_HouseMotto>
+  <ARIO_CloseHouse>Close</ARIO_CloseHouse>
+  <ARIO_DragHouse>Drag this header to move the ledger. Gameplay continues; use the normal HUD to pause or change speed.</ARIO_DragHouse>
+  <ARIO_TaxRate>Tax rate: {0}</ARIO_TaxRate>
+  <ARIO_Dynasty>Dynasty</ARIO_Dynasty>
+  <ARIO_Realm>Realm management</ARIO_Realm>
+  <ARIO_Diplomacy>Diplomacy</ARIO_Diplomacy>
+  <ARIO_DiplomacyDevelopment>Diplomacy — In development</ARIO_DiplomacyDevelopment>
+  <ARIO_HouseName>House name</ARIO_HouseName>
+  <ARIO_Apply>Apply</ARIO_Apply>
+  <ARIO_Rename>Rename</ARIO_Rename>
+  <ARIO_KeepName>Keep / settlement name</ARIO_KeepName>
+  <ARIO_ChooseKeep>Choose your keep</ARIO_ChooseKeep>
+  <ARIO_NoKeep>Lost settlement</ARIO_NoKeep>
+  <ARIO_Ideology>Ideology: {0}</ARIO_Ideology>
+  <ARIO_NoIdeology>Ideology DLC is not active</ARIO_NoIdeology>
+  <ARIO_BannerExplanation>Your house banner follows your colony's primary ideology symbol and color. Use the normal ideology designer to choose that symbol; this does not create a separate ideology.</ARIO_BannerExplanation>
+  <ARIO_OpenIdeology>Open ideology</ARIO_OpenIdeology>
+  <ARIO_Founder>Founder: {0}</ARIO_Founder>
+  <ARIO_Head>House head: {0}</ARIO_Head>
+  <ARIO_Unchosen>Choose a colonist</ARIO_Unchosen>
+  <ARIO_InheritanceExplanation>Choose a house head from any of your colonists — there is no age requirement, so a child may found or inherit a House. Without a designated heir, inheritance prefers the eldest eligible adult child, then spouse, sibling, or parent, and falls back to a child relative only when no adult remains. Temporary guests, prisoners, slaves and levies cannot inherit.</ARIO_InheritanceExplanation>
+  <ARIO_ChooseHead>Choose the house head</ARIO_ChooseHead>
+  <ARIO_HeadOption>{0} (age {1})</ARIO_HeadOption>
+  <ARIO_HeirButton>Heir: {0}</ARIO_HeirButton>
+  <ARIO_HeirUndesignated>Undesignated (by blood)</ARIO_HeirUndesignated>
+  <ARIO_DesignateHeir>Designate an heir</ARIO_DesignateHeir>
+  <ARIO_HeirExplanation>A designated heir takes the seat ahead of blood order when the head dies or leaves. The designation is spent once they inherit, and is ignored if they are no longer an eligible colonist.</ARIO_HeirExplanation>
+  <ARIO_SuccessionDesignated>{1} succeeds {0} as head of your house, as designated.</ARIO_SuccessionDesignated>
+  <ARIO_DynastyTreeNoHead>Choose a house head to see the family tree.</ARIO_DynastyTreeNoHead>
+  <ARIO_IdeoLeaderBypass>Bypass ideoligion leader requirements</ARIO_IdeoLeaderBypass>
+  <ARIO_IdeoLeaderBypassTip>Lets the house head hold the ideoligion's leader role even when its normal requirements would forbid it. Applies only to your house head and only to the leader role; every other pawn and role keeps its usual requirements. The head can hold the dynasty seat and the leader role at the same time.</ARIO_IdeoLeaderBypassTip>
+  <ARIO_IdeoLeaderCurrent>Ideoligion leader: {0}</ARIO_IdeoLeaderCurrent>
+  <ARIO_IdeoLeaderMakeHead>Make the house head ideoligion leader</ARIO_IdeoLeaderMakeHead>
+  <ARIO_IdeoLeaderNoRole>Your ideoligion has no leader role.</ARIO_IdeoLeaderNoRole>
+  <ARIO_IdeoLeaderNoHead>Choose an eligible house head first.</ARIO_IdeoLeaderNoHead>
+  <ARIO_IdeoLeaderRequirements>Your house head does not meet the leader role's requirements. Enable the bypass above to seat them anyway.</ARIO_IdeoLeaderRequirements>
+  <ARIO_IdeoLeaderSet>{0} now holds the role of {1}.</ARIO_IdeoLeaderSet>
+  <ARIO_NoHeir>{0} has no eligible heir. Choose a new house head in House → Dynasty.</ARIO_NoHeir>
+  <ARIO_Succession>{1} succeeds {0} as head of your house.</ARIO_Succession>
+  <ARIO_NotReady>The house ledger will be available after the game has finished loading.</ARIO_NotReady>
+  <ARIO_OpenHouse>House ledger</ARIO_OpenHouse>
+  <ARIO_OpenHouseDesc>Open your dynasty and realm management window.</ARIO_OpenHouseDesc>
+  <ARIO_HoldingName>{0} — {1}</ARIO_HoldingName>
+  <ARIO_Garrison>Garrison</ARIO_Garrison>
+  <ARIO_Town>Town</ARIO_Town>
+  <ARIO_Village>Village</ARIO_Village>
+  <ARIO_NoTrade>Independent smallfolk holding. No trading.</ARIO_NoTrade>
+  <ARIO_HoldingInspect>Attached to: {0}\nStrength: {1}/{2} • Deployed: {3}\nWealth: {4}/100 • Tax: {5}\nIndependent smallfolk holding. No trading.</ARIO_HoldingInspect>
+  <ARIO_Recovery>Recovering: {0}</ARIO_Recovery>
+  <ARIO_CapturedHoldingInspect>Held by: {0}\nStrength: {1}/{2} • Deployed: {3}\nWealth: {4}/100 • Tax: {5}\nIndependent holding of your House. No trading.</ARIO_CapturedHoldingInspect>
+  <ARIO_HoldingRazed>{0} has been razed. Its smallfolk will rebuild in five days if the parent settlement survives.</ARIO_HoldingRazed>
+  <ARIO_HoldingPlundered>{0} has been plundered. The smallfolk will rebuild their wealth and militia over time.</ARIO_HoldingPlundered>
+  <ARIO_PlunderUnavailable>The holding was preserved, but the Pillage &amp; Plunder reward interface could not be opened. See the error log.</ARIO_PlunderUnavailable>
+  <ARIO_HoldingRowTip>Available levies: {0}\nDeployed: {1}\nWealth: {2}/100</ARIO_HoldingRowTip>
+  <ARIO_NoHoldings>No holdings yet. Accept village requests in Dynasty or capture a holding.</ARIO_NoHoldings>
+  <ARIO_SelectHolding>Select a village, town or garrison to inspect its ledger.</ARIO_SelectHolding>
+  <ARIO_Strength>Strength: {0}/{1} available • {2} deployed</ARIO_Strength>
+  <ARIO_Wealth>Wealth: {0}/100</ARIO_Wealth>
+  <ARIO_JumpHolding>Show on world map</ARIO_JumpHolding>
+
+  <ARIO_Taxes>Taxes</ARIO_Taxes>
+  <ARIO_Lowest>Lowest</ARIO_Lowest>
+  <ARIO_Highest>High</ARIO_Highest>
+  <ARIO_Silver>Silver</ARIO_Silver>
+  <ARIO_Food>Food</ARIO_Food>
+  <ARIO_Materials>Materials</ARIO_Materials>
+  <ARIO_TaxEstimate>Estimated value: {0} silver • Next assessment: {1}</ARIO_TaxEstimate>
+  <ARIO_TaxExplanation>Taxes are assessed at the interval in Mod Settings (15 days by default). Choose silver, a raw food, or a building resource. Deliveries go to the attached settlement, or your chosen destination for a captured holding. Prices determine quantities. Deployed militia reduce production in proportion to the workforce absent over the assessment period. Higher taxes impoverish the holding and slow recruitment. A pending delivery keeps its original resource; unlimited back-pay does not accumulate.</ARIO_TaxExplanation>
+  <ARIO_TaxesDelivered>{0} has delivered taxes: {1} {2}.</ARIO_TaxesDelivered>
+  <ARIO_Levies>Levies</ARIO_Levies>
+  <ARIO_Rebuilding>Rebuilding: {0}</ARIO_Rebuilding>
+  <ARIO_HoldingBusy>The holding is occupied, recovering, or awaiting a nearby free tile.</ARIO_HoldingBusy>
+  <ARIO_LevyExplanation>Temporary militia can work, fight and travel. Mobilization costs 30 silver per soldier plus selected equipment, then 5 silver per soldier each day. Wages are drawn from the arrival settlement; unpaid soldiers are ordered home. You also provide food and shelter.</ARIO_LevyExplanation>
+  <ARIO_MusterCount>Call {0} levies</ARIO_MusterCount>
+  <ARIO_CallBanners>Call the banners ({0} silver)</ARIO_CallBanners>
+  <ARIO_Disband>Disband the militia</ARIO_Disband>
+  <ARIO_DisbandAll>Disband all militia ({0})</ARIO_DisbandAll>
+  <ARIO_ReturnExplanation>Equipment and inventory are guest-locked. Survivors restore strength only after walking off the map. Injured or trapped levies wait until able to leave; caravan and transport levies wait until they reach a map. Deaths permanently consume that levy, with replacements recovering gradually. Feed and shelter your guests.</ARIO_ReturnExplanation>
+  <ARIO_LevyEquipment>Levy equipment • Preview</ARIO_LevyEquipment>
+  <ARIO_ExtraPrice>{0} — {1} silver</ARIO_ExtraPrice>
+  <ARIO_ExtraExplanation>Choose one item or None in each slot. Equipment is purchased per soldier at normal-quality market value, using cloth, plain leather or steel. The basic poor tunic, brown belt and weapon are included in the 20-silver mobilization fee. One eligible soldier per holding carries a banner spear. Selections affect future musters only. Clothing never changes the preview pawn's body or head.</ARIO_ExtraExplanation>
+  <ARIO_LayerConflict>This apparel conflicts with the current levy uniform or cannot be worn.</ARIO_LayerConflict>
+  <ARIO_LevyGearLocked>This is a temporary house levy. Equipment is issued by their holding and cannot be changed while serving.</ARIO_LevyGearLocked>
+  <ARIO_CannotMuster>No valid muster is available, or the quoted plan changed. Holdings must be controlled, unoccupied and recovered, with available strength and a loaded player settlement as their destination. Check the equipment, destination and count, then try again.</ARIO_CannotMuster>
+  <ARIO_NotEnoughSilver>There is not enough accessible, unforbidden silver at one or more arrival settlements to pay for this muster.</ARIO_NotEnoughSilver>
+  <ARIO_NoArrival>No reachable map-edge arrival cell was found.</ARIO_NoArrival>
+  <ARIO_MusterFailed>The muster was cancelled before silver was taken. See the error log.</ARIO_MusterFailed>
+  <ARIO_Mustered>{0} levies from {1} have answered your call. Mobilization and equipment cost: {2} silver.</ARIO_Mustered>
+  <ARIO_DisbandRequested>{0} levies have been ordered home. Their strength returns only when they depart safely.</ARIO_DisbandRequested>
+  <ARIO_ResetTax>Reset to normal — 35%</ARIO_ResetTax>
+  <ARIO_TaxResource>Deliver: {0}</ARIO_TaxResource>
+  <ARIO_Workforce>Tax-producing workforce: {0}</ARIO_Workforce>
+  <ARIO_SlotHeadgear>Headgear</ARIO_SlotHeadgear>
+  <ARIO_SlotHeadwrap>Headwrap</ARIO_SlotHeadwrap>
+  <ARIO_SlotGorget>Gorget</ARIO_SlotGorget>
+  <ARIO_SlotGambeson>Gambeson</ARIO_SlotGambeson>
+  <ARIO_SlotArmor>Armor</ARIO_SlotArmor>
+  <ARIO_SlotWeapon>Weapon</ARIO_SlotWeapon>
+  <ARIO_SlotShield>Shield</ARIO_SlotShield>
+  <ARIO_ArmsExplanation>Melee weapons and shields only. Issued at normal quality, replacing the basic weapon included in the mobilization fee. Priced per soldier at market value. Selections affect future musters only.</ARIO_ArmsExplanation>
+  <ARIO_None>None</ARIO_None>
+  <ARIO_HeaderMuster>Call banners: {0} • {1} silver</ARIO_HeaderMuster>
+  <ARIO_RealmMusterTip>Call {0} of {1} ready levies across your holdings. Ongoing wages: {2} silver/day. Only recovered, unoccupied holdings with a loaded destination map can answer.</ARIO_RealmMusterTip>
+  <ARIO_MusterConfirm>Call {0} levies across your holdings for {1} silver? Ongoing wages will be {2} silver/day, first due after one day. Each arrival settlement pays for its own troops. Deployed soldiers reduce their holding's tax production. Food and shelter are your responsibility.</ARIO_MusterConfirm>
+  <ARIO_MusterPlanLine>{0}: {1} levies → {2} ({3} silver)</ARIO_MusterPlanLine>
+  <ARIO_ConfirmMuster>Call the banners</ARIO_ConfirmMuster>
+  <ARIO_Cancel>Cancel</ARIO_Cancel>
+  <ARIO_RealmMustered>{0} levies have answered your call. Mobilization and equipment: {1} silver. Wages: {2} silver/day.</ARIO_RealmMustered>
+  <ARIO_UnpaidLevies>{0} levies could not be paid and have been ordered home. Injured, blocked or travelling soldiers will leave when able.</ARIO_UnpaidLevies>
+  <ARIO_DeliveryTo>Delivery settlement: {0}</ARIO_DeliveryTo>
+  <ARIO_ChooseDelivery>Choose a delivery settlement</ARIO_ChooseDelivery>
+  <ARIO_ChooseDeliveryFirst>Choose an existing player settlement before taking this holding.</ARIO_ChooseDeliveryFirst>
+  <ARIO_Unselected>Not selected</ARIO_Unselected>
+  <ARIO_Independent>Independent smallfolk</ARIO_Independent>
+  <ARIO_VictoryTitle>Decide the holding's fate</ARIO_VictoryTitle>
+  <ARIO_VictoryPending>The defenders have been defeated. Choose whether to raze or take this holding using its world-map command.</ARIO_VictoryPending>
+  <ARIO_VictoryBody>You have defeated the defenders of {0}, held by {1}.\n\nTake it: retain the holding under your House, independently of its former parent settlement. Choose where its taxes and levies will arrive. Recovery takes five days; recruitment resumes gradually. The former owner loses 30 goodwill.\n\nRaze it: destroy the holding, erase pending taxes and devastate its wealth. It can rebuild after five days if its parent settlement survives. The former owner loses 40 goodwill. Other factions are not penalized.</ARIO_VictoryBody>
+  <ARIO_TakeHolding>Take holding</ARIO_TakeHolding>
+  <ARIO_RazeHolding>Raze holding</ARIO_RazeHolding>
+  <ARIO_HoldingTaken>{0} now belongs to your House. Deliveries and future levies will go to {1}. The holding must recover for five days.</ARIO_HoldingTaken>
+  <ARIO_Later>Decide later</ARIO_Later>
+</LanguageData>

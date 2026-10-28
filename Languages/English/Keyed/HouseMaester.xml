@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ARIO_MaesterHeading>Maester</ARIO_MaesterHeading>
+  <ARIO_MaesterExplanation>A sworn or landed House may petition the Citadel for one official Maester. A Maester is a permanent colonist trained in medicine, research, counsel and childhood lessons. While present at a colony, their ravens provide communication and make eligible goods in player stockpile zones, shelves, and registered storage across that entire map available to distant traders.</ARIO_MaesterExplanation>
+  <ARIO_MaesterRequest>Request a Maester — {0} silver</ARIO_MaesterRequest>
+  <ARIO_MaesterRequestConfirm>Petition the Citadel for an official Maester?
+
+Fee: {0} silver, paid from the keep now
+Journey: about {1} days
+
+A House may hold only one official appointment. A living Maester who is travelling or kidnapped still holds the office and cannot be replaced.</ARIO_MaesterRequestConfirm>
+  <ARIO_MaesterSelect>Select Maester</ARIO_MaesterSelect>
+  <ARIO_MaesterStatusPresent>Maester {0} is present and serving the House.</ARIO_MaesterStatusPresent>
+  <ARIO_MaesterStatusAway>Maester {0} still holds the office but is away from the colony.</ARIO_MaesterStatusAway>
+  <ARIO_MaesterStatusTravelling>The Citadel has answered. Your Maester should arrive in {0}.</ARIO_MaesterStatusTravelling>
+  <ARIO_MaesterStatusVacant>The office is vacant. The Citadel will hear your petition.</ARIO_MaesterStatusVacant>
+  <ARIO_MaesterStatusLocked>Establish a place in the feudal order before petitioning the Citadel.</ARIO_MaesterStatusLocked>
+  <ARIO_MaesterLockedReason>Become another House's vassal, gain a vassal of your own, or control a village, town or garrison first. The starting keep alone does not qualify.</ARIO_MaesterLockedReason>
+  <ARIO_MaesterPendingReason>A petition is already under way.</ARIO_MaesterPendingReason>
+  <ARIO_MaesterOccupiedReason>Maester {0} already holds this office.</ARIO_MaesterOccupiedReason>
+  <ARIO_MaesterNoKeep>Your keep must be loaded to pay the Citadel's fee.</ARIO_MaesterNoKeep>
+  <ARIO_MaesterNoSilver>Your keep needs {0} silver for the Citadel's fee.</ARIO_MaesterNoSilver>
+  <ARIO_MaesterRequestedTitle>Petition sent to the Citadel</ARIO_MaesterRequestedTitle>
+  <ARIO_MaesterRequestedBody>{0} silver has been paid to petition the Citadel and arrange the journey. An appointed Maester should reach your keep in about {1} days.</ARIO_MaesterRequestedBody>
+  <ARIO_MaesterArrivedTitle>Maester {0} has arrived</ARIO_MaesterArrivedTitle>
+  <ARIO_MaesterArrivedBody>Maester {0}, trained at the Citadel, has entered the service of your House.
+
+Their chain marks skill in medicine, scholarship and counsel. Select the Maester and use Send a raven to contact distant factions or passing traders.</ARIO_MaesterArrivedBody>
+  <ARIO_MaesterDelayedTitle>Maester journey delayed</ARIO_MaesterDelayedTitle>
+  <ARIO_MaesterDelayedBody>The Citadel's appointment has been preserved, but the arrival could not be completed safely. No second fee was taken; the journey will be tried again.</ARIO_MaesterDelayedBody>
+
+  <ARIO_MaesterRavenLabel>Send a raven</ARIO_MaesterRavenLabel>
+  <ARIO_MaesterRavenDesc>Contact a distant faction or passing trader through the Maester's ravens. While this Maester is present, eligible goods in player stockpile zones, shelves, and registered storage anywhere on this map can be offered. Loose items and pawn or caravan inventories are not included by the Maester.</ARIO_MaesterRavenDesc>
+  <ARIO_MaesterRavenTo>Send a raven to {0}</ARIO_MaesterRavenTo>
+  <ARIO_MaesterRavenUnavailable>The Maester must be present, conscious, undrafted and capable of speaking.</ARIO_MaesterRavenUnavailable>
+  <ARIO_MaesterRavenNoTargets>No faction or passing trader can be contacted at present.</ARIO_MaesterRavenNoTargets>
+  <ARIO_MaesterLeaderUnavailable>{0} has no leader available to receive the raven.</ARIO_MaesterLeaderUnavailable>
+  <ARIO_MaesterTradeShipRaven>A raven from the Maester reports that {0} is passing within trading distance.</ARIO_MaesterTradeShipRaven>
+
+  <ARIO_MaesterDebugArrive>House: finish Maester journey</ARIO_MaesterDebugArrive>
+  <ARIO_MaesterDebugNone>No Maester petition is currently travelling.</ARIO_MaesterDebugNone>
+  <ARIO_MaesterDebugDone>The Citadel's party has been brought to the keep.</ARIO_MaesterDebugDone>
+
+</LanguageData>

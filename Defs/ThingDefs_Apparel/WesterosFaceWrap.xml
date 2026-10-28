@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>ARIOIAF_WesterosFaceWrap</defName>
+    <label>Westeros face wrap</label>
+    <description>Face wrap worn under a helmet against bitter wind. Fabric or leather sets warmth and protection. Dyeable.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/WesterosFaceWrap/WesterosFaceWrap_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>20</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories Inherit="False">
+      <li>ARIOIAF_WesterosClothingCategory</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>1200</WorkToMake>
+      <Mass>0.2</Mass>
+      <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+      <!-- Face covering only: below a vanilla tuque (0.5), which covers the whole upper head.
+           Pairs with either cloak for the -40C target. -->
+      <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>ARIOIAF_WesterosClothing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+      <displayPriority>255</displayPriority>
+    </recipeMaker>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/WesterosFaceWrap/WesterosFaceWrap</wornGraphicPath>
+      <parentTagDef>ApparelHead</parentTagDef>
+      <!-- EyeCover is head-rendered with three directional textures and stacks with Overhead. -->
+      <layers>
+        <li>EyeCover</li>
+      </layers>
+      <drawData>
+        <defaultData>
+          <layer>69</layer>
+        </defaultData>
+      </drawData>
+      <tags>
+        <li>ARIOIAF_ColdWeatherFaceWrap</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- RIAF-owned arrangements reuse CBF's MO fortress/city piece families. No copies or edits
+       of provider building grids, no global faction-plan takeover, and no duplicate pawn lists. -->
+  <CustomBaseFramework.StyleDef><defName>ARIO_LM_CBF_MOStyle</defName><label>Westerosi medieval fortress</label></CustomBaseFramework.StyleDef>
+  <CustomBaseFramework.WallProfileDef><defName>ARIO_LM_CBF_MOWallFive</defName><label>medieval landmark curtain</label><style>ARIO_LM_CBF_MOStyle</style><depth>5</depth><segments><li>TownWall_1x5</li><li>CBF_MO_TownWall_1x5_Embrasure</li></segments><tower>LargeTower_9d</tower><gatehouse>CBF_MO_GateHouse_Small</gatehouse><gatehouseOutward>West</gatehouseOutward></CustomBaseFramework.WallProfileDef>
+  <CustomBaseFramework.WallProfileDef><defName>ARIO_LM_CBF_MOWallThree</defName><label>medieval landmark town wall</label><style>ARIO_LM_CBF_MOStyle</style><depth>3</depth><segments><li>TownWall</li><li>CBF_MO_TownWall_Embrasure</li></segments><tower>Tower</tower><gatehouse>CBF_MO_GateHouse_Small</gatehouse><gatehouseOutward>West</gatehouseOutward></CustomBaseFramework.WallProfileDef>
+  <CustomBaseFramework.SettlementPlanDef Name="ARIO_LM_MO_Base" Abstract="True">
+    <kind>MedievalTown</kind><materialList>CBF_MO_MaterialList</materialList><styles><li>ARIO_LM_CBF_MOStyle</li></styles>
+    <mapSize>250</mapSize><coreSize>85~100</coreSize><roadMain>2</roadMain><roadLane>2</roadLane><minBuildingGap>2</minBuildingGap><targetBuilt>0.36</targetBuilt>
+    <towerCorner>9</towerCorner><noWdLoot>true</noWdLoot><forAllFactions>false</forAllFactions><factionTags><li>ARIO_HistoricalLandmarkForceOnly</li></factionTags><techLevels><li>Medieval</li></techLevels>
+    <emplacements><li><tag>CBF_MO_FortressTower</tag><count>2~4</count></li></emplacements><gatehouses><li><tag>CBF_MO_FortressGate</tag><count>1~2</count></li></gatehouses>
+  </CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef Name="ARIO_LM_MO_Fortress" ParentName="ARIO_LM_MO_Base" Abstract="True">
+    <wards><li><name>Citadel</name><kind>Town</kind><supply>1.1</supply><roads><li>DankPyon_Floor_Cobblestone_Granite</li></roads>
+      <walls><li><piece>TownWall_1x5</piece><weight>3</weight></li><li><piece>CBF_MO_TownWall_1x5_Embrasure</piece><weight>1</weight></li></walls>
+      <emplacements><li><tag>CBF_MO_FortressTower</tag><count>2~4</count></li></emplacements><gatehouses><li><tag>CBF_MO_FortressGate</tag><count>1~2</count></li></gatehouses>
+      <districts><li><name>Castle</name><entries>
+        <li><tag>CBF_MO_FortressKeep</tag><count>1~1</count><unique>true</unique><priority>Important</priority></li>
+        <li><tag>CBF_MO_Barracks</tag><count>1~2</count></li><li><tag>CBF_MO_Armory</tag><count>1~1</count></li><li><tag>CBF_MO_Treasury</tag><count>1~1</count></li>
+        <li><piece>CBF_MO_Dungeon</piece><count>0~1</count></li><li><tag>CBF_MO_WallAccess</tag><count>1~2</count></li>
+      </entries></li><li><name>Household</name><entries>
+        <li><tag>CBF_MO_NobleHouse</tag><count>1~2</count></li><li><tag>CBF_MO_Smithy</tag><count>1~1</count></li><li><tag>CBF_MO_Warehouse</tag><count>1~1</count></li>
+        <li><tag>CBF_MO_Tavern</tag><count>0~1</count></li><li><tag>CBF_MO_GapYard</tag><count>0~2</count><filler>true</filler></li>
+      </entries></li></districts>
+    </li></wards>
+  </CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef Name="ARIO_LM_MO_City" ParentName="ARIO_LM_MO_Base" Abstract="True">
+    <mapSize>250</mapSize><coreSize>100~120</coreSize><targetBuilt>0.38</targetBuilt>
+    <harbor><entries><li><tag>CBF_MO_Harbormaster</tag><count>1~1</count></li><li><tag>CBF_MO_HarborStore</tag><count>1~1</count></li><li><tag>CBF_MO_Jetty</tag><count>1~2</count></li></entries></harbor>
+    <wards>
+      <li><name>RoyalCourt</name><kind>Town</kind><supply>1.1</supply><roads><li>DankPyon_Floor_Cobblestone_Granite</li></roads>
+        <walls><li><piece>TownWall_1x5</piece></li></walls><emplacements><li><tag>CBF_MO_FortressTower</tag><count>3~4</count></li></emplacements><gatehouses><li><tag>CBF_MO_FortressGate</tag><count>1~2</count></li></gatehouses>
+        <districts><li><name>Keep</name><entries>
+          <li><tag>CBF_MO_FortressKeep</tag><count>1~1</count><unique>true</unique><priority>Important</priority></li><li><tag>CBF_MO_Treasury</tag><count>1~1</count></li>
+          <li><tag>CBF_MO_Barracks</tag><count>1~2</count></li><li><tag>CBF_MO_Armory</tag><count>1~1</count></li><li><piece>CBF_MO_Dungeon</piece><count>1~1</count></li>
+          <li><tag>CBF_MO_WallAccess</tag><count>1~2</count></li>
+        </entries></li><li><name>NobleCourt</name><entries>
+          <li><tag>CBF_MO_NobleHouse</tag><count>1~3</count></li><li><tag>CBF_MO_Library</tag><count>0~1</count></li><li><tag>CBF_MO_Church</tag><count>1~1</count></li>
+        </entries></li></districts>
+      </li>
+      <li><name>MarketWard</name><kind>Suburb</kind><supply>1.1</supply><roads><li>DankPyon_Floor_Cobblestone_Granite</li></roads>
+        <walls><li><piece>TownWall</piece></li></walls><emplacements><li><tag>CBF_MO_TownTower</tag><count>2~3</count></li></emplacements><gatehouses><li><tag>CBF_MO_Gatehouse</tag><count>1~2</count></li></gatehouses>
+        <districts><li><name>Market</name><entries>
+          <li><tag>CBF_MO_MarketSquare</tag><count>1~2</count></li><li><tag>CBF_MO_Guild</tag><count>1~1</count></li><li><tag>CBF_MO_Tavern</tag><count>1~2</count></li>
+          <li><tag>CBF_MO_BurgherHouse</tag><count>3~6</count><filler>true</filler></li><li><tag>CBF_MO_GapYard</tag><count>0~2</count><filler>true</filler></li>
+        </entries></li><li><name>Trades</name><entries>
+          <li><tag>CBF_MO_Smithy</tag><count>1~1</count></li><li><tag>CBF_MO_Warehouse</tag><count>1~2</count></li><li><tag>CBF_MO_Bakery</tag><count>1~1</count></li>
+          <li><tag>CBF_MO_Workshop</tag><count>1~2</count></li><li><tag>CBF_MO_Folk</tag><count>2~4</count><filler>true</filler></li>
+        </entries></li></districts>
+      </li>
+    </wards>
+  </CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef Name="ARIO_LM_MO_GardenEstate" ParentName="ARIO_LM_MO_Fortress" Abstract="True">
+    <treeShare>0.45</treeShare><wards><li><name>EstateFarms</name><kind>Rural</kind><supply>1.2</supply><districts>
+      <li><name>Farms</name><entries><li><tag>CBF_MO_Farmstead</tag><count>2~3</count></li><li><tag>CBF_MO_Barn</tag><count>1~1</count></li><li><tag>CBF_MO_Mill</tag><count>1~1</count></li></entries>
+        <fields><li><count>2~3</count><fence>true</fence><weight>1</weight><plants><li>Plant_Corn</li><li>Plant_Haygrass</li></plants><tags><li>CBF_MO_Farmstead</li></tags></li></fields>
+      </li><li><name>EstateCourt</name><entries><li><tag>CBF_MO_NobleHouse</tag><count>1~2</count></li><li><tag>CBF_MO_Winery</tag><count>1~1</count></li><li><tag>CBF_MO_Monument</tag><count>0~1</count></li></entries></li>
+    </districts></li></wards>
+  </CustomBaseFramework.SettlementPlanDef>
+
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_MO_Fortress"><defName>ARIO_LM_CBF_MO_Winterfell</defName><label>Winterfell — medieval fortress courts</label><coreSize>100~115</coreSize><treeShare>0.25</treeShare></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_MO_Fortress"><defName>ARIO_LM_CBF_MO_Harrenhal</defName><label>Harrenhal — vast medieval enclosure</label><mapSize>300</mapSize><coreSize>130~150</coreSize><targetBuilt>0.25</targetBuilt></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_MO_City"><defName>ARIO_LM_CBF_MO_KingsLanding</defName><label>King's Landing — medieval capital and keep</label><mapSize>300</mapSize><coreSize>115~135</coreSize></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_MO_Fortress"><defName>ARIO_LM_CBF_MO_CasterlyRock</defName><label>Casterly Rock — medieval treasury fortress</label><coreSize>85~100</coreSize><mountainMantle>8</mountainMantle></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_MO_Fortress"><defName>ARIO_LM_CBF_MO_Eyrie</defName><label>Eyrie — compact medieval mountain keep</label><coreSize>70~82</coreSize><mountainMantle>12</mountainMantle><targetBuilt>0.30</targetBuilt></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_MO_GardenEstate"><defName>ARIO_LM_CBF_MO_Highgarden</defName><label>Highgarden — medieval court and fertile estate</label><coreSize>100~115</coreSize><targetBuilt>0.32</targetBuilt></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_MO_Fortress"><defName>ARIO_LM_CBF_MO_StormsEnd</defName><label>Storm's End — medieval coastal fortress</label><coreSize>90~105</coreSize></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_MO_City"><defName>ARIO_LM_CBF_MO_Sunspear</defName><label>Sunspear — medieval palace and market wards</label><coreSize>85~100</coreSize><targetBuilt>0.32</targetBuilt></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_MO_Fortress"><defName>ARIO_LM_CBF_MO_Riverrun</defName><label>Riverrun — medieval river fortress</label><coreSize>80~95</coreSize></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_MO_Fortress"><defName>ARIO_LM_CBF_MO_Dragonstone</defName><label>Dragonstone — medieval island citadel</label><coreSize>75~90</coreSize><mountainMantle>6</mountainMantle><targetBuilt>0.32</targetBuilt><harbor><entries><li><tag>CBF_MO_Jetty</tag><count>1~1</count></li><li><tag>CBF_MO_Boathouse</tag><count>0~1</count></li></entries></harbor></CustomBaseFramework.SettlementPlanDef>
+</Defs>

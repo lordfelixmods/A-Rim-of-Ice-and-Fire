@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef Name="ARIOIAF_IronbornBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionDef>ARIOIAF_Ironborn</defaultFactionDef>
+    <minGenerationAge>18</minGenerationAge>
+    <maxGenerationAge>65</maxGenerationAge>
+    <initialResistanceRange>15~30</initialResistanceRange>
+    <initialWillRange>2~5</initialWillRange>
+    <backstoryFilters><li><categories><li>ARIOIAF_Backstory_IronIslands</li></categories></li></backstoryFilters>
+    <apparelMoney>0</apparelMoney>
+    <apparelRequired><li>ARIOIAF_WesterosTunic</li><li>ARIOIAF_WesterosGambeson</li><li>ARIOIAF_WesterosBlackBelt</li></apparelRequired>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+    <allowRoyalApparelRequirements>false</allowRoyalApparelRequirements>
+    <allowRoyalRoomRequirements>false</allowRoyalRoomRequirements>
+    <weaponMoney>350~700</weaponMoney>
+    <weaponTags><li>NeolithicMelee</li><li>MedievalMeleeDecent</li><li>ARIOIAF_WesterosMeleeDecent</li></weaponTags>
+    <invFoodDef>Pemmican</invFoodDef>
+    <invNutrition>2.55</invNutrition>
+    <gearHealthRange>0.75~1</gearHealthRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_IronbornBase">
+    <defName>ARIOIAF_Ironborn_Levy</defName><label>Ironborn levy</label>
+    <forcedTraits><ARIOIAF_Trait_Levy>0</ARIOIAF_Trait_Levy></forcedTraits>
+    <combatPower>50</combatPower>
+    <skills><li><skill>Melee</skill><range>4~8</range></li></skills>
+    <itemQuality>Poor</itemQuality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_IronbornBase">
+    <defName>ARIOIAF_Ironborn_DeckArcher</defName><label>Ironborn deck archer</label>
+    <forcedTraits><ARIOIAF_Trait_ManAtArms>0</ARIOIAF_Trait_ManAtArms></forcedTraits>
+    <combatPower>75</combatPower>
+    <weaponTags Inherit="False"><li>NeolithicRanged</li><li>ARIOIAF_WesterosCrossbowLight</li><li>ARIOIAF_WesterosCrossbowMilitary</li></weaponTags>
+    <apparelRequired><li>ARIOIAF_IronbornKettleHelm</li></apparelRequired>
+    <skills><li><skill>Shooting</skill><range>7~12</range></li></skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_IronbornBase" Name="ARIOIAF_IronbornReaverBase" Abstract="True">
+    <apparelRequired><li>ARIOIAF_IronbornKettleHelm</li><li>ARIOIAF_IronbornGorget</li></apparelRequired>
+    <weaponTags Inherit="False"><li>MedievalMeleeDecent</li><li>MedievalMeleeAdvanced</li><li>ARIOIAF_WesterosMeleeDecent</li><li>ARIOIAF_WesterosMeleeAdvanced</li></weaponTags>
+    <skills><li><skill>Melee</skill><range>8~13</range></li></skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_IronbornReaverBase">
+    <defName>ARIOIAF_Ironborn_Reaver</defName><label>Ironborn reaver</label>
+    <forcedTraits><ARIOIAF_Trait_ManAtArms>0</ARIOIAF_Trait_ManAtArms></forcedTraits>
+    <combatPower>100</combatPower>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_IronbornReaverBase">
+    <defName>ARIOIAF_Ironborn_Houseguard</defName><label>Ironborn houseguard</label>
+    <forcedTraits><ARIOIAF_Trait_ManAtArms>0</ARIOIAF_Trait_ManAtArms></forcedTraits>
+    <apparelRequired><li>ARIOIAF_IronbornPlateArmor</li></apparelRequired>
+    <weaponTags Inherit="False"><li>MedievalMeleeAdvanced</li><li>ARIOIAF_WesterosMeleeAdvanced</li></weaponTags>
+    <combatPower>155</combatPower>
+    <itemQuality>Good</itemQuality>
+    <skills Inherit="False"><li><skill>Melee</skill><range>11~16</range></li></skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_IronbornReaverBase" Name="ARIOIAF_IronbornCaptainBase" Abstract="True">
+    <apparelRequired><li>ARIOIAF_IronbornPlateArmor</li><li>ARIOIAF_WesterosCloak</li></apparelRequired>
+    <weaponTags Inherit="False"><li>MedievalMeleeAdvanced</li><li>ARIOIAF_WesterosMeleeAdvanced</li></weaponTags>
+    <itemQuality>Good</itemQuality>
+    <skills Inherit="False"><li><skill>Melee</skill><range>12~17</range></li><li><skill>Social</skill><range>8~13</range></li></skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_IronbornCaptainBase">
+    <defName>ARIOIAF_Ironborn_Captain</defName><label>Ironborn captain</label>
+    <forcedTraits><ARIOIAF_Trait_LordLady>0</ARIOIAF_Trait_LordLady></forcedTraits>
+    <combatPower>190</combatPower><maxPerGroup>2</maxPerGroup>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_IronbornCaptainBase">
+    <defName>ARIOIAF_Ironborn_LordReaper</defName><label>Ironborn lord reaper</label><labelFemale>Ironborn lady reaper</labelFemale>
+    <forcedTraits><ARIOIAF_Trait_LordLady>0</ARIOIAF_Trait_LordLady></forcedTraits>
+    <combatPower>240</combatPower><factionLeader>true</factionLeader>
+    <itemQuality>Excellent</itemQuality>
+    <skills Inherit="False"><li><skill>Melee</skill><range>14~19</range></li><li><skill>Social</skill><range>13~18</range></li></skills>
+  </PawnKindDef>
+</Defs>

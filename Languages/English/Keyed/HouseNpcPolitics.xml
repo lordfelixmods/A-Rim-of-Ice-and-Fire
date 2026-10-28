@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ARIO_NpcWarTitle>War in the realm</ARIO_NpcWarTitle>
+  <ARIO_NpcWarBody>{0} and {1} have gone to war. Their quarrel is their own, but the fighting will weaken both and may redraw the map. Watch for marching hosts near their holdings.</ARIO_NpcWarBody>
+  <ARIO_NpcAllyJoinedBody>{0} has answered {1}'s call and declared against {2}. The war widens.</ARIO_NpcAllyJoinedBody>
+  <ARIO_NpcRebellionTitle>A vassal rises</ARIO_NpcRebellionTitle>
+  <ARIO_NpcRebellionBody>{0} has raised its banners against its liege, {1}. Victory may win independence; defeat will preserve the oath.</ARIO_NpcRebellionBody>
+
+  <ARIO_NpcFealtyTitle>Fealty in the realm</ARIO_NpcFealtyTitle>
+  <ARIO_NpcVassalSwornBody>{0} has freely sworn fealty to {1}.</ARIO_NpcVassalSwornBody>
+  <ARIO_NpcLiegeChangedBody>{0} has abandoned {1} and sworn fealty to {2}.</ARIO_NpcLiegeChangedBody>
+  <ARIO_NpcSubjugatedBody>{0} has submitted to {1} after defeat in war.</ARIO_NpcSubjugatedBody>
+  <ARIO_NpcIndependenceTitle>A House wins independence</ARIO_NpcIndependenceTitle>
+  <ARIO_NpcIndependenceBody>{0} has defeated {1} and cast off its oath of fealty.</ARIO_NpcIndependenceBody>
+
+  <ARIO_NpcAllianceTitle>An alliance is sworn</ARIO_NpcAllianceTitle>
+  <ARIO_NpcAllianceBody>{0} and {1} have sworn an alliance against a common enemy. Each will answer the other's wars.</ARIO_NpcAllianceBody>
+
+  <ARIO_NpcPeaceTitle>Peace in the realm</ARIO_NpcPeaceTitle>
+  <ARIO_NpcPeaceBody>{0} and {1} have made peace. {2}</ARIO_NpcPeaceBody>
+  <ARIO_NpcPeaceIndecisive>Neither House gained ground.</ARIO_NpcPeaceIndecisive>
+  <ARIO_NpcPeaceGains>{0} ends the war the stronger.</ARIO_NpcPeaceGains>
+
+  <ARIO_NpcCampaignTitle>A host takes the field</ARIO_NpcCampaignTitle>
+  <ARIO_NpcCampaignBody>{0} marches on {1}, a holding of {2}. The matter should be settled within {3} days.</ARIO_NpcCampaignBody>
+  <ARIO_NpcCampaignResultTitle>Word from the field</ARIO_NpcCampaignResultTitle>
+  <ARIO_NpcCampaignTaken>{0} has taken {1} from {2}. The holding now answers to its new lord.</ARIO_NpcCampaignTaken>
+  <ARIO_NpcCampaignRaided>{0} has broken the garrison of {1}, but {2} keeps the holding.</ARIO_NpcCampaignRaided>
+  <ARIO_NpcCampaignRepulsed>{2} has repulsed {0} before {1}. The attackers withdrew with losses.</ARIO_NpcCampaignRepulsed>
+
+  <ARIO_NpcWarCallTitle>A call to arms</ARIO_NpcWarCallTitle>
+  <ARIO_NpcWarCallBody>{0} is at war with {1} and calls on your House as {2}.\n\nMarching means declaring war on {1} yourself: their caravans, visitors and raids will treat you as an enemy until you make peace. Refusing costs honour and goodwill with {0}. You have {3} days to answer.</ARIO_NpcWarCallBody>
+  <ARIO_NpcBondLiege>your liege</ARIO_NpcBondLiege>
+  <ARIO_NpcBondVassal>your sworn vassal</ARIO_NpcBondVassal>
+  <ARIO_NpcBondAlly>your ally</ARIO_NpcBondAlly>
+  <ARIO_NpcWarJoin>March with them</ARIO_NpcWarJoin>
+  <ARIO_NpcWarDecline>Stay out of it</ARIO_NpcWarDecline>
+  <ARIO_NpcWarJoinedBody>Your House has declared for {0} against {1}.</ARIO_NpcWarJoinedBody>
+  <ARIO_NpcWarDeclinedBody>{0} has been told that your House will not march. The slight is remembered.</ARIO_NpcWarDeclinedBody>
+
+  <ARIO_NpcStatusWar>At war with {0} ({1})</ARIO_NpcStatusWar>
+  <ARIO_NpcStatusCampaign>{0} marches on {1} ({2})</ARIO_NpcStatusCampaign>
+  <ARIO_NpcStatusAlliance>Allied to {0}</ARIO_NpcStatusAlliance>
+  <ARIO_NpcStatusVassal>Vassal of {0}</ARIO_NpcStatusVassal>
+  <ARIO_NpcStatusLiege>Liege of {0}</ARIO_NpcStatusLiege>
+
+  <ARIO_NpcRecoveredTitle>Word from the realm is confused</ARIO_NpcRecoveredTitle>
+  <ARIO_NpcRecoveredBody>Reports of the quarrel between {0} and {1} could not be confirmed, so nothing came of it. No land changed hands and no House was blamed. The matter may be raised again in about {2} days.</ARIO_NpcRecoveredBody>
+
+  <ARIO_PlunderClaimTitle>{0} demands compensation</ARIO_PlunderClaimTitle>
+  <ARIO_PlunderClaimBody>{0} sends a raven over {1}. They will not go to war over it, but they want {2} silver for the smallfolk and the loss.\n\nPaying restores part of their goodwill and your standing. Refusing, or saying nothing for {3} days, costs honour and goodwill. Silver is taken from your keep.</ARIO_PlunderClaimBody>
+  <ARIO_PlunderPay>Pay the compensation</ARIO_PlunderPay>
+  <ARIO_PlunderRefuse>Refuse them</ARIO_PlunderRefuse>
+  <ARIO_PlunderPaidBody>{0} has been paid {1} silver. The matter is closed.</ARIO_PlunderPaidBody>
+  <ARIO_PlunderRefusedBody>{0} has been refused. The insult is remembered.</ARIO_PlunderRefusedBody>
+  <ARIO_PlunderIgnoredBody>{0} waited in vain for an answer about the sack. The silence is taken as a refusal.</ARIO_PlunderIgnoredBody>
+  <ARIO_PlunderNoSilver>Your keep needs {0} silver to pay this claim.</ARIO_PlunderNoSilver>
+
+  <ARIO_TaxOpinionHigh>Your taxes are heavy: your House loses about {0} honour and some House Integrity every {1} days.</ARIO_TaxOpinionHigh>
+  <ARIO_TaxOpinionLow>Your taxes are light: your House gains about {0} honour and some House Integrity every {1} days.</ARIO_TaxOpinionLow>
+  <ARIO_TaxOpinionEven>Your taxes are what the smallfolk expect.</ARIO_TaxOpinionEven>
+  <ARIO_DiploHouseCoffers>Their coffers: about {0} silver</ARIO_DiploHouseCoffers>
+
+  <ARIO_NpcDebugWar>House: start an NPC war</ARIO_NpcDebugWar>
+  <ARIO_NpcDebugCampaign>House: march an NPC host now</ARIO_NpcDebugCampaign>
+  <ARIO_NpcDebugPeace>House: end NPC wars</ARIO_NpcDebugPeace>
+  <ARIO_NpcDebugRecovery>House: break NPC politics safely</ARIO_NpcDebugRecovery>
+  <ARIO_NpcDebugUnavailable>No two Westerosi Houses are available for this.</ARIO_NpcDebugUnavailable>
+  <ARIO_NpcDebugDone>{0} and {1}: {2}</ARIO_NpcDebugDone>
+
+</LanguageData>

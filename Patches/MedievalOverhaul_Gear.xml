@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!--
+    Medieval Overhaul gear for the Westerosi Houses. Applied only when Medieval Overhaul
+    is loaded, so the mod is unaffected otherwise. Shields go on levies and footmen the
+    way Medieval Overhaul equips its own footman kinds; the elite kinds are left alone
+    because they carry two-handed weapons a shield would fight with. Bowmen gain the
+    bows and crossbows their culture would actually field.
+  -->
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Medieval Overhaul</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <!-- Northmen: round shields of the First Men; no crossbows in the North -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Northmen_Levy"]/apparelRequired</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Northmen_Levy"]/apparelRequired</xpath>
+            <value><li>DankPyon_Shield</li></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Northmen_Levy"]</xpath>
+            <value><apparelRequired><li>DankPyon_Shield</li></apparelRequired></value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Northmen_Footman"]/apparelRequired</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Northmen_Footman"]/apparelRequired</xpath>
+            <value><li>DankPyon_Shield</li></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Northmen_Footman"]</xpath>
+            <value><apparelRequired><li>DankPyon_Shield</li></apparelRequired></value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Northmen_Bowman"]/weaponTags</xpath>
+          <value>
+            <li>DankPyon_HuntingBow</li>
+            <li>DankPyon_Warbow</li>
+          </value>
+        </li>
+
+        <!-- Valemen: knightly heater shields -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Valemen_Levy"]/apparelRequired</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Valemen_Levy"]/apparelRequired</xpath>
+            <value><li>DankPyon_ShieldHeater</li></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Valemen_Levy"]</xpath>
+            <value><apparelRequired><li>DankPyon_ShieldHeater</li></apparelRequired></value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Valemen_Footman"]/apparelRequired</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Valemen_Footman"]/apparelRequired</xpath>
+            <value><li>DankPyon_ShieldHeater</li></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Valemen_Footman"]</xpath>
+            <value><apparelRequired><li>DankPyon_ShieldHeater</li></apparelRequired></value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Valemen_Bowman"]/weaponTags</xpath>
+          <value>
+            <li>DankPyon_Warbow</li>
+            <li>DankPyon_Crossbow</li>
+          </value>
+        </li>
+
+        <!-- Riverlanders: kite shields; the Trident fields both bow and crossbow -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Riverlanders_Levy"]/apparelRequired</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Riverlanders_Levy"]/apparelRequired</xpath>
+            <value><li>DankPyon_ShieldKite</li></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Riverlanders_Levy"]</xpath>
+            <value><apparelRequired><li>DankPyon_ShieldKite</li></apparelRequired></value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Riverlanders_Footman"]/apparelRequired</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Riverlanders_Footman"]/apparelRequired</xpath>
+            <value><li>DankPyon_ShieldKite</li></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Riverlanders_Footman"]</xpath>
+            <value><apparelRequired><li>DankPyon_ShieldKite</li></apparelRequired></value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Riverlanders_Bowman"]/weaponTags</xpath>
+          <value>
+            <li>DankPyon_HuntingBow</li>
+            <li>DankPyon_Warbow</li>
+            <li>DankPyon_Crossbow</li>
+          </value>
+        </li>
+
+        <!-- Westerlanders: heater shields and the best crossbows money buys -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Westerlanders_Levy"]/apparelRequired</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Westerlanders_Levy"]/apparelRequired</xpath>
+            <value><li>DankPyon_ShieldHeater</li></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Westerlanders_Levy"]</xpath>
+            <value><apparelRequired><li>DankPyon_ShieldHeater</li></apparelRequired></value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Westerlanders_Footman"]/apparelRequired</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Westerlanders_Footman"]/apparelRequired</xpath>
+            <value><li>DankPyon_ShieldHeater</li></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Westerlanders_Footman"]</xpath>
+            <value><apparelRequired><li>DankPyon_ShieldHeater</li></apparelRequired></value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Westerlanders_Bowman"]/weaponTags</xpath>
+          <value>
+            <li>DankPyon_Warbow</li>
+            <li>DankPyon_Crossbow</li>
+            <li>DankPyon_Arbelest</li>
+          </value>
+        </li>
+
+        <!-- Reachmen: heater shields; the Reach breeds famous archers -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Reachmen_Levy"]/apparelRequired</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Reachmen_Levy"]/apparelRequired</xpath>
+            <value><li>DankPyon_ShieldHeater</li></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Reachmen_Levy"]</xpath>
+            <value><apparelRequired><li>DankPyon_ShieldHeater</li></apparelRequired></value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Reachmen_Footman"]/apparelRequired</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Reachmen_Footman"]/apparelRequired</xpath>
+            <value><li>DankPyon_ShieldHeater</li></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Reachmen_Footman"]</xpath>
+            <value><apparelRequired><li>DankPyon_ShieldHeater</li></apparelRequired></value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Reachmen_Bowman"]/weaponTags</xpath>
+          <value>
+            <li>DankPyon_Warbow</li>
+            <li>DankPyon_Crossbow</li>
+          </value>
+        </li>
+
+        <!-- Stormlanders: old kite shields of the storm kings -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Stormlanders_Levy"]/apparelRequired</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Stormlanders_Levy"]/apparelRequired</xpath>
+            <value><li>DankPyon_ShieldKite</li></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Stormlanders_Levy"]</xpath>
+            <value><apparelRequired><li>DankPyon_ShieldKite</li></apparelRequired></value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Stormlanders_Footman"]/apparelRequired</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Stormlanders_Footman"]/apparelRequired</xpath>
+            <value><li>DankPyon_ShieldKite</li></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Stormlanders_Footman"]</xpath>
+            <value><apparelRequired><li>DankPyon_ShieldKite</li></apparelRequired></value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Stormlanders_Bowman"]/weaponTags</xpath>
+          <value>
+            <li>DankPyon_HuntingBow</li>
+            <li>DankPyon_Warbow</li>
+            <li>DankPyon_Crossbow</li>
+          </value>
+        </li>
+
+        <!-- Valyria: kite shields; dragonlords favour the crossbow over the longbow -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Valyria_Levy"]/apparelRequired</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Valyria_Levy"]/apparelRequired</xpath>
+            <value><li>DankPyon_ShieldKite</li></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Valyria_Levy"]</xpath>
+            <value><apparelRequired><li>DankPyon_ShieldKite</li></apparelRequired></value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Valyria_Footman"]/apparelRequired</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Valyria_Footman"]/apparelRequired</xpath>
+            <value><li>DankPyon_ShieldKite</li></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Valyria_Footman"]</xpath>
+            <value><apparelRequired><li>DankPyon_ShieldKite</li></apparelRequired></value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/PawnKindDef[defName="ARIOIAF_Valyria_Bowman"]/weaponTags</xpath>
+          <value>
+            <li>DankPyon_Crossbow</li>
+            <li>DankPyon_Arbelest</li>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- All named Valyrian relic swords inherit this exact Dark Sister CE profile.
+       Material CE edits follow Patches/ValyrianSteel.xml independently of folder order. -->
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name="ARIOIAF_ValyrianRelicWeaponBase"]/statBases</xpath>
+        <value><Bulk>6</Bulk><MeleeCounterParryBonus>1</MeleeCounterParryBonus></value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name="ARIOIAF_ValyrianRelicWeaponBase"]</xpath>
+        <value><equippedStatOffsets><MeleeCritChance>0.6</MeleeCritChance><MeleeParryChance>0.8</MeleeParryChance><MeleeDodgeChance>0.45</MeleeDodgeChance></equippedStatOffsets></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="ARIOIAF_ValyrianRelicWeaponBase"]/tools</xpath>
+        <value>
+          <tools>
+            <li Class="CombatExtended.ToolCE">
+              <label>edge</label><capacities><li>Cut</li></capacities>
+              <power>45</power><cooldownTime>1.55</cooldownTime>
+              <armorPenetrationSharp>1.2</armorPenetrationSharp><armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+              <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>point</label><capacities><li>Stab</li></capacities>
+              <power>28</power><cooldownTime>1.6</cooldownTime>
+              <armorPenetrationSharp>2.5</armorPenetrationSharp><armorPenetrationBlunt>1.2</armorPenetrationBlunt>
+              <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>hilt</label><capacities><li>Poke</li></capacities>
+              <power>6</power><cooldownTime>1.8</cooldownTime><chanceFactor>0.1</chanceFactor>
+              <armorPenetrationSharp>0</armorPenetrationSharp><armorPenetrationBlunt>1.2</armorPenetrationBlunt>
+              <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+          </tools>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

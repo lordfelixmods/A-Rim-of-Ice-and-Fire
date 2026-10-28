@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="ARIOIAF_WesterosCrossbowBase"]/tools</xpath>
+    <value><tools><li Class="CombatExtended.ToolCE">
+      <label>stock</label><capacities><li>Blunt</li></capacities>
+      <power>7</power><cooldownTime>1.6</cooldownTime><armorPenetrationBlunt>0.65</armorPenetrationBlunt><linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+    </li></tools></value>
+  </Operation>
+
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>ARIOIAF_LightWoodenCrossbow</defName>
+    <statBases>
+      <Bulk>4</Bulk><Mass>1.8</Mass><SwayFactor>1.5</SwayFactor><ShotSpread>0.45</ShotSpread><SightsEfficiency>0.75</SightsEfficiency><RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <Properties>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass><hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Projectile_CrossbowBolt_Steel</defaultProjectile><warmupTime>0.9</warmupTime><range>21</range><soundCast>Shot_CE_Crossbow</soundCast>
+    </Properties>
+    <AmmoUser><magazineSize>1</magazineSize><reloadTime>2.8</reloadTime><ammoSet>AmmoSet_CrossbowBolt</ammoSet><AmmoGenPerMagOverride>4</AmmoGenPerMagOverride></AmmoUser>
+    <FireModes><aiAimMode>AimedShot</aiAimMode></FireModes>
+    <weaponTags><li>CE_XBow</li></weaponTags>
+  </Operation>
+
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>ARIOIAF_SoldiersCrossbow</defName>
+    <statBases>
+      <Bulk>6</Bulk><Mass>2.7</Mass><SwayFactor>1.2</SwayFactor><ShotSpread>0.25</ShotSpread><SightsEfficiency>1</SightsEfficiency><RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <Properties>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass><hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Projectile_CrossbowBolt_Steel</defaultProjectile><warmupTime>1</warmupTime><range>25</range><soundCast>Shot_CE_Crossbow</soundCast>
+    </Properties>
+    <AmmoUser><magazineSize>1</magazineSize><reloadTime>4</reloadTime><ammoSet>AmmoSet_CrossbowBolt</ammoSet><AmmoGenPerMagOverride>4</AmmoGenPerMagOverride></AmmoUser>
+    <FireModes><aiAimMode>AimedShot</aiAimMode></FireModes>
+    <weaponTags><li>CE_XBow</li></weaponTags>
+  </Operation>
+
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>ARIOIAF_HeavyArbalest</defName>
+    <statBases>
+      <Bulk>9</Bulk><Mass>4.5</Mass><SwayFactor>0.9</SwayFactor><ShotSpread>0.15</ShotSpread><SightsEfficiency>1</SightsEfficiency><RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <Properties>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass><hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Projectile_CrossbowBolt_Steel</defaultProjectile><warmupTime>1.2</warmupTime><range>30</range><soundCast>Shot_CE_Crossbow</soundCast>
+    </Properties>
+    <AmmoUser><magazineSize>1</magazineSize><reloadTime>6.5</reloadTime><ammoSet>AmmoSet_CrossbowBolt</ammoSet><AmmoGenPerMagOverride>4</AmmoGenPerMagOverride></AmmoUser>
+    <FireModes><aiAimMode>AimedShot</aiAimMode></FireModes>
+    <weaponTags><li>CE_XBow</li></weaponTags>
+  </Operation>
+</Patch>

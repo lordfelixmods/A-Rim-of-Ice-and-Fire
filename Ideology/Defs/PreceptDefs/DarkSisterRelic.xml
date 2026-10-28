@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PreceptDef>
+    <defName>ARIOIAF_DarkSisterRelic</defName>
+    <label>Dark Sister</label>
+    <description>Dark Sister is a unique named Valyrian-steel relic. Its legendary-quality blade may be recovered through a relic-hunt quest; destruction or loss never creates a replacement.</description>
+    <issue>IdeoRelic</issue>
+    <preceptClass>ARimOfIceAndFireCore.DarkSisterRelic</preceptClass>
+    <workerClass>ARimOfIceAndFireCore.DarkSisterRelicWorker</workerClass>
+    <nameMaker>NamerIdeoRelic</nameMaker>
+    <impact>Medium</impact>
+    <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+    <!-- Manual-only: vanilla's IdeoRelic curve supplies the normal random relic count. -->
+    <canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+    <canUseAlreadyUsedThingDef>false</canUseAlreadyUsedThingDef>
+    <useChoicesFromBuildingDefs>true</useChoicesFromBuildingDefs>
+    <requiredMemes>
+      <li>ARIOIAF_Structure_OldGods</li>
+      <li>ARIOIAF_Structure_FaithOfTheSeven</li>
+      <li>ARIOIAF_Structure_DrownedGod</li>
+    </requiredMemes>
+  </PreceptDef>
+</Defs>

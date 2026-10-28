@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--
+    Children of the Sea used to be an impact-1 flavor meme: without Odyssey it changed only
+    ideology grammar, and with Odyssey it merely suggested Fishing: sacred. The sea-reverence
+    issue makes it mechanically complete in every DLC setup while leaving Odyssey additive.
+  -->
+  <IssueDef>
+    <defName>ARIOIAF_Sea</defName>
+    <label>the sea</label>
+    <iconPath>UI/Issues/Sea</iconPath>
+  </IssueDef>
+
+  <PreceptDef>
+    <defName>ARIOIAF_Sea_Revered</defName>
+    <issue>ARIOIAF_Sea</issue>
+    <label>revered</label>
+    <description>The sea is mother, road and grave. Living beside salt water brings peace and belonging; a life cut off from the coast feels diminished.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>50</displayOrderInIssue>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    <requiredMemes><li>ARIOIAF_ChildrenOfTheSea</li></requiredMemes>
+    <associatedMemes><li>ARIOIAF_ChildrenOfTheSea</li></associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought"><thought>ARIOIAF_Sea_Revered</thought></li>
+    </comps>
+  </PreceptDef>
+
+  <!--
+    +3 coast / -2 inland: meaningful enough to affect settlement choice, but smaller than the
+    Lineage precept because Children of the Sea is impact 1. Caravans and world pawns receive no
+    state; the belief concerns the place one is living, not each tile crossed on a journey.
+  -->
+  <ThoughtDef>
+    <defName>ARIOIAF_Sea_Revered</defName>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <workerClass>ARimOfIceAndFire.ThoughtWorker_SeaRevered</workerClass>
+    <stages>
+      <li>
+        <label>far from the sea</label>
+        <description>The horizon holds no salt water. I feel cut off from the sea that shaped my people.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <label>beside the sea</label>
+        <description>The tide is near. Its sound and salt air remind me that I am where my people belong.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

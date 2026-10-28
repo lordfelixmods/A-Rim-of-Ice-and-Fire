@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_TrialTitle>Trial by combat</ARIO_TrialTitle>
+  <ARIO_TrialRules>Choose two adult champions and propose the trial. A random site appears near your keep. Bring your champion and another free adult colonist by caravan, then confirm Autoresolve trial. There is no arena or live fight. Melee skill, equipment, armour and health determine the odds when the trial is agreed; reloading does not change the result. Both champions can be wounded and the loser risks death. Victory: +4 Integrity, +8 goodwill. Defeat: −4 Integrity.</ARIO_TrialRules>
+  <ARIO_TrialChooseOurs>Choose your champion</ARIO_TrialChooseOurs>
+  <ARIO_TrialChooseTheirs>Choose the other House's champion</ARIO_TrialChooseTheirs>
+  <ARIO_TrialSeat>Trial ground near: {0}</ARIO_TrialSeat>
+  <ARIO_TrialChooseSeat>Choose the foreign seat</ARIO_TrialChooseSeat>
+  <ARIO_TrialCandidate>{0} · Melee {1}</ARIO_TrialCandidate>
+  <ARIO_TrialInspect>Inspect {0}</ARIO_TrialInspect>
+  <ARIO_TrialTerms>Your champion: {0}\nTheir champion: {1}\nResult: {2}\nStage: {3}</ARIO_TrialTerms>
+  <ARIO_TrialSigningConfirm>Reserve these champions? You have ten days to travel to a random nearby site and confirm autoresolve. Bring another free adult colonist to bring home your champion if wounded or killed. Odds and consequences are fixed when this agreement is signed; changing gear or reloading afterward does not reroll them. One active trial, 30-day House cooldown. Other accepted diplomatic terms execute at signing, independently of the trial.</ARIO_TrialSigningConfirm>
+  <ARIO_TrialSigned>{0} accepted trial by combat. A random site is marked near your keep. Bring your champion and another free adult colonist there by caravan within ten days, then confirm Autoresolve trial. No combat map is needed.\n\n{1}</ARIO_TrialSigned>
+  <ARIO_TrialReady>The trial ground is ready. Move your champion to within 20 cells of the sand court's centre. Keep spectators back. Select the world site or use the active agreement in House → Diplomacy → Begin trial. Confirming starts real, potentially lethal melee combat. Begin within one day or the original earlier deadline.\n\n{1}</ARIO_TrialReady>
+  <ARIO_TrialBegin>Begin trial</ARIO_TrialBegin>
+  <ARIO_TrialBeginConfirm>{0}\n\nBegin the real duel now? Downing or death decides it. A lethal hit can kill your champion; surviving losers can bleed out unless treated. Wounds, lost limbs and death are permanent; equipment is at risk. The mod issues melee orders to these two people only. Do not issue different orders or attack with spectators unless you intend to forfeit. No one is invulnerable. Bring your champion near the sand court and keep the escort back.</ARIO_TrialBeginConfirm>
+  <ARIO_TrialEnter>Enter trial ground</ARIO_TrialEnter>
+  <ARIO_TrialRescue>Return to trial ground for rescue</ARIO_TrialRescue>
+  <ARIO_TrialFindSite>Find trial ground</ARIO_TrialFindSite>
+  <ARIO_TrialUnavailable>The trial cannot proceed. Both named champions must remain free, fit adults and the Houses at peace. Your caravan must bring the exact champion plus another free permanent adult colonist to the marked site before the deadline. Captives, quests and other reservations cannot be overridden.</ARIO_TrialUnavailable>
+  <ARIO_TrialWithdraw>Cancel trial</ARIO_TrialWithdraw>
+  <ARIO_TrialWithdrawConfirm>Cancel this trial for 8 Integrity? Neither champion is harmed by cancellation. Other accepted diplomatic terms are not undone.</ARIO_TrialWithdrawConfirm>
+  <ARIO_TrialEnded>The trial with {0} has ended.\n\n{1}\n\nTreat bleeding immediately. Existing injuries, corpses and belongings remain; no automatic healing or recruitment occurs. A mobile foreign champion walks out in their original faction. A downed guest remains for medical rescue and keeps the map available. Select the site → Evacuate trial ground to reform your caravan after the fight. Include your wounded, corpses and desired loot; uncollected objects on an otherwise abandoned map follow normal map removal. You can return by caravan while an injured guest keeps the map open.</ARIO_TrialEnded>
+  <ARIO_TrialEvacuate>Evacuate trial ground</ARIO_TrialEvacuate>
+  <ARIO_TrialEvacuateDesc>Reform your caravan after the trial. Bring your wounded, the fallen and their belongings with you. An incapacitated foreign champion remains on the battlefield until rescued.</ARIO_TrialEvacuateDesc>
+  <ARIO_TrialEvacuateBlocked>End or surrender the trial first. Other active threats and buildings that block map removal must also be resolved.</ARIO_TrialEvacuateBlocked>
+  <ARIO_TrialClosed>This trial is closed.</ARIO_TrialClosed>
+  <ARIO_TrialDeadline>Time to reach the trial site: {0}</ARIO_TrialDeadline>
+  <ARIO_TrialCooldown>Next trial with this House: {0}</ARIO_TrialCooldown>
+  <ARIO_TrialPhaseAwaiting>Awaiting caravan</ARIO_TrialPhaseAwaiting>
+  <ARIO_TrialPhaseReady>Ready for your confirmation</ARIO_TrialPhaseReady>
+  <ARIO_TrialPhaseFighting>Fighting</ARIO_TrialPhaseFighting>
+  <ARIO_TrialPhaseFinished>Finished</ARIO_TrialPhaseFinished>
+  <ARIO_TrialResultNone>Undecided</ARIO_TrialResultNone>
+  <ARIO_TrialResultVictory>Your champion won · +4 Integrity, +8 goodwill</ARIO_TrialResultVictory>
+  <ARIO_TrialResultDefeat>Your champion lost · −4 Integrity</ARIO_TrialResultDefeat>
+  <ARIO_TrialResultForfeit>You forfeited · −8 Integrity</ARIO_TrialResultForfeit>
+  <ARIO_TrialResultNeutral>No judgement · no diplomatic penalty</ARIO_TrialResultNeutral>
+  <ARIO_TrialDebug>House: create trial test champion</ARIO_TrialDebug>
+  <ARIO_TrialDebugCreated>A NEW 25-year-old champion of {0} is now a retained world pawn for trial testing. Existing people, goodwill and acceptance rolls were not changed. Choose an adult player champion in Diplomacy → Trial by combat. If either champion is incapable of violence, select another; normal eligibility and acceptance still apply.</ARIO_TrialDebugCreated>
+  <ARIO_TrialDebugUnavailable>A player-home map and a peaceful Westerosi House available for a trial are required.</ARIO_TrialDebugUnavailable>
+  <ARIO_TrialRandomSite>A random trial site will be marked near your keep.</ARIO_TrialRandomSite>
+  <ARIO_TrialAutoresolve>Autoresolve trial</ARIO_TrialAutoresolve>
+  <ARIO_TrialOdds>Agreed victory chance: {0}</ARIO_TrialOdds>
+  <ARIO_TrialAutoConfirm>{0} faces {1}. Your agreed victory chance is {2}.\n\nResolve the trial now? Both champions can be wounded, and the loser faces a 15% chance of death. Existing injuries or later bleeding can also prove fatal. The outcome was fixed when the trial was signed; reloading will not change it.\n\nSurvivors keep their allegiance and belongings. Your champion returns to the caravan, while your escort brings home anyone who falls.</ARIO_TrialAutoConfirm>
+  <ARIO_TrialAutoEnded>The trial with {0} is resolved.\n\n{1}\n\nYour caravan can continue normally. Care for wounds and bleeding. Survivors keep their original allegiance; fallen bodies retain their gear. If a casualty cannot be brought home immediately, their return remains pending until your caravan or keep can receive them.</ARIO_TrialAutoEnded>
+  <ARIO_TrialLegacyEnded>The old live-arena trial with {0} has been retired without a new judgement. Existing injuries and people remain. If its old map is occupied, use the rescue/evacuation options; no new fight starts.\n\n{1}</ARIO_TrialLegacyEnded>
+  <ARIO_TrialHealthSummary>Your champion: {0}\nTheir champion: {1}</ARIO_TrialHealthSummary>
+  <ARIO_TrialAlive>alive</ARIO_TrialAlive>
+  <ARIO_TrialDowned>incapacitated</ARIO_TrialDowned>
+  <ARIO_TrialDead>dead</ARIO_TrialDead>
+  <ARIO_TrialUnknown>unavailable</ARIO_TrialUnknown>
+</LanguageData>

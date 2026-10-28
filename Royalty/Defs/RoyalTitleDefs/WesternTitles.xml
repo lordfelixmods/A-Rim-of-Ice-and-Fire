@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RoyalTitleDef Name="ARIOIAF_WesternTitleBase" Abstract="True">
+    <tags><li>ARIOIAF_WesternTitle</li></tags>
+    <awardThought>GainedTitle</awardThought>
+    <lostThought>LostTitle</lostThought>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <canBeInherited>true</canBeInherited>
+    <allowDignifiedMeditationFocus>false</allowDignifiedMeditationFocus>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_WesternTitleBase">
+    <defName>ARIOIAF_WesternTitle_Squire</defName><label>Squire</label>
+    <description>A sworn attendant learning the duties of arms and service. The first honor earned in service to the Westerlands. Western titles confer standing, not psychic powers, and never forbid honest work.</description>
+    <seniority>10</seniority><favorCost>6</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_WesternTitleBase">
+    <defName>ARIOIAF_WesternTitle_HedgeKnight</defName><label>Hedge Knight</label>
+    <description>A landless knight whose courage and service have earned recognition from the houses of the Westerlands.</description>
+    <seniority>20</seniority><favorCost>8</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_WesternTitleBase">
+    <defName>ARIOIAF_WesternTitle_LandedKnight</defName><label>Landed Knight</label>
+    <description>A knight recognized as worthy of a landed household and its duties. This honor grants standing, not a new settlement.</description>
+    <seniority>30</seniority><favorCost>12</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_WesternTitleBase">
+    <defName>ARIOIAF_WesternTitle_Lord</defName><label>Lord</label><labelFemale>Lady</labelFemale>
+    <description>A recognized head of a western house, bound to protect its people and honor sworn obligations.</description>
+    <seniority>40</seniority><favorCost>16</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_WesternTitleBase">
+    <defName>ARIOIAF_WesternTitle_HighLord</defName><label>High Lord</label><labelFemale>Great Lady</labelFemale>
+    <description>A High Lord, also called a Great Lord, commands the respect of lesser houses and carries greater responsibility for the Westerlands.</description>
+    <seniority>50</seniority><favorCost>24</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_WesternTitleBase">
+    <defName>ARIOIAF_WesternTitle_LordParamount</defName><label>Lord Paramount</label><labelFemale>Lady Paramount</labelFemale>
+    <description>A paramount ruler honored above the great houses of the Westerlands for exceptional service and leadership.</description>
+    <seniority>60</seniority><favorCost>32</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_WesternTitleBase">
+    <defName>ARIOIAF_WesternTitle_WardenOfTheWest</defName><label>Warden of the West</label>
+    <description>The Westerlands' highest honor, recognizing a military guardian of the West and defender of its borders. It grants your House standing without replacing the Westerlands' Warden or transferring their lands.</description>
+    <seniority>70</seniority><favorCost>40</favorCost>
+  </RoyalTitleDef>
+</Defs>

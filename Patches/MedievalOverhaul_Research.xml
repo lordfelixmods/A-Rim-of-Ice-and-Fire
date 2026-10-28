@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!--
+    Starting research for "A House of Your Own" when Medieval Overhaul is loaded.
+
+    The base scenario already grants the vanilla medieval foundation (Smithing, Stonecutting,
+    Complex Clothing, Long Blades, Plate Armor, Brewing). Medieval Overhaul re-gates most
+    everyday medieval crafting behind its own tree, so without this a House starts unable to
+    make furniture, tan leather, cook properly or forge the simplest weapons - which is a
+    harsher opening than vanilla, not a fairer one.
+
+    Scope is deliberately the domestic tier only - the crafts a standing holdfast would already
+    have, so the opening is not a grind. Arms and armour are NOT granted: those are the first
+    things the campaign should make you earn.
+
+      Lumber -> RusticFurniture          (furniture and storage)
+      BasicCooking, BasicAgriculture      (a hall that can feed itself)
+      LeatherTanning                      (hides)
+
+    Withheld: Candle making, the Basic/Military/Noble weapon lines, Protective Clothing,
+    Alchemy, Gunpowder, Steel, Plasteel, Engineering, Mining, Ballista and Trebuchet.
+  -->
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Medieval Overhaul</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ScenarioDef[defName="ARIOIAF_HouseOfYourOwn"]/scenario/parts/li[@Class="ARimOfIceAndFire.Scenarios.ScenPart_ARIOIAF_StartingResearch"]/projects</xpath>
+      <value>
+        <li>DankPyon_Lumber</li>
+        <li>DankPyon_RusticFurniture</li>
+        <li>DankPyon_BasicCooking</li>
+        <li>DankPyon_BasicAgriculture</li>
+        <li>DankPyon_LeatherTanning</li>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

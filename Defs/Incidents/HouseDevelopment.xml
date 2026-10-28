@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- HouseRealm schedules these at saved deadlines, not in the random storyteller pool. -->
+  <IncidentDef>
+    <defName>ARIOIAF_SmallfolkSeekProtection</defName>
+    <label>smallfolk seek your protection</label>
+    <workerClass>ARimOfIceAndFireCore.IncidentWorker_HouseSettlers</workerClass>
+    <category>Misc</category>
+    <targetTags><li>Map_PlayerHome</li></targetTags>
+    <baseChance>0</baseChance>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>ARIOIAF_HoldingRaid</defName>
+    <label>raiders approach a holding</label>
+    <workerClass>ARimOfIceAndFireCore.IncidentWorker_HouseDefense</workerClass>
+    <category>ThreatBig</category>
+    <targetTags><li>Map_PlayerHome</li></targetTags>
+    <baseChance>0</baseChance>
+  </IncidentDef>
+</Defs>

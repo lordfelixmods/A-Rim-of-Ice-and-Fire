@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--
+    The Old Way already requires vanilla Raiding: respected, which penalizes ordinary labor and
+    rewards pawns who personally take part in a standard raid. Iron Price is the mod-side half:
+    it recognizes successful House campaigns and holding plunder, systems vanilla cannot know
+    about, and lets the whole believing community celebrate the prize.
+  -->
+  <IssueDef>
+    <defName>ARIOIAF_IronPrice</defName>
+    <label>iron price</label>
+    <iconPath>UI/Issues/IronPrice</iconPath>
+  </IssueDef>
+
+  <PreceptDef>
+    <defName>ARIOIAF_IronPrice_Demanded</defName>
+    <issue>ARIOIAF_IronPrice</issue>
+    <label>demanded</label>
+    <description>Wealth won through danger carries an honor no market purchase can imitate. A victorious campaign or successful raid proves that the strong still take their due.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>50</displayOrderInIssue>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    <requiredMemes><li>ARIOIAF_TheOldWay</li></requiredMemes>
+    <associatedMemes><li>ARIOIAF_TheOldWay</li></associatedMemes>
+  </PreceptDef>
+
+  <ThoughtDef>
+    <defName>ARIOIAF_IronPricePaid</defName>
+    <durationDays>4</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>the iron price was paid</label>
+        <description>Our people took victory and plunder by strength. This prize was paid for in iron, not bought with gold.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

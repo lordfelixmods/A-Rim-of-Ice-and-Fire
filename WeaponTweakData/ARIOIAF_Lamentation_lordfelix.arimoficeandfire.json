@@ -1,0 +1,15 @@
+{
+  "TextureModID": "lordfelix.arimoficeandfire",
+  "ItemDefName": "ARIOIAF_Lamentation",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.3766,
+  "OffY": 0.0014,
+  "Rotation": 45.0,
+  "ScaleX": 1.07,
+  "ScaleY": 1.07,
+  "HandsMode": 1,
+  "BladeStart": 0.137,
+  "BladeEnd": 0.9618,
+  "MeleeWeaponType": 6
+}

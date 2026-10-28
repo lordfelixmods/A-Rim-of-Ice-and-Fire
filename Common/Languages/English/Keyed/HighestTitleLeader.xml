@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_AutoTitleLeaderFailed>Automatic highest-title Leader assignment could not complete: {0}</ARIO_AutoTitleLeaderFailed>
+  <ARIO_AutoTitleLeaderStatus>Leader: automatically assigned by highest title</ARIO_AutoTitleLeaderStatus>
+  <ARIO_AutoTitleLeaderTip>The eligible free colonist of your House's ideology with the most senior noble title is assigned Leader automatically. Promotions, deaths and eligibility changes are checked automatically, including while paused. On equal titles the current Leader stays. If nobody eligible holds a title, manual leadership is retained. Other role requirements still apply; no promotion ceremony is required.</ARIO_AutoTitleLeaderTip>
+</LanguageData>

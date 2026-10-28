@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <WorldObjectDef>
+    <defName>ARIOIAF_TrialSite</defName>
+    <label>trial ground</label>
+    <description>A meeting place where a dispute will be settled by trial by combat. Bring your champion by caravan and confirm the challenge to resolve the duel. You do not command the fight on a battle map, and your champion risks injury or death.</description>
+    <worldObjectClass>ARimOfIceAndFireCore.HouseTrialSite</worldObjectClass>
+    <texture>World/WorldObjects/DefaultSettlement</texture>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconPriority>72</expandingIconPriority>
+    <IncidentTargetTags><li>Map_Misc</li></IncidentTargetTags>
+  </WorldObjectDef>
+  <MapGeneratorDef ParentName="MapCommonBase">
+    <defName>ARIOIAF_TrialMap</defName>
+    <genSteps><li>ARIOIAF_TrialArena</li></genSteps>
+  </MapGeneratorDef>
+  <GenStepDef>
+    <defName>ARIOIAF_TrialArena</defName>
+    <order>450</order>
+    <genStep Class="ARimOfIceAndFireCore.GenStep_HouseTrialArena" />
+  </GenStepDef>
+  <JobDef>
+    <defName>ARIOIAF_TrialDuel</defName>
+    <driverClass>ARimOfIceAndFireCore.JobDriver_HouseTrialDuel</driverClass>
+    <reportString>leaving an obsolete trial.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <alwaysShowWeapon>false</alwaysShowWeapon>
+  </JobDef>
+</Defs>

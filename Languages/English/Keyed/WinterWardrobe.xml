@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_WinterWardrobeTip>Winter wardrobe: equip available cloaks and face wraps on colony pawns (not prisoners), even when their apparel policy disallows them. Does not change any apparel policy. Turn off to restore normal policy rules. Pawns still need wearable, reachable gear.</ARIO_WinterWardrobeTip>
+  <ARIO_WinterWardrobeUnavailable>[A Rim of Ice and Fire] Winter wardrobe could not complete; the ordinary apparel policy still applies: {0}</ARIO_WinterWardrobeUnavailable>
+</LanguageData>

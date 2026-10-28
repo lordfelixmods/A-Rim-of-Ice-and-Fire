@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Ordinary Westerosi steel arms. Private generation tags keep them out of unrelated
+       factions while still allowing normal crafting, trade and player use. -->
+  <ThingDef Name="ARIOIAF_WesterosSteelSwordBase" ParentName="BaseMeleeWeapon_Sharp_Quality" Abstract="True">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <ignoreThingDrawColor>true</ignoreThingDrawColor>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <possessionCount>1</possessionCount>
+    <relicChance>0</relicChance>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories Inherit="False"><li>Metallic</li></stuffCategories>
+  </ThingDef>
+
+  <ThingDef Name="ARIOIAF_WesterosSteelMaceBase" ParentName="BaseMeleeWeapon_Blunt_Quality" Abstract="True">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <ignoreThingDrawColor>true</ignoreThingDrawColor>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <possessionCount>1</possessionCount>
+    <relicChance>0</relicChance>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories Inherit="False"><li>Metallic</li></stuffCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="ARIOIAF_WesterosSteelSwordBase">
+    <defName>ARIOIAF_SoldiersShortSword</defName>
+    <label>soldier's short sword</label>
+    <description>A compact, economical sidearm issued to common soldiers. Its short blade is quick in a shield wall and useful in the crush inside a breached gate.</description>
+    <graphicData><texPath>Things/Item/Equipment/WeaponMelee/WesterosArmory/SoldiersShortSword</texPath><drawSize>(1.06,1.06)</drawSize></graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <weaponTags><li>ARIOIAF_WesterosMeleeDecent</li></weaponTags>
+    <costStuffCount>45</costStuffCount>
+    <statBases><WorkToMake>9000</WorkToMake><Mass>0.85</Mass></statBases>
+    <tools>
+      <li><label>handle</label><capacities><li>Blunt</li></capacities><power>7</power><cooldownTime>1.8</cooldownTime></li>
+      <li><label>point</label><capacities><li>Stab</li></capacities><power>14</power><cooldownTime>1.8</cooldownTime></li>
+      <li><label>edge</label><capacities><li>Cut</li></capacities><power>15</power><cooldownTime>1.8</cooldownTime></li>
+    </tools>
+    <recipeMaker><researchPrerequisite>Smithing</researchPrerequisite><skillRequirements><Crafting>3</Crafting></skillRequirements><displayPriority>431</displayPriority></recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ARIOIAF_WesterosSteelSwordBase">
+    <defName>ARIOIAF_FootmansSword</defName>
+    <label>footman's sword</label>
+    <description>A sturdy, broad-bladed arming sword made for sustained infantry fighting. It balances reach, cutting power and point control without giving up a shield.</description>
+    <graphicData><texPath>Things/Item/Equipment/WeaponMelee/WesterosArmory/FootmansSword</texPath><drawSize>(1.05,1.05)</drawSize></graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <weaponTags><li>ARIOIAF_WesterosMeleeDecent</li></weaponTags>
+    <costStuffCount>65</costStuffCount>
+    <statBases><WorkToMake>13000</WorkToMake><Mass>1.3</Mass></statBases>
+    <tools>
+      <li><label>handle</label><capacities><li>Blunt</li></capacities><power>8</power><cooldownTime>2</cooldownTime></li>
+      <li><label>point</label><capacities><li>Stab</li></capacities><power>18</power><cooldownTime>2.1</cooldownTime></li>
+      <li><label>edge</label><capacities><li>Cut</li></capacities><power>19</power><cooldownTime>2.1</cooldownTime></li>
+    </tools>
+    <recipeMaker><researchPrerequisite>Smithing</researchPrerequisite><skillRequirements><Crafting>4</Crafting></skillRequirements><displayPriority>432</displayPriority></recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ARIOIAF_WesterosSteelMaceBase">
+    <defName>ARIOIAF_BallMace</defName>
+    <label>ball mace</label>
+    <description>A simple iron mace with a heavy spherical head. Cheap to maintain and forgiving to wield, it is a dependable answer to mail and boiled leather.</description>
+    <graphicData><texPath>Things/Item/Equipment/WeaponMelee/WesterosArmory/BallMace</texPath><drawSize>(1.05,1.05)</drawSize></graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <weaponTags><li>ARIOIAF_WesterosMeleeDecent</li></weaponTags>
+    <costStuffCount>50</costStuffCount>
+    <statBases><WorkToMake>7000</WorkToMake><Mass>1.35</Mass></statBases>
+    <tools>
+      <li><label>handle</label><capacities><li>Poke</li></capacities><power>8</power><cooldownTime>2</cooldownTime></li>
+      <li><label>head</label><labelUsedInLogging>false</labelUsedInLogging><capacities><li>Blunt</li></capacities><power>15.7</power><cooldownTime>2</cooldownTime></li>
+    </tools>
+    <recipeMaker><researchPrerequisite>Smithing</researchPrerequisite><skillRequirements><Crafting>3</Crafting></skillRequirements><displayPriority>433</displayPriority></recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ARIOIAF_WesterosSteelSwordBase">
+    <defName>ARIOIAF_KnightsShortSword</defName>
+    <label>knight's short sword</label>
+    <description>A compact but finely balanced knightly sidearm, fast enough for close work after a lance is lost and short enough to draw in a crowded melee.</description>
+    <graphicData><texPath>Things/Item/Equipment/WeaponMelee/WesterosArmory/KnightsShortSword</texPath><drawSize>(1.06,1.06)</drawSize></graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <weaponTags><li>ARIOIAF_WesterosMeleeAdvanced</li></weaponTags>
+    <costStuffCount>55</costStuffCount>
+    <statBases><WorkToMake>15000</WorkToMake><Mass>1</Mass></statBases>
+    <tools>
+      <li><label>handle</label><capacities><li>Blunt</li></capacities><power>7</power><cooldownTime>1.75</cooldownTime></li>
+      <li><label>point</label><capacities><li>Stab</li></capacities><power>17</power><cooldownTime>1.85</cooldownTime></li>
+      <li><label>edge</label><capacities><li>Cut</li></capacities><power>18</power><cooldownTime>1.8</cooldownTime></li>
+    </tools>
+    <recipeMaker><researchPrerequisites><li>LongBlades</li><li>ARIOIAF_WesterosArmory</li></researchPrerequisites><skillRequirements><Crafting>5</Crafting></skillRequirements><displayPriority>434</displayPriority></recipeMaker>
+  </ThingDef>
+
+  <!-- Save-only legacy identity: existing copies remain loadable and usable, but no new sword
+       can be crafted, traded, selected for levies or generated in future worlds. -->
+  <ThingDef ParentName="ARIOIAF_WesterosSteelSwordBase">
+    <defName>ARIOIAF_NarrowThrustingSword</defName>
+    <label>narrow thrusting sword</label>
+    <description>A long, stiff and unusually narrow blade made to seek the gaps in mail, plate and visor. Its keen point excels against armor, though its slight edge is less suited to heavy cuts.</description>
+    <graphicData><texPath>Things/Item/Equipment/WeaponMelee/WesterosArmory/NarrowThrustingSword</texPath><drawSize>(1.04,1.04)</drawSize></graphicData>
+    <uiIconScale>1.15</uiIconScale>
+    <weaponTags Inherit="False" />
+    <tradeTags Inherit="False" />
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <costStuffCount>65</costStuffCount>
+    <statBases><WorkToMake>18000</WorkToMake><Mass>1.15</Mass></statBases>
+    <tools>
+      <li><label>pommel</label><capacities><li>Blunt</li></capacities><power>7</power><cooldownTime>1.9</cooldownTime></li>
+      <li><label>point</label><capacities><li>Stab</li></capacities><power>22</power><armorPenetration>0.5</armorPenetration><cooldownTime>1.9</cooldownTime></li>
+      <li><label>edge</label><capacities><li>Cut</li></capacities><power>13</power><cooldownTime>1.7</cooldownTime></li>
+    </tools>
+    <!-- IsNull plus Inherit=False clears the recipe inherited from BaseMeleeWeapon; an empty
+         recipeMaker node would accidentally generate a vanilla smithy bill. -->
+    <recipeMaker Inherit="False" IsNull="True" />
+  </ThingDef>
+
+  <ThingDef ParentName="ARIOIAF_WesterosSteelSwordBase">
+    <defName>ARIOIAF_CavalrySword</defName>
+    <label>cavalry sword</label>
+    <description>A long, fullered sword balanced for a powerful cut from horseback. Its extra reach also serves a skilled swordsman well on foot.</description>
+    <graphicData><texPath>Things/Item/Equipment/WeaponMelee/WesterosArmory/CavalrySword</texPath><drawSize>(1.05,1.05)</drawSize></graphicData>
+    <uiIconScale>1.15</uiIconScale>
+    <weaponTags><li>ARIOIAF_WesterosMeleeAdvanced</li></weaponTags>
+    <costStuffCount>85</costStuffCount>
+    <statBases><WorkToMake>17000</WorkToMake><Mass>1.65</Mass></statBases>
+    <tools>
+      <li><label>pommel</label><capacities><li>Blunt</li></capacities><power>8</power><cooldownTime>2.1</cooldownTime></li>
+      <li><label>point</label><capacities><li>Stab</li></capacities><power>18</power><cooldownTime>2.3</cooldownTime></li>
+      <li><label>edge</label><capacities><li>Cut</li></capacities><power>22</power><cooldownTime>2.25</cooldownTime></li>
+    </tools>
+    <recipeMaker><researchPrerequisites><li>LongBlades</li><li>ARIOIAF_WesterosArmory</li></researchPrerequisites><skillRequirements><Crafting>6</Crafting></skillRequirements><displayPriority>436</displayPriority></recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ARIOIAF_WesterosSteelMaceBase">
+    <defName>ARIOIAF_FlangedMace</defName>
+    <label>flanged mace</label>
+    <description>A military mace whose rigid metal flanges focus each blow into the smallest possible area. It is made for crushing plate rather than merely bruising flesh.</description>
+    <graphicData><texPath>Things/Item/Equipment/WeaponMelee/WesterosArmory/FlangedMace</texPath><drawSize>(1.08,1.08)</drawSize></graphicData>
+    <uiIconScale>1.15</uiIconScale>
+    <weaponTags><li>ARIOIAF_WesterosMeleeAdvanced</li></weaponTags>
+    <costStuffCount>60</costStuffCount>
+    <statBases><WorkToMake>12000</WorkToMake><Mass>1.5</Mass></statBases>
+    <tools>
+      <li><label>handle</label><capacities><li>Poke</li></capacities><power>8</power><cooldownTime>2</cooldownTime></li>
+      <li><label>flanged head</label><labelUsedInLogging>false</labelUsedInLogging><capacities><li>Blunt</li></capacities><power>17</power><armorPenetration>0.35</armorPenetration><cooldownTime>2.05</cooldownTime></li>
+    </tools>
+    <recipeMaker><researchPrerequisites><li>Smithing</li><li>ARIOIAF_WesterosArmory</li></researchPrerequisites><skillRequirements><Crafting>5</Crafting></skillRequirements><displayPriority>437</displayPriority></recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ARIOIAF_WesterosSteelMaceBase">
+    <defName>ARIOIAF_SpikedMace</defName>
+    <label>spiked mace</label>
+    <description>A brutal mace ringed with stout iron spikes. The heavy head crushes beneath armor while the spikes bite into gaps, padding and shields.</description>
+    <graphicData><texPath>Things/Item/Equipment/WeaponMelee/WesterosArmory/SpikedMace</texPath><drawSize>(1.1,1.1)</drawSize></graphicData>
+    <uiIconScale>1.15</uiIconScale>
+    <weaponTags><li>ARIOIAF_WesterosMeleeAdvanced</li></weaponTags>
+    <costStuffCount>70</costStuffCount>
+    <statBases><WorkToMake>14000</WorkToMake><Mass>1.65</Mass></statBases>
+    <tools>
+      <li><label>handle</label><capacities><li>Poke</li></capacities><power>8</power><cooldownTime>2.05</cooldownTime></li>
+      <li><label>head</label><capacities><li>Blunt</li></capacities><power>17</power><cooldownTime>2.1</cooldownTime></li>
+      <li><label>spike</label><capacities><li>Stab</li></capacities><power>18</power><armorPenetration>0.45</armorPenetration><cooldownTime>2.15</cooldownTime></li>
+    </tools>
+    <recipeMaker><researchPrerequisites><li>Smithing</li><li>ARIOIAF_WesterosArmory</li></researchPrerequisites><skillRequirements><Crafting>5</Crafting></skillRequirements><displayPriority>438</displayPriority></recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ARIOIAF_WesterosSteelSwordBase">
+    <defName>ARIOIAF_TwoHandedWarSword</defName>
+    <label>two-handed war sword</label>
+    <description>A broad war sword built for two hands. Its long grip and heavy blade deliver punishing cuts and strong thrusts, but leave no hand free for a shield.</description>
+    <graphicData><texPath>Things/Item/Equipment/WeaponMelee/WesterosArmory/TwoHandedWarSword</texPath><drawSize>(1.45,1.45)</drawSize></graphicData>
+    <uiIconScale>1.1</uiIconScale>
+    <weaponTags><li>ARIOIAF_WesterosMeleeAdvanced</li></weaponTags>
+    <costStuffCount>120</costStuffCount>
+    <statBases><WorkToMake>24000</WorkToMake><Mass>2.8</Mass></statBases>
+    <tools>
+      <li><label>pommel</label><capacities><li>Blunt</li></capacities><power>10</power><cooldownTime>2.3</cooldownTime></li>
+      <li><label>point</label><capacities><li>Stab</li></capacities><power>24</power><armorPenetration>0.35</armorPenetration><cooldownTime>2.6</cooldownTime></li>
+      <li><label>edge</label><capacities><li>Cut</li></capacities><power>27</power><cooldownTime>2.6</cooldownTime></li>
+    </tools>
+    <recipeMaker><researchPrerequisites><li>LongBlades</li><li>ARIOIAF_WesterosArmory</li></researchPrerequisites><skillRequirements><Crafting>7</Crafting></skillRequirements><displayPriority>439</displayPriority></recipeMaker>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_SmallfolkExplanation>Move 1–3 smallfolk households between villages or towns, not named colonists. Existing villages gain workforce, tax output and gradual levy recruitment: each household above the tier's baseline adds 5%, up to +30%. Departures reduce the source by the same factor and must leave at least three households. Military capacity does not change; there is no instant soldier grant. Households remain village population, never player pawns.</ARIO_SmallfolkExplanation>
+  <ARIO_SmallfolkSource>Choose source village or town</ARIO_SmallfolkSource>
+  <ARIO_SmallfolkTarget>Choose destination</ARIO_SmallfolkTarget>
+  <ARIO_SmallfolkNewVillage>Found a new village (3 households)</ARIO_SmallfolkNewVillage>
+  <ARIO_SmallfolkNewVillageAt>Found a new village near {0}</ARIO_SmallfolkNewVillageAt>
+  <ARIO_SmallfolkCount>Households: {0}</ARIO_SmallfolkCount>
+  <ARIO_SmallfolkPopulation>{0} households · workforce/tax/recruitment factor {1}</ARIO_SmallfolkPopulation>
+  <ARIO_SmallfolkSeat>Meet the other House's steward at {0} with a player caravan and a free permanent adult envoy.</ARIO_SmallfolkSeat>
+  <ARIO_SmallfolkCost>Transport provisions due at confirmation: {0} silver. Requests cost 300 per household; offers receive no automatic sale payment. Agreements allow 20 days to arrange departure, then a three-day journey, with a 30-day House cooldown. Four active agreements maximum, one per House.</ARIO_SmallfolkCost>
+  <ARIO_SmallfolkSeatCompact>Meeting place: {0}</ARIO_SmallfolkSeatCompact>
+  <ARIO_SmallfolkCostCompact>Provisions: {0} silver</ARIO_SmallfolkCostCompact>
+  <ARIO_SmallfolkTerms>{0}: {1} households\nFrom: {2}\nTo: {3}\nProvisioning silver: {4}</ARIO_SmallfolkTerms>
+  <ARIO_SmallfolkSigning>Reserve these households and housing? No colonists move. An envoy must visit the foreign steward and confirm departure before provisions are charged. Population settles after three days. New villages require three households, occupy one of your four founding slots, build for the duration in Mod Settings (five days by default) and then receive fifteen tax-exempt days. Sparse new villages begin below a mature village's workforce. Other accepted diplomatic terms execute now and are not reversed if this journey fails.</ARIO_SmallfolkSigning>
+  <ARIO_SmallfolkSigned>{0} agreed to this smallfolk migration. Bring an envoy and provisions to the signed steward's settlement within 20 days.\n\n{1}</ARIO_SmallfolkSigned>
+  <ARIO_SmallfolkHandover>{0}\n\nAuthorize the households' three-day journey and pay the listed provisions? This changes village populations, not your colony roster. Source households and destination housing remain reserved until arrival. No instant soldiers or recruitable pawns are created.</ARIO_SmallfolkHandover>
+  <ARIO_SmallfolkTravelling>The smallfolk migration with {0} is underway. The envoy may go home; the households settle after three days, provided both holdings remain safe and eligible.\n\n{1}</ARIO_SmallfolkTravelling>
+  <ARIO_SmallfolkJourney>Households arrive in: {0}</ARIO_SmallfolkJourney>
+  <ARIO_SmallfolkSuccess>The smallfolk reached their destination. Your House gains 2 Integrity and 6 goodwill with {0}. The source loses these households; the destination gains them. No colonists or instant soldiers were created. A newly founded village now begins construction for the duration selected in Mod Settings.\n\n{1}</ARIO_SmallfolkSuccess>
+  <ARIO_SmallfolkBroken>The migration with {0} was cancelled or its valid departure deadline was missed. Your House loses 4 Integrity once. No population moved.\n\n{1}</ARIO_SmallfolkBroken>
+  <ARIO_SmallfolkNeutral>The migration agreement with {0} could not be completed. It has ended without a penalty. Smallfolk who have not moved stay in their old homes, and unused provisions will be returned to your keep.\n\n{1}</ARIO_SmallfolkNeutral>
+  <ARIO_SmallfolkCancel>Cancel for 4 Integrity? Reserved households stay in their villages. The normal House cooldown remains. Other accepted diplomatic terms are not undone.</ARIO_SmallfolkCancel>
+</LanguageData>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Fixed atlas anchors, not tile IDs. Lesser-House identities match RealmRegions;
+       coordinates are adapted to this mod's authored political map. -->
+  <ARimOfIceAndFireCore.WesterosSeatDef Name="ARIO_SeatNorth" Abstract="True"><region>ARIOIAF_Region_Northmen</region></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef Name="ARIO_SeatVale" Abstract="True"><region>ARIOIAF_Region_Valemen</region></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef Name="ARIO_SeatRiver" Abstract="True"><region>ARIOIAF_Region_Riverlanders</region></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef Name="ARIO_SeatWest" Abstract="True"><region>ARIOIAF_Region_Westerlanders</region></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef Name="ARIO_SeatReach" Abstract="True"><region>ARIOIAF_Region_Reachmen</region></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef Name="ARIO_SeatStorm" Abstract="True"><region>ARIOIAF_Region_Stormlanders</region></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef Name="ARIO_SeatValyria" Abstract="True"><region>ARIOIAF_Region_Valyria</region></ARimOfIceAndFireCore.WesterosSeatDef>
+
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatNorth"><defName>ARIO_Seat_Winterfell</defName><label>Winterfell</label><position>(174, 178)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatNorth"><defName>ARIO_Seat_Mormont</defName><houseName>House Mormont</houseName><label>Bear Island</label><position>(101, 103)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatNorth"><defName>ARIO_Seat_Glover</defName><houseName>House Glover</houseName><label>Deepwood Motte</label><position>(112, 149)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatNorth"><defName>ARIO_Seat_Hornwood</defName><houseName>House Hornwood</houseName><label>Hornwood</label><position>(218, 191)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatNorth"><defName>ARIO_Seat_Reed</defName><houseName>House Reed</houseName><label>Greywater Watch</label><position>(147, 277)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatNorth"><defName>ARIO_Seat_Karstark</defName><houseName>House Karstark</houseName><label>Karhold</label><position>(254, 131)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatNorth"><defName>ARIO_Seat_Umber</defName><houseName>House Umber</houseName><label>Last Hearth</label><position>(221, 110)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatNorth"><defName>ARIO_Seat_Bolton</defName><houseName>House Bolton</houseName><label>the Dreadfort</label><position>(230, 161)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatNorth"><defName>ARIO_Seat_Dustin</defName><houseName>House Dustin</houseName><label>Barrowton</label><position>(111, 211)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatNorth"><defName>ARIO_Seat_Manderly</defName><houseName>House Manderly</houseName><label>White Harbor</label><position>(177, 225)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatNorth"><defName>ARIO_Seat_Flint</defName><houseName>House Flint</houseName><label>Flint's Finger</label><position>(69, 267)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatVale"><defName>ARIO_Seat_Eyrie</defName><label>the Eyrie</label><position>(220, 322)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatVale"><defName>ARIO_Seat_Royce</defName><houseName>House Royce</houseName><label>Runestone</label><position>(265, 345)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatVale"><defName>ARIO_Seat_Waynwood</defName><houseName>House Waynwood</houseName><label>Ironoaks</label><position>(245, 313)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatVale"><defName>ARIO_Seat_Corbray</defName><houseName>House Corbray</houseName><label>Heart's Home</label><position>(220, 293)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatVale"><defName>ARIO_Seat_Redfort</defName><houseName>House Redfort</houseName><label>Redfort</label><position>(228, 345)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatVale"><defName>ARIO_Seat_Hunter</defName><houseName>House Hunter</houseName><label>Longbow Hall</label><position>(267, 318)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatVale"><defName>ARIO_Seat_Belmore</defName><houseName>House Belmore</houseName><label>Strongsong</label><position>(203, 303)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatVale"><defName>ARIO_Seat_Templeton</defName><houseName>House Templeton</houseName><label>Ninestars</label><position>(195, 325)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatVale"><defName>ARIO_Seat_Grafton</defName><houseName>House Grafton</houseName><label>Gulltown</label><position>(259, 363)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatVale"><defName>ARIO_Seat_Lynderly</defName><houseName>House Lynderly</houseName><label>Snakewood</label><position>(244, 289)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatVale"><defName>ARIO_Seat_Sunderland</defName><houseName>House Sunderland</houseName><label>the Sisters</label><position>(220, 280)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatRiver"><defName>ARIO_Seat_Riverrun</defName><label>Riverrun</label><position>(148, 347)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatRiver"><defName>ARIO_Seat_Mallister</defName><houseName>House Mallister</houseName><label>Seagard</label><position>(139, 328)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatRiver"><defName>ARIO_Seat_Blackwood</defName><houseName>House Blackwood</houseName><label>Raventree Hall</label><position>(159, 338)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatRiver"><defName>ARIO_Seat_Bracken</defName><houseName>House Bracken</houseName><label>Stone Hedge</label><position>(169, 353)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatRiver"><defName>ARIO_Seat_Frey</defName><houseName>House Frey</houseName><label>the Twins</label><position>(158, 307)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatRiver"><defName>ARIO_Seat_Piper</defName><houseName>House Piper</houseName><label>Pinkmaiden</label><position>(151, 379)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatRiver"><defName>ARIO_Seat_Vance</defName><houseName>House Vance</houseName><label>Wayfarer's Rest</label><position>(137, 363)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatRiver"><defName>ARIO_Seat_Mooton</defName><houseName>House Mooton</houseName><label>Maidenpool</label><position>(197, 369)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatRiver"><defName>ARIO_Seat_Darry</defName><houseName>House Darry</houseName><label>Darry</label><position>(175, 367)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatRiver"><defName>ARIO_Seat_Smallwood</defName><houseName>House Smallwood</houseName><label>Acorn Hall</label><position>(167, 400)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatRiver"><defName>ARIO_Seat_Ryger</defName><houseName>House Ryger</houseName><label>Willow Wood</label><position>(165, 385)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatWest"><defName>ARIO_Seat_CasterlyRock</defName><label>Casterly Rock</label><position>(75, 395)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatWest"><defName>ARIO_Seat_Clegane</defName><houseName>House Clegane</houseName><label>Clegane's Keep</label><position>(87, 404)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatWest"><defName>ARIO_Seat_Marbrand</defName><houseName>House Marbrand</houseName><label>Ashemark</label><position>(107, 367)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatWest"><defName>ARIO_Seat_Crakehall</defName><houseName>House Crakehall</houseName><label>Crakehall</label><position>(68, 418)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatWest"><defName>ARIO_Seat_Lefford</defName><houseName>House Lefford</houseName><label>the Golden Tooth</label><position>(123, 357)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatWest"><defName>ARIO_Seat_Brax</defName><houseName>House Brax</houseName><label>Hornvale</label><position>(126, 379)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatWest"><defName>ARIO_Seat_Banefort</defName><houseName>House Banefort</houseName><label>the Banefort</label><position>(85, 353)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatWest"><defName>ARIO_Seat_Westerling</defName><houseName>House Westerling</houseName><label>the Crag</label><position>(83, 371)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatWest"><defName>ARIO_Seat_Serrett</defName><houseName>House Serrett</houseName><label>Silverhill</label><position>(112, 405)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatWest"><defName>ARIO_Seat_Farman</defName><houseName>House Farman</houseName><label>Faircastle</label><position>(42, 377)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatWest"><defName>ARIO_Seat_Prester</defName><houseName>House Prester</houseName><label>Feastfires</label><position>(60, 388)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatReach"><defName>ARIO_Seat_Highgarden</defName><label>Highgarden</label><position>(122, 466)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatReach"><defName>ARIO_Seat_Tarly</defName><houseName>House Tarly</houseName><label>Horn Hill</label><position>(140, 496)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatReach"><defName>ARIO_Seat_Florent</defName><houseName>House Florent</houseName><label>Brightwater Keep</label><position>(105, 503)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatReach"><defName>ARIO_Seat_Hightower</defName><houseName>House Hightower</houseName><label>Oldtown</label><position>(85, 541)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatReach"><defName>ARIO_Seat_Redwyne</defName><houseName>House Redwyne</houseName><label>the Arbor</label><position>(36, 588)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatReach"><defName>ARIO_Seat_Rowan</defName><houseName>House Rowan</houseName><label>Goldengrove</label><position>(123, 440)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatReach"><defName>ARIO_Seat_Oakheart</defName><houseName>House Oakheart</houseName><label>Old Oak</label><position>(68, 449)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatReach"><defName>ARIO_Seat_Fossoway</defName><houseName>House Fossoway</houseName><label>Cider Hall</label><position>(139, 458)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatReach"><defName>ARIO_Seat_Beesbury</defName><houseName>House Beesbury</houseName><label>Honeyholt</label><position>(101, 526)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatReach"><defName>ARIO_Seat_Merryweather</defName><houseName>House Merryweather</houseName><label>Longtable</label><position>(152, 467)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatReach"><defName>ARIO_Seat_Caswell</defName><houseName>House Caswell</houseName><label>Bitterbridge</label><position>(161, 440)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatStorm"><defName>ARIO_Seat_StormsEnd</defName><label>Storm's End</label><position>(249, 469)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatStorm"><defName>ARIO_Seat_Dondarrion</defName><houseName>House Dondarrion</houseName><label>Blackhaven</label><position>(182, 513)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatStorm"><defName>ARIO_Seat_Seaworth</defName><houseName>House Seaworth</houseName><label>Cape Wrath keep</label><position>(263, 510)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatStorm"><defName>ARIO_Seat_Tarth</defName><houseName>House Tarth</houseName><label>Evenfall Hall</label><position>(280, 477)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatStorm"><defName>ARIO_Seat_Selmy</defName><houseName>House Selmy</houseName><label>Harvest Hall</label><position>(200, 508)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatStorm"><defName>ARIO_Seat_Swann</defName><houseName>House Swann</houseName><label>Stonehelm</label><position>(237, 514)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatStorm"><defName>ARIO_Seat_Estermont</defName><houseName>House Estermont</houseName><label>Greenstone</label><position>(285, 504)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatStorm"><defName>ARIO_Seat_Caron</defName><houseName>House Caron</houseName><label>Nightsong</label><position>(172, 500)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatStorm"><defName>ARIO_Seat_Morrigen</defName><houseName>House Morrigen</houseName><label>Crow's Nest</label><position>(223, 494)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatStorm"><defName>ARIO_Seat_Connington</defName><houseName>House Connington</houseName><label>Griffin's Roost</label><position>(248, 482)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatStorm"><defName>ARIO_Seat_Penrose</defName><houseName>House Penrose</houseName><label>Parchments</label><position>(232, 451)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+
+  <!-- Valyrian lineages use the atlas's Crownlands/Valyria territory. Exiled/extinct
+       lineages receive authored campaign holdfasts, not claims of historical seats. -->
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatValyria"><defName>ARIO_Seat_Dragonstone</defName><label>Dragonstone</label><position>(279, 397)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatValyria"><defName>ARIO_Seat_Velaryon</defName><houseName>House Velaryon</houseName><label>Driftmark</label><position>(266, 409)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatValyria"><defName>ARIO_Seat_Celtigar</defName><houseName>House Celtigar</houseName><label>Claw Isle holdfast</label><position>(239, 386)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatValyria"><defName>ARIO_Seat_Qoherys</defName><houseName>House Qoherys</houseName><label>Qoherys holdfast</label><position>(207, 396)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatValyria"><defName>ARIO_Seat_Belaerys</defName><houseName>House Belaerys</houseName><label>Belaerys holdfast</label><position>(223, 418)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatValyria"><defName>ARIO_Seat_Rogare</defName><houseName>House Rogare</houseName><label>Rogare holdfast</label><position>(239, 429)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatValyria"><defName>ARIO_Seat_Maegyr</defName><houseName>House Maegyr</houseName><label>Maegyr holdfast</label><position>(207, 426)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatValyria"><defName>ARIO_Seat_Paenymion</defName><houseName>House Paenymion</houseName><label>Paenymion holdfast</label><position>(224, 389)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatValyria"><defName>ARIO_Seat_Vhassar</defName><houseName>House Vhassar</houseName><label>Vhassar holdfast</label><position>(213, 380)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatValyria"><defName>ARIO_Seat_Longwaters</defName><houseName>House Longwaters</houseName><label>Longwaters keep</label><position>(194, 419)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+  <ARimOfIceAndFireCore.WesterosSeatDef ParentName="ARIO_SeatValyria"><defName>ARIO_Seat_Scales</defName><houseName>House Scales</houseName><label>Scales holdfast</label><position>(216, 406)</position></ARimOfIceAndFireCore.WesterosSeatDef>
+</Defs>

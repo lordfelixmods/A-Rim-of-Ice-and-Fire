@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_SupportersCommand>Supporters</ARIO_SupportersCommand>
+  <ARIO_SupportersCommandDesc>Read the names graven into the monument.</ARIO_SupportersCommandDesc>
+  <ARIO_SupportersBadge>VII</ARIO_SupportersBadge>
+  <ARIO_SupportersTitle>Monument of the Realm</ARIO_SupportersTitle>
+  <ARIO_SupportersLead>The realm remembers those whose patronage raised this monument. Their names are graven in the stone beneath the broken swords of the Seven Kingdoms, that winter nor war nor the passing of years should carry them away.\n\nThank you for keeping A Rim of Ice and Fire alive.</ARIO_SupportersLead>
+  <ARIO_SupportersHeading>Graven in the stone</ARIO_SupportersHeading>
+  <ARIO_SupportersClose>Close</ARIO_SupportersClose>
+</LanguageData>

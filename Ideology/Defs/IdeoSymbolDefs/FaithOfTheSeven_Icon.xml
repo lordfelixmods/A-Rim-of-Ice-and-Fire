@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IdeoIconDef>
+    <defName>ARIOIAF_FaithOfTheSevenIcon</defName>
+    <iconPath>UI/Ideology/FaithOfTheSeven</iconPath>
+    <memes>
+      <li>ARIOIAF_Structure_FaithOfTheSeven</li>
+    </memes>
+  </IdeoIconDef>
+</Defs>

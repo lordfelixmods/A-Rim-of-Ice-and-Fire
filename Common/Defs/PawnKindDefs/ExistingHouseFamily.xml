@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Scoped to the NEW existing-House scenario's generated relatives only.
+       The real ruler keeps their original regional House outfit and equipment.
+       Normal-quality cloth/fabric House layers rather than random tribal tags
+       or free plate, relics and military-rank forced traits. -->
+  <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>ARIOIAF_ExistingHouseAdult</defName>
+    <label>House relative</label>
+    <race>Human</race>
+    <initialResistanceRange>9~15</initialResistanceRange>
+    <defaultFactionDef>ARIOIAF_PlayerHouse</defaultFactionDef>
+    <minGenerationAge>18</minGenerationAge><maxGenerationAge>65</maxGenerationAge>
+    <apparelMoney>0~0</apparelMoney><apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelTags Inherit="False"><li>ARIOIAF_WesterosApparel</li><li>ARIOIAF_WesterosMilitaryApparel</li></apparelTags>
+    <apparelRequired><li>ARIOIAF_WesterosTunic</li><li>ARIOIAF_WesterosGambeson</li></apparelRequired>
+    <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <backstoryFiltersOverride>
+      <li><categories>
+        <li>ARIOIAF_Backstory_Crownlands</li><li>ARIOIAF_Backstory_Dorne</li>
+        <li>ARIOIAF_Backstory_FreeFolk</li><li>ARIOIAF_Backstory_IronIslands</li>
+        <li>ARIOIAF_Backstory_North</li><li>ARIOIAF_Backstory_Reach</li>
+        <li>ARIOIAF_Backstory_Riverlands</li><li>ARIOIAF_Backstory_Stormlands</li>
+        <li>ARIOIAF_Backstory_Vale</li><li>ARIOIAF_Backstory_Valyria</li>
+        <li>ARIOIAF_Backstory_Westerlands</li>
+      </categories></li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+  <PawnKindDef ParentName="BasePlayerPawnKind" MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>ARIOIAF_ExistingHouseChild</defName>
+    <label>young House relative</label>
+    <race>Human</race>
+    <initialResistanceRange>9~15</initialResistanceRange>
+    <defaultFactionDef>ARIOIAF_PlayerHouse</defaultFactionDef>
+    <minGenerationAge>3</minGenerationAge><maxGenerationAge>17</maxGenerationAge>
+    <apparelMoney>0~0</apparelMoney><apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelTags Inherit="False"><li>ARIOIAF_ExistingHouseChild</li></apparelTags>
+    <apparelRequired><li>ARIOIAF_ExistingHouseChildTunic</li></apparelRequired>
+    <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <backstoryFiltersOverride>
+      <li><categories>
+        <li>ARIOIAF_Backstory_Crownlands</li><li>ARIOIAF_Backstory_Dorne</li>
+        <li>ARIOIAF_Backstory_FreeFolk</li><li>ARIOIAF_Backstory_IronIslands</li>
+        <li>ARIOIAF_Backstory_North</li><li>ARIOIAF_Backstory_Reach</li>
+        <li>ARIOIAF_Backstory_Riverlands</li><li>ARIOIAF_Backstory_Stormlands</li>
+        <li>ARIOIAF_Backstory_Vale</li><li>ARIOIAF_Backstory_Valyria</li>
+        <li>ARIOIAF_Backstory_Westerlands</li>
+      </categories></li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+</Defs>

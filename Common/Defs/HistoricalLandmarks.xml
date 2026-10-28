@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef Name="ARIO_HistoricalEstate" Abstract="True">
+    <maxDistance>12</maxDistance><capacity>32</capacity><silverTax>800</silverTax><foodTax>180</foodTax><defense>1.5</defense><strategic>0.7</strategic><influence>2</influence><mapSize>250</mapSize>
+  </ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef>
+  <ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef ParentName="ARIO_HistoricalEstate">
+    <defName>ARIO_Landmark_Winterfell</defName><label>Winterfell</label><description>The ancestral seat of House Stark, commanding the heart of the North. Its walls and military traditions support a strong defensive garrison.</description>
+    <seat>Winterfell</seat><region>North</region><position>(174, 178)</position><claimant>House Stark</claimant><claimantFaction>ARIOIAF_Northmen</claimantFaction><cultureFaction>ARIOIAF_Northmen</cultureFaction><capacity>44</capacity><defense>1.9</defense><silverTax>1000</silverTax><foodTax>240</foodTax><strategic>0.9</strategic>
+  </ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef>
+  <ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef ParentName="ARIO_HistoricalEstate">
+    <defName>ARIO_Landmark_Harrenhal</defName><label>Harrenhal</label><description>The immense, partly ruined fortress on the northern shore of the Gods Eye. It can house an enormous garrison, but its vast enclosure is expensive to restore and supply.</description>
+    <seat>Harrenhal</seat><region>Riverlands</region><position>(184, 382)</position><claimant>House Whent</claimant><claimantFaction>ARIOIAF_Riverlanders</claimantFaction><cultureFaction>ARIOIAF_Riverlanders</cultureFaction><lakeShore>true</lakeShore><capacity>60</capacity><defense>1.55</defense><silverTax>900</silverTax><foodTax>220</foodTax><strategic>1</strategic><mapSize>300</mapSize>
+  </ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef>
+  <ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef ParentName="ARIO_HistoricalEstate">
+    <defName>ARIO_Landmark_KingsLanding</defName><label>King's Landing</label><description>The capital at the mouth of the Blackwater, with the Red Keep as its fortified heart. City and keep form one strategic estate, yielding exceptional wealth and political influence.</description>
+    <seat>KingsLanding</seat><region>Crownlands</region><position>(231, 415)</position><claimant>House Baratheon</claimant><claimantFaction>ARIOIAF_Valyria</claimantFaction><cultureFaction>ARIOIAF_Valyria</cultureFaction><river>Blackwater</river><coast>true</coast><capacity>56</capacity><defense>1.55</defense><silverTax>2400</silverTax><foodTax>200</foodTax><influence>8</influence><strategic>1</strategic><mapSize>300</mapSize>
+  </ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef>
+  <ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef ParentName="ARIO_HistoricalEstate">
+    <defName>ARIO_Landmark_CasterlyRock</defName><label>Casterly Rock</label><description>The mighty western seat of House Lannister, fortified above the Sunset Sea and sustained by the wealth of the Westerlands.</description>
+    <seat>CasterlyRock</seat><region>Westerlands</region><position>(62, 391)</position><claimant>House Lannister</claimant><claimantFaction>ARIOIAF_Westerlanders</claimantFaction><cultureFaction>ARIOIAF_Westerlanders</cultureFaction><coast>true</coast><mountain>true</mountain><capacity>46</capacity><defense>2.1</defense><silverTax>1900</silverTax><foodTax>160</foodTax><influence>5</influence><strategic>0.85</strategic>
+  </ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef>
+  <ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef ParentName="ARIO_HistoricalEstate">
+    <defName>ARIO_Landmark_Eyrie</defName><label>the Eyrie</label><description>House Arryn's mountaintop fortress in the Mountains of the Moon. Difficult approaches make it exceptionally defensible, though its small footprint limits recruitment and agriculture.</description>
+    <seat>Eyrie</seat><region>Vale</region><position>(220, 322)</position><claimant>House Arryn</claimant><claimantFaction>ARIOIAF_Valemen</claimantFaction><cultureFaction>ARIOIAF_Valemen</cultureFaction><mountain>true</mountain><capacity>28</capacity><defense>2.8</defense><silverTax>900</silverTax><foodTax>110</foodTax><maxDistance>8</maxDistance><strategic>0.85</strategic>
+  </ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef>
+  <ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef ParentName="ARIO_HistoricalEstate">
+    <defName>ARIO_Landmark_Highgarden</defName><label>Highgarden</label><description>House Tyrell's rich seat on the Mander, commanding fertile lands capable of supplying substantial levies and food taxes.</description>
+    <seat>Highgarden</seat><region>Reach</region><position>(122, 466)</position><claimant>House Tyrell</claimant><claimantFaction>ARIOIAF_Reachmen</claimantFaction><cultureFaction>ARIOIAF_Reachmen</cultureFaction><river>Mander</river><capacity>48</capacity><defense>1.55</defense><silverTax>1600</silverTax><foodTax>500</foodTax><influence>4</influence><strategic>0.85</strategic>
+  </ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef>
+  <ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef ParentName="ARIO_HistoricalEstate">
+    <defName>ARIO_Landmark_StormsEnd</defName><label>Storm's End</label><description>The great coastal fortress overlooking Shipbreaker Bay. Its thick walls shelter a disciplined garrison against siege and storm.</description>
+    <seat>StormsEnd</seat><region>Stormlands</region><position>(249, 469)</position><claimant>House Baratheon</claimant><claimantFaction>ARIOIAF_Stormlanders</claimantFaction><cultureFaction>ARIOIAF_Stormlanders</cultureFaction><coast>true</coast><capacity>40</capacity><defense>2.35</defense><silverTax>1000</silverTax><foodTax>240</foodTax><strategic>0.9</strategic>
+  </ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef>
+  <ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef ParentName="ARIO_HistoricalEstate">
+    <defName>ARIO_Landmark_Sunspear</defName><label>Sunspear</label><description>House Martell's seat on the southeastern coast of Dorne, commanding the shadow city and the surrounding Dornish lands.</description>
+    <seat>Sunspear</seat><region>Dorne</region><position>(291, 564)</position><claimant>House Martell</claimant><cultureFaction>ARIOIAF_Stormlanders</cultureFaction><coast>true</coast><capacity>36</capacity><defense>1.65</defense><silverTax>1300</silverTax><foodTax>230</foodTax><influence>4</influence><strategic>0.8</strategic>
+  </ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef>
+  <ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef ParentName="ARIO_HistoricalEstate">
+    <defName>ARIO_Landmark_Riverrun</defName><label>Riverrun</label><description>House Tully's castle at the meeting of the Red Fork and Tumblestone, guarding an important Riverlands junction.</description>
+    <seat>Riverrun</seat><region>Riverlands</region><position>(148, 347)</position><claimant>House Tully</claimant><claimantFaction>ARIOIAF_Riverlanders</claimantFaction><cultureFaction>ARIOIAF_Riverlanders</cultureFaction><river>RedFork</river><capacity>36</capacity><defense>2</defense><silverTax>1100</silverTax><foodTax>300</foodTax><strategic>0.95</strategic>
+  </ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef>
+  <ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef ParentName="ARIO_HistoricalEstate">
+    <defName>ARIO_Landmark_Dragonstone</defName><label>Dragonstone</label><description>The ancient Targaryen citadel on its volcanic island at the mouth of Blackwater Bay. Its dragon-carved black walls command the narrow-sea approaches, though the island limits farming and recruitment.</description>
+    <seat>Dragonstone</seat><region>Valyria</region><position>(279, 397)</position><claimant>House Targaryen</claimant><claimantFaction>ARIOIAF_Valyria</claimantFaction><cultureFaction>ARIOIAF_Valyria</cultureFaction><coast>true</coast><island>true</island><maxDistance>8</maxDistance><capacity>34</capacity><defense>2.3</defense><silverTax>1000</silverTax><foodTax>110</foodTax><influence>5</influence><strategic>0.85</strategic>
+  </ARimOfIceAndFire.Landmarks.HistoricalLandmarkDef>
+  <FactionDef ParentName="FactionBase">
+    <defName>ARIO_LandmarkCustodians</defName><label>unclaimed landmark custodians</label><description>Local defenders of unclaimed historical landmarks, not a landed House or political owner.</description>
+    <backstoryFilters><li><categories><li>Tribal</li></categories></li></backstoryFilters>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <hidden>true</hidden><humanlikeFaction>true</humanlikeFaction><techLevel>Medieval</techLevel><permanentEnemy>true</permanentEnemy><canMakeRandomly>false</canMakeRandomly><mustStartOneEnemy>false</mustStartOneEnemy><requiredCountAtGameStart>0</requiredCountAtGameStart><basicMemberKind>ARIOIAF_Riverlanders_Levy</basicMemberKind><settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+  </FactionDef>
+  <WorldObjectDef ParentName="Settlement">
+    <defName>ARIO_HistoricalLandmark</defName><label>historical landmark</label><description>A persistent strategic castle or city.</description><worldObjectClass>ARimOfIceAndFire.Landmarks.LandmarkSettlement</worldObjectClass>
+    <expandingIcon>true</expandingIcon><canHaveFaction>true</canHaveFaction><canBePlayerHome>false</canBePlayerHome><mapGenerator>Base_Faction</mapGenerator>
+  </WorldObjectDef>
+  <WorldObjectDef>
+    <defName>ARIO_LandmarkCourier</defName><label>landmark tax courier</label><description>A courier carrying actual landmark taxes to a home base.</description><worldObjectClass>ARimOfIceAndFire.Landmarks.LandmarkCourier</worldObjectClass><texture>World/WorldObjects/Caravan</texture><expandingIconTexture>World/WorldObjects/Expanding/Caravan</expandingIconTexture><expandingIcon>true</expandingIcon><canHaveMap>false</canHaveMap><useDynamicDrawer>true</useDynamicDrawer>
+  </WorldObjectDef>
+  <WorldObjectDef>
+    <defName>ARIO_LandmarkArmy</defName><label>landmark army</label><description>An army travelling to contest a historical landmark.</description><worldObjectClass>ARimOfIceAndFire.Landmarks.LandmarkArmy</worldObjectClass><texture>World/WorldObjects/Caravan</texture><expandingIconTexture>World/WorldObjects/Expanding/Caravan</expandingIconTexture><expandingIcon>true</expandingIcon><canHaveFaction>true</canHaveFaction><canHaveMap>false</canHaveMap><useDynamicDrawer>true</useDynamicDrawer>
+  </WorldObjectDef>
+</Defs>

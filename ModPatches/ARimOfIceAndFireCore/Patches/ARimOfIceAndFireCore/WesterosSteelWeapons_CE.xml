@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Combat Extended 1.6 profiles. All tool lists are replaced wholesale so vanilla
+       attacks cannot survive beside CE attacks. Exactly the war sword remains two-handed. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ARIOIAF_SoldiersShortSword"]/tools</xpath>
+    <value><tools>
+      <li Class="CombatExtended.ToolCE"><label>handle</label><capacities><li>Poke</li></capacities><power>2</power><chanceFactor>0.33</chanceFactor><cooldownTime>1.38</cooldownTime><armorPenetrationBlunt>0.4</armorPenetrationBlunt><linkedBodyPartsGroup>Handle</linkedBodyPartsGroup></li>
+      <li Class="CombatExtended.ToolCE"><label>point</label><capacities><li>Stab</li></capacities><power>24</power><cooldownTime>1.46</cooldownTime><armorPenetrationBlunt>0.4</armorPenetrationBlunt><armorPenetrationSharp>0.45</armorPenetrationSharp><linkedBodyPartsGroup>Point</linkedBodyPartsGroup></li>
+      <li Class="CombatExtended.ToolCE"><label>edge</label><capacities><li>Cut</li></capacities><power>18</power><cooldownTime>1.36</cooldownTime><armorPenetrationBlunt>0.85</armorPenetrationBlunt><armorPenetrationSharp>0.4</armorPenetrationSharp><linkedBodyPartsGroup>Edge</linkedBodyPartsGroup></li>
+    </tools></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="ARIOIAF_SoldiersShortSword"]/statBases</xpath><value><Bulk>3</Bulk><MeleeCounterParryBonus>0.3</MeleeCounterParryBonus></value></Operation>
+  <Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="ARIOIAF_SoldiersShortSword"]</xpath><value><equippedStatOffsets><MeleeCritChance>0.18</MeleeCritChance><MeleeParryChance>0.3</MeleeParryChance><MeleeDodgeChance>0.22</MeleeDodgeChance></equippedStatOffsets></value></Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ARIOIAF_FootmansSword"]/tools</xpath>
+    <value><tools>
+      <li Class="CombatExtended.ToolCE"><label>handle</label><capacities><li>Poke</li></capacities><power>3</power><chanceFactor>0.25</chanceFactor><cooldownTime>1.55</cooldownTime><armorPenetrationBlunt>0.65</armorPenetrationBlunt><linkedBodyPartsGroup>Handle</linkedBodyPartsGroup></li>
+      <li Class="CombatExtended.ToolCE"><label>point</label><capacities><li>Stab</li></capacities><power>22</power><cooldownTime>1.62</cooldownTime><armorPenetrationBlunt>0.65</armorPenetrationBlunt><armorPenetrationSharp>1.35</armorPenetrationSharp><linkedBodyPartsGroup>Point</linkedBodyPartsGroup></li>
+      <li Class="CombatExtended.ToolCE"><label>edge</label><capacities><li>Cut</li></capacities><power>31</power><cooldownTime>1.52</cooldownTime><armorPenetrationBlunt>2.2</armorPenetrationBlunt><armorPenetrationSharp>0.58</armorPenetrationSharp><linkedBodyPartsGroup>Edge</linkedBodyPartsGroup></li>
+    </tools></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="ARIOIAF_FootmansSword"]/statBases</xpath><value><Bulk>5.5</Bulk><MeleeCounterParryBonus>0.55</MeleeCounterParryBonus></value></Operation>
+  <Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="ARIOIAF_FootmansSword"]</xpath><value><equippedStatOffsets><MeleeCritChance>0.35</MeleeCritChance><MeleeParryChance>0.5</MeleeParryChance><MeleeDodgeChance>0.3</MeleeDodgeChance></equippedStatOffsets></value></Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ARIOIAF_BallMace"]/tools</xpath>
+    <value><tools>
+      <li Class="CombatExtended.ToolCE"><label>handle</label><capacities><li>Poke</li></capacities><power>2</power><chanceFactor>0.33</chanceFactor><cooldownTime>1.59</cooldownTime><armorPenetrationBlunt>0.625</armorPenetrationBlunt><linkedBodyPartsGroup>Handle</linkedBodyPartsGroup></li>
+      <li Class="CombatExtended.ToolCE"><label>head</label><capacities><li>Blunt</li></capacities><power>15</power><cooldownTime>1.9</cooldownTime><armorPenetrationBlunt>5.625</armorPenetrationBlunt><linkedBodyPartsGroup>Head</linkedBodyPartsGroup></li>
+    </tools></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="ARIOIAF_BallMace"]/statBases</xpath><value><Bulk>3.5</Bulk><MeleeCounterParryBonus>0.24</MeleeCounterParryBonus></value></Operation>
+  <Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="ARIOIAF_BallMace"]</xpath><value><equippedStatOffsets><MeleeCritChance>0.42</MeleeCritChance><MeleeParryChance>0.24</MeleeParryChance><MeleeDodgeChance>0.2</MeleeDodgeChance></equippedStatOffsets></value></Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ARIOIAF_KnightsShortSword"]/tools</xpath>
+    <value><tools>
+      <li Class="CombatExtended.ToolCE"><label>handle</label><capacities><li>Poke</li></capacities><power>2</power><chanceFactor>0.25</chanceFactor><cooldownTime>1.35</cooldownTime><armorPenetrationBlunt>0.45</armorPenetrationBlunt><linkedBodyPartsGroup>Handle</linkedBodyPartsGroup></li>
+      <li Class="CombatExtended.ToolCE"><label>point</label><capacities><li>Stab</li></capacities><power>25</power><cooldownTime>1.42</cooldownTime><armorPenetrationBlunt>0.45</armorPenetrationBlunt><armorPenetrationSharp>0.65</armorPenetrationSharp><linkedBodyPartsGroup>Point</linkedBodyPartsGroup></li>
+      <li Class="CombatExtended.ToolCE"><label>edge</label><capacities><li>Cut</li></capacities><power>23</power><cooldownTime>1.34</cooldownTime><armorPenetrationBlunt>1.2</armorPenetrationBlunt><armorPenetrationSharp>0.48</armorPenetrationSharp><linkedBodyPartsGroup>Edge</linkedBodyPartsGroup></li>
+    </tools></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="ARIOIAF_KnightsShortSword"]/statBases</xpath><value><Bulk>3.5</Bulk><MeleeCounterParryBonus>0.45</MeleeCounterParryBonus></value></Operation>
+  <Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="ARIOIAF_KnightsShortSword"]</xpath><value><equippedStatOffsets><MeleeCritChance>0.28</MeleeCritChance><MeleeParryChance>0.45</MeleeParryChance><MeleeDodgeChance>0.28</MeleeDodgeChance></equippedStatOffsets></value></Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ARIOIAF_NarrowThrustingSword"]/tools</xpath>
+    <value><tools>
+      <li Class="CombatExtended.ToolCE"><label>pommel</label><capacities><li>Poke</li></capacities><power>2</power><chanceFactor>0.2</chanceFactor><cooldownTime>1.55</cooldownTime><armorPenetrationBlunt>0.4</armorPenetrationBlunt><linkedBodyPartsGroup>Handle</linkedBodyPartsGroup></li>
+      <li Class="CombatExtended.ToolCE"><label>point</label><capacities><li>Stab</li></capacities><power>25</power><cooldownTime>1.5</cooldownTime><armorPenetrationBlunt>0.55</armorPenetrationBlunt><armorPenetrationSharp>2.2</armorPenetrationSharp><linkedBodyPartsGroup>Point</linkedBodyPartsGroup></li>
+      <li Class="CombatExtended.ToolCE"><label>edge</label><capacities><li>Cut</li></capacities><power>14</power><cooldownTime>1.42</cooldownTime><armorPenetrationBlunt>0.7</armorPenetrationBlunt><armorPenetrationSharp>0.28</armorPenetrationSharp><linkedBodyPartsGroup>Edge</linkedBodyPartsGroup></li>
+    </tools></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="ARIOIAF_NarrowThrustingSword"]/statBases</xpath><value><Bulk>4.5</Bulk><MeleeCounterParryBonus>0.6</MeleeCounterParryBonus></value></Operation>
+  <Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="ARIOIAF_NarrowThrustingSword"]</xpath><value><equippedStatOffsets><MeleeCritChance>0.4</MeleeCritChance><MeleeParryChance>0.65</MeleeParryChance><MeleeDodgeChance>0.35</MeleeDodgeChance></equippedStatOffsets></value></Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ARIOIAF_CavalrySword"]/tools</xpath>
+    <value><tools>
+      <li Class="CombatExtended.ToolCE"><label>pommel</label><capacities><li>Poke</li></capacities><power>3</power><chanceFactor>0.15</chanceFactor><cooldownTime>1.7</cooldownTime><armorPenetrationBlunt>0.75</armorPenetrationBlunt><linkedBodyPartsGroup>Handle</linkedBodyPartsGroup></li>
+      <li Class="CombatExtended.ToolCE"><label>point</label><capacities><li>Stab</li></capacities><power>20</power><cooldownTime>1.72</cooldownTime><armorPenetrationBlunt>0.75</armorPenetrationBlunt><armorPenetrationSharp>1.6</armorPenetrationSharp><linkedBodyPartsGroup>Point</linkedBodyPartsGroup></li>
+      <li Class="CombatExtended.ToolCE"><label>edge</label><capacities><li>Cut</li></capacities><power>37</power><cooldownTime>1.58</cooldownTime><armorPenetrationBlunt>2.8</armorPenetrationBlunt><armorPenetrationSharp>0.65</armorPenetrationSharp><linkedBodyPartsGroup>Edge</linkedBodyPartsGroup></li>
+    </tools></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="ARIOIAF_CavalrySword"]/statBases</xpath><value><Bulk>7</Bulk><MeleeCounterParryBonus>0.75</MeleeCounterParryBonus></value></Operation>
+  <Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="ARIOIAF_CavalrySword"]</xpath><value><equippedStatOffsets><MeleeCritChance>0.48</MeleeCritChance><MeleeParryChance>0.55</MeleeParryChance><MeleeDodgeChance>0.28</MeleeDodgeChance></equippedStatOffsets></value></Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ARIOIAF_FlangedMace"]/tools</xpath>
+    <value><tools>
+      <li Class="CombatExtended.ToolCE"><label>handle</label><capacities><li>Poke</li></capacities><power>2</power><chanceFactor>0.25</chanceFactor><cooldownTime>1.6</cooldownTime><armorPenetrationBlunt>0.7</armorPenetrationBlunt><linkedBodyPartsGroup>Handle</linkedBodyPartsGroup></li>
+      <li Class="CombatExtended.ToolCE"><label>flanged head</label><capacities><li>Blunt</li></capacities><power>17</power><cooldownTime>1.95</cooldownTime><armorPenetrationBlunt>6.75</armorPenetrationBlunt><linkedBodyPartsGroup>Head</linkedBodyPartsGroup></li>
+    </tools></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="ARIOIAF_FlangedMace"]/statBases</xpath><value><Bulk>4</Bulk><MeleeCounterParryBonus>0.28</MeleeCounterParryBonus></value></Operation>
+  <Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="ARIOIAF_FlangedMace"]</xpath><value><equippedStatOffsets><MeleeCritChance>0.5</MeleeCritChance><MeleeParryChance>0.28</MeleeParryChance><MeleeDodgeChance>0.18</MeleeDodgeChance></equippedStatOffsets></value></Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ARIOIAF_SpikedMace"]/tools</xpath>
+    <value><tools>
+      <li Class="CombatExtended.ToolCE"><label>handle</label><capacities><li>Poke</li></capacities><power>2</power><chanceFactor>0.2</chanceFactor><cooldownTime>1.62</cooldownTime><armorPenetrationBlunt>0.75</armorPenetrationBlunt><linkedBodyPartsGroup>Handle</linkedBodyPartsGroup></li>
+      <li Class="CombatExtended.ToolCE"><label>head</label><capacities><li>Blunt</li></capacities><power>16</power><cooldownTime>2</cooldownTime><armorPenetrationBlunt>6.25</armorPenetrationBlunt><linkedBodyPartsGroup>Head</linkedBodyPartsGroup></li>
+      <li Class="CombatExtended.ToolCE"><label>spike</label><capacities><li>Stab</li></capacities><power>20</power><cooldownTime>1.95</cooldownTime><armorPenetrationBlunt>1</armorPenetrationBlunt><armorPenetrationSharp>1.45</armorPenetrationSharp><linkedBodyPartsGroup>Point</linkedBodyPartsGroup></li>
+    </tools></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="ARIOIAF_SpikedMace"]/statBases</xpath><value><Bulk>4.5</Bulk><MeleeCounterParryBonus>0.25</MeleeCounterParryBonus></value></Operation>
+  <Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="ARIOIAF_SpikedMace"]</xpath><value><equippedStatOffsets><MeleeCritChance>0.55</MeleeCritChance><MeleeParryChance>0.25</MeleeParryChance><MeleeDodgeChance>0.15</MeleeDodgeChance></equippedStatOffsets></value></Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ARIOIAF_TwoHandedWarSword"]/tools</xpath>
+    <value><tools>
+      <li Class="CombatExtended.ToolCE"><label>pommel</label><capacities><li>Poke</li></capacities><power>5</power><chanceFactor>0.1</chanceFactor><cooldownTime>1.9</cooldownTime><armorPenetrationBlunt>1.2</armorPenetrationBlunt><linkedBodyPartsGroup>Handle</linkedBodyPartsGroup></li>
+      <li Class="CombatExtended.ToolCE"><label>point</label><capacities><li>Stab</li></capacities><power>28</power><cooldownTime>1.95</cooldownTime><armorPenetrationBlunt>1.2</armorPenetrationBlunt><armorPenetrationSharp>2.4</armorPenetrationSharp><linkedBodyPartsGroup>Point</linkedBodyPartsGroup></li>
+      <li Class="CombatExtended.ToolCE"><label>edge</label><capacities><li>Cut</li></capacities><power>48</power><cooldownTime>1.85</cooldownTime><armorPenetrationBlunt>4</armorPenetrationBlunt><armorPenetrationSharp>0.85</armorPenetrationSharp><linkedBodyPartsGroup>Edge</linkedBodyPartsGroup></li>
+    </tools></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="ARIOIAF_TwoHandedWarSword"]/statBases</xpath><value><Bulk>12</Bulk><MeleeCounterParryBonus>1.1</MeleeCounterParryBonus></value></Operation>
+  <Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="ARIOIAF_TwoHandedWarSword"]</xpath><value><equippedStatOffsets><MeleeCritChance>0.6</MeleeCritChance><MeleeParryChance>0.8</MeleeParryChance><MeleeDodgeChance>0.25</MeleeDodgeChance></equippedStatOffsets></value></Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="ARIOIAF_SoldiersShortSword" or defName="ARIOIAF_FootmansSword" or defName="ARIOIAF_BallMace" or defName="ARIOIAF_KnightsShortSword" or defName="ARIOIAF_CavalrySword" or defName="ARIOIAF_FlangedMace" or defName="ARIOIAF_SpikedMace"]/weaponTags</xpath>
+    <value><li>CE_OneHandedWeapon</li></value>
+  </Operation>
+</Patch>

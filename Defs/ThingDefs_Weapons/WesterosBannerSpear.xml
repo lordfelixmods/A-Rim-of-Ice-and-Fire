@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>ARIOIAF_WesterosBannerSpear</defName>
+    <label>Westeros banner spear</label>
+    <description>A long spear carrying a Westerosi battle standard, held upright so its House's colors can be seen above the ranks. Its bearer can still fight with the spear.\n\nChoose regional heraldry or let the banner follow its wielder's House. The cloth carries the chosen colors without changing the shaft or spearhead, and cannot be dyed. Plant it as a standard from the Furniture menu, then take it down to recover the same weapon.</description>
+    <thingClass>ARimOfIceAndFireCore.BannerSpear</thingClass>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WesterosBannerSpear/Banner</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+      <ignoreThingDrawColor>true</ignoreThingDrawColor>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags><li>ARIOIAF_BannerSpear</li></weaponTags>
+    <weaponClasses><li>Neolithic</li></weaponClasses>
+    <costStuffCount>75</costStuffCount>
+    <costList><Cloth>20</Cloth></costList>
+    <stuffCategories><li>Metallic</li></stuffCategories>
+    <statBases>
+      <WorkToMake>16000</WorkToMake>
+      <Mass>2.5</Mass>
+    </statBases>
+    <equippedAngleOffset>-25</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities><li>Blunt</li><li>Poke</li></capacities>
+        <power>13</power><cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities><li>Stab</li></capacities>
+        <power>23</power><armorPenetration>0.5</armorPenetration><cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <comps>
+      <li Class="ARimOfIceAndFireCore.CompProperties_Banner" />
+    </comps>
+    <recipeMaker>
+      <researchPrerequisites><li>LongBlades</li><li>ARIOIAF_WesterosArmory</li></researchPrerequisites>
+      <skillRequirements><Crafting>4</Crafting></skillRequirements>
+      <displayPriority>331</displayPriority>
+    </recipeMaker>
+    <modExtensions>
+      <!-- Non-attacking carry pose: rotate the diagonal art -45 degrees so the gonfalon stands
+           upright. The calibrated grip (same point Show Me Your Hands uses) lands at chest height
+           on the bearer's right side; the cloth then rises above the head, the butt ends near the
+           thigh, and layer 48 keeps the cloth behind the face but in front of the torso. -->
+      <li Class="ARimOfIceAndFire.UprightCarriedBannerExtension">
+        <textureGrip>(-0.285,-0.275)</textureGrip>
+        <uprightRotation>-45</uprightRotation>
+        <handSouth>(-0.30,0.05)</handSouth>
+        <handNorth>(0.30,0.05)</handNorth>
+        <handEast>(0.20,0.05)</handEast>
+        <handWest>(-0.20,0.05)</handWest>
+        <layer>48</layer>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

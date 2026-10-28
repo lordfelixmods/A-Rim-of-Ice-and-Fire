@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>ARIOIAF_OathFulfilled</defName>
+    <durationDays>5</durationDays>
+    <stackLimit>3</stackLimit>
+    <stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>sacred oath fulfilled</label>
+        <description>We kept an oath sworn before the gods. The old gods remember our honor.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>ARIOIAF_OathBroken</defName>
+    <durationDays>8</durationDays>
+    <stackLimit>3</stackLimit>
+    <stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>sacred oath broken</label>
+        <description>We failed an oath sworn before the gods. Their carved faces witnessed our dishonor.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>ARIOIAF_PreparedForWinter</defName>
+    <workerClass>ARimOfIceAndFireCore.ThoughtWorker_PreparedForWinter</workerClass>
+    <stages>
+      <li>
+        <label>prepared for winter</label>
+        <description>Winter came, but we stored at least ten days of food for each colonist. We prepared together, and we will endure together.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>ARIOIAF_UnpreparedForWinter</defName>
+    <workerClass>ARimOfIceAndFireCore.ThoughtWorker_UnpreparedForWinter</workerClass>
+    <stages>
+      <li>
+        <label>unprepared for winter</label>
+        <description>Winter is here and our food reserves have fallen below three days per colonist. Hunger waits beyond the cold.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>ARIOIAF_SnowBeautiful</defName>
+    <workerClass>ARimOfIceAndFireCore.ThoughtWorker_SnowBeautiful</workerClass>
+    <stages>
+      <li>
+        <label>beautiful snow</label>
+        <description>Snow has blanketed the land in austere, silent beauty.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>ARIOIAF_IntrigueDishonor</defName>
+    <durationDays>5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>dishonorable intrigue</label>
+        <description>Our House ordered secret intrigues instead of meeting its rivals openly. Whatever the gain, our honor is stained.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Standalone Death: Don't care support. The abstract parent thoughts do not
+       define nullifyingPrecepts, while the concrete witness thoughts may be extended
+       by other mods, so create the former and append to the latter. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThoughtDef[@Name="LostMemory"]</xpath>
+    <value><nullifyingPrecepts><li>ARIOIAF_Death_DontCare</li></nullifyingPrecepts></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThoughtDef[@Name="DeathMemory"]</xpath>
+    <value><nullifyingPrecepts><li>ARIOIAF_Death_DontCare</li></nullifyingPrecepts></value>
+  </Operation>
+
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="WitnessedDeathAlly"]/nullifyingPrecepts</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThoughtDef[defName="WitnessedDeathAlly"]/nullifyingPrecepts</xpath>
+          <value><li>ARIOIAF_Death_DontCare</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThoughtDef[defName="WitnessedDeathAlly"]</xpath>
+          <value><nullifyingPrecepts><li>ARIOIAF_Death_DontCare</li></nullifyingPrecepts></value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="WitnessedDeathNonAlly"]/nullifyingPrecepts</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/ThoughtDef[defName="WitnessedDeathNonAlly"]/nullifyingPrecepts</xpath>
+          <value><li>ARIOIAF_Death_DontCare</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThoughtDef[defName="WitnessedDeathNonAlly"]</xpath>
+          <value><nullifyingPrecepts><li>ARIOIAF_Death_DontCare</li></nullifyingPrecepts></value>
+        </nomatch>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

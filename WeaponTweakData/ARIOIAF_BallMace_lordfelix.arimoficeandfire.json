@@ -1,0 +1,15 @@
+{
+  "TextureModID": "lordfelix.arimoficeandfire",
+  "ItemDefName": "ARIOIAF_BallMace",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.2461,
+  "OffY": 0.0019,
+  "Rotation": 45.0,
+  "ScaleX": 1.05,
+  "ScaleY": 1.05,
+  "HandsMode": 1,
+  "BladeStart": 0.5062,
+  "BladeEnd": 0.6869,
+  "MeleeWeaponType": 8
+}

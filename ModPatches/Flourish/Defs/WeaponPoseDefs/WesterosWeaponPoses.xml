@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Optional Flourish 2.1.4 native profiles: weapon-center rendered-cell X/Z grips.
+       SMYH normalized positions are scaled ONCE; crossbow grips are un-straightened
+       into the actual artwork frame because Flourish includes equippedAngleOffset.
+       Trail endpoints are absolute center-origin diagonal distances, NOT MA's hilt-
+       relative distances. No native weapon stats, artwork or hand ownership changed. -->
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_SoldiersShortSword</defName>
+    <label>soldier's short sword pose</label>
+    <weaponClass>EdgedOneHand</weaponClass>
+    <gripMain>(-0.219420, -0.221540)</gripMain>
+    <bladeStart>-0.227900</bladeStart><bladeEnd>0.428982</bladeEnd>
+    <weapons><li>ARIOIAF_SoldiersShortSword</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_FootmansSword</defName>
+    <label>footman's sword pose</label>
+    <weaponClass>EdgedOneHand</weaponClass>
+    <gripMain>(-0.286650, -0.287700)</gripMain>
+    <bladeStart>-0.304500</bladeStart><bladeEnd>0.539490</bladeEnd>
+    <weapons><li>ARIOIAF_FootmansSword</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_BallMace</defName>
+    <label>ball mace pose</label>
+    <weaponClass>BluntOneHand</weaponClass>
+    <gripMain>(-0.254100, -0.252000)</gripMain>
+    <bladeStart>0.260085</bladeStart><bladeEnd>0.440790</bladeEnd>
+    <weapons><li>ARIOIAF_BallMace</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_KnightsShortSword</defName>
+    <label>knight's short sword pose</label>
+    <weaponClass>EdgedOneHand</weaponClass>
+    <gripMain>(-0.232140, -0.234260)</gripMain>
+    <bladeStart>-0.238500</bladeStart><bladeEnd>0.453786</bladeEnd>
+    <weapons><li>ARIOIAF_KnightsShortSword</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_NarrowThrustingSword</defName>
+    <label>narrow thrusting sword pose</label>
+    <weaponClass>EdgedOneHand</weaponClass>
+    <gripMain>(-0.310960, -0.308880)</gripMain>
+    <bladeStart>-0.329680</bladeStart><bladeEnd>0.568776</bladeEnd>
+    <weapons><li>ARIOIAF_NarrowThrustingSword</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_CavalrySword</defName>
+    <label>cavalry sword pose</label>
+    <weaponClass>EdgedOneHand</weaponClass>
+    <gripMain>(-0.318150, -0.319200)</gripMain>
+    <bladeStart>-0.352800</bladeStart><bladeEnd>0.606165</bladeEnd>
+    <weapons><li>ARIOIAF_CavalrySword</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_FlangedMace</defName>
+    <label>flanged mace pose</label>
+    <weaponClass>BluntOneHand</weaponClass>
+    <gripMain>(-0.265680, -0.265680)</gripMain>
+    <bladeStart>0.223344</bladeStart><bladeEnd>0.484704</bladeEnd>
+    <weapons><li>ARIOIAF_FlangedMace</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_SpikedMace</defName>
+    <label>spiked mace pose</label>
+    <weaponClass>BluntOneHand</weaponClass>
+    <gripMain>(-0.259600, -0.261800)</gripMain>
+    <bladeStart>0.203720</bladeStart><bladeEnd>0.477070</bladeEnd>
+    <weapons><li>ARIOIAF_SpikedMace</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_TwoHandedWarSword</defName>
+    <label>two-handed war sword pose</label>
+    <weaponClass>EdgedTwoHand</weaponClass>
+    <gripMain>(-0.356700, -0.359600)</gripMain>
+    <gripOff>(-0.475600, -0.478500)</gripOff>
+    <bladeStart>-0.343650</bladeStart><bladeEnd>0.865070</bladeEnd>
+    <weapons><li>ARIOIAF_TwoHandedWarSword</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_Blackfyre</defName>
+    <label>Blackfyre pose</label>
+    <weaponClass>EdgedOneHand</weaponClass>
+    <gripMain>(-0.335500, -0.336600)</gripMain>
+    <bladeStart>-0.361900</bladeStart><bladeEnd>0.616770</bladeEnd>
+    <weapons><li>ARIOIAF_Blackfyre</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_Brightroar</defName>
+    <label>Brightroar pose</label>
+    <weaponClass>EdgedOneHand</weaponClass>
+    <gripMain>(-0.276660, -0.278780)</gripMain>
+    <bladeStart>-0.257580</bladeStart><bladeEnd>0.610454</bladeEnd>
+    <weapons><li>ARIOIAF_Brightroar</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_DarkSister</defName>
+    <label>Dark Sister pose</label>
+    <weaponClass>EdgedOneHand</weaponClass>
+    <gripMain>(-0.284080, -0.286200)</gripMain>
+    <bladeStart>-0.305280</bladeStart><bladeEnd>0.569432</bladeEnd>
+    <weapons><li>ARIOIAF_DarkSister</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_Heartsbane</defName>
+    <label>Heartsbane pose</label>
+    <weaponClass>EdgedTwoHand</weaponClass>
+    <gripMain>(-0.378880, -0.381840)</gripMain>
+    <gripOff>(-0.523920, -0.523920)</gripOff>
+    <bladeStart>-0.341880</bladeStart><bladeEnd>0.868760</bladeEnd>
+    <weapons><li>ARIOIAF_Heartsbane</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_Ice</defName>
+    <label>Ice pose</label>
+    <weaponClass>EdgedTwoHand</weaponClass>
+    <gripMain>(-0.405000, -0.408000)</gripMain>
+    <gripOff>(-0.544500, -0.544500)</gripOff>
+    <bladeStart>-0.364500</bladeStart><bladeEnd>0.901200</bladeEnd>
+    <weapons><li>ARIOIAF_Ice</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_LadyForlorn</defName>
+    <label>Lady Forlorn pose</label>
+    <weaponClass>EdgedOneHand</weaponClass>
+    <gripMain>(-0.296370, -0.298590)</gripMain>
+    <bladeStart>-0.314130</bladeStart><bladeEnd>0.574869</bladeEnd>
+    <weapons><li>ARIOIAF_LadyForlorn</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_Lamentation</defName>
+    <label>Lamentation pose</label>
+    <weaponClass>EdgedOneHand</weaponClass>
+    <gripMain>(-0.265360, -0.267500)</gripMain>
+    <bladeStart>-0.239680</bladeStart><bladeEnd>0.585183</bladeEnd>
+    <weapons><li>ARIOIAF_Lamentation</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_Longclaw</defName>
+    <label>Longclaw pose</label>
+    <weaponClass>EdgedOneHand</weaponClass>
+    <gripMain>(-0.274170, -0.277500)</gripMain>
+    <bladeStart>-0.231990</bladeStart><bladeEnd>0.628482</bladeEnd>
+    <weapons><li>ARIOIAF_Longclaw</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_Nightfall</defName>
+    <label>Nightfall pose</label>
+    <weaponClass>EdgedOneHand</weaponClass>
+    <gripMain>(-0.275400, -0.276480)</gripMain>
+    <bladeStart>-0.268920</bladeStart><bladeEnd>0.584712</bladeEnd>
+    <weapons><li>ARIOIAF_Nightfall</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_Oathkeeper</defName>
+    <label>Oathkeeper pose</label>
+    <weaponClass>EdgedOneHand</weaponClass>
+    <gripMain>(-0.280340, -0.283550)</gripMain>
+    <bladeStart>-0.270710</bladeStart><bladeEnd>0.601447</bladeEnd>
+    <weapons><li>ARIOIAF_Oathkeeper</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_OrphanMaker</defName>
+    <label>Orphan-Maker pose</label>
+    <weaponClass>EdgedOneHand</weaponClass>
+    <gripMain>(-0.281880, -0.285120)</gripMain>
+    <bladeStart>-0.272160</bladeStart><bladeEnd>0.584712</bladeEnd>
+    <weapons><li>ARIOIAF_OrphanMaker</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_RedRain</defName>
+    <label>Red Rain pose</label>
+    <weaponClass>EdgedOneHand</weaponClass>
+    <gripMain>(-0.255730, -0.258940)</gripMain>
+    <bladeStart>-0.226840</bladeStart><bladeEnd>0.585183</bladeEnd>
+    <weapons><li>ARIOIAF_RedRain</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_Truth</defName>
+    <label>Truth pose</label>
+    <weaponClass>EdgedOneHand</weaponClass>
+    <gripMain>(-0.276480, -0.278640)</gripMain>
+    <bladeStart>-0.271080</bladeStart><bladeEnd>0.569808</bladeEnd>
+    <weapons><li>ARIOIAF_Truth</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_ValyrianVigilance</defName>
+    <label>Vigilance pose</label>
+    <weaponClass>EdgedOneHand</weaponClass>
+    <gripMain>(-0.265360, -0.267500)</gripMain>
+    <bladeStart>-0.245030</bladeStart><bladeEnd>0.585183</bladeEnd>
+    <weapons><li>ARIOIAF_Vigilance</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_WidowsWail</defName>
+    <label>Widow's Wail pose</label>
+    <weaponClass>EdgedOneHand</weaponClass>
+    <gripMain>(-0.215600, -0.217360)</gripMain>
+    <bladeStart>-0.213840</bladeStart><bladeEnd>0.442376</bladeEnd>
+    <weapons><li>ARIOIAF_WidowsWail</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_WesterosBannerSpear</defName>
+    <label>Westerosi banner spear pose</label>
+    <weaponClass>Spear</weaponClass>
+    <gripMain>(-0.427500, -0.412500)</gripMain>
+    <gripOff>(-0.540000, -0.525000)</gripOff>
+    <bladeStart>0.585000</bladeStart><bladeEnd>0.865950</bladeEnd>
+    <weapons><li>ARIOIAF_WesterosBannerSpear</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_LightWoodenCrossbow</defName>
+    <label>light wooden crossbow pose</label>
+    <weaponClass>RangedOther</weaponClass>
+    <gripMain>(-0.108152, -0.080504)</gripMain>
+    <gripOff>(0.097581, 0.131734)</gripOff>
+    <weapons><li>ARIOIAF_LightWoodenCrossbow</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_SoldiersCrossbow</defName>
+    <label>soldier's crossbow pose</label>
+    <weaponClass>RangedOther</weaponClass>
+    <gripMain>(-0.112253, -0.082201)</gripMain>
+    <gripOff>(0.112253, 0.149376)</gripOff>
+    <weapons><li>ARIOIAF_SoldiersCrossbow</li></weapons>
+  </Flourish.WeaponPoseDef>
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_HeavyArbalest</defName>
+    <label>heavy arbalest pose</label>
+    <weaponClass>RangedOther</weaponClass>
+    <gripMain>(-0.131734, -0.089732)</gripMain>
+    <gripOff>(0.134598, 0.168963)</gripOff>
+    <weapons><li>ARIOIAF_HeavyArbalest</li></weapons>
+  </Flourish.WeaponPoseDef>
+</Defs>

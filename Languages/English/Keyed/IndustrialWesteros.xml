@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_IndustrialSettingsCategory>A Rim of Ice and Fire</ARIO_IndustrialSettingsCategory>
+  <ARIO_IndustrialWesteros>Industrialised Westeros</ARIO_IndustrialWesteros>
+  <ARIO_IndustrialWesterosDesc>Bring three firearms to the armies of Westeros: the northern hunting rifle, musket and revolver. These are the only firearms offered for new House weapon generation and new levy-kit choices. Civilians, existing soldiers and player equipment are unchanged. Existing saved weapon choices are retained for compatibility. House culture, clothing, faith and diplomacy remain.\n\nWith Combat Extended, these soldiers carry matching ammunition and 3–5 spare magazines when they have room. Enabling this turns off Medieval only. If World Tech Level is active, its ceiling is raised to at least Industrial.</ARIO_IndustrialWesterosDesc>
+  <ARIO_IndustrialSettingsScope>In a game, this changes the current realm and its future soldiers—not existing equipment or completed research. From the main menu, it sets the default for new realms. Each save keeps its own choice, and older realms stay medieval until you enable it.</ARIO_IndustrialSettingsScope>
+  <ARIO_IndustrialWorldTech>World tech level: {0}</ARIO_IndustrialWorldTech>
+  <ARIO_IndustrialWorldTechDesc>Choose the world's technology ceiling through the optional World Tech Level mod. Industrialised Westeros requires at least Industrial; higher or unrestricted choices remain available.</ARIO_IndustrialWorldTechDesc>
+  <ARIO_IndustrialUnrestricted>Unrestricted</ARIO_IndustrialUnrestricted>
+  <ARIO_IndustrialNeedsIndustrial>requires Industrialised Westeros off</ARIO_IndustrialNeedsIndustrial>
+  <ARIO_IndustrialInstallFailed>[A Rim of Ice and Fire] Industrialised Westeros integration could not be installed: {0}</ARIO_IndustrialInstallFailed>
+  <ARIO_IndustrialNoShieldGun>[A Rim of Ice and Fire] No CE-compatible one-handed industrial gun is available for a shielded Westerosi NPC. Their original generation loadout is retained.</ARIO_IndustrialNoShieldGun>
+  <ARIO_IndustrialWorldTechMissing>[A Rim of Ice and Fire] World Tech Level integration unavailable because its API changed. Its native settings remain available.</ARIO_IndustrialWorldTechMissing>
+</LanguageData>

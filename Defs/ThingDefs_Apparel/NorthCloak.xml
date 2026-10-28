@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>ARIOIAF_NorthCloak</defName>
+    <label>North cloak</label>
+    <description>Heavy Northern cloak, worn over armor. Textile sets warmth, protection and colour.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/NorthCloak/NorthCloak_Male_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>80</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToMake>4500</WorkToMake>
+      <Mass>1.5</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <!-- Same cold value as the Westeros cloak; either one plus the face wrap reaches -40C. -->
+      <StuffEffectMultiplierInsulation_Cold>1.4</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/NorthCloak/NorthCloak</wornGraphicPath>
+      <layers>
+        <li>ARIOIAF_OuterCloak</li>
+      </layers>
+      <drawData>
+        <dataNorth>
+          <layer>90</layer>
+        </dataNorth>
+      </drawData>
+      <tags>
+        <li>ARIOIAF_NorthApparel</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+      <displayPriority>225</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

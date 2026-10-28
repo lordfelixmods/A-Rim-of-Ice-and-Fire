@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Native FA color binding preserves NL/UNAGI shapes, masks, highlights,
+       animation and per-eye blindness/prosthetic overrides. No FA DLL reference. -->
+  <FacialAnimation.EyeballColorDef MayRequire="Nals.FacialAnimation">
+    <defName>ARIOIAF_FA_ValyrianPurple</defName>
+    <geneDef>ARIOIAF_ValyrianPurpleEyes</geneDef>
+    <eyeballColor>(0.58,0.26,0.82,1)</eyeballColor>
+  </FacialAnimation.EyeballColorDef>
+</Defs>

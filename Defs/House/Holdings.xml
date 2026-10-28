@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef ParentName="FactionBase">
+    <defName>ARIOIAF_WesterosSmallfolk</defName>
+    <label>Westeros</label>
+    <description>The farmers, smiths and smallfolk of Westeros. Their independent holdings surround the great settlements.</description>
+    <hidden>true</hidden>
+    <humanlikeFaction>true</humanlikeFaction>
+    <basicMemberKind>ARIOIAF_SmallfolkFarmer</basicMemberKind>
+    <techLevel>Medieval</techLevel>
+    <settlementGenerationWeight>0</settlementGenerationWeight>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <startingCountAtWorldCreation>0</startingCountAtWorldCreation>
+    <displayInFactionSelection>false</displayInFactionSelection>
+    <fixedName>Westeros</fixedName>
+    <raidsForbidden>true</raidsForbidden>
+    <canRequestTraders>false</canRequestTraders><canRequestMilitaryAid>false</canRequestMilitaryAid>
+    <canGenerateQuestSites>false</canGenerateQuestSites>
+    <classicIdeo>true</classicIdeo><hiddenIdeo>true</hiddenIdeo><allowedCultures><li>Rustican</li></allowedCultures>
+    <canStageAttacks>false</canStageAttacks>
+    <canSiege>false</canSiege>
+    <autoFlee>true</autoFlee>
+    <allowedArrivalTemperatureRange>-100~100</allowedArrivalTemperatureRange>
+    <backstoryFilters><li><categories><li>Outlander</li></categories></li></backstoryFilters>
+    <factionIconPath>UI/House/House</factionIconPath>
+    <settlementTexturePath>World/House/Village</settlementTexturePath>
+    <colorSpectrum><li>(0.64,0.51,0.32)</li></colorSpectrum>
+    <fixedLeaderKinds><li>ARIOIAF_SmallfolkElder</li></fixedLeaderKinds>
+    <maxPawnCostPerTotalPointsCurve><points><li>(0,40)</li><li>(500,10000)</li></points></maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li><kindDef>Combat</kindDef><options><ARIOIAF_SmallfolkFarmer>6</ARIOIAF_SmallfolkFarmer><ARIOIAF_SmallfolkSmith>2</ARIOIAF_SmallfolkSmith><ARIOIAF_SmallfolkWoodcutter>3</ARIOIAF_SmallfolkWoodcutter></options></li>
+      <li><kindDef>Settlement</kindDef><options><ARIOIAF_SmallfolkFarmer>6</ARIOIAF_SmallfolkFarmer><ARIOIAF_SmallfolkSmith>2</ARIOIAF_SmallfolkSmith><ARIOIAF_SmallfolkWoodcutter>3</ARIOIAF_SmallfolkWoodcutter></options></li>
+    </pawnGroupMakers>
+    <apparelStuffFilter><thingDefs><li>Cloth</li><li>Leather_Plain</li><li>Steel</li></thingDefs></apparelStuffFilter>
+  </FactionDef>
+
+  <PawnKindDef Name="ARIOIAF_SmallfolkBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionDef>ARIOIAF_WesterosSmallfolk</defaultFactionDef>
+    <minGenerationAge>18</minGenerationAge><maxGenerationAge>60</maxGenerationAge>
+    <initialResistanceRange>12~25</initialResistanceRange>
+    <initialWillRange>1~3</initialWillRange>
+    <combatPower>40</combatPower>
+    <apparelMoney>0</apparelMoney><weaponMoney>0</weaponMoney>
+    <apparelTags Inherit="False"/><weaponTags Inherit="False"/>
+    <apparelRequired><li>ARIOIAF_WesterosTunic</li><li>ARIOIAF_WesterosBelt</li></apparelRequired>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons><ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+    <allowRoyalApparelRequirements>false</allowRoyalApparelRequirements><allowRoyalRoomRequirements>false</allowRoyalRoomRequirements>
+    <itemQuality>Poor</itemQuality><gearHealthRange>0.7~1</gearHealthRange>
+  </PawnKindDef>
+  <PawnKindDef ParentName="ARIOIAF_SmallfolkBase"><defName>ARIOIAF_SmallfolkFarmer</defName><label>farmer</label><skills><li><skill>Plants</skill><range>6~12</range></li></skills></PawnKindDef>
+  <PawnKindDef ParentName="ARIOIAF_SmallfolkBase"><defName>ARIOIAF_SmallfolkSmith</defName><label>smith</label><skills><li><skill>Crafting</skill><range>6~12</range></li></skills></PawnKindDef>
+  <PawnKindDef ParentName="ARIOIAF_SmallfolkBase"><defName>ARIOIAF_SmallfolkWoodcutter</defName><label>woodcutter</label><skills><li><skill>Construction</skill><range>5~10</range></li><li><skill>Plants</skill><range>4~8</range></li></skills></PawnKindDef>
+  <PawnKindDef ParentName="ARIOIAF_SmallfolkBase"><defName>ARIOIAF_CastleCook</defName><label>castle cook</label><skills><li><skill>Cooking</skill><range>6~12</range></li></skills></PawnKindDef>
+  <PawnKindDef ParentName="ARIOIAF_SmallfolkBase"><defName>ARIOIAF_CastleStablehand</defName><label>castle stablehand</label><skills><li><skill>Animals</skill><range>5~11</range></li></skills></PawnKindDef>
+  <PawnKindDef ParentName="ARIOIAF_SmallfolkBase"><defName>ARIOIAF_CastleServant</defName><label>castle servant</label><skills><li><skill>Social</skill><range>3~8</range></li><li><skill>Cooking</skill><range>3~8</range></li></skills></PawnKindDef>
+  <PawnKindDef ParentName="ARIOIAF_SmallfolkBase"><defName>ARIOIAF_SmallfolkElder</defName><label>village elder</label><factionLeader>true</factionLeader></PawnKindDef>
+
+  <WorldObjectDef Name="ARIOIAF_HoldingBase" Abstract="True">
+    <worldObjectClass>ARimOfIceAndFireCore.HouseHolding</worldObjectClass>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconColor>(1,1,1,1)</expandingIconColor><expandingIconDrawSize>0.8</expandingIconDrawSize>
+    <overrideMapSize>(150,1,150)</overrideMapSize>
+    <selectable>true</selectable>
+    <canHaveFaction>true</canHaveFaction>
+    <texture>World/House/Village</texture>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <mapGenerator>ARIOIAF_HoldingMap</mapGenerator>
+  </WorldObjectDef>
+  <WorldObjectDef ParentName="ARIOIAF_HoldingBase"><defName>ARIOIAF_Village</defName><label>village</label><description>A small village whose fields and workshops sustain a nearby settlement. Its smallfolk live outside the colony and do not offer ordinary caravan trade.</description><expandingIconTexture>World/House/Village</expandingIconTexture></WorldObjectDef>
+  <WorldObjectDef ParentName="ARIOIAF_HoldingBase"><defName>ARIOIAF_Town</defName><label>town</label><description>A growing town that supports a nearby settlement with the work of its smallfolk. It remains separate from the colony and does not offer ordinary caravan trade.</description><texture>World/House/Town</texture><expandingIconTexture>World/House/Town</expandingIconTexture></WorldObjectDef>
+  <WorldObjectDef ParentName="ARIOIAF_HoldingBase"><defName>ARIOIAF_Garrison</defName><label>garrison</label><description>A fortified smallfolk town with walls and expanded barracks to support a larger House levy. Its defenses strengthen the lands around a nearby settlement, though it does not offer ordinary caravan trade.</description><texture>World/House/Garrison</texture><expandingIconTexture>World/House/Garrison</expandingIconTexture></WorldObjectDef>
+  <MapGeneratorDef>
+    <defName>ARIOIAF_HoldingMap</defName>
+    <genSteps><li>ElevationFertility</li><li>Terrain</li><li>RockChunks</li><li>Plants</li><li>Snow</li><li>FindPlayerStartSpot</li><li>ARIOIAF_HoldingBuildings</li><li>Fog</li></genSteps>
+  </MapGeneratorDef>
+  <GenStepDef><defName>ARIOIAF_HoldingBuildings</defName><order>450</order><genStep Class="ARimOfIceAndFireCore.GenStep_Holding"/></GenStepDef>
+  <WorldObjectDef><defName>ARIOIAF_HoldingRuins</defName><label>razed holding</label><description>The broken remains of a smallfolk holding, emptied by war. The ruins remain marked while your expedition is still there.</description><worldObjectClass>ARimOfIceAndFireCore.HouseRuins</worldObjectClass><texture>World/House/Village</texture><expandingIcon>true</expandingIcon><expandingIconTexture>World/House/Village</expandingIconTexture><useDynamicDrawer>true</useDynamicDrawer></WorldObjectDef>
+  <JobDef><defName>ARIOIAF_LevyReturn</defName><driverClass>ARimOfIceAndFireCore.JobDriver_LevyReturn</driverClass><reportString>returning to the holding.</reportString><casualInterruptible>false</casualInterruptible></JobDef>
+  <MainButtonDef>
+    <defName>ARIOIAF_House</defName><label>House</label><description>Manage your dynasty, holdings, taxes and levies.</description>
+    <workerClass>ARimOfIceAndFireCore.MainButtonWorker_House</workerClass><minimized>true</minimized><order>95</order><validWithoutMap>true</validWithoutMap><iconPath>UI/House/House</iconPath>
+  </MainButtonDef>
+  <HistoryEventDef><defName>ARIOIAF_HoldingTaken</defName><label>seized a holding</label></HistoryEventDef>
+  <HistoryEventDef><defName>ARIOIAF_HoldingRazed</defName><label>razed a holding</label></HistoryEventDef>
+</Defs>

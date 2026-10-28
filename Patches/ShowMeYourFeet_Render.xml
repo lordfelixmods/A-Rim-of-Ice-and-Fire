@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!--
+    Show Me Your Feet compatibility: feet are 20% smaller (0.22 -> 0.176) and sit a little
+    lower on the body (verticalOffset -0.1 -> -0.14).
+
+    verticalOffset is SMYF's own knob for this and stacks on top of drawData's z offset, so it
+    is the right place to nudge height without disturbing the base placement the mod tuned.
+
+    Applied only when that mod is loaded. SMYF injects its two foot nodes into the vanilla
+    Humanlike render tree by XML patch, so the size is data and needs no code. Each operation
+    is Conditional rather than a bare Add: if our patch were ever to run BEFORE SMYF's (load
+    order is not guaranteed), the nodes would not exist yet and a plain xpath edit would error.
+    This way it silently no-ops instead.
+  -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Show me your feet</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[debugLabel="Body"]/children/li[debugLabel="Foot left"]/drawSize</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[debugLabel="Body"]/children/li[debugLabel="Foot left"]/drawSize</xpath>
+            <value><drawSize>(0.176, 0.176)</drawSize></value>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[debugLabel="Body"]/children/li[debugLabel="Foot right"]/drawSize</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[debugLabel="Body"]/children/li[debugLabel="Foot right"]/drawSize</xpath>
+            <value><drawSize>(0.176, 0.176)</drawSize></value>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[debugLabel="Body"]/children/li[debugLabel="Foot left"]/verticalOffset</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[debugLabel="Body"]/children/li[debugLabel="Foot left"]/verticalOffset</xpath>
+            <value><verticalOffset>-0.14</verticalOffset></value>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[debugLabel="Body"]/children/li[debugLabel="Foot right"]/verticalOffset</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[debugLabel="Body"]/children/li[debugLabel="Foot right"]/verticalOffset</xpath>
+            <value><verticalOffset>-0.14</verticalOffset></value>
+          </match>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+</Patch>

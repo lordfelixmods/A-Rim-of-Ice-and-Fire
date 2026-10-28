@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase" Name="ARIO_LandmarkFacilityBase" Abstract="True">
+    <thingClass>Building</thingClass><category>Building</category><selectable>true</selectable><size>(3,3)</size><passability>PassThroughOnly</passability><pathCost>30</pathCost><rotatable>false</rotatable><terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <statBases><MaxHitPoints>800</MaxHitPoints><Mass>90</Mass><Flammability>0.3</Flammability><Beauty>2</Beauty><WorkToBuild>2000</WorkToBuild></statBases>
+    <graphicData><graphicClass>Graphic_Single</graphicClass><shaderType>Cutout</shaderType><drawSize>(3,3)</drawSize></graphicData>
+    <building><isInert>true</isInert></building>
+  </ThingDef>
+  <ThingDef ParentName="ARIO_LandmarkFacilityBase">
+    <defName>ARIO_LandmarkBarracks</defName><label>landmark barracks</label><description>The military quarters of a historical estate. Its paid upgrade level increases available levy capacity and defensive readiness. Destroying the facility removes its benefits.</description>
+    <graphicData><texPath>Things/Building/Landmarks/Barracks</texPath></graphicData><comps><li Class="ARimOfIceAndFire.Landmarks.CompProperties_LandmarkFacility"><kind>0</kind></li></comps>
+  </ThingDef>
+  <ThingDef ParentName="ARIO_LandmarkFacilityBase">
+    <defName>ARIO_LandmarkFarm</defName><label>landmark farm</label><description>The farms and provisioning administration of a historical estate. Its paid upgrade level increases food tax and garrison provisions. Destroying the facility removes its benefits.</description>
+    <graphicData><texPath>Things/Building/Landmarks/Farm</texPath></graphicData><comps><li Class="ARimOfIceAndFire.Landmarks.CompProperties_LandmarkFacility"><kind>1</kind></li></comps>
+  </ThingDef>
+  <ThingDef ParentName="ARIO_LandmarkFacilityBase">
+    <defName>ARIO_LandmarkMint</defName><label>landmark coin mint</label><description>The mint of a historical estate. Its paid upgrade level increases silver tax. Destroying the facility removes its benefits.</description>
+    <graphicData><texPath>Things/Building/Landmarks/Mint</texPath></graphicData><comps><li Class="ARimOfIceAndFire.Landmarks.CompProperties_LandmarkFacility"><kind>2</kind></li></comps>
+  </ThingDef>
+</Defs>

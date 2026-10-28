@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <WorldObjectDef>
+    <defName>ARIOIAF_BannerCallSite</defName>
+    <label>liege's battle camp</label>
+    <description>A rally point where your levies answer their liege's call to arms.</description>
+    <worldObjectClass>ARimOfIceAndFireCore.HouseBannerCallSite</worldObjectClass>
+    <!-- Bespoke untinted war-camp icon, enlarged at far zoom and drawn above settlements (100),
+         landmarks and World Domination objects, but below caravans (1000). The pulsing beacon and
+         off-screen pointer are drawn by ARimOfIceAndFire.BannerCampBeacon. -->
+    <texture>World/House/BattleCamp</texture>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>World/House/BattleCamp</expandingIconTexture>
+    <expandingIconColor>(1,1,1,1)</expandingIconColor>
+    <expandingIconDrawSize>1.35</expandingIconDrawSize>
+    <expandMore>true</expandMore>
+    <expandingIconPriority>900</expandingIconPriority>
+    <mapGenerator>ARIOIAF_BannerCallMap</mapGenerator>
+    <comps>
+      <li Class="WorldObjectCompProperties_FormCaravan" />
+    </comps>
+    <IncidentTargetTags>
+      <li>Map_Misc</li>
+    </IncidentTargetTags>
+  </WorldObjectDef>
+
+  <MapGeneratorDef ParentName="MapCommonBase">
+    <defName>ARIOIAF_BannerCallMap</defName>
+    <genSteps>
+      <li>ARIOIAF_BannerCallBattle</li>
+    </genSteps>
+  </MapGeneratorDef>
+
+  <GenStepDef>
+    <defName>ARIOIAF_BannerCallBattle</defName>
+    <order>450</order>
+    <genStep Class="ARimOfIceAndFireCore.GenStep_HouseBannerBattle" />
+  </GenStepDef>
+</Defs>

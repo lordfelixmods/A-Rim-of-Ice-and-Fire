@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- A landmark, not a build option: one is raised on every colony map by its own map-generation
+       step. It can be claimed, uninstalled and carried elsewhere, but never deconstructed for
+       materials, and it is far too solid to be worth attacking. -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>ARIOIAF_SupportersMonument</defName>
+    <label>monument of the realm</label>
+    <description>A weathered plinth of pale stone, crowned with the broken swords of beaten kings and a single gilded crown. The sigils of the great Houses are carved around its base, worn smooth by centuries of wind and rain.\n\nNo one in the Seven Kingdoms agrees on who raised it, only that it commemorates those whose patronage sustains the realm. Its face bears their names, and those who sit before it in silence often find their thoughts unusually clear.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Monument/WesterosMonument</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3.9,3.9)</drawSize>
+      <!-- Keep the existing visual scale and lift; the footprint shrinks without replacing the
+           saved building, so older monuments retain their artwork, identity and state. -->
+      <drawOffset>(0,0,0.45)</drawOffset>
+      <shadowData>
+        <volume>(2.5,1.1,1.9)</volume>
+        <offset>(0,0,-0.25)</offset>
+      </shadowData>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <size>(3,2)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <fillPercent>1.0</fillPercent>
+    <blockWind>true</blockWind>
+    <blockLight>true</blockLight>
+    <castEdgeShadows>false</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <useHitPoints>true</useHitPoints>
+    <isAutoAttackableMapObject>false</isAutoAttackableMapObject>
+    <tradeability>None</tradeability>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <!-- Minifiable, so a colony can claim it, uninstall it and rebuild it where it belongs. -->
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsArt</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>4000</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>60</Beauty>
+      <Mass>65</Mass>
+      <WorkToBuild>2000</WorkToBuild>
+      <MeditationFocusStrength>0.26</MeditationFocusStrength>
+    </statBases>
+    <building>
+      <deconstructible>false</deconstructible>
+      <claimable>true</claimable>
+      <ai_neverTrashThis>true</ai_neverTrashThis>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <destroySound>BuildingDestroyed_Stone_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="ARimOfIceAndFire.CompProperties_SupportersMonument" />
+      <li Class="CompProperties_MeditationFocus" MayRequire="Ludeon.RimWorld.Royalty">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Artistic</li>
+        </focusTypes>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li MayRequire="Ludeon.RimWorld.Royalty">PlaceWorker_MeditationOffsetBuildingsNear</li>
+    </placeWorkers>
+  </ThingDef>
+</Defs>

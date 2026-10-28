@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_StallShowDetails>Item details</ARIO_StallShowDetails>
+  <ARIO_StallHideDetails>Hide item details</ARIO_StallHideDetails>
+  <ARIO_StallPerishable>Perishable</ARIO_StallPerishable>
+  <ARIO_StallKeeps>Keeps</ARIO_StallKeeps>
+  <ARIO_StallKeepsDesc>This food does not rot.</ARIO_StallKeepsDesc>
+  <ARIO_StallPerishableDesc>This food can spoil. Refrigeration slows spoilage, while freezing can stop it.</ARIO_StallPerishableDesc>
+  <ARIO_StallFoodCount>{0} | {1}</ARIO_StallFoodCount>
+  <ARIO_StallSoonestFood>Soonest-spoiling stack: {0}</ARIO_StallSoonestFood>
+  <ARIO_StallTakeOut>Take out</ARIO_StallTakeOut>
+  <ARIO_StallTakeOutTitle>Return goods to storage</ARIO_StallTakeOutTitle>
+  <ARIO_StallTakeOutDesc>Choose how many goods to return to ordinary storage. Colonists must haul them from the stall; they stay here until a hauler has a clear route and somewhere suitable to put them.</ARIO_StallTakeOutDesc>
+  <ARIO_StallTakeOutAmount>Quantity: {0} / {1} available</ARIO_StallTakeOutAmount>
+  <ARIO_StallTakeOutCancel>Cancel</ARIO_StallTakeOutCancel>
+  <ARIO_StallTakeOutQueue>Queue return haul</ARIO_StallTakeOutQueue>
+  <ARIO_StallTakeOutQueued>{0} items queued for colonist hauling back to storage. They will wait for suitable storage and an available hauler.</ARIO_StallTakeOutQueued>
+  <ARIO_StallTakeOutUnavailable>These goods are no longer available to take out.</ARIO_StallTakeOutUnavailable>
+  <ARIO_StallOutgoing>Return to storage: {0} x{1}</ARIO_StallOutgoing>
+  <ARIO_StallOutgoingTip>Colonists will return these goods to suitable storage when space, a route and a hauler are available. Cancelling stops goods that have not been picked up; a hauler already carrying something can finish the trip.</ARIO_StallOutgoingTip>
+</LanguageData>

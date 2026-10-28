@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ApparelLayerDef>
+    <defName>ARIOIAF_ScaleArmor</defName>
+    <label>under armor</label>
+    <drawOrder>175</drawOrder>
+  </ApparelLayerDef>
+</Defs>

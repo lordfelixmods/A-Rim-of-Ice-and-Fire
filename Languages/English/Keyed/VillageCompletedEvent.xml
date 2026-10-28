@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_VillageEventStory>The last roofs are thatched and the hearths are lit. {0} is complete.</ARIO_VillageEventStory>
+  <ARIO_VillageEventContinue>Continue</ARIO_VillageEventContinue>
+  <ARIO_VillageEventView>View village</ARIO_VillageEventView>
+  <ARIO_VillageEventUnavailable>[A Rim of Ice and Fire] The illustrated village completion event is unavailable; standard notices remain available: {0}</ARIO_VillageEventUnavailable>
+  <ARIO_VillageEventFailed>[A Rim of Ice and Fire] The village was completed, but its illustrated notice could not open: {0}</ARIO_VillageEventFailed>
+</LanguageData>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_RealmLandmarks>Historical landmarks</ARIO_RealmLandmarks>
+  <ARIO_LM_DefenseConnected>{0}: original castle-defense rules connected to the existing layout ({1} interior cells, {2} keep cells, {3} boundary checks).</ARIO_LM_DefenseConnected>
+  <ARIO_LM_DefenseConnectionFailed>{0}: the existing defensive footprint could not be validated. The defenders have not been assigned assault behavior.</ARIO_LM_DefenseConnectionFailed>
+  <ARIO_LM_DefenseHoldFallback>{0}: its existing map could not prove a complete gate-and-keep footprint. Current guards will hold locally rather than sally out.</ARIO_LM_DefenseHoldFallback>
+  <ARIO_LM_LayoutSelected>{0}: generating the CBF layout "{1}". Landmark troops and ownership remain managed by A Rim of Ice and Fire.</ARIO_LM_LayoutSelected>
+  <ARIO_LM_LayoutStatus>Layout: {0}</ARIO_LM_LayoutStatus>
+  <ARIO_LM_LayoutNotGenerated>chosen on first visit</ARIO_LM_LayoutNotGenerated>
+  <ARIO_LM_LayoutExisting>existing saved or native layout</ARIO_LM_LayoutExisting>
+  <ARIO_LM_BootstrapInstalled>Independent landmark world-generation hooks installed (site registration v1).</ARIO_LM_BootstrapInstalled>
+  <ARIO_LM_GenerationArmed>Historical landmark world-generation result armed: {0} planned anchors; seeded={1}; Sandbox={2}.</ARIO_LM_GenerationArmed>
+  <ARIO_LM_SiteRegistered>Historical landmark {0} registered as object {1} at tile {2}; owner: {3}.</ARIO_LM_SiteRegistered>
+  <ARIO_LM_DefendersFailed>Historical landmark {0} could not ready its garrison ({1} defenders planned). Capture is blocked; inspect the map and report the log. No troops were treated as defeated.</ARIO_LM_DefendersFailed>
+  <ARIO_LM_DefendersUnavailable>{0} has no verified armed garrison. Your caravan has not claimed it; check the log before trying again.</ARIO_LM_DefendersUnavailable>
+  <ARIO_LM_DebugNoWorld>No active Westeros landmark world or player faction is available.</ARIO_LM_DebugNoWorld>
+  <ARIO_LM_DebugAlreadyOwned>Already controlled by your House</ARIO_LM_DebugAlreadyOwned>
+  <ARIO_LM_DebugBusy>Active map, battle or approaching army: use normal combat instead</ARIO_LM_DebugBusy>
+  <ARIO_LM_DebugRoster>Saved living defenders: use normal combat instead</ARIO_LM_DebugRoster>
+  <ARIO_LM_DebugCaptured>Developer capture: {0} now belongs to your House. No troops, silver or upgrades were granted.</ARIO_LM_DebugCaptured>
+  <ARIO_LM_DebugCaptureHistory>{0} took control from {1} using the developer capture action (not a battle).</ARIO_LM_DebugCaptureHistory>
+  <ARIO_LM_DebugReportTitle>Landmark world-map status</ARIO_LM_DebugReportTitle>
+  <ARIO_LM_DebugReportState>Sites seeded: {0}; selection finalized: {1}; Sandbox: {2}; initialization faulted: {3}</ARIO_LM_DebugReportState>
+  <ARIO_LM_DebugReportRow>{0}: saved tile {1}; object ID {2}; registered {3}; spawned {4}; owner {5}</ARIO_LM_DebugReportRow>
+  <ARIO_LM_DebugRepairTitle>Spawn missing unclaimed landmarks</ARIO_LM_DebugRepairTitle>
+  <ARIO_LM_DebugRepairConfirm>Developer repair: create only missing landmark sites at their already-saved canonical tiles. They start unclaimed. Existing owners, maps, buildings and troops will not change; occupied tiles and records with an existing site reference are skipped.</ARIO_LM_DebugRepairConfirm>
+  <ARIO_LM_DebugRepaired>Created {0} missing unclaimed landmark site(s). The detailed status report was written to the log.</ARIO_LM_DebugRepaired>
+  <ARIO_LM_Unclaimed>Unclaimed</ARIO_LM_Unclaimed><ARIO_LM_Unknown>Unknown House</ARIO_LM_Unknown><ARIO_LM_None>None</ARIO_LM_None>
+  <ARIO_LM_FieldSeat>{0} field seat</ARIO_LM_FieldSeat>
+  <ARIO_LM_WorldgenReady>Historical landmarks: {0} live world-map sites validated for {1} before starting-tile selection.</ARIO_LM_WorldgenReady>
+  <ARIO_LM_HistoricalOwnership>historical ownership</ARIO_LM_HistoricalOwnership>
+  <ARIO_LM_UnplacedMarker>Not present on this world map</ARIO_LM_UnplacedMarker>
+  <ARIO_LM_Failed>Historical landmarks: {0}</ARIO_LM_Failed>
+  <ARIO_LM_WdConquestProtected>Historical landmarks are protected from World Domination 2.0 conquest conversion. Landmark battles retain the same castle, map and ownership records.</ARIO_LM_WdConquestProtected>
+  <ARIO_LM_ProviderUnavailable>Historical landmark integration with {0} is unavailable; the independent system remains active. Details: {1}</ARIO_LM_ProviderUnavailable>
+  <ARIO_LM_Unavailable>This landmark is not yet registered.</ARIO_LM_Unavailable>
+  <ARIO_LM_SetupFirst>Complete Realm Setup to manage historical landmarks.</ARIO_LM_SetupFirst>
+  <ARIO_LM_AtlasRequired>Historical landmarks require the Westeros world map. Existing unrelated worlds are not rewritten.</ARIO_LM_AtlasRequired>
+  <ARIO_LM_MissingLegacy>This landmark was not placed in the saved world's canonical seat plan. Existing settlements and visited maps have been preserved.</ARIO_LM_MissingLegacy>
+  <ARIO_LM_Inspect>Owner: {0}\nGarrison: {1}\nEffective strength: {2}\nAvailable landmark levies: {3}</ARIO_LM_Inspect>
+  <ARIO_LM_OwnerClaim>Owner: {0}\nHistorical claimant: {1}</ARIO_LM_OwnerClaim>
+  <ARIO_LM_Stats>Garrison: {0} / {1}\nEffective strength: {2}\nFortification condition: {3}\nAvailable landmark levies: {4}</ARIO_LM_Stats>
+  <ARIO_LM_Economy>Base tax per 15 days: {0} silver and {1} food\nUncollected tax: {2} silver, {3} corn\nPolitical influence: {4}\nActual income is reduced by occupation, damage, upkeep and siege.</ARIO_LM_Economy>
+  <ARIO_LM_Stock>Supply reserve: {0}\nNext tax cycle: {1}</ARIO_LM_Stock>
+  <ARIO_LM_View>View location</ARIO_LM_View>
+  <ARIO_LM_Conflict>{0} is approaching or contesting this landmark.\nStage: {1}\nArmy: {2} troops</ARIO_LM_Conflict>
+  <ARIO_LM_AnswerAid>Answer aid request</ARIO_LM_AnswerAid>
+  <ARIO_LM_AutoDefense>Let the garrison defend</ARIO_LM_AutoDefense>
+  <ARIO_LM_RemoteEstate>This is a remote managed estate, not an additional colony. Its available levies can be committed to landmark expeditions; ordinary holding muster and issued equipment remain separate.</ARIO_LM_RemoteEstate>
+  <ARIO_LM_Delivery>Payment and delivery base: {0}</ARIO_LM_Delivery>
+  <ARIO_LM_SelectDelivery>Choose base</ARIO_LM_SelectDelivery>
+  <ARIO_LM_Upgrading>Constructing {0}. Time remaining: {1}</ARIO_LM_Upgrading>
+  <ARIO_LM_Upgrade_0>barracks</ARIO_LM_Upgrade_0><ARIO_LM_Upgrade_1>farm</ARIO_LM_Upgrade_1><ARIO_LM_Upgrade_2>coin mint</ARIO_LM_Upgrade_2>
+  <ARIO_LM_UpgradeDetails_0>Barracks increase garrison capacity by 8 and improve defensive readiness at each level.</ARIO_LM_UpgradeDetails_0>
+  <ARIO_LM_UpgradeDetails_1>Farms increase food tax and local off-map garrison provisions.</ARIO_LM_UpgradeDetails_1>
+  <ARIO_LM_UpgradeDetails_2>Coin mints increase silver tax by 25% per level.</ARIO_LM_UpgradeDetails_2>
+  <ARIO_LM_UpgradeCaption>Upgrade {0} — level {1}/3 — {2} silver</ARIO_LM_UpgradeCaption>
+  <ARIO_LM_UpgradeConfirm>Improve {0} for {1} silver, {2} wood and {3} granite blocks from the chosen home base? Construction takes time and can be interrupted by capture.</ARIO_LM_UpgradeConfirm>
+  <ARIO_LM_LevyTip>Local levy reserves are a finite pool. Commit up to eight at a time to reinforce this estate's garrison. Recruiting costs retained estate income and supplies. Realm expeditions use the existing paid holding muster, with its research, equipment and wages unchanged.</ARIO_LM_LevyTip>
+  <ARIO_LM_CommitReserve>Assign local reserves to the garrison</ARIO_LM_CommitReserve>
+  <ARIO_LM_FacilityInspect>Estate upgrade level: {0}/3\nOwner: {1}</ARIO_LM_FacilityInspect>
+  <ARIO_LM_AttackTip>Bring a real caravan to this location to claim or attack it personally, or dispatch available realm forces. Ownership changes only after victory. Friendly allies cannot be attacked without first ending their political connection.</ARIO_LM_AttackTip>
+  <ARIO_LM_DispatchArmy>Dispatch realm forces</ARIO_LM_DispatchArmy>
+  <ARIO_LM_DispatchConfirm>Send {0} available troops to contest {1}, paying {2} silver from the selected home base? They will be unavailable while travelling, fighting and returning. Casualties and occupation detachments do not return to their source holdings.</ARIO_LM_DispatchConfirm>
+  <ARIO_LM_Interests>Faction ambitions</ARIO_LM_Interests><ARIO_LM_Interest>{0}: {1} interest</ARIO_LM_Interest>
+  <ARIO_LM_History>Recent history</ARIO_LM_History>
+  <ARIO_LM_Providers>World Domination 2.0: {0}\nCustom Base Framework: {1}</ARIO_LM_Providers>
+  <ARIO_LM_IntegrationReady>adapter available; live compatibility still requires testing</ARIO_LM_IntegrationReady>
+  <ARIO_LM_IntegrationFallback>independent fallback</ARIO_LM_IntegrationFallback>
+  <ARIO_LM_OpenDesc>Open this landmark's management in the Realm window.</ARIO_LM_OpenDesc>
+  <ARIO_LM_Rest>Rest and resupply</ARIO_LM_Rest>
+  <ARIO_LM_RestDesc>Rest here for six hours. Hospitality draws finite local provisions into the caravan's inventory; native food consumption handles meals. Rest, comfort and recreation recover gradually. Injuries are not instantly healed. Travel or a siege ends the visit.</ARIO_LM_RestDesc>
+  <ARIO_LM_Collect>Collect stored taxes</ARIO_LM_Collect>
+  <ARIO_LM_CollectDesc>Take this estate's uncollected silver and food tax into this caravan's real inventory. The stock is removed once. Automatic tax couriers retain up to 1,000 silver locally for recruitment; manual collection can withdraw that fund too.</ARIO_LM_CollectDesc>
+  <ARIO_LM_JoinDefense>Join the defense</ARIO_LM_JoinDefense><ARIO_LM_JoinDesc>Enter the landmark with this caravan and fight the approaching army manually.</ARIO_LM_JoinDesc>
+  <ARIO_LM_Claim>Claim landmark</ARIO_LM_Claim><ARIO_LM_Attack>Attack landmark</ARIO_LM_Attack><ARIO_LM_Visit>Visit landmark</ARIO_LM_Visit>
+  <ARIO_LM_TravelReport>Travelling to {0}</ARIO_LM_TravelReport>
+  <ARIO_LM_ArmyLabel>{0} army — {1}</ARIO_LM_ArmyLabel><ARIO_LM_ArmyInspect>Troops committed: {0}\nObjective: {1}\nStage: {2}</ARIO_LM_ArmyInspect>
+  <ARIO_LM_Stage_Marching>Marching</ARIO_LM_Stage_Marching><ARIO_LM_Stage_Besieging>Besieging</ARIO_LM_Stage_Besieging><ARIO_LM_Stage_Manual>Manual battle</ARIO_LM_Stage_Manual><ARIO_LM_Stage_Returning>Returning</ARIO_LM_Stage_Returning><ARIO_LM_Stage_Ended>Ended</ARIO_LM_Stage_Ended>
+  <ARIO_LM_WarAidTitle>War declared — call for aid</ARIO_LM_WarAidTitle>
+  <ARIO_LM_WarAidBody>{1} has declared war on {2} for control of {0}. An army is approaching. The defending House calls for assistance. You may travel with your caravan, dispatch selected available fighters, refuse, or leave the garrison to face the attack.</ARIO_LM_WarAidBody>
+  <ARIO_LM_MarchTitle>Army departing</ARIO_LM_MarchTitle><ARIO_LM_MarchBody>Your army is marching to {0} to contest its garrison. The troops and their paid expedition cannot be used elsewhere while away.</ARIO_LM_MarchBody>
+  <ARIO_LM_ResultTitle>Landmark battle resolved</ARIO_LM_ResultTitle>
+  <ARIO_LM_CapturedBody>{1} has defeated the defenders and taken control of {0} from {2}. Surviving improvements remain, but occupation, damage and losses will reduce the estate's benefits while it recovers. See the landmark's history for casualties.</ARIO_LM_CapturedBody>
+  <ARIO_LM_HeldBody>{2} has held {0} against {1}. The owner retains control. Losses, supplies spent and damage persist; surviving expedition forces must return before they are available again.</ARIO_LM_HeldBody>
+  <ARIO_LM_AidTerms>Approaching force: {0} troops. Answer within {1}. Accepting a journey does not teleport your people; they must travel to the landmark. Dispatching selected fighters consumes travel provisions.</ARIO_LM_AidTerms>
+  <ARIO_LM_AcceptTravel>Accept and travel personally</ARIO_LM_AcceptTravel>
+  <ARIO_LM_HelperSelection>Select equipped adult fighters from the current home map to dispatch. The journey requires pemmican provisions; insufficient provisions leave this offer unanswered.</ARIO_LM_HelperSelection>
+  <ARIO_LM_SendForces>Send selected forces</ARIO_LM_SendForces><ARIO_LM_RefuseAid>Refuse aid</ARIO_LM_RefuseAid><ARIO_LM_Ignore>Ignore the conflict</ARIO_LM_Ignore>
+  <ARIO_LM_HistoryRegistered>Landmark registered. Owner: {0}.</ARIO_LM_HistoryRegistered>
+  <ARIO_LM_HistoryWar>{0} declared its intention to take the landmark from {1}.</ARIO_LM_HistoryWar>
+  <ARIO_LM_HistorySiege>{0} reached the landmark and began a siege against {1}.</ARIO_LM_HistorySiege>
+  <ARIO_LM_HistoryCaptured>{0} captured the landmark from {1}. Recorded casualties: {2}.</ARIO_LM_HistoryCaptured>
+  <ARIO_LM_HistoryHeld>{0} held the landmark against {1}. Recorded casualties: {2}.</ARIO_LM_HistoryHeld>
+  <ARIO_LM_HistoryUpgraded>{0} completed an estate improvement.</ARIO_LM_HistoryUpgraded>
+  <ARIO_LM_HistoryKeptHome>{0} kept this seat in Sandbox because no safe alternative recruiting seat could be established nearby.</ARIO_LM_HistoryKeptHome>
+  <ARIO_LM_HistoryBlocked>{0}'s army encountered an impassable route and halted.</ARIO_LM_HistoryBlocked>
+  <ARIO_LM_CourierLabel>Landmark tax courier</ARIO_LM_CourierLabel><ARIO_LM_CourierInspect>Delivering stored taxes to {0}. Cargo: {1} stacks.</ARIO_LM_CourierInspect>
+  <ARIO_LM_ProviderManualOnly>This World Domination dispatch owns real pawns or cargo. Use a caravan to attack this historical landmark manually; the unsupported dispatch is returned by the provider's native refund path.</ARIO_LM_ProviderManualOnly>
+</LanguageData>

@@ -1,0 +1,15 @@
+{
+  "TextureModID": "lordfelix.arimoficeandfire",
+  "ItemDefName": "ARIOIAF_Ice",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.5751,
+  "OffY": 0.0021,
+  "Rotation": 45.0,
+  "ScaleX": 1.5,
+  "ScaleY": 1.5,
+  "HandsMode": 0,
+  "BladeStart": 0.2106,
+  "BladeEnd": 1.4763,
+  "MeleeWeaponType": 6
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Group garments and utility wear under Westeros Clothing. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosTunic" or defName="ARIOIAF_NobleTunic" or defName="ARIOIAF_WesterosGambeson" or defName="ARIOIAF_NorthCloak" or defName="ARIOIAF_WesterosCloak" or defName="ARIOIAF_WesterosBelt" or defName="ARIOIAF_WesterosBlackBelt"]/thingCategories</xpath>
+    <value>
+      <thingCategories>
+        <li>ARIOIAF_WesterosClothingCategory</li>
+      </thingCategories>
+    </value>
+  </Operation>
+
+  <!-- Group armor, helmets, and gorgets under Westeros Armory. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosPlateArmor" or defName="ARIOIAF_IronbornKettleHelm" or defName="ARIOIAF_IronbornPlateArmor" or defName="ARIOIAF_LannisterArmor" or defName="ARIOIAF_RiverlandsScaleArmor" or defName="ARIOIAF_ValyrianArmor" or defName="ARIOIAF_WesterosHelmet" or defName="ARIOIAF_LannisterHelmet" or defName="ARIOIAF_ReachHelmet" or defName="ARIOIAF_RiverlandsHelmet" or defName="ARIOIAF_StormlandsHelmet" or defName="ARIOIAF_NorthmenHelmet" or defName="ARIOIAF_ValyrianHelmet" or defName="ARIOIAF_WesterosGorget" or defName="ARIOIAF_NorthernGorget" or defName="ARIOIAF_LannisterGorget" or defName="ARIOIAF_StormlanderGorget" or defName="ARIOIAF_IronbornGorget" or defName="ARIOIAF_HouseArrynGorget" or defName="ARIOIAF_NorthernHeavyGorget"]/thingCategories</xpath>
+    <value>
+      <thingCategories>
+        <li>ARIOIAF_WesterosArmoryCategory</li>
+      </thingCategories>
+    </value>
+  </Operation>
+
+  <!-- Replace any earlier clothing prerequisite, then add the shared unlock. -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosTunic" or defName="ARIOIAF_NobleTunic" or defName="ARIOIAF_WesterosGambeson" or defName="ARIOIAF_NorthCloak" or defName="ARIOIAF_WesterosCloak" or defName="ARIOIAF_WesterosBelt" or defName="ARIOIAF_WesterosBlackBelt"]/recipeMaker/researchPrerequisite</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosTunic" or defName="ARIOIAF_NobleTunic" or defName="ARIOIAF_WesterosGambeson" or defName="ARIOIAF_NorthCloak" or defName="ARIOIAF_WesterosCloak" or defName="ARIOIAF_WesterosBelt" or defName="ARIOIAF_WesterosBlackBelt"]/recipeMaker</xpath>
+    <value>
+      <researchPrerequisite>ARIOIAF_WesterosClothing</researchPrerequisite>
+    </value>
+  </Operation>
+
+  <!-- Westeros Armory supersedes individual Smithing/Plate Armor recipe gates. -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosPlateArmor" or defName="ARIOIAF_IronbornKettleHelm" or defName="ARIOIAF_IronbornPlateArmor" or defName="ARIOIAF_LannisterArmor" or defName="ARIOIAF_RiverlandsScaleArmor" or defName="ARIOIAF_ValyrianArmor" or defName="ARIOIAF_WesterosHelmet" or defName="ARIOIAF_LannisterHelmet" or defName="ARIOIAF_ReachHelmet" or defName="ARIOIAF_RiverlandsHelmet" or defName="ARIOIAF_StormlandsHelmet" or defName="ARIOIAF_NorthmenHelmet" or defName="ARIOIAF_ValyrianHelmet" or defName="ARIOIAF_WesterosGorget" or defName="ARIOIAF_NorthernGorget" or defName="ARIOIAF_LannisterGorget" or defName="ARIOIAF_StormlanderGorget" or defName="ARIOIAF_IronbornGorget" or defName="ARIOIAF_HouseArrynGorget" or defName="ARIOIAF_NorthernHeavyGorget"]/recipeMaker/researchPrerequisite</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosPlateArmor" or defName="ARIOIAF_IronbornKettleHelm" or defName="ARIOIAF_IronbornPlateArmor" or defName="ARIOIAF_LannisterArmor" or defName="ARIOIAF_RiverlandsScaleArmor" or defName="ARIOIAF_ValyrianArmor" or defName="ARIOIAF_WesterosHelmet" or defName="ARIOIAF_LannisterHelmet" or defName="ARIOIAF_ReachHelmet" or defName="ARIOIAF_RiverlandsHelmet" or defName="ARIOIAF_StormlandsHelmet" or defName="ARIOIAF_NorthmenHelmet" or defName="ARIOIAF_ValyrianHelmet" or defName="ARIOIAF_WesterosGorget" or defName="ARIOIAF_NorthernGorget" or defName="ARIOIAF_LannisterGorget" or defName="ARIOIAF_StormlanderGorget" or defName="ARIOIAF_IronbornGorget" or defName="ARIOIAF_HouseArrynGorget" or defName="ARIOIAF_NorthernHeavyGorget"]/recipeMaker</xpath>
+    <value>
+      <researchPrerequisite>ARIOIAF_WesterosArmory</researchPrerequisite>
+    </value>
+  </Operation>
+</Patch>

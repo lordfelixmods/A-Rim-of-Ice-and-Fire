@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_MigrationHeading>Diplomatic smallfolk</ARIO_MigrationHeading>
+  <ARIO_MigrationRequest>Request smallfolk</ARIO_MigrationRequest>
+  <ARIO_MigrationOffer>Offer smallfolk</ARIO_MigrationOffer>
+  <ARIO_MigrationExplanation>Arrange a permanent transfer of 1–3 named adults between your House and this House. This does not found a village, hire temporary workers or create new people. Request settlers selects existing free world members of the other House; Offer settlers selects your permanent colonists. Both directions use a real caravan at the agreed foreign settlement.</ARIO_MigrationExplanation>
+  <ARIO_MigrationReadiness>Readiness is checked at signing and handover: biological and chronological age 18+, free, not downed or in a mental state, mood at least 35%, and a nonnegative opinion of the receiving House head if one exists. Leaders, your head/heir, temporary guests, levies, captives, slaves, quest-owned or reserved people cannot move. A living dependent child must already belong to the receiving faction; spouses, fiancés and lovers must accompany the group or already belong there. These explicit rules model willingness; no opinion, age or personality is rewritten.</ARIO_MigrationReadiness>
+  <ARIO_MigrationAdd>Add person · {0}/{1}</ARIO_MigrationAdd>
+  <ARIO_MigrationChoose>Choose a settler</ARIO_MigrationChoose>
+  <ARIO_MigrationCandidate>{0} · age {1}</ARIO_MigrationCandidate>
+  <ARIO_MigrationNoCandidates>No eligible unreserved adults are available in this direction. Incoming settlers must already exist as free world members of this House; this chooser never generates a fresh recruit pool. Captivity, quests, faction leadership and temporary service can make existing people unavailable.</ARIO_MigrationNoCandidates>
+  <ARIO_MigrationSeat>Choose meeting settlement</ARIO_MigrationSeat>
+  <ARIO_MigrationCost>Resettlement provisions due from the caravan at handover: {0} silver. Incoming settlers cost 300 each; outgoing settlers earn no automatic sale payment.</ARIO_MigrationCost>
+  <ARIO_MigrationBundle>One migration agreement per House and at most four active agreements in total. Signing starts a 30-day House migration cooldown and gives 20 days to complete the caravan journey. Other accepted peace, silver, land or service terms execute at signing and are not rolled back if this later journey fails.</ARIO_MigrationBundle>
+  <ARIO_MigrationTerms>{0}: {1}\nMeeting settlement: {2}\nCaravan resettlement provisions: {3} silver.</ARIO_MigrationTerms>
+  <ARIO_MigrationFactor>Smallfolk households</ARIO_MigrationFactor>
+  <ARIO_MigrationSigningConfirm>Reserve this exact group for a permanent transfer? No pawn or resettlement silver moves when you sign. Form a caravan with a free permanent adult escort who is not leaving. For incoming settlers, bring their provisioning silver; for outgoing settlers, bring every named person. Right-click the agreed settlement and choose the settler transfer option. A second confirmation is required on arrival.</ARIO_MigrationSigningConfirm>
+  <ARIO_MigrationSigned>{0} has signed a settler agreement. Complete the physical caravan pickup or delivery within 20 days. Readiness, family obligations and current ownership will be checked again at the destination.\n\n{1}</ARIO_MigrationSigned>
+  <ARIO_MigrationDue>Time remaining: {0}</ARIO_MigrationDue>
+  <ARIO_MigrationCooldown>Next migration proposal to this House: {0}</ARIO_MigrationCooldown>
+  <ARIO_MigrationTravel>Arrange smallfolk transport at {0}</ARIO_MigrationTravel>
+  <ARIO_MigrationHandover>Confirm departure</ARIO_MigrationHandover>
+  <ARIO_MigrationHandoverConfirm>{0}\n\nConfirm the permanent move of these exact people? Incoming adults become ordinary player colonists in this caravan; outgoing adults leave it to live as real members of the other House. Existing injuries, skills, genes, names, relations and belongings remain. Native recruitment initializes incoming colonist kind and work settings. This is not a ward visit and there is no automatic return. The permanent escort must remain.</ARIO_MigrationHandoverConfirm>
+  <ARIO_MigrationUnavailable>This smallfolk migration is unavailable. Check peace, cooldown, safe unloaded source/destination holdings, household reservations and housing space, three remaining source households, founding slots, steward settlement, deadline, adult envoy and caravan silver. No colonists are selected.</ARIO_MigrationUnavailable>
+  <ARIO_MigrationRecovering>An interrupted handover is being reconciled. Completed permanent moves are preserved; unfinished members and unspent provisioning credit are recovered without penalties.</ARIO_MigrationRecovering>
+  <ARIO_MigrationSuccess>The permanent settler transfer with {0} is complete. Your House gains 2 Integrity and the peaceful House gains 6 goodwill.\n\n{1}</ARIO_MigrationSuccess>
+  <ARIO_MigrationCancel>Cancel smallfolk agreement</ARIO_MigrationCancel>
+  <ARIO_MigrationCancelConfirm>Cancel this agreement for 4 Integrity? Nobody is moved. The normal migration cooldown remains. Other terms of the accepted diplomatic package are not reversed.</ARIO_MigrationCancelConfirm>
+  <ARIO_MigrationBroken>The settler agreement with {0} was cancelled or its deadline passed while the group remained eligible. Your House loses 4 Integrity.\n\n{1}</ARIO_MigrationBroken>
+  <ARIO_MigrationNeutral>The settler agreement with {0} could not be completed. It has ended without loss of Integrity or goodwill. Settlers who already moved stay in their new homes; unused provisions will be returned to your keep. If no one moved, this House can reconsider within two days.\n\n{1}</ARIO_MigrationNeutral>
+  <ARIO_MigrationDebugGroup>House: smallfolk migration help</ARIO_MigrationDebugGroup>
+  <ARIO_MigrationDebugUnavailable>A player-home map and a peaceful Westerosi House with an unloaded seat and no migration cooldown are required.</ARIO_MigrationDebugUnavailable>
+  <ARIO_MigrationDebugCreated>Use House → Diplomacy → {0} → Request smallfolk. Select an existing source holding and Found a new village (3 households), or an existing player destination. Submit normally, then bring an adult envoy and 900 silver for three households to the signed steward's seat. No test pawns or free population were generated. After final confirmation, advance three days for arrival and five more for new-village construction.</ARIO_MigrationDebugCreated>
+</LanguageData>

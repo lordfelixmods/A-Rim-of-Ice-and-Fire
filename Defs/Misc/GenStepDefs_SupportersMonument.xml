@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GenStepDef>
+    <defName>ARIOIAF_SupportersMonument</defName>
+    <!-- Must run after FindPlayerStartSpot (order 850), or the "keep clear of where the colonists
+         land" rule reads a start spot that does not exist yet. Still ahead of plants, snow, animals
+         and fog, so the monument lands on ground that is already final and is not fogged over. -->
+    <order>880</order>
+    <genStep Class="ARimOfIceAndFire.GenStep_SupportersMonument" />
+  </GenStepDef>
+</Defs>

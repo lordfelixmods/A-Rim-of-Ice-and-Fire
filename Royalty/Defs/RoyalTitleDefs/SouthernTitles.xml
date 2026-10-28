@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RoyalTitleDef Name="ARIOIAF_SouthernTitleBase" Abstract="True">
+    <tags><li>ARIOIAF_SouthernTitle</li></tags>
+    <awardThought>GainedTitle</awardThought>
+    <lostThought>LostTitle</lostThought>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <canBeInherited>true</canBeInherited>
+    <allowDignifiedMeditationFocus>false</allowDignifiedMeditationFocus>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_SouthernTitleBase">
+    <defName>ARIOIAF_SouthernTitle_Squire</defName><label>Squire</label>
+    <description>A sworn attendant learning the duties of arms and service. The first honor earned in service to the Reach. Reach titles confer standing, not psychic powers, and never forbid honest work.</description>
+    <seniority>10</seniority><favorCost>6</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_SouthernTitleBase">
+    <defName>ARIOIAF_SouthernTitle_HedgeKnight</defName><label>Hedge Knight</label>
+    <description>A landless knight whose courage and service have earned recognition from the houses of the Reach.</description>
+    <seniority>20</seniority><favorCost>8</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_SouthernTitleBase">
+    <defName>ARIOIAF_SouthernTitle_LandedKnight</defName><label>Landed Knight</label>
+    <description>A knight recognized as worthy of a landed household and its duties. This honor grants standing, not a new settlement.</description>
+    <seniority>30</seniority><favorCost>12</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_SouthernTitleBase">
+    <defName>ARIOIAF_SouthernTitle_Lord</defName><label>Lord</label><labelFemale>Lady</labelFemale>
+    <description>A recognized head of a house of the Reach, bound to protect its people and honor sworn obligations.</description>
+    <seniority>40</seniority><favorCost>16</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_SouthernTitleBase">
+    <defName>ARIOIAF_SouthernTitle_HighLord</defName><label>High Lord</label><labelFemale>Great Lady</labelFemale>
+    <description>A High Lord, also called a Great Lord, commands the respect of lesser houses and carries greater responsibility for the Reach.</description>
+    <seniority>50</seniority><favorCost>24</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_SouthernTitleBase">
+    <defName>ARIOIAF_SouthernTitle_LordParamount</defName><label>Lord Paramount</label><labelFemale>Lady Paramount</labelFemale>
+    <description>A paramount ruler honored above the great houses of the Reach for exceptional service and leadership.</description>
+    <seniority>60</seniority><favorCost>32</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_SouthernTitleBase">
+    <defName>ARIOIAF_SouthernTitle_WardenOfTheSouth</defName><label>Warden of the South</label>
+    <description>The Reach's highest honor, recognizing a military guardian of the South and defender of its borders. It grants your House standing without replacing the Reach's Warden or transferring its lands.</description>
+    <seniority>70</seniority><favorCost>40</favorCost>
+  </RoyalTitleDef>
+</Defs>

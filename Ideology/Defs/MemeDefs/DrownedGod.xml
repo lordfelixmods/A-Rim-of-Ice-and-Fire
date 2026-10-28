@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--
+    The faith of the Ironborn. These memes are player-selectable and are also the required
+    ideology of the generated Ironborn faction.
+
+    These memes DO combine with Feudalism - the Iron Islands are part of the feudal order,
+    with lords, vassals and fealty to the Iron Throne.
+  -->
+
+  <MemeDef>
+    <defName>ARIOIAF_Structure_DrownedGod</defName>
+    <label>the Drowned God</label>
+    <description>Beneath the waves the Drowned God made the Ironborn in his likeness, to reave and rove and carve out kingdoms with fire and sword. He drowned the first of them and raised them up again, harder than the sea itself.\n\nWhat is dead may never die, but rises again, harder and stronger.</description>
+    <category>Structure</category>
+    <groupDef>ARIOIAF_WesterosiFaiths</groupDef>
+    <iconPath>UI/Ideology/DrownedGod</iconPath>
+    <impact>0</impact>
+    <worshipRoomLabel>drowned hall</worshipRoomLabel>
+    <deityCount>1</deityCount>
+    <requireOne>
+      <li><li>Corpses_DontCare</li></li>
+      <li><li>ARIOIAF_Death_DontCare</li></li>
+      <li><li>Execution_RespectedIfGuilty</li></li>
+    </requireOne>
+    <requiredRituals>
+      <li>
+        <precept>ARIOIAF_DrowningRite</precept>
+        <pattern>CelebrationPartyChat</pattern>
+      </li>
+      <li>
+        <precept>ARIOIAF_SeaBurial</precept>
+        <pattern>FuneralStandard</pattern>
+      </li>
+    </requiredRituals>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective-&gt;drowned</li>
+        <li>memeAdjective-&gt;salt</li>
+        <li>memeConcept-&gt;the deep</li>
+        <li>memeConcept-&gt;the drowning</li>
+        <li>memeLeaderNoun-&gt;captain</li>
+        <li>memeMoralist-&gt;drowned man</li>
+      </rulesStrings>
+    </generalRules>
+    <!-- Structure memes MUST declare at least one descriptionMaker pattern; rules alone are
+         only valid for normal memes. Theist patterns fit a named god who made the Ironborn and
+         drowned the first of them. Unlike the Seven (seven faces of one god) this sets only
+         structure_theist, not structure_theistAbstract - the Drowned God is a single concrete
+         deity. The Old Gods use AnimistDescription instead, being nameless gods in trees. -->
+    <descriptionMaker>
+      <patterns>
+        <li><def>TheistMyth</def></li>
+        <li><def>TheistFounder</def></li>
+      </patterns>
+      <constants>
+        <li><key>structure_theist</key><value>true</value></li>
+      </constants>
+      <rules>
+        <rulesStrings>
+          <li>lesson(tag=meme_ARIOIAF_Structure_DrownedGod)-&gt;what is dead may never die</li>
+          <li>lessonReinforcement(tag=meme_ARIOIAF_Structure_DrownedGod)-&gt;The sea gave us breath and will take it back; until then we are his to spend.</li>
+        </rulesStrings>
+      </rules>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <theme>drowned</theme>
+        <adjective>salt</adjective>
+        <member>drowned man</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+
+  <MemeDef>
+    <defName>ARIOIAF_TheOldWay</defName>
+    <label>The Old Way</label>
+    <description>What is taken by strength is owned by right. The Ironborn pay the iron price for what they carry and leave common labor to lesser men.\n\nFollowers respect raiding, accept slavery and suffer the normal -8% global work speed of Raiding: respected. A successful raid, holding plunder or victorious abstract House campaign grants all believers +4 mood for 4 days; this reward cannot stack or refresh while active. A Reaving Feast is required.</description>
+    <iconPath>UI/Memes/TheOldWay</iconPath>
+    <groupDef>ARIOIAF_WesterosiTraditions</groupDef>
+    <impact>2</impact>
+    <renderOrder>80</renderOrder>
+    <requireOne>
+      <li><li>Raiding_Respected</li></li>
+      <li><li>Slavery_Acceptable</li></li>
+      <li><li>ARIOIAF_IronPrice_Demanded</li></li>
+    </requireOne>
+    <requiredRituals>
+      <li>
+        <precept>ARIOIAF_ReavingFeast</precept>
+        <pattern>CelebrationPartyChat</pattern>
+      </li>
+    </requiredRituals>
+    <agreeableTraits>
+      <li><def>Bloodlust</def></li>
+      <li><def>Tough</def></li>
+    </agreeableTraits>
+    <disagreeableTraits>
+      <li><def>Kind</def></li>
+    </disagreeableTraits>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective-&gt;reaving</li>
+        <li>memeAdjective-&gt;iron</li>
+        <li>memeConcept-&gt;the iron price</li>
+        <li>memeConcept-&gt;the old way</li>
+        <li>memeLeaderNoun-&gt;reaver</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <rules>
+        <rulesStrings>
+          <li>lesson(tag=meme_ARIOIAF_TheOldWay)-&gt;we do not sow</li>
+          <li>lessonReinforcement(tag=meme_ARIOIAF_TheOldWay)-&gt;Pay the iron price, and what you hold is truly yours.</li>
+        </rulesStrings>
+      </rules>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <theme>reaving</theme>
+        <adjective>iron</adjective>
+        <member>reaver</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+
+  <MemeDef>
+    <defName>ARIOIAF_ChildrenOfTheSea</defName>
+    <label>Children of the Sea</label>
+    <description>The sea is mother, road and grave. Its children take the tide's bounty without waste and know that no mortal ever masters it.\n\nLiving on a coastal map grants +3 mood; living inland gives -2. With Odyssey active, Sea: revered adds +10% fishing yield and Fishing: sacred is strongly suggested, allowing a fishing-centered faith to reach +20% yield. Caravans receive no coastal or inland thought.</description>
+    <iconPath>UI/Memes/ChildrenOfTheSea</iconPath>
+    <groupDef>ARIOIAF_WesterosiTraditions</groupDef>
+    <impact>1</impact>
+    <renderOrder>81</renderOrder>
+    <!--
+      This used to have no requirement and did nothing but change naming grammar unless Odyssey
+      happened to be active. Sea: revered is mod-owned and always available, so the impact-1 meme
+      now has a real settlement tradeoff in every DLC setup: +3 mood on a coastal map, -2 inland.
+      Odyssey remains additive rather than required (Fishing: sacred is suggested, and the sea
+      precept gains +10% FishingYield through DrownedGod_Unlocks.xml).
+    -->
+    <requireOne>
+      <li><li>ARIOIAF_Sea_Revered</li></li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective-&gt;tidal</li>
+        <li>memeAdjective-&gt;seaborn</li>
+        <li>memeConcept-&gt;the tides</li>
+        <li>memeConcept-&gt;the deep waters</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <rules>
+        <rulesStrings>
+          <li>lesson(tag=meme_ARIOIAF_ChildrenOfTheSea)-&gt;the sea feeds and the sea drowns</li>
+          <li>lessonReinforcement(tag=meme_ARIOIAF_ChildrenOfTheSea)-&gt;Take what the water offers and never more.</li>
+        </rulesStrings>
+      </rules>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <theme>tidal</theme>
+        <adjective>seaborn</adjective>
+        <member>seafarer</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+
+</Defs>

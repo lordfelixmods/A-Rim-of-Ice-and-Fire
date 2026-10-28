@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!--
+    ARIOIAF_WesterosiFaiths occupies the left slot as a three-card horizontal box. Shift the
+    vanilla abstract and embodied theist clusters right to place all three groups on the same row
+    without overlap. This changes placement only - no meme membership, availability or selection
+    behaviour is touched.
+  -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/MemeGroupDef[defName="Theist_Abstract"]/drawOffset</xpath>
+    <value><drawOffset>(0.40, 0)</drawOffset></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/MemeGroupDef[defName="Theist_Embodied"]/drawOffset</xpath>
+    <value><drawOffset>(0.68, 0)</drawOffset></value>
+  </Operation>
+</Patch>

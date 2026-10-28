@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModMetaData>
+  <name>A Rim of Ice and Fire</name>
+  <packageId>lordfelix.ARimOfIceAndFire</packageId>
+  <author>lordfelix</author>
+  <description>[img]https://i.imgur.com/Vj3klXU.png[/img]
+Welcome to Westeros.
+
+Found a House of your own and carve out its place among the great families of the realm. Raise your banners, settle your smallfolk, and decide whether your dynasty will prosper through loyalty, trade, marriage or conquest.
+
+A Rim of Ice and Fire brings the lands, cultures and feudal life of Westeros to RimWorld. This is a solo project that continues to grow—thank you for helping bring the realm to life.
+[img]https://i.imgur.com/MR8Pd8s.png[/img]
+[img]https://i.imgur.com/DqcliUP.png[/img]
+[img]https://i.imgur.com/VnaitFm.png[/img]
+[img]https://i.imgur.com/pvdrwix.png[/img]
+[img]https://i.imgur.com/1yHAtag.png[/img]
+Build your dynasty
+• Choose your House name, words, home region, sigil and colors. Dress your followers in its livery and fly its banners.
+• Appoint a House Head and heir, arrange marriages, and navigate the ties between rival families.
+• Negotiate treaties, swear fealty, gather intelligence, and call your levies when diplomacy fails.
+
+Rule your lands
+• Welcome smallfolk, found villages, and develop them into towns or garrisons.
+• Collect taxes, manage obligations, and defend the settlements that sustain your House.
+• Stock market stands with real goods for passing visitors to buy.
+
+Explore Westeros
+• Begin with the custom starting scenario and a world shaped by the regions, rivers and ancestral seats of Westeros.
+• Meet the Great Houses and lesser Houses, each with its own heraldry and place in the realm.
+• Discover regional backstories and traits that give your people roots in the lands they call home.
+
+Equip your household
+• Craft Westerosi weapons and armor, from gambesons and mail to plate, helmets and gorgets.
+• Customize tabards and banners, or seek the crowns and unique Valyrian-steel relics that mark a dynasty's rise.
+• Prefer a different age of warfare? Enable Industrialised Westeros to give newly recruited regional soldiers firearms while keeping their House identities and culture.
+[img]https://i.imgur.com/9bhJKR5.png[/img]
+[img]https://i.imgur.com/TIiUz2g.png[/img]
+[img]https://i.imgur.com/kEr2PkP.png[/img]
+[img]https://i.imgur.com/nI0O89H.png[/img]
+Optional integrations
+The mod includes support for Combat Extended, Pillage and Plunder, World Domination 2, The Long Night, Medieval Overhaul and ReGrowth 2. Westerosi weapon profiles are also included for Show Me Your Hands, Melee Animation and Flourish.
+
+These mods are optional. Harmony is required.
+[img]https://i.imgur.com/w7vk9Ym.png[/img]
+From the North to Dorne
+Stand alongside Houses such as Stark, Lannister and Targaryen—or establish a new name that the realm will remember. Legendary arms and symbols of office offer ambitions beyond a single settlement.
+[img]https://i.imgur.com/n0uwMoG.png[/img]
+Frequently asked questions
+
+Does it include a Westeros world map?
+Yes. Use the mod's starting scenario to begin in Westeros.
+
+Do I need every expansion?
+No. Expansions are optional; expansion-specific content is available when the corresponding DLC is active.
+
+Is it based on the books or the television series?
+Both inspire the mod, with book geography guiding the Westeros map.
+
+Are Valyrian-steel weapons unique?
+Yes. They are unique relics to seek, not ordinary weapons to mass-produce.
+
+Does it include dragons and the supernatural?
+The Long Night is a separate, optional companion mod. Dragons are not included in this module; other creatures and mystical elements may be considered as development continues.
+[img]https://i.imgur.com/lGFWDNT.png[/img]
+Help shape the realm
+I develop and test this mod on my own, so some problems may only surface in other players' games. If something goes wrong, please report it on Discord. A screenshot and your Player.log are especially helpful.
+
+Join the server to follow development, share ideas and discuss the mod.
+
+A Rim of Ice and Fire is an unofficial fan-made RimWorld mod. It is not affiliated with or endorsed by George R. R. Martin, HBO, Warner Bros., or Ludeon Studios. All respective trademarks and intellectual property belong to their owners.
+[img]https://i.imgur.com/lGFWDNT.png[/img]
+[url=https://ko-fi.com/lordfelix69][img]https://i.imgur.com/mDDAeVI.png[/img][/url]
+[url=https://discord.gg/2Jeeu9jcfy][img]https://i.imgur.com/Yo341bw.png[/img][/url]</description>
+  <supportedVersions>
+    <li>1.6</li>
+    <li>1.7</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>CETeam.CombatExtended</li>
+    <li>lordfelix.TheLongNight</li>
+    <li>m00nl1ght.WorldTechLevel</li>
+    <li>lordfelix.pillageandplunder</li>
+    <li>TSA.WorldDominationExperimental</li>
+    <li>EvilEyeGuy.CustomBaseFramework</li>
+    <li>Mlie.ShowMeYourHands</li>
+    <li>astryl.Flourish</li>
+    <li>co.uk.epicguru.meleeanimation</li>
+    <li>IwoRosiak.Holsters</li>
+    <li>Nals.FacialAnimation</li>
+    <li>UNAGI.FacialAnimation</li>
+    <li>UNAGIFacialAnimation.biotech</li>
+    <li>UNAGI.FA.addon.EyeParts</li>
+  </loadAfter>
+</ModMetaData>

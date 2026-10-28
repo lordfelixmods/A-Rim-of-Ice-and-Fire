@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Shown in the ideoligion role panel when "Leader: highest title" is active. -->
+  <ARIOIAF_RoleRequirementHighestTitle>holds the most senior royal title</ARIOIAF_RoleRequirementHighestTitle>
+
+  <!-- Shown when a Westerosi faith rejects a non-Valyrian relic candidate. -->
+  <ARIOIAF_RelicMustBeValyrian>only a Valyrian-steel blade may serve as a relic of this faith</ARIOIAF_RelicMustBeValyrian>
+
+  <!-- Diplomacy list group captions. -->
+  <ARIOIAF_DiploGroupHouses>Houses</ARIOIAF_DiploGroupHouses>
+  <ARIOIAF_DiploGroupOthers>Others</ARIOIAF_DiploGroupOthers>
+
+  <!-- One condensed line in the scenario description instead of one line per project. -->
+  <ARIOIAF_ScenStartingResearch>Start with research: {0}.</ARIOIAF_ScenStartingResearch>
+
+  <!-- Fixed faith name, matching how the core names the Seven and the Old Gods. -->
+  <ARIOIAF_DrownedGodName>The Drowned God</ARIOIAF_DrownedGodName>
+  <ARIOIAF_DrownedGodAdjective>Ironborn</ARIOIAF_DrownedGodAdjective>
+  <ARIOIAF_DrownedGodMember>Ironborn</ARIOIAF_DrownedGodMember>
+  <ARIOIAF_DrownedGodDeity>the Drowned God</ARIOIAF_DrownedGodDeity>
+  <ARIOIAF_DrownedGodDeityType>god of the sea and of the drowned</ARIOIAF_DrownedGodDeityType>
+  <ARIOIAF_DrownedGodNarrative>Beneath the waves the Drowned God made the Ironborn in his own likeness, to reave and to rove, to carve out kingdoms with fire and sword. He drowned the first of them and raised them up again, harder than the sea that killed them.\n\nThe Storm God dwells in the clouded halls of the sky and hates all men, and between the two there has been war since the world began. What is dead may never die, but rises again, harder and stronger.</ARIOIAF_DrownedGodNarrative>
+</LanguageData>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Same crafting-only ordinary metal gorget profile as Targaryen gorget. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_BlackfyreGorget"]/statBases/StuffEffectMultiplierArmor</xpath>
+    <value><StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_BlackfyreGorget"]/statBases</xpath>
+    <value><Bulk>3</Bulk><WornBulk>0.75</WornBulk></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_BlackfyreGorget"]/stuffCategories/li[.="Metallic"]</xpath>
+    <value><li>Steeled</li></value>
+  </Operation>
+</Patch>

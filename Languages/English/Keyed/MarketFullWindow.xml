@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_MarketReturnHouse>Back to House</ARIO_MarketReturnHouse>
+  <ARIO_MarketFullTitle>Market</ARIO_MarketFullTitle>
+  <ARIO_MarketShoppersOn>Shoppers: on</ARIO_MarketShoppersOn>
+  <ARIO_MarketShoppersOff>Shoppers: off</ARIO_MarketShoppersOff>
+  <ARIO_MarketShoppersToggleTip>Toggle new trading-party arrivals on this map. Turning them off cancels pending groups; visitors already here can finish shopping, and ordinary traders are unaffected. Turning them back on resumes at the next daily check.</ARIO_MarketShoppersToggleTip>
+</LanguageData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_LevyApparelColor>Apparel color</ARIO_LevyApparelColor>
+  <ARIO_LevyChangeColor>Change color</ARIO_LevyChangeColor>
+  <ARIO_LevyDefaultColor>Default colors</ARIO_LevyDefaultColor>
+  <ARIO_LevyResetColor>Reset</ARIO_LevyResetColor>
+  <ARIO_LevyApparelColorTip>Set the color of dyeable clothes for new levies, including their starting tunic. The leather belt cannot be dyed. Shields and banners keep their heraldry. Reset restores normal colors. Already mustered troops are unchanged.</ARIO_LevyApparelColorTip>
+  <ARIO_LevyColorFailed>Levy apparel color could not be updated: {0}</ARIO_LevyColorFailed>
+</LanguageData>

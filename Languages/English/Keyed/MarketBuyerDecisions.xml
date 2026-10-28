@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_MarketBuyerInstallFailed>[A Rim of Ice and Fire] Saved market buyer decisions could not be installed: {0}</ARIO_MarketBuyerInstallFailed>
+  <ARIO_MarketBuyerUpsold>Your sales pitch made {0} more willing to buy, raising their chance to 75%. It improves their existing decision rather than giving them a new roll.</ARIO_MarketBuyerUpsold>
+  <ARIO_MarketBuyerBrowsing>Market: willing to browse - {0}/{1} purchases this visit</ARIO_MarketBuyerBrowsing>
+  <ARIO_MarketBuyerDeclined>Market: not buying - {0}/{1} purchases this visit. A completed upsell may persuade them.</ARIO_MarketBuyerDeclined>
+  <ARIO_MarketBuyerFinished>Market: shopping finished - {0}/{1} purchases this visit</ARIO_MarketBuyerFinished>
+  <ARIO_MarketGatherInstallFailed>[A Rim of Ice and Fire] Market-stall gathering preference could not be installed: {0}</ARIO_MarketGatherInstallFailed>
+  <ARIO_MarketGatherSelectionFailed>[A Rim of Ice and Fire] No safe stall meeting point could be selected; native gathering location retained: {0}</ARIO_MarketGatherSelectionFailed>
+</LanguageData>

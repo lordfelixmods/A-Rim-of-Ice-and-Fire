@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Same ordinary metallic helmet profile as this mod's Westeros/Lannister helms.
+       No NPC/loadout, head coverage, recipe or appearance changes. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_TargaryenHelmet"]/statBases/StuffEffectMultiplierArmor</xpath>
+    <value><StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_TargaryenHelmet"]/statBases</xpath>
+    <value><Bulk>3</Bulk><WornBulk>1</WornBulk></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_TargaryenHelmet"]/stuffCategories/li[.="Metallic"]</xpath>
+    <value><li>Steeled</li></value>
+  </Operation>
+</Patch>

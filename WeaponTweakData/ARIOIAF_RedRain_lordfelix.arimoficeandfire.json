@@ -1,0 +1,15 @@
+{
+  "TextureModID": "lordfelix.arimoficeandfire",
+  "ItemDefName": "ARIOIAF_RedRain",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.3643,
+  "OffY": 0.0022,
+  "Rotation": 45.0,
+  "ScaleX": 1.07,
+  "ScaleY": 1.07,
+  "HandsMode": 1,
+  "BladeStart": 0.1375,
+  "BladeEnd": 0.9495,
+  "MeleeWeaponType": 6
+}

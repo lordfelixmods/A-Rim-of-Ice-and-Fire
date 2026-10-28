@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Same source palms as SMYH, multiplied by constant 1.3 drawSize once.
+       Flourish WeaponGeometry.TexPoint consumes rendered cells, not normalized texture points.
+       Rifle uses native long-gun draw/aim/recoil profiles; no melee blade trails. -->
+  <Flourish.WeaponPoseDef MayRequire="astryl.Flourish">
+    <defName>ARIO_FlourishPose_NorthernHuntingRifle</defName>
+    <label>northern hunting rifle pose</label>
+    <weaponClass>Rifle</weaponClass>
+    <gripMain>(-0.21328125, 0.005078125)</gripMain>
+    <gripOff>(0.1751953125, 0.035546875)</gripOff>
+    <muzzle>(0.59921875, 0.0837890625)</muzzle>
+    <weapons><li>ARIOIAF_NorthernHuntingRifle</li></weapons>
+  </Flourish.WeaponPoseDef>
+</Defs>

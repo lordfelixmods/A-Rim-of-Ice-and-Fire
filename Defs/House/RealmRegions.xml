@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- One record per playable Westerosi culture. branchNames are complete noble-House
+       names, curated from canon minor Houses and region-appropriate lineages. Runtime
+       generation draws only from its region and enforces global uniqueness. -->
+
+  <ARimOfIceAndFireCore.RealmRegionDef>
+    <defName>ARIOIAF_Region_Northmen</defName>
+    <label>the North</label>
+    <faction>ARIOIAF_Northmen</faction>
+    <worldRegion>North</worldRegion>
+    <biomes>
+      <li>BorealForest</li>
+      <li>Tundra</li>
+      <li>ColdBog</li>
+    </biomes>
+    <branchNames>
+      <li>House Mormont</li>
+      <li>House Glover</li>
+      <li>House Hornwood</li>
+      <li>House Reed</li>
+      <li>House Karstark</li>
+      <li>House Umber</li>
+      <li>House Bolton</li>
+      <li>House Dustin</li>
+      <li>House Manderly</li>
+      <li>House Flint</li>
+    </branchNames>
+  </ARimOfIceAndFireCore.RealmRegionDef>
+
+  <ARimOfIceAndFireCore.RealmRegionDef>
+    <defName>ARIOIAF_Region_Valemen</defName>
+    <label>the Vale</label>
+    <faction>ARIOIAF_Valemen</faction>
+    <worldRegion>Vale</worldRegion>
+    <biomes>
+      <li>BorealForest</li>
+      <li>TemperateForest</li>
+      <li>Tundra</li>
+    </biomes>
+    <branchNames>
+      <li>House Royce</li>
+      <li>House Waynwood</li>
+      <li>House Corbray</li>
+      <li>House Redfort</li>
+      <li>House Hunter</li>
+      <li>House Belmore</li>
+      <li>House Templeton</li>
+      <li>House Grafton</li>
+      <li>House Lynderly</li>
+      <li>House Sunderland</li>
+    </branchNames>
+  </ARimOfIceAndFireCore.RealmRegionDef>
+
+  <ARimOfIceAndFireCore.RealmRegionDef>
+    <defName>ARIOIAF_Region_Riverlanders</defName>
+    <label>the Riverlands</label>
+    <faction>ARIOIAF_Riverlanders</faction>
+    <worldRegion>Riverlands</worldRegion>
+    <biomes>
+      <li>TemperateForest</li>
+      <li>TemperateSwamp</li>
+      <li>ColdBog</li>
+    </biomes>
+    <branchNames>
+      <li>House Mallister</li>
+      <li>House Blackwood</li>
+      <li>House Bracken</li>
+      <li>House Frey</li>
+      <li>House Piper</li>
+      <li>House Vance</li>
+      <li>House Mooton</li>
+      <li>House Darry</li>
+      <li>House Smallwood</li>
+      <li>House Ryger</li>
+    </branchNames>
+  </ARimOfIceAndFireCore.RealmRegionDef>
+
+  <ARimOfIceAndFireCore.RealmRegionDef>
+    <defName>ARIOIAF_Region_Westerlanders</defName>
+    <label>the Westerlands</label>
+    <faction>ARIOIAF_Westerlanders</faction>
+    <worldRegion>Westerlands</worldRegion>
+    <biomes>
+      <li>TemperateForest</li>
+      <li>AridShrubland</li>
+    </biomes>
+    <branchNames>
+      <li>House Clegane</li>
+      <li>House Marbrand</li>
+      <li>House Crakehall</li>
+      <li>House Lefford</li>
+      <li>House Brax</li>
+      <li>House Banefort</li>
+      <li>House Westerling</li>
+      <li>House Serrett</li>
+      <li>House Farman</li>
+      <li>House Prester</li>
+    </branchNames>
+  </ARimOfIceAndFireCore.RealmRegionDef>
+
+  <ARimOfIceAndFireCore.RealmRegionDef>
+    <defName>ARIOIAF_Region_Ironborn</defName>
+    <label>the Iron Islands</label>
+    <faction>ARIOIAF_Ironborn</faction>
+    <worldRegion>IronIslands</worldRegion>
+    <biomes>
+      <li>TemperateForest</li>
+      <li>BorealForest</li>
+      <li>AridShrubland</li>
+    </biomes>
+    <branchNames>
+      <li>House Greyjoy</li>
+      <li>House Harlaw</li>
+      <li>House Goodbrother</li>
+      <li>House Drumm</li>
+      <li>House Blacktyde</li>
+      <li>House Botley</li>
+      <li>House Farwynd</li>
+      <li>House Merlyn</li>
+      <li>House Saltcliffe</li>
+      <li>House Orkwood</li>
+    </branchNames>
+  </ARimOfIceAndFireCore.RealmRegionDef>
+
+  <ARimOfIceAndFireCore.RealmRegionDef>
+    <defName>ARIOIAF_Region_Reachmen</defName>
+    <label>the Reach</label>
+    <faction>ARIOIAF_Reachmen</faction>
+    <worldRegion>Reach</worldRegion>
+    <biomes>
+      <li>TemperateForest</li>
+      <li>AridShrubland</li>
+      <li>AridShrubland</li>
+    </biomes>
+    <branchNames>
+      <li>House Tarly</li>
+      <li>House Florent</li>
+      <li>House Hightower</li>
+      <li>House Redwyne</li>
+      <li>House Rowan</li>
+      <li>House Oakheart</li>
+      <li>House Fossoway</li>
+      <li>House Beesbury</li>
+      <li>House Merryweather</li>
+      <li>House Caswell</li>
+    </branchNames>
+  </ARimOfIceAndFireCore.RealmRegionDef>
+
+  <ARimOfIceAndFireCore.RealmRegionDef>
+    <defName>ARIOIAF_Region_Stormlanders</defName>
+    <label>the Stormlands</label>
+    <faction>ARIOIAF_Stormlanders</faction>
+    <worldRegion>Stormlands</worldRegion>
+    <biomes>
+      <li>TemperateForest</li>
+      <li>TemperateSwamp</li>
+      <li>TropicalSwamp</li>
+    </biomes>
+    <branchNames>
+      <li>House Dondarrion</li>
+      <li>House Seaworth</li>
+      <li>House Tarth</li>
+      <li>House Selmy</li>
+      <li>House Swann</li>
+      <li>House Estermont</li>
+      <li>House Caron</li>
+      <li>House Morrigen</li>
+      <li>House Connington</li>
+      <li>House Penrose</li>
+    </branchNames>
+  </ARimOfIceAndFireCore.RealmRegionDef>
+
+  <ARimOfIceAndFireCore.RealmRegionDef>
+    <defName>ARIOIAF_Region_Valyria</defName>
+    <label>Valyria</label>
+    <faction>ARIOIAF_Valyria</faction>
+    <worldRegion>Valyria</worldRegion>
+    <biomes>
+      <li>Desert</li>
+      <li>ExtremeDesert</li>
+      <li>AridShrubland</li>
+    </biomes>
+    <branchNames>
+      <li>House Velaryon</li>
+      <li>House Celtigar</li>
+      <li>House Qoherys</li>
+      <li>House Belaerys</li>
+      <li>House Rogare</li>
+      <li>House Maegyr</li>
+      <li>House Paenymion</li>
+      <li>House Vhassar</li>
+      <li>House Longwaters</li>
+      <li>House Scales</li>
+    </branchNames>
+  </ARimOfIceAndFireCore.RealmRegionDef>
+
+  <!-- Instantiated manually after terrain generation. Its worker is deliberately empty
+       so ordinary RimWorld planets keep vanilla's own feature-name generation. -->
+  <FeatureDef>
+    <defName>ARIOIAF_WesterosRegionFeature</defName>
+    <label>realm</label>
+    <workerClass>ARimOfIceAndFireCore.FeatureWorker_WesterosRegion</workerClass>
+    <order>9999</order>
+    <minSize>1</minSize>
+  </FeatureDef>
+
+</Defs>

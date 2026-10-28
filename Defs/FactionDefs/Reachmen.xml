@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef ParentName="FactionBase">
+    <defName>ARIOIAF_Reachmen</defName>
+    <label>Reachmen</label>
+    <description>Wealthy houses of the Reach, sworn to the Faith of the Seven and knightly service. Green-clad levies, bowmen and armored guards. Starts at peace and sends merchant caravans. With Royalty, service earns titles from Squire to Warden of the South.</description>
+    <fixedName>Reachmen</fixedName>
+    <pawnSingular>reachman</pawnSingular>
+    <pawnsPlural>reachmen</pawnsPlural>
+    <categoryTag>ARIOIAF_Reachmen</categoryTag>
+    <techLevel>Medieval</techLevel>
+    <basicMemberKind>ARIOIAF_Reachmen_Levy</basicMemberKind>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>78</configurationListOrderPriority>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Warden of the South</leaderTitle>
+    <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+    <fixedLeaderKinds><li>ARIOIAF_Reachmen_Warden</li></fixedLeaderKinds>
+    <factionIconPath>UI/Factions/Reachmen</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <colorSpectrum><li>(0.22,0.55,0.25)</li></colorSpectrum>
+    <allowedArrivalTemperatureRange>-25~45</allowedArrivalTemperatureRange>
+    <backstoryFilters><li><categories><li>Tribal</li></categories></li></backstoryFilters>
+    <apparelStuffFilter>
+      <thingDefs><li>Cloth</li><li>WoolSheep</li><li>Leather_Plain</li><li>Leather_Heavy</li><li>Steel</li></thingDefs>
+    </apparelStuffFilter>
+    <allowedCultures><li>Rustican</li></allowedCultures>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_Structure_FaithOfTheSeven</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_ChivalricHonor</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_Feudalism</li>
+    </requiredMemes>
+    <allowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_Structure_FaithOfTheSeven</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_ChivalricHonor</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_Feudalism</li>
+    </allowedMemes>
+    <structureMemeWeights><ARIOIAF_Structure_FaithOfTheSeven MayRequire="Ludeon.RimWorld.Ideology">1</ARIOIAF_Structure_FaithOfTheSeven></structureMemeWeights>
+    <royalFavorLabel MayRequire="Ludeon.RimWorld.Royalty">honor</royalFavorLabel>
+    <royalFavorIconPath MayRequire="Ludeon.RimWorld.Royalty">UI/Icons/RoyalFavor</royalFavorIconPath>
+    <royalTitleTags MayRequire="Ludeon.RimWorld.Royalty"><li>ARIOIAF_SouthernTitle</li></royalTitleTags>
+    <royalTitleInheritanceWorkerClass MayRequire="Ludeon.RimWorld.Royalty">RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+    <royalTitleInheritanceRelations MayRequire="Ludeon.RimWorld.Royalty"><li>Child</li><li>Grandchild</li><li>Spouse</li><li>Sibling</li><li>Parent</li></royalTitleInheritanceRelations>
+    <caravanTraderKinds><li>Caravan_Neolithic_BulkGoods</li><li>Caravan_Neolithic_WarMerchant</li></caravanTraderKinds>
+    <visitorTraderKinds><li>Visitor_Neolithic_Standard</li></visitorTraderKinds>
+    <baseTraderKinds><li>Base_Neolithic_Standard</li></baseTraderKinds>
+    <maxPawnCostPerTotalPointsCurve>
+      <points><li>(0,45)</li><li>(150,110)</li><li>(400,150)</li><li>(700,220)</li><li>(2000,10000)</li></points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options><ARIOIAF_Reachmen_Levy>4</ARIOIAF_Reachmen_Levy><ARIOIAF_Reachmen_Bowman>4</ARIOIAF_Reachmen_Bowman><ARIOIAF_Reachmen_Footman>6</ARIOIAF_Reachmen_Footman><ARIOIAF_Reachmen_Houseguard>2</ARIOIAF_Reachmen_Houseguard><ARIOIAF_Reachmen_Officer>1</ARIOIAF_Reachmen_Officer></options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options><ARIOIAF_Reachmen_Levy>5</ARIOIAF_Reachmen_Levy><ARIOIAF_Reachmen_Bowman>3</ARIOIAF_Reachmen_Bowman><ARIOIAF_Reachmen_Officer>1</ARIOIAF_Reachmen_Officer></options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders><ARIOIAF_Reachmen_CaravanLeader>1</ARIOIAF_Reachmen_CaravanLeader></traders>
+        <carriers><Muffalo>4</Muffalo><Alpaca>6</Alpaca></carriers>
+        <guards><ARIOIAF_Reachmen_Bowman>3</ARIOIAF_Reachmen_Bowman><ARIOIAF_Reachmen_Footman>6</ARIOIAF_Reachmen_Footman><ARIOIAF_Reachmen_Houseguard>2</ARIOIAF_Reachmen_Houseguard><ARIOIAF_Reachmen_Officer>1</ARIOIAF_Reachmen_Officer></guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options><ARIOIAF_Reachmen_Levy>3</ARIOIAF_Reachmen_Levy><ARIOIAF_Reachmen_Bowman>4</ARIOIAF_Reachmen_Bowman><ARIOIAF_Reachmen_Footman>6</ARIOIAF_Reachmen_Footman><ARIOIAF_Reachmen_Houseguard>3</ARIOIAF_Reachmen_Houseguard><ARIOIAF_Reachmen_Officer>1</ARIOIAF_Reachmen_Officer></options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+</Defs>

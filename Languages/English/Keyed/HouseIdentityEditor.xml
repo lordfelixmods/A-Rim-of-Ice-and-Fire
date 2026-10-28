@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_HouseIdentityEditorLabel>House identity</ARIO_HouseIdentityEditorLabel>
+  <ARIO_HouseIdentityEditorTitle>Edit House identity</ARIO_HouseIdentityEditorTitle>
+  <ARIO_HouseIdentityEditorHint>Reopen the House creation form to edit your name, words, home region, sigil, primary cloth/banner color and secondary crest color. Current choices are filled in. Apply saves the identity; Cancel or Escape discards these edits. This does not restart realm setup, change faith, move your seat or holdings, or recolor colonists' map names.</ARIO_HouseIdentityEditorHint>
+  <ARIO_HouseIdentityEditorLocked>Finish founding your House and choosing its faith before editing its identity. If the editor cannot open, see the log for details.</ARIO_HouseIdentityEditorLocked>
+  <ARIO_HouseIdentityEditorUnavailable>[A Rim of Ice and Fire] The House identity editor could not be opened safely: {0}</ARIO_HouseIdentityEditorUnavailable>
+  <ARIO_HouseIdentityEditorApplyFailed>[A Rim of Ice and Fire] House identity could not be applied: {0}</ARIO_HouseIdentityEditorApplyFailed>
+  <ARIO_HouseIdentityEditorRefreshFailed>[A Rim of Ice and Fire] House identity was saved, but a presentation refresh could not finish: {0}</ARIO_HouseIdentityEditorRefreshFailed>
+</LanguageData>

@@ -1,0 +1,15 @@
+{
+  "TextureModID": "lordfelix.arimoficeandfire",
+  "ItemDefName": "ARIOIAF_Oathkeeper",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.3987,
+  "OffY": 0.0023,
+  "Rotation": 45.0,
+  "ScaleX": 1.07,
+  "ScaleY": 1.07,
+  "HandsMode": 1,
+  "BladeStart": 0.128,
+  "BladeEnd": 1.0002,
+  "MeleeWeaponType": 6
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>ARIO_PlayExistingHouse</defName>
+    <label>Play an Existing House</label>
+    <description>An old banner is waiting for a new hand. Choose a Westerosi House and take your place at its seat, where a ruler and a realm of rivals already await you.
+
+The Houses and their lands are familiar, but the people who inhabit them and the history they make belong to this world. What will your House become?</description>
+    <scenario>
+      <summary>Lead a Westerosi House from its own seat.</summary>
+      <playerFaction Class="ARimOfIceAndFire.Scenarios.ScenPart_PlayerFaction_ExistingHouse">
+        <factionDef>ARIOIAF_PlayerHouse</factionDef>
+      </playerFaction>
+      <parts>
+        <li Class="ARimOfIceAndFire.Scenarios.ScenPart_ExistingHouseChoice"><def>ARIO_ExistingHouseChoice</def></li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod"><def>PlayerPawnsArriveMethod</def><method>Standing</method></li>
+        <!-- A small real supply allocation for the existing ruler, not a second
+             random founding kit or a duplicated NPC garrison. -->
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>MealSurvivalPack</thingDef><count>30</count></li>
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>MedicineHerbal</thingDef><count>6</count></li>
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>Bedroll</thingDef><stuff>Cloth</stuff><quality>Normal</quality><count>1</count></li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+</Defs>

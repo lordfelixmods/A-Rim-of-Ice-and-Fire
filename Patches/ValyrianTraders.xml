@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TraderKindDef[stockGenerators/li[tradeTag="ExoticMisc"]]/stockGenerators</xpath>
+    <value><li Class="ARimOfIceAndFireCore.StockGenerator_RareValyrianSteel" /></value>
+  </Operation>
+</Patch>

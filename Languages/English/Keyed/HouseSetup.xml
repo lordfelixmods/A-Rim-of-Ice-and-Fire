@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ARIO_SetupApply>Apply</ARIO_SetupApply>
+
+  <!-- World creation: mode chooser and the realm's own world page -->
+  <ARIO_WorldModeTitle>Choose your world</ARIO_WorldModeTitle>
+  <ARIO_WorldModeChoose>Choose a world before continuing.</ARIO_WorldModeChoose>
+  <ARIO_WorldModeVanilla>Play RimWorld</ARIO_WorldModeVanilla>
+  <ARIO_WorldModeVanillaTag>Ordinary planet · all technology</ARIO_WorldModeVanillaTag>
+  <ARIO_WorldModeVanillaDesc>A normal rimworld. Outlander towns, mechanoids, hives and modern tech all remain. House, culture and dynasty systems still work.</ARIO_WorldModeVanillaDesc>
+  <ARIO_WorldModeThrones>A Rim of Ice and Fire</ARIO_WorldModeThrones>
+  <ARIO_WorldModeThronesTag>Authored Westeros · 7 regions · fixed seats</ARIO_WorldModeThronesTag>
+  <ARIO_WorldModeThronesDesc>The true map of Westeros, from the Lands of Always Winter to Dorne. You set the realm's rules on the next page.</ARIO_WorldModeThronesDesc>
+  <ARIO_WorldModeHint>Click to choose · double-click to begin</ARIO_WorldModeHint>
+  <ARIO_WorldModeNextVanilla>Next: generate an ordinary rimworld</ARIO_WorldModeNextVanilla>
+  <ARIO_WorldModeNextThrones>Next: set the realm's rules, then Westeros</ARIO_WorldModeNextThrones>
+  <ARIO_WesterosWorldTitle>The Seven Kingdoms</ARIO_WesterosWorldTitle>
+  <ARIO_WesterosWorldIntro>An authored Westeros, from the frozen far north to Dorne. Choose the lesser-House count, climate and realm rules; borders and House seats stay fixed.</ARIO_WesterosWorldIntro>
+  <ARIO_WesterosAtlasUnavailable>The Westeros map data is missing or damaged. Generation has been cancelled; check the mod installation.</ARIO_WesterosAtlasUnavailable>
+  <ARIO_WesterosWorldSize>Planet size: {0}</ARIO_WesterosWorldSize>
+  <ARIO_WesterosWorldSizeDesc>Controls how much of the globe RimWorld generates, not its tile density. Westeros uses the same authored outline, fitted to the available northern region. More coverage takes longer to generate.</ARIO_WesterosWorldSizeDesc>
+  <ARIO_WesterosWorldClimate>Climate</ARIO_WesterosWorldClimate>
+  <ARIO_WesterosWorldRules>Realm rules</ARIO_WesterosWorldRules>
+  <ARIO_WesterosSettingsPanel>Realm setup</ARIO_WesterosSettingsPanel>
+  <ARIO_WesterosWorldSettings>World</ARIO_WesterosWorldSettings>
+  <ARIO_WesterosPlanetSize>Planet size: {0}</ARIO_WesterosPlanetSize>
+  <ARIO_WesterosPopulation>Population: {0}</ARIO_WesterosPopulation>
+  <ARIO_WesterosMapSize>Map size: {0} × {1}</ARIO_WesterosMapSize>
+  <ARIO_WesterosStartingSeason>Starting season</ARIO_WesterosStartingSeason>
+  <ARIO_WesterosSeasonAutomatic>Automatic</ARIO_WesterosSeasonAutomatic>
+  <ARIO_WesterosRainfall>Rainfall: {0}</ARIO_WesterosRainfall>
+  <ARIO_WesterosTemperature>Temperature: {0}</ARIO_WesterosTemperature>
+  <ARIO_WesterosPeriod>Period</ARIO_WesterosPeriod>
+  <!-- The period is deliberately not selectable yet; only Sandbox is offered. -->
+  <ARIO_WesterosWarFiveKings>Storylines are still in development</ARIO_WesterosWarFiveKings>
+  <ARIO_WesterosMorePeriods>This is the only available period. More periods will be added soon.</ARIO_WesterosMorePeriods>
+  <ARIO_WesterosChoosePeriod>Select a period before generating Westeros.</ARIO_WesterosChoosePeriod>
+  <ARIO_WesterosFactionsPanel>Factions</ARIO_WesterosFactionsPanel>
+  <ARIO_WesterosFactionRegion>{0} · {1}</ARIO_WesterosFactionRegion>
+  <ARIO_WesterosHouseCountNone>No lesser-House vassals</ARIO_WesterosHouseCountNone>
+  <ARIO_WesterosHouseCountOne>1 lesser-House vassal</ARIO_WesterosHouseCountOne>
+  <ARIO_WesterosHouseCountMany>{0} lesser-House vassals</ARIO_WesterosHouseCountMany>
+  <ARIO_WesterosForeignFactions>Non-Westerosi factions will also be generated.</ARIO_WesterosForeignFactions>
+  <ARIO_WesterosFactionPlacement>Every listed regional faction and its lesser-House vassals are confined to the named region.</ARIO_WesterosFactionPlacement>
+  <ARIO_WesterosCanonicalRegions>Use canonical regional borders</ARIO_WesterosCanonicalRegions>
+  <ARIO_WesterosCanonicalRegionsDesc>Required for the authored Westeros map. Every regional faction, lesser House, seat and holdfast is placed inside its own named territory.</ARIO_WesterosCanonicalRegionsDesc>
+
+  <ARIO_WorldLevelAlmostNone>almost none</ARIO_WorldLevelAlmostNone>
+  <ARIO_WorldLevelLittle>little</ARIO_WorldLevelLittle>
+  <ARIO_WorldLevelSlightlyLow>slightly low</ARIO_WorldLevelSlightlyLow>
+  <ARIO_WorldLevelNormal>normal</ARIO_WorldLevelNormal>
+  <ARIO_WorldLevelSlightlyHigh>slightly high</ARIO_WorldLevelSlightlyHigh>
+  <ARIO_WorldLevelHigh>high</ARIO_WorldLevelHigh>
+  <ARIO_WorldLevelVeryHigh>very high</ARIO_WorldLevelVeryHigh>
+  <ARIO_WorldTemperatureVeryCold>very cold</ARIO_WorldTemperatureVeryCold>
+  <ARIO_WorldTemperatureCold>cold</ARIO_WorldTemperatureCold>
+  <ARIO_WorldTemperatureSlightlyCold>slightly cold</ARIO_WorldTemperatureSlightlyCold>
+  <ARIO_WorldTemperatureSlightlyWarm>slightly warm</ARIO_WorldTemperatureSlightlyWarm>
+  <ARIO_WorldTemperatureHot>hot</ARIO_WorldTemperatureHot>
+  <ARIO_WorldTemperatureVeryHot>very hot</ARIO_WorldTemperatureVeryHot>
+
+  <!-- Fixed labels generated onto the authored world -->
+  <ARIO_WorldRegion_LandsOfAlwaysWinter>Lands of Always Winter</ARIO_WorldRegion_LandsOfAlwaysWinter>
+  <ARIO_WorldRegion_North>The North</ARIO_WorldRegion_North>
+  <ARIO_WorldRegion_Vale>The Vale</ARIO_WorldRegion_Vale>
+  <ARIO_WorldRegion_Riverlands>The Riverlands</ARIO_WorldRegion_Riverlands>
+  <ARIO_WorldRegion_Westerlands>The Westerlands</ARIO_WorldRegion_Westerlands>
+  <ARIO_WorldRegion_Reach>The Reach</ARIO_WorldRegion_Reach>
+  <ARIO_WorldRegion_Stormlands>The Stormlands</ARIO_WorldRegion_Stormlands>
+  <ARIO_WorldRegion_Valyria>The Crownlands</ARIO_WorldRegion_Valyria>
+  <ARIO_WesterosTerritoryValyria>The Crownlands and Dragonstone</ARIO_WesterosTerritoryValyria>
+  <ARIO_WorldRegion_Dorne>Dorne</ARIO_WorldRegion_Dorne>
+  <ARIO_WorldRegion_IronIslands>The Iron Islands</ARIO_WorldRegion_IronIslands>
+
+  <!-- Window I -->
+  <ARIO_SetupModeTitle>A new colony</ARIO_SetupModeTitle>
+  <ARIO_SetupModeSubtitle>Choose how this world should be played.</ARIO_SetupModeSubtitle>
+  <ARIO_SetupModeVanilla>Play RimWorld</ARIO_SetupModeVanilla>
+  <ARIO_SetupModeVanillaDesc>The rim stays as it is. Outlander towns, mechanoids, insect hives and modern technology all remain. The House, culture and dynasty systems are still available to you, but nothing about the world is rewritten.</ARIO_SetupModeVanillaDesc>
+  <ARIO_SetupModeThrones>A Rim of Ice and Fire</ARIO_SetupModeThrones>
+  <ARIO_SetupModeThronesDesc>Convert this world into the Seven Kingdoms. You choose exactly which conversion rules apply on the next page, then found your House.</ARIO_SetupModeThronesDesc>
+  <ARIO_SetupPostpone>Postpone</ARIO_SetupPostpone>
+  <ARIO_SetupLauncherTip>Mouse 1: Reopen Setup\nMouse 2: Hide Medallion</ARIO_SetupLauncherTip>
+  <ARIO_SetupDynastyMedallionTip>Reopen the remaining setup.</ARIO_SetupDynastyMedallionTip>
+  <ARIO_SetupLauncherHidden>Setup Medallion hidden. You can continue or reopen the setup from the medallion in the Dynasty tab.</ARIO_SetupLauncherHidden>
+
+  <!-- Window II -->
+  <ARIO_SetupRulesTitle>World rules</ARIO_SetupRulesTitle>
+  <ARIO_SetupRulesSubtitle>Nothing is changed unless you tick it. What you tick is enforced for the whole game.</ARIO_SetupRulesSubtitle>
+  <ARIO_SetupRuleSettlements>Disable towns and villages</ARIO_SetupRuleSettlements>
+  <ARIO_SetupRuleSettlementsDesc>Removes unoccupied settlements outside the Westerosi Houses and stops new foreign settlements from appearing. Your colony, holdings, the Night's Watch, and factions protected by the preservation rules are exempt. Settlements with loaded maps are not removed.</ARIO_SetupRuleSettlementsDesc>
+  <ARIO_SetupRuleMechanoids>Disable mechanoids</ARIO_SetupRuleMechanoids>
+  <ARIO_SetupRuleMechanoidsDesc>Retires the mechanoid faction, blocks every mechanoid incident and cluster, and clears machines already standing on your maps, including a sealed ancient danger.</ARIO_SetupRuleMechanoidsDesc>
+  <ARIO_SetupRuleHive>Disable hives</ARIO_SetupRuleHive>
+  <ARIO_SetupRuleHiveDesc>Retires the insect faction, blocks infestations, and burns out any hive already present.</ARIO_SetupRuleHiveDesc>
+  <ARIO_SetupRuleTech>Medieval technology only</ARIO_SetupRuleTech>
+  <ARIO_SetupRuleTechDesc>Locks industrial research and later, and keeps modern gear out of traders, rewards and arriving pawns.</ARIO_SetupRuleTechDesc>
+  <ARIO_SetupRuleIdeos>Remove unused RimWorld faiths</ARIO_SetupRuleIdeos>
+  <ARIO_SetupRuleIdeosDesc>Remove unused ideoligions that no House or living person follows.</ARIO_SetupRuleIdeosDesc>
+  <ARIO_SetupRuleFactions>Remove non-Westerosi factions</ARIO_SetupRuleFactions>
+  <ARIO_SetupRuleFactionsDesc>Remove non-Westerosi factions except those selected below.</ARIO_SetupRuleFactionsDesc>
+  <ARIO_SetupRuleRegionalIdeos>Give factions Westerosi ideologies only</ARIO_SetupRuleRegionalIdeos>
+  <ARIO_SetupRuleRegionalIdeosDesc>Every faction in the world follows a Westerosi faith. Each House takes its own culture's creed and lesser Houses share their liege's instead of inventing a private copy. Any other faction left in play is matched to the nearest fit: tribal peoples keep the old gods, settled realms follow the Seven. Your own colony's faith is never changed.</ARIO_SetupRuleRegionalIdeosDesc>
+
+  <!-- Realm-rule groupings. -->
+  <ARIO_PeriodSandbox>Sandbox</ARIO_PeriodSandbox>
+  <ARIO_PeriodSandboxDesc>Start with no scripted storyline and no fixed historical progression. The Houses, their seats and their rivalries are all in place, but nothing is scheduled to happen on rails — the realm develops from what you and the storyteller do. This is the only period available while the authored storylines are unfinished.</ARIO_PeriodSandboxDesc>
+
+  <ARIO_SetupGroupWorld>World</ARIO_SetupGroupWorld>
+  <ARIO_SetupGroupFactions>Factions</ARIO_SetupGroupFactions>
+  <ARIO_SetupGroupFaith>Faith</ARIO_SetupGroupFaith>
+
+  <!-- Faction panel. -->
+  <ARIO_WesterosFactionVassalsNone>No lesser Houses</ARIO_WesterosFactionVassalsNone>
+  <ARIO_WesterosFactionVassalsOne>1 lesser House</ARIO_WesterosFactionVassalsOne>
+  <ARIO_WesterosFactionVassalsMany>{0} lesser Houses</ARIO_WesterosFactionVassalsMany>
+  <ARIO_WesterosFactionFaith>Faith: {0}</ARIO_WesterosFactionFaith>
+  <ARIO_WesterosFactionTip>Region: {0}\nFaith: {1}</ARIO_WesterosFactionTip>
+  <ARIO_WesterosFactionFaithUnchanged>Not changed</ARIO_WesterosFactionFaithUnchanged>
+  <ARIO_WesterosFaithOldGods>the old gods</ARIO_WesterosFaithOldGods>
+  <ARIO_WesterosFaithSeven>the Seven</ARIO_WesterosFaithSeven>
+
+  <!-- Install diagnostics; each patch falls back to the original layout on its own. -->
+  <ARIO_WesterosFaithsFailed>[A Rim of Ice and Fire] Westerosi-only faiths could not install; the original regional-faith rule is unchanged: {0}</ARIO_WesterosFaithsFailed>
+  <ARIO_RealmSetupLayoutFailed>[A Rim of Ice and Fire] Realm setup keeps its original layout: {0}</ARIO_RealmSetupLayoutFailed>
+  <ARIO_RealmModeLayoutFailed>[A Rim of Ice and Fire] The world chooser keeps its original layout: {0}</ARIO_RealmModeLayoutFailed>
+  <ARIO_SetupRuleExtraFactions>Add lesser Houses as vassals</ARIO_SetupRuleExtraFactions>
+  <ARIO_SetupRuleExtraFactionsDesc>Adds 1–10 lesser Houses to each supported region. Each begins sworn as a vassal to its regional faction, uses an authored House name and receives one fixed seat in its home territory.</ARIO_SetupRuleExtraFactionsDesc>
+  <ARIO_SetupSliderFactions>Lesser-House vassals per region: {0}</ARIO_SetupSliderFactions>
+  <ARIO_SetupSliderSettlements>Holdfasts per additional House: {0}</ARIO_SetupSliderSettlements>
+  <ARIO_SetupSliderPlayerDistance>Minimum House distance from your colony: {0} tiles</ARIO_SetupSliderPlayerDistance>
+  <ARIO_SetupSliderFactionDistance>Minimum distance between House seats: {0} tiles</ARIO_SetupSliderFactionDistance>
+  <ARIO_SetupSliderHouseSettlementDistance>Maximum holdfast distance from its House seat: {0} tiles</ARIO_SetupSliderHouseSettlementDistance>
+  <ARIO_SetupScaleWarning>This will found {0} new lesser Houses as regional vassals, holding about {1} new holdfasts. Every holdfast becomes land the realm tracks, so a wide setting means a busier map and a larger save.</ARIO_SetupScaleWarning>
+  <ARIO_SetupRuleRelocate>Relocate regional factions to their biomes</ARIO_SetupRuleRelocate>
+  <ARIO_SetupRuleRelocateDesc>Moves each culture to ground that suits it. Your distance settings keep House seats away from your colony and one another, while the culture suited to your landing biome is still placed nearest.</ARIO_SetupRuleRelocateDesc>
+  <ARIO_SetupBack>Back</ARIO_SetupBack>
+  <ARIO_SetupRulesConfirmTitle>Are you sure you wish to continue?</ARIO_SetupRulesConfirmTitle>
+  <ARIO_SetupRulesConfirmBody>Once these settings are applied, you cannot return to this setup page.</ARIO_SetupRulesConfirmBody>
+  <ARIO_SetupContinueConversion>Continue</ARIO_SetupContinueConversion>
+
+  <!-- Loading screen -->
+  <ARIO_SetupPreparingTitle>Preparing the realm...</ARIO_SetupPreparingTitle>
+  <ARIO_SetupPreparingSubtitle>Do not close this window.</ARIO_SetupPreparingSubtitle>
+  <ARIO_SetupProgressCount>{0} / {1}   {2}</ARIO_SetupProgressCount>
+  <ARIO_SetupStepHouses>Creating Houses</ARIO_SetupStepHouses>
+  <ARIO_SetupStepCultures>Assigning cultures</ARIO_SetupStepCultures>
+  <ARIO_SetupStepOutlanders>Retiring outlanders</ARIO_SetupStepOutlanders>
+  <ARIO_SetupStepSettlements>Emptying foreign towns</ARIO_SetupStepSettlements>
+  <ARIO_SetupStepReligions>Establishing religions</ARIO_SetupStepReligions>
+  <ARIO_SetupStepPurgeFaiths>Forgetting rimworld creeds</ARIO_SetupStepPurgeFaiths>
+  <ARIO_SetupStepLords>Appointing lords</ARIO_SetupStepLords>
+  <ARIO_SetupStepRelocate>Drawing the borders</ARIO_SetupStepRelocate>
+  <ARIO_SetupStepClaims>Generating claims</ARIO_SetupStepClaims>
+  <ARIO_SetupStepHoldings>Gathering the holdfasts</ARIO_SetupStepHoldings>
+  <ARIO_SetupStepMachines>Banishing the machines</ARIO_SetupStepMachines>
+  <ARIO_SetupStepHives>Burning out the hives</ARIO_SetupStepHives>
+  <ARIO_SetupStepTech>Forbidding modern arts</ARIO_SetupStepTech>
+  <ARIO_SetupStepOutsiders>Settling the outlanders</ARIO_SetupStepOutsiders>
+  <ARIO_SetupStepSeal>Sealing the records</ARIO_SetupStepSeal>
+
+  <!-- Window III -->
+  <ARIO_SetupHouseTitle>Create your House</ARIO_SetupHouseTitle>
+  <ARIO_SetupHouseSubtitle>Name your House and choose its sigil.</ARIO_SetupHouseSubtitle>
+  <ARIO_SetupHouseName>House name</ARIO_SetupHouseName>
+  <ARIO_SetupHouseWords>House words</ARIO_SetupHouseWords>
+  <ARIO_SetupHouseRegion>Home region</ARIO_SetupHouseRegion>
+  <ARIO_SetupHouseSigil>Sigil</ARIO_SetupHouseSigil>
+  <ARIO_SetupIdeologySigils>Ideology symbols...</ARIO_SetupIdeologySigils>
+  <ARIO_SetupIdeologySigilsTitle>Choose an ideology symbol</ARIO_SetupIdeologySigilsTitle>
+  <ARIO_SetupSigilColor>Primary colour (cloth and banners)</ARIO_SetupSigilColor>
+  <ARIO_SetupHouseHint>Your region suggests a sigil and faith; you may change both.</ARIO_SetupHouseHint>
+
+  <!-- Window IV -->
+  <ARIO_SetupFaithTitle>Choose your faith</ARIO_SetupFaithTitle>
+  <ARIO_SetupFaithSubtitle>Choose your House faith.</ARIO_SetupFaithSubtitle>
+  <ARIO_SetupFaithKeep>Keep our present ideoligion</ARIO_SetupFaithKeep>
+  <ARIO_SetupFaithKeepDesc>Nothing changes. Your colonists keep the ideoligion they already believe in.</ARIO_SetupFaithKeepDesc>
+
+  <!-- Debug -->
+  <ARIO_SetupDebugReopen>Reopen the new colony setup from the first page.</ARIO_SetupDebugReopen>
+  <ARIO_SetupDebugRerun>Run the saved world conversion again.</ARIO_SetupDebugRerun>
+  <ARIO_SetupDebugNoRules>This colony has no saved conversion rules. Reopen the setup and choose a game of thrones first.</ARIO_SetupDebugNoRules>
+
+</LanguageData>

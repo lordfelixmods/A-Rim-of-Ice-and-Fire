@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_DDealRelationship>Relationship</ARIO_DDealRelationship>
+  <ARIO_DDealOfferSilver>Offer Silver</ARIO_DDealOfferSilver>
+  <ARIO_DDealDemandSilver>Demand Silver</ARIO_DDealDemandSilver>
+  <ARIO_DDealOfferPeace>Offer Peace</ARIO_DDealOfferPeace>
+  <ARIO_DDealDemandPeace>Demand Peace</ARIO_DDealDemandPeace>
+  <ARIO_DDealAskJob>Ask for Job</ARIO_DDealAskJob>
+  <ARIO_DDealOfferMarriage>Offer Marriage</ARIO_DDealOfferMarriage>
+  <ARIO_DDealWards>Wards</ARIO_DDealWards>
+  <ARIO_DActionSummaryWar>Start a war with this House.</ARIO_DActionSummaryWar>
+  <ARIO_DActionSummaryOfferPeace>Offer terms to end the current war.</ARIO_DActionSummaryOfferPeace>
+  <ARIO_DActionSummaryDemandPeace>Demand terms to end the current war.</ARIO_DActionSummaryDemandPeace>
+  <ARIO_DActionSummarySwear>Become this House's vassal and recognize them as your liege.</ARIO_DActionSummarySwear>
+  <ARIO_DActionSummaryDemandOath>Demand that this House become your vassal.</ARIO_DActionSummaryDemandOath>
+  <ARIO_DActionSummaryOfferSilver>Offer immediate silver or daily tribute.</ARIO_DActionSummaryOfferSilver>
+  <ARIO_DActionSummaryDemandSilver>Ask this House for silver or daily tribute.</ARIO_DActionSummaryDemandSilver>
+  <ARIO_DActionSummaryOfferLevies>Lend soldiers from your holdings for a fixed term.</ARIO_DActionSummaryOfferLevies>
+  <ARIO_DActionSummaryDemandLevies>Request soldiers to garrison your holdings for a fixed term.</ARIO_DActionSummaryDemandLevies>
+  <ARIO_DActionSummaryOfferLand>Cede one eligible holding to this House.</ARIO_DActionSummaryOfferLand>
+  <ARIO_DActionSummaryDemandLand>Ask this House to cede one eligible holding.</ARIO_DActionSummaryDemandLand>
+  <ARIO_DActionSummaryTrade>Establish scheduled trade caravans between your Houses.</ARIO_DActionSummaryTrade>
+  <ARIO_DActionSummarySupplyJob>Deliver recurring supplies to this House for payment.</ARIO_DActionSummarySupplyJob>
+  <ARIO_DActionSummaryAttackJob>Attack a settlement belonging to a shared enemy.</ARIO_DActionSummaryAttackJob>
+  <ARIO_DActionSummaryTrial>Settle the dispute through two chosen champions.</ARIO_DActionSummaryTrial>
+  <ARIO_DActionSummaryPrisoners>Exchange or ransom named captives at a chosen settlement.</ARIO_DActionSummaryPrisoners>
+  <ARIO_DActionSummaryRequestSettlers>Request abstract smallfolk households for one of your holdings.</ARIO_DActionSummaryRequestSettlers>
+  <ARIO_DActionSummaryOfferSettlers>Offer abstract smallfolk households to this House.</ARIO_DActionSummaryOfferSettlers>
+  <ARIO_DActionSummaryMarriage>Arrange a marriage or non-romantic betrothal.</ARIO_DActionSummaryMarriage>
+  <ARIO_DActionSummaryFoster>Arrange a temporary ward between the Houses.</ARIO_DActionSummaryFoster>
+  <ARIO_DActionSummarySquire>Arrange temporary squire service between the Houses.</ARIO_DActionSummarySquire>
+  <ARIO_DActionTipOfferSilver>Silver is paid when the proposal is accepted. Daily tribute continues until the agreement ends; three missed payments cancel it.</ARIO_DActionTipOfferSilver>
+  <ARIO_DActionTipDemandSilver>Their available treasury limits immediate payment. Daily tribute continues until the agreement ends.</ARIO_DActionTipDemandSilver>
+  <ARIO_DActionTipOfferLevies>Lent soldiers leave their source holdings and workforce for the full term. Survivors return to those exact holdings.</ARIO_DActionTipOfferLevies>
+  <ARIO_DActionTipDemandLevies>Hired soldiers fill available garrison capacity for the chosen term, then return to their House.</ARIO_DActionTipDemandLevies>
+  <ARIO_DActionTipOfferLand>Only settled, idle holdings can be ceded. Ownership, population, development and surviving garrison strength transfer permanently.</ARIO_DActionTipOfferLand>
+  <ARIO_DActionTipDemandLand>A House yields an eligible holding only under substantial value or military pressure. The transfer is permanent.</ARIO_DActionTipDemandLand>
+  <ARIO_DActionTipMigration>One migration may involve 1–3 households. Departure requires a caravan envoy and has a 20-day deadline followed by a 30-day House cooldown; new villages require three households.</ARIO_DActionTipMigration>
+  <ARIO_DynastyFamilyTreeToggle>Family Tree</ARIO_DynastyFamilyTreeToggle>
+  <ARIO_DDealPeaceExplanation>Propose an end to this war. Select other actions to add concessions or demands to the same proposal. Offer Peace and Demand Peace use the same acceptance rules: the complete bargain determines whether the other House agrees. Demanding peace does not guarantee acceptance.</ARIO_DDealPeaceExplanation>
+  <ARIO_DDealMarriageMode>Arrangement: {0}. Younger pairs use a political contract only; adults may also choose to keep it political. A romantic spouse relationship and travel require both adults' willing reconfirmation.</ARIO_DDealMarriageMode>
+  <ARIO_DDealOfferLevies>Offer levies</ARIO_DDealOfferLevies>
+  <ARIO_DDealDemandLevies>Demand levies</ARIO_DDealDemandLevies>
+  <ARIO_DDealOfferLand>Offer territory</ARIO_DDealOfferLand>
+  <ARIO_DDealDemandLand>Demand territory</ARIO_DDealDemandLand>
+  <ARIO_DDealWarExclusive>A declaration of war carries no other terms. Deselect it to bargain instead.</ARIO_DDealWarExclusive>
+  <ARIO_DNavOverview>Overview</ARIO_DNavOverview>
+  <ARIO_DNavRelationships>Relationships</ARIO_DNavRelationships>
+  <ARIO_DNavAgreements>Agreements</ARIO_DNavAgreements>
+  <ARIO_DNavActions>Actions</ARIO_DNavActions>
+  <ARIO_DNavNavigate>Diplomacy views</ARIO_DNavNavigate>
+  <ARIO_DNavMoney>Silver and tribute</ARIO_DNavMoney>
+  <ARIO_DNavLand>Territory</ARIO_DNavLand>
+  <ARIO_DNavLevies>Levy service</ARIO_DNavLevies>
+  <ARIO_DNavTrade>Caravan trade pact</ARIO_DNavTrade>
+  <ARIO_DNavTreaty>Signed treaty</ARIO_DNavTreaty>
+  <ARIO_DNavSupply>Supply contract</ARIO_DNavSupply>
+  <ARIO_DNavAttack>Attack contract</ARIO_DNavAttack>
+  <ARIO_DNavPeople>Dynastic people</ARIO_DNavPeople>
+  <ARIO_DNavReview>Review all terms</ARIO_DNavReview>
+  <ARIO_DNavReviewChance>Review · {0}</ARIO_DNavReviewChance>
+  <ARIO_DNavReviewCount>Review proposal · {0} terms</ARIO_DNavReviewCount>
+  <ARIO_DNavReviewHeading>Selected terms</ARIO_DNavReviewHeading>
+  <ARIO_DNavDraftEmpty>No proposal terms selected</ARIO_DNavDraftEmpty>
+  <ARIO_DNavChooseAction>Choose a diplomatic action</ARIO_DNavChooseAction>
+  <ARIO_DNavClear>Clear</ARIO_DNavClear>
+  <ARIO_DNavClearConfirm>Discard the entire unsent proposal? Signed agreements are not affected.</ARIO_DNavClearConfirm>
+  <ARIO_DNavIncomplete>Select all required people, resources and destinations</ARIO_DNavIncomplete>
+  <ARIO_DNavChanceCompact>{0} acceptance</ARIO_DNavChanceCompact>
+  <ARIO_DNavAcceptanceHint>Hover for acceptance factors</ARIO_DNavAcceptanceHint>
+  <ARIO_DNavWarImmediate>Unilateral declaration · no acceptance roll</ARIO_DNavWarImmediate>
+  <ARIO_DNavWarWeariness>War exhaustion</ARIO_DNavWarWeariness>
+  <ARIO_DNavAtGlance>At a glance</ARIO_DNavAtGlance>
+  <ARIO_DNavAgreementCount>{0} active agreements</ARIO_DNavAgreementCount>
+  <ARIO_DNavAgreementOpen>View signed terms, deadlines and obligations</ARIO_DNavAgreementOpen>
+  <ARIO_DNavAttention>Needs attention</ARIO_DNavAttention>
+  <ARIO_DNavFeudalAttention>Taxes, banner service, supplies or a visiting liege</ARIO_DNavFeudalAttention>
+  <ARIO_DNavViewRelationships>View relationships and family trees</ARIO_DNavViewRelationships>
+  <ARIO_DNavRelationshipsHelp>Click a portrait to explore that person's family. The helmet button changes their portrait only. The shields below show how other factions regard the selected House. Trade means friendly trading relations; signed caravan pacts and other agreements are listed separately.</ARIO_DNavRelationshipsHelp>
+  <ARIO_DNavNoAgreements>No active agreements with this faction. Use Actions to propose one.</ARIO_DNavNoAgreements>
+  <ARIO_DNavBackAgreements>Back to all agreements</ARIO_DNavBackAgreements>
+  <ARIO_DNavAgreementEnded>This agreement has ended or is no longer available. Return to the agreement list for current terms.</ARIO_DNavAgreementEnded>
+  <ARIO_DNavFealty>Feudal bond and obligations</ARIO_DNavFealty>
+  <ARIO_DNavTribute>Recurring tribute</ARIO_DNavTribute>
+  <ARIO_DNavTributeStatus>You pay {0} silver/day · They pay {1} silver/day</ARIO_DNavTributeStatus>
+  <ARIO_DNavNextDue>Next assessment: {0}</ARIO_DNavNextDue>
+  <ARIO_DNavNewProposal>New proposal</ARIO_DNavNewProposal>
+  <ARIO_DNavReplaceConfirm>Replace the unsent proposal with a new action? Its current terms will be cleared. To combine terms instead, return to the draft and use Add/change terms.</ARIO_DNavReplaceConfirm>
+  <ARIO_DNavResumeDraft>Resume current proposal</ARIO_DNavResumeDraft>
+  <ARIO_DNavBackActions>Back to actions · keep draft</ARIO_DNavBackActions>
+  <ARIO_DNavUnavailable>Unavailable with the current relationship or an existing agreement. Review Agreements for current commitments. Signing is revalidated before submission.</ARIO_DNavUnavailable>
+  <ARIO_DNavActionsHelp>Select actions to combine their terms into one proposal. Deselecting a row removes its terms. War carries no other terms; primary actions are mutually exclusive. Choose one dynastic arrangement and one job type per proposal. The acceptance chance below covers the complete bargain.</ARIO_DNavActionsHelp>
+  <ARIO_DNavNegotiation>Negotiated proposal</ARIO_DNavNegotiation>
+  <ARIO_DNavEditTerms>Add/change terms · {0}</ARIO_DNavEditTerms>
+  <ARIO_DNavAddTerms>Edit a part of this proposal</ARIO_DNavAddTerms>
+  <ARIO_DNavIncludeTrade>Include a caravan trade pact</ARIO_DNavIncludeTrade>
+  <ARIO_DNavOathHelp>You can serve only one liege. Oaths use the existing acceptance and Integrity rules. Promised silver, land or soldiers are additional terms, not replacements for the oath.</ARIO_DNavOathHelp>
+  <ARIO_DNavPeaceHelp>Select Offer Peace or Demand Peace while at war, then add concessions or demands using the other action rows. All selected terms form a single negotiated peace proposal.</ARIO_DNavPeaceHelp>
+  <ARIO_DNavReviewHelp>Every selected term remains in this proposal even when its editor is not visible. Click a term to edit it; Remove clears only that term. The pinned acceptance reflects the complete package. Submission opens a final confirmation and revalidates current availability.</ARIO_DNavReviewHelp>
+  <ARIO_DNavRemove>Remove</ARIO_DNavRemove>
+  <ARIO_DNavDetails>Details</ARIO_DNavDetails>
+  <ARIO_DNavHelpCare>Care and consequences</ARIO_DNavHelpCare>
+  <ARIO_DNavHelpConsent>Marriage eligibility and consent</ARIO_DNavHelpConsent>
+  <ARIO_DNavHelpPledge>How betrothal works</ARIO_DNavHelpPledge>
+  <ARIO_DNavHelpLimits>Travel and participant limits</ARIO_DNavHelpLimits>
+  <ARIO_DNavHelpTrade>Caravan schedule rules</ARIO_DNavHelpTrade>
+  <ARIO_DNavHelpTreaty>Treaty rules and breach costs</ARIO_DNavHelpTreaty>
+  <ARIO_DNavHelpSupply>Delivery and contract rules</ARIO_DNavHelpSupply>
+  <ARIO_DNavHelpAttack>Target and victory rules</ARIO_DNavHelpAttack>
+  <ARIO_DNavHelpRelationships>Reading portraits and relations</ARIO_DNavHelpRelationships>
+  <ARIO_DNavHelpActions>Combining diplomatic terms</ARIO_DNavHelpActions>
+  <ARIO_DNavHelpReview>Reviewing your proposal</ARIO_DNavHelpReview>
+  <ARIO_DNavHelpPeace>Adding peace settlement terms</ARIO_DNavHelpPeace>
+  <ARIO_DNavHelpOath>Fealty rules</ARIO_DNavHelpOath>
+  <ARIO_DNavPeopleReview>{0}: {1} / {2} · {3} · {4} days · dowry {5}</ARIO_DNavPeopleReview>
+</LanguageData>

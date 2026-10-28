@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>ARIO_WithdrawMarketGoods</defName>
+    <driverClass>ARimOfIceAndFire.MarketUI.JobDriver_WithdrawMarketGoods</driverClass>
+    <reportString>returning TargetA from the market stall to storage.</reportString>
+    <suspendable>false</suspendable>
+  </JobDef>
+  <WorkGiverDef>
+    <defName>ARIO_WithdrawMarketGoods</defName>
+    <label>return market goods to storage</label>
+    <giverClass>ARimOfIceAndFire.MarketUI.WorkGiver_WithdrawMarketGoods</giverClass>
+    <workType>Hauling</workType>
+    <verb>haul</verb>
+    <gerund>hauling</gerund>
+    <priorityInType>17</priorityInType>
+    <requiredCapacities><li>Manipulation</li></requiredCapacities>
+  </WorkGiverDef>
+</Defs>

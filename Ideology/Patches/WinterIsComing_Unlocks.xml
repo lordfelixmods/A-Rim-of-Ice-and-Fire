@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- requiredMemes is an OR list: a precept is offered when the ideo has ANY meme in it.
+       Winter Is Coming demands these precepts, so it must also be a route to them, or the
+       meme would require precepts the ideo is not allowed to take.
+       Corpses_DontCare and RoughLiving_Welcomed are handled in SharedFaith_Corpses.xml. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PreceptDef[defName="Comfort_Ignored"]/requiredMemes</xpath>
+    <value><li>ARIOIAF_WinterIsComing</li></value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PreceptDef[defName="Temperature_Tough"]/requiredMemes</xpath>
+    <value><li>ARIOIAF_WinterIsComing</li></value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PreceptDef[defName="NutrientPasteEating_DontMind"]/requiredMemes</xpath>
+    <value><li>ARIOIAF_WinterIsComing</li></value>
+  </Operation>
+</Patch>

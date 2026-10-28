@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TerrainDef ParentName="BridgeBase">
+    <defName>ARIO_HeavyStoneBridge</defName>
+    <label>heavy stone bridge</label>
+    <description>A substantial masonry bridge with a paved deck and stone piers. Supports heavy structures, including defensive walls and gatehouses. Built over rivers, shallow water or marsh without filling the underlying channel. If the bridge collapses, structures on it collapse too.</description>
+    <!-- Vanilla Core art only: the stone floor tile for the deck and the game's own bridge
+         understructure, tinted to stone. No custom bridge textures ship with this mod. -->
+    <texturePath>Terrain/Surfaces/TileStone</texturePath>
+    <bridgePropsPath>Terrain/Misc/BridgeProps</bridgePropsPath>
+    <spaceBridgePropsPath>Terrain/Misc/BridgeSpaceProps</spaceBridgePropsPath>
+    <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
+    <color>(105,95,97)</color>
+    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+    <affordances><li>Light</li><li>Medium</li><li>Heavy</li><li>Walkable</li></affordances>
+    <constructEffect>ConstructDirt</constructEffect>
+    <researchPrerequisites><li>Stonecutting</li></researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <statBases><WorkToBuild>3600</WorkToBuild><Flammability>0</Flammability><Beauty>1</Beauty></statBases>
+    <!-- A dedicated terrain designator supplies the chosen stuff to vanilla's blueprint/frame.
+         Stony includes every vanilla block and compatible modded stone-block stuff def. -->
+    <costStuffCount>20</costStuffCount>
+    <stuffCategories><li>Stony</li></stuffCategories>
+    <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <destroyOnBombDamageThreshold>180</destroyOnBombDamageThreshold>
+  </TerrainDef>
+</Defs>

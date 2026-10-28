@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef Name="ARIOIAF_ValemanBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionDef>ARIOIAF_Valemen</defaultFactionDef>
+    <minGenerationAge>18</minGenerationAge>
+    <maxGenerationAge>65</maxGenerationAge>
+    <initialResistanceRange>12~25</initialResistanceRange>
+    <initialWillRange>1~3</initialWillRange>
+    <backstoryFilters><li><categories><li>ARIOIAF_Backstory_Vale</li></categories></li></backstoryFilters>
+    <apparelMoney>0</apparelMoney>
+    <apparelRequired><li>ARIOIAF_WesterosTunic</li><li>ARIOIAF_WesterosGambeson</li></apparelRequired>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+    <allowRoyalApparelRequirements>false</allowRoyalApparelRequirements>
+    <allowRoyalRoomRequirements>false</allowRoyalRoomRequirements>
+    <weaponMoney>300~600</weaponMoney>
+    <weaponTags><li>NeolithicMelee</li><li>MedievalMeleeDecent</li><li>ARIOIAF_WesterosMeleeDecent</li></weaponTags>
+    <invFoodDef>Pemmican</invFoodDef>
+    <invNutrition>2.55</invNutrition>
+    <gearHealthRange>0.8~1</gearHealthRange>
+    <modExtensions><li Class="ARimOfIceAndFireCore.ValemanOutfitExtension" /></modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_ValemanBase">
+    <defName>ARIOIAF_Valemen_Levy</defName><label>Vale levy</label>
+    <forcedTraits><ARIOIAF_Trait_Levy>0</ARIOIAF_Trait_Levy></forcedTraits>
+    <combatPower>45</combatPower>
+    <skills><li><skill>Melee</skill><range>3~7</range></li></skills>
+    <itemQuality>Poor</itemQuality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_ValemanBase">
+    <defName>ARIOIAF_Valemen_Bowman</defName><label>Vale bowman</label><labelFemale>Vale bowwoman</labelFemale>
+    <forcedTraits><ARIOIAF_Trait_ManAtArms>0</ARIOIAF_Trait_ManAtArms></forcedTraits>
+    <combatPower>75</combatPower>
+    <weaponTags Inherit="False"><li>NeolithicRanged</li><li>ARIOIAF_WesterosCrossbowLight</li><li>ARIOIAF_WesterosCrossbowMilitary</li><li>ARIOIAF_WesterosArbalest</li></weaponTags>
+    <apparelRequired><li>ARIOIAF_WesterosHelmet</li><li>ARIOIAF_WesterosGorget</li></apparelRequired>
+    <skills><li><skill>Shooting</skill><range>7~12</range></li></skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_ValemanBase" Name="ARIOIAF_ValeArmoredBase" Abstract="True">
+    <apparelRequired><li>ARIOIAF_WesterosHelmet</li></apparelRequired>
+    <weaponTags Inherit="False"><li>MedievalMeleeDecent</li><li>ARIOIAF_WesterosMeleeDecent</li></weaponTags>
+    <skills><li><skill>Melee</skill><range>7~12</range></li></skills>
+    <!-- Plate and belt are added only when PawnCanWear permits them. -->
+    <modExtensions Inherit="False"><li Class="ARimOfIceAndFireCore.ValemanOutfitExtension"><armor>ARIOIAF_WesterosPlateArmor</armor></li></modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_ValeArmoredBase">
+    <defName>ARIOIAF_Valemen_Footman</defName><label>Vale footman</label><labelFemale>Vale footwoman</labelFemale>
+    <forcedTraits><ARIOIAF_Trait_ManAtArms>0</ARIOIAF_Trait_ManAtArms></forcedTraits>
+    <combatPower>110</combatPower>
+    <apparelRequired><li>ARIOIAF_WesterosGorget</li></apparelRequired>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_ValeArmoredBase" Name="ARIOIAF_ValeEliteBase" Abstract="True">
+    <!-- Each kind wears only one gorget; this branch never inherits the Westeros gorget. -->
+    <apparelRequired><li>ARIOIAF_HouseArrynGorget</li></apparelRequired>
+    <weaponTags Inherit="False"><li>MedievalMeleeAdvanced</li><li>ARIOIAF_WesterosMeleeAdvanced</li></weaponTags>
+    <itemQuality>Good</itemQuality>
+    <skills Inherit="False"><li><skill>Melee</skill><range>10~15</range></li></skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_ValeEliteBase">
+    <defName>ARIOIAF_Valemen_Houseguard</defName><label>Vale houseguard</label>
+    <forcedTraits><ARIOIAF_Trait_Knight>0</ARIOIAF_Trait_Knight></forcedTraits>
+    <combatPower>150</combatPower>
+    <royalTitleChance>1</royalTitleChance>
+    <titleSelectOne MayRequire="Ludeon.RimWorld.Royalty"><li>ARIOIAF_EasternTitle_HedgeKnight</li><li>ARIOIAF_EasternTitle_LandedKnight</li></titleSelectOne>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_ValeEliteBase">
+    <defName>ARIOIAF_Valemen_Officer</defName><label>Vale officer</label>
+    <forcedTraits><ARIOIAF_Trait_LandedKnight>0</ARIOIAF_Trait_LandedKnight></forcedTraits>
+    <combatPower>175</combatPower><maxPerGroup>2</maxPerGroup>
+    <skills Inherit="False"><li><skill>Melee</skill><range>11~16</range></li><li><skill>Social</skill><range>8~13</range></li></skills>
+    <royalTitleChance>1</royalTitleChance>
+    <titleSelectOne MayRequire="Ludeon.RimWorld.Royalty"><li>ARIOIAF_EasternTitle_LandedKnight</li><li>ARIOIAF_EasternTitle_Lord</li><li>ARIOIAF_EasternTitle_HighLord</li></titleSelectOne>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_ValeEliteBase">
+    <defName>ARIOIAF_Valemen_CaravanLeader</defName><label>Vale caravan leader</label>
+    <forcedTraits><ARIOIAF_Trait_HedgeKnight>0</ARIOIAF_Trait_HedgeKnight></forcedTraits>
+    <combatPower>110</combatPower><trader>true</trader>
+    <itemQuality>Normal</itemQuality>
+    <weaponTags Inherit="False"><li>MedievalMeleeDecent</li><li>ARIOIAF_WesterosMeleeDecent</li></weaponTags>
+    <skills Inherit="False"><li><skill>Melee</skill><range>6~10</range></li><li><skill>Social</skill><range>10~16</range></li></skills>
+    <royalTitleChance>1</royalTitleChance>
+    <titleSelectOne MayRequire="Ludeon.RimWorld.Royalty"><li>ARIOIAF_EasternTitle_Squire</li><li>ARIOIAF_EasternTitle_HedgeKnight</li><li>ARIOIAF_EasternTitle_LandedKnight</li></titleSelectOne>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ARIOIAF_ValeEliteBase">
+    <defName>ARIOIAF_Valemen_Warden</defName><label>warden of the East</label>
+    <forcedTraits><ARIOIAF_Trait_LordLady>0</ARIOIAF_Trait_LordLady></forcedTraits>
+    <combatPower>220</combatPower><factionLeader>true</factionLeader>
+    <itemQuality>Excellent</itemQuality>
+    <titleRequired MayRequire="Ludeon.RimWorld.Royalty">ARIOIAF_EasternTitle_WardenOfTheEast</titleRequired>
+    <skills Inherit="False"><li><skill>Melee</skill><range>13~18</range></li><li><skill>Social</skill><range>13~18</range></li></skills>
+  </PawnKindDef>
+</Defs>

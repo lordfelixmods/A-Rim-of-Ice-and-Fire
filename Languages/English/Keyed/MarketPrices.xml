@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_StallItemPrice>{0} silver/item</ARIO_StallItemPrice>
+  <ARIO_StallItemPriceRange>{0}-{1} silver/item</ARIO_StallItemPriceRange>
+  <ARIO_StallPriceAndFood>{0} | {1}</ARIO_StallPriceAndFood>
+  <ARIO_StallPriceHelp>Base market value of this stock: {0} silver. Includes actual quality, condition and salvage discount. Shopper, upsell and demand modifiers apply at checkout.</ARIO_StallPriceHelp>
+</LanguageData>

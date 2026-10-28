@@ -1,0 +1,15 @@
+{
+  "TextureModID": "lordfelix.arimoficeandfire",
+  "ItemDefName": "ARIOIAF_WesterosBannerSpear",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.594,
+  "OffY": -0.0106,
+  "Rotation": 45.0,
+  "ScaleX": 1.5,
+  "ScaleY": 1.5,
+  "HandsMode": 0,
+  "BladeStart": 1.179,
+  "BladeEnd": 1.4599,
+  "MeleeWeaponType": 6
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- These stable legacy IDs are shared with The Long Night. This folder
+       loads ONLY without that mod; the common patch supplies our material. -->
+  <StuffCategoryDef><defName>TLN_ValyrianSteel</defName><label>Valyrian steel</label></StuffCategoryDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>TLN_ValyrianSteel</defName>
+    <label>Valyrian steel</label>
+  </ThingDef>
+</Defs>

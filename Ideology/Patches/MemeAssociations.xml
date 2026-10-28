@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!--
+    Precepts demoted from hard requirements to "strongly suggested".
+
+    associatedMemes raises a precept's selection weight when an ideoligion is generated with
+    that meme, so these stay thematic and are still offered prominently — they just aren't
+    forced any more. This mod's own precepts already declare associatedMemes in their defs;
+    only vanilla precepts need patching here.
+
+    Each entry appends when the node exists and creates it otherwise, so vanilla entries and
+    other mods' additions are preserved.
+  -->
+  <Operation Class="PatchOperationSequence">
+    <operations>
+
+      <!-- Winter Is Coming: hardship and northern indifference. -->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="Comfort_Ignored"]/associatedMemes</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="Comfort_Ignored"]/associatedMemes</xpath>
+          <value><li>ARIOIAF_WinterIsComing</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="Comfort_Ignored"]</xpath>
+          <value><associatedMemes><li>ARIOIAF_WinterIsComing</li></associatedMemes></value>
+        </nomatch>
+      </li>
+
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="NutrientPasteEating_DontMind"]/associatedMemes</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="NutrientPasteEating_DontMind"]/associatedMemes</xpath>
+          <value><li>ARIOIAF_WinterIsComing</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="NutrientPasteEating_DontMind"]</xpath>
+          <value><associatedMemes><li>ARIOIAF_WinterIsComing</li></associatedMemes></value>
+        </nomatch>
+      </li>
+
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="Corpses_DontCare"]/associatedMemes</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="Corpses_DontCare"]/associatedMemes</xpath>
+          <value><li>ARIOIAF_WinterIsComing</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="Corpses_DontCare"]</xpath>
+          <value><associatedMemes><li>ARIOIAF_WinterIsComing</li></associatedMemes></value>
+        </nomatch>
+      </li>
+
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="Raiding_Respected"]/associatedMemes</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="Raiding_Respected"]/associatedMemes</xpath>
+          <value><li>ARIOIAF_WinterIsComing</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="Raiding_Respected"]</xpath>
+          <value><associatedMemes><li>ARIOIAF_WinterIsComing</li></associatedMemes></value>
+        </nomatch>
+      </li>
+
+      <!-- Feudalism: the social shape of a sworn hierarchy. -->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="IdeoDiversity_Disapproved"]/associatedMemes</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="IdeoDiversity_Disapproved"]/associatedMemes</xpath>
+          <value><li>ARIOIAF_Feudalism</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="IdeoDiversity_Disapproved"]</xpath>
+          <value><associatedMemes><li>ARIOIAF_Feudalism</li></associatedMemes></value>
+        </nomatch>
+      </li>
+
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="Proselytizing_Occasionally"]/associatedMemes</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="Proselytizing_Occasionally"]/associatedMemes</xpath>
+          <value><li>ARIOIAF_Feudalism</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="Proselytizing_Occasionally"]</xpath>
+          <value><associatedMemes><li>ARIOIAF_Feudalism</li></associatedMemes></value>
+        </nomatch>
+      </li>
+
+      <!-- Old Gods: demoted from hard requirements (8 -> 4). -->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="Execution_RespectedIfGuilty"]/associatedMemes</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="Execution_RespectedIfGuilty"]/associatedMemes</xpath>
+          <value><li>ARIOIAF_Structure_OldGods</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="Execution_RespectedIfGuilty"]</xpath>
+          <value><associatedMemes><li>ARIOIAF_Structure_OldGods</li></associatedMemes></value>
+        </nomatch>
+      </li>
+
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="MarriageName_AlwaysMans"]/associatedMemes</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="MarriageName_AlwaysMans"]/associatedMemes</xpath>
+          <value><li>ARIOIAF_Structure_OldGods</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="MarriageName_AlwaysMans"]</xpath>
+          <value><associatedMemes><li>ARIOIAF_Structure_OldGods</li></associatedMemes></value>
+        </nomatch>
+      </li>
+
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="IdeoDiversity_Standard"]/associatedMemes</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="IdeoDiversity_Standard"]/associatedMemes</xpath>
+          <value><li>ARIOIAF_Structure_OldGods</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="IdeoDiversity_Standard"]</xpath>
+          <value><associatedMemes><li>ARIOIAF_Structure_OldGods</li></associatedMemes></value>
+        </nomatch>
+      </li>
+
+      <!-- Chivalric Honor: demoted from hard requirements (6 -> 3). -->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="Charity_Worthwhile"]/associatedMemes</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="Charity_Worthwhile"]/associatedMemes</xpath>
+          <value><li>ARIOIAF_ChivalricHonor</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="Charity_Worthwhile"]</xpath>
+          <value><associatedMemes><li>ARIOIAF_ChivalricHonor</li></associatedMemes></value>
+        </nomatch>
+      </li>
+
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="Lovin_SpouseOnly_Moderate"]/associatedMemes</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="Lovin_SpouseOnly_Moderate"]/associatedMemes</xpath>
+          <value><li>ARIOIAF_ChivalricHonor</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="Lovin_SpouseOnly_Moderate"]</xpath>
+          <value><associatedMemes><li>ARIOIAF_ChivalricHonor</li></associatedMemes></value>
+        </nomatch>
+      </li>
+
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="Apostasy_Disapproved"]/associatedMemes</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="Apostasy_Disapproved"]/associatedMemes</xpath>
+          <value><li>ARIOIAF_ChivalricHonor</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="Apostasy_Disapproved"]</xpath>
+          <value><associatedMemes><li>ARIOIAF_ChivalricHonor</li></associatedMemes></value>
+        </nomatch>
+      </li>
+
+      <!-- Blood of the Dragon: suggested, not forced. -->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/PreceptDef[defName="IdeoDiversity_Disapproved"]/associatedMemes</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="IdeoDiversity_Disapproved"]/associatedMemes</xpath>
+          <value><li>ARIOIAF_BloodOfTheDragon</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/PreceptDef[defName="IdeoDiversity_Disapproved"]</xpath>
+          <value><associatedMemes><li>ARIOIAF_BloodOfTheDragon</li></associatedMemes></value>
+        </nomatch>
+      </li>
+
+    </operations>
+  </Operation>
+</Patch>

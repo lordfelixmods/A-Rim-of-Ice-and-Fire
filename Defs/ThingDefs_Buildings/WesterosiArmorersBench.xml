@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BenchBase">
+    <defName>ARIOIAF_WesterosiArmorersBench</defName>
+    <label>Westerosi armorer's bench</label>
+    <description>Craft Westerosi clothing, armor, banners and ordinary weapons here. These wares require this bench and their usual research and skill.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/WesterosiArmorersBench/WesterosiArmorersBench</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <!-- Independent north and south perspectives use their actual in-game facings: the
+           supplied north-named rear art belongs to south. The supplied end view stays east;
+           west is its lossless left-right mirror (the vanilla Graphic_Multi convention), so
+           the feet stay at the bottom and nothing is drawn upside down. These painted facings
+           must NOT be rotated again by Graphic_Multi. 672x288 and 288x672 source images
+           match the 3.5x1.5 drawSize (swapped for east/west) exactly, so no facing is
+           stretched. Red mask takes stuff colour, green the white secondary and black
+           retains painted tools/fittings. -->
+      <drawRotated>false</drawRotated>
+      <drawSize>(3.5,1.5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <!-- Keep this save-stable def in place: old buildings, frames, blueprints and bills load
+         normally, while their dynamic occupied rectangle safely shrinks from 3x2 to 3x1. -->
+    <size>(3,1)</size>
+    <costStuffCount>120</costStuffCount>
+    <stuffCategories>
+      <li>Woody</li>
+      <li>Metallic</li>
+    </stuffCategories>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <WorkToBuild>4000</WorkToBuild>
+      <MaxHitPoints>220</MaxHitPoints>
+      <Flammability>0.8</Flammability>
+      <WorkTableWorkSpeedFactor>0.9</WorkTableWorkSpeedFactor>
+    </statBases>
+    <designationCategory>Production</designationCategory>
+    <uiOrder>2450</uiOrder>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <inspectorTabs><li>ITab_Bills</li></inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <workTableRoomRole>Workshop</workTableRoomRole>
+      <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities><li>ToolCabinet</li></linkableFacilities>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>Smithing</li>
+      <li>ComplexClothing</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

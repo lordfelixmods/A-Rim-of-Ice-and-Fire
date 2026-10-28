@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_TabardHeraldryChoose>Choose tabard heraldry</ARIO_TabardHeraldryChoose>
+  <ARIO_TabardHeraldryDescription>Choose the same regional heraldry offered by the banner spear, or automatically follow the wearer's House or faction. The choice sets the front and back emblems and the undyed fabric's regional color. Applied cloth dye takes precedence. The painted belt, buckle and crest artwork are not recolored by cloth dye. Material, quality, protection and belt benefits stay unchanged. The choice stays with each tabard when it is removed or given to another wearer.</ARIO_TabardHeraldryDescription>
+  <ARIO_TabardHeraldryAutomatic>Automatic: wearer's House or faction</ARIO_TabardHeraldryAutomatic>
+  <ARIO_TabardHeraldryInspect>Tabard heraldry: {0}</ARIO_TabardHeraldryInspect>
+  <ARIO_TabardHeraldrySelection>Selected tabards: {0}</ARIO_TabardHeraldrySelection>
+  <ARIO_TabardHeraldryMixed>mixed</ARIO_TabardHeraldryMixed>
+  <ARIO_TabardClothRestore>Restore regional/faction cloth color</ARIO_TabardClothRestore>
+</LanguageData>

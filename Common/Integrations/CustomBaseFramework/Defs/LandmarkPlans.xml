@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Standalone native-Core pieces: CBF integration does not require MO or VFEM2. -->
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>ARIO_LM_CBF_Category_Wall</defName><label>landmark curtain walls</label>
+  </CustomBaseFramework.PieceCategoryDef>
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>ARIO_LM_CBF_Category_Keep</defName><label>landmark keeps</label>
+  </CustomBaseFramework.PieceCategoryDef>
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>ARIO_LM_CBF_Category_Barracks</defName><label>landmark barracks</label>
+  </CustomBaseFramework.PieceCategoryDef>
+  <CustomBaseFramework.PieceDef>
+    <defName>ARIO_LM_CBF_Wall</defName><label>landmark curtain wall</label><schemaVersion>2</schemaVersion><type>WallPart</type><style>Standard</style>
+    <!-- CBF treats WallSegment as a wall strip, not as a doorless building needing open access. -->
+    <categories><li>ARIO_LM_CBF_Category_Wall</li><li>WallSegment</li></categories>
+    <outwardIsLow>true</outwardIsLow>
+    <legend>
+      <li><symbol>W</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>f</symbol><terrain>FlagstoneGranite</terrain></li>
+    </legend>
+    <mask><li>#</li><li>#</li><li>#</li><li>#</li><li>#</li></mask>
+    <terrain><li>f</li><li>f</li><li>f</li><li>f</li><li>f</li></terrain>
+    <things><li>W</li><li>.</li><li>.</li><li>.</li><li>W</li></things>
+  </CustomBaseFramework.PieceDef>
+  <CustomBaseFramework.PieceDef>
+    <defName>ARIO_LM_CBF_Keep</defName><label>landmark keep</label><schemaVersion>2</schemaVersion><style>Standard</style>
+    <categories><li>ARIO_LM_CBF_Category_Keep</li></categories>
+    <legend>
+      <li><symbol>W</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li><li><symbol>D</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>b</symbol><thing>Bed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li><li><symbol>t</symbol><thing>Table2x2c</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>c</symbol><thing>DiningChair</thing><stuff>WoodLog</stuff></li><li><symbol>f</symbol><terrain>FlagstoneGranite</terrain></li><li><symbol>r</symbol><roof>RoofConstructed</roof></li>
+    </legend>
+    <mask><li>###########</li><li>###########</li><li>###########</li><li>###########</li><li>###########</li><li>###########</li><li>###########</li><li>###########</li><li>###########</li><li>###########</li><li>###########</li></mask>
+    <terrain><li>fffffffffff</li><li>fffffffffff</li><li>fffffffffff</li><li>fffffffffff</li><li>fffffffffff</li><li>fffffffffff</li><li>fffffffffff</li><li>fffffffffff</li><li>fffffffffff</li><li>fffffffffff</li><li>fffffffffff</li></terrain>
+    <things><li>WWWWWWWWWWW</li><li>W.b....b..W</li><li>W.........W</li><li>W.........W</li><li>W.c..t..c.W</li><li>W.........W</li><li>W.........W</li><li>W.........W</li><li>W.b....b..W</li><li>W.........W</li><li>WWWWWDWWWWW</li></things>
+    <roof><li>rrrrrrrrrrr</li><li>rrrrrrrrrrr</li><li>rrrrrrrrrrr</li><li>rrrrrrrrrrr</li><li>rrrrrrrrrrr</li><li>rrrrrrrrrrr</li><li>rrrrrrrrrrr</li><li>rrrrrrrrrrr</li><li>rrrrrrrrrrr</li><li>rrrrrrrrrrr</li><li>rrrrrrrrrrr</li></roof>
+  </CustomBaseFramework.PieceDef>
+  <CustomBaseFramework.PieceDef>
+    <defName>ARIO_LM_CBF_Barracks</defName><label>landmark barracks</label><schemaVersion>2</schemaVersion><style>Standard</style>
+    <categories><li>ARIO_LM_CBF_Category_Barracks</li></categories>
+    <legend><li><symbol>W</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li><li><symbol>D</symbol><thing>Door</thing><stuff>WoodLog</stuff></li><li><symbol>b</symbol><thing>Bed</thing><stuff>WoodLog</stuff><rotation>North</rotation></li><li><symbol>r</symbol><roof>RoofConstructed</roof></li></legend>
+    <mask><li>#########</li><li>#########</li><li>#########</li><li>#########</li><li>#########</li><li>#########</li><li>#########</li></mask>
+    <things><li>WWWWWWWWW</li><li>Wb.b.b.bW</li><li>W.......W</li><li>W.......W</li><li>Wb.b.b.bW</li><li>W.......W</li><li>WWWWDWWWW</li></things>
+    <roof><li>rrrrrrrrr</li><li>rrrrrrrrr</li><li>rrrrrrrrr</li><li>rrrrrrrrr</li><li>rrrrrrrrr</li><li>rrrrrrrrr</li><li>rrrrrrrrr</li></roof>
+  </CustomBaseFramework.PieceDef>
+  <!-- A separate odd-width gatehouse makes one defensible passage through the solid curtain. -->
+  <CustomBaseFramework.PieceCategoryDef>
+    <defName>ARIO_LM_CBF_Category_Gatehouse</defName><label>landmark gatehouses</label>
+  </CustomBaseFramework.PieceCategoryDef>
+  <CustomBaseFramework.PieceDef>
+    <defName>ARIO_LM_CBF_Gatehouse</defName><label>landmark stone gatehouse</label><schemaVersion>2</schemaVersion><type>WallPart</type><style>Standard</style>
+    <categories><li>ARIO_LM_CBF_Category_Gatehouse</li><li>WallGateHouse</li></categories>
+    <drawnOutward>West</drawnOutward>
+    <legend>
+      <li><symbol>W</symbol><thing>Wall</thing><stuff>BlocksGranite</stuff></li>
+      <li><symbol>D</symbol><thing>Door</thing><stuff>WoodLog</stuff></li>
+      <li><symbol>f</symbol><terrain>FlagstoneGranite</terrain></li>
+      <li><symbol>A</symbol><anchor>Outside</anchor></li>
+      <li><symbol>M</symbol><anchor>Wall</anchor></li>
+    </legend>
+    <mask><li>#####</li><li>#####</li><li>#####</li><li>#####</li><li>#####</li><li>#####</li><li>#####</li><li>#####</li><li>#####</li></mask>
+    <terrain><li>fffff</li><li>fffff</li><li>fffff</li><li>fffff</li><li>fffff</li><li>fffff</li><li>fffff</li><li>fffff</li><li>fffff</li></terrain>
+    <things><li>WWWWW</li><li>W...W</li><li>W...W</li><li>WWWWW</li><li>.D.D.</li><li>WWWWW</li><li>W...W</li><li>W...W</li><li>WWWWW</li></things>
+    <anchors><li>..M..</li><li>.....</li><li>.....</li><li>.....</li><li>A....</li><li>.....</li><li>.....</li><li>.....</li><li>..M..</li></anchors>
+  </CustomBaseFramework.PieceDef>
+  <CustomBaseFramework.WallProfileDef>
+    <defName>ARIO_LM_CBF_StoneWall_5</defName><label>landmark stone curtain</label><style>Standard</style><depth>5</depth>
+    <segments><li>ARIO_LM_CBF_Wall</li></segments><gatehouse>ARIO_LM_CBF_Gatehouse</gatehouse><gatehouseOutward>West</gatehouseOutward>
+  </CustomBaseFramework.WallProfileDef>
+  <CustomBaseFramework.SettlementPlanDef Name="ARIO_LM_CBF_Estate" Abstract="True">
+    <materialList>CBF_MaterialList_Base</materialList><styles><li>Standard</li></styles><kind>MedievalTown</kind><coreSize>80~95</coreSize><mapSize>250</mapSize>
+    <roadMain>2</roadMain><roadLane>1</roadLane><minBuildingGap>3</minBuildingGap><targetBuilt>0.30</targetBuilt><noWdLoot>true</noWdLoot><forAllFactions>false</forAllFactions><factionTags><li>ARIO_HistoricalLandmarkForceOnly</li></factionTags>
+    <wards><li><kind>Town</kind><name>Castle</name><supply>1</supply><roads><li>FlagstoneGranite</li></roads>
+      <walls><li><piece>ARIO_LM_CBF_Wall</piece></li></walls>
+      <gatehouses><li><piece>ARIO_LM_CBF_Gatehouse</piece><count>1~2</count></li></gatehouses>
+      <districts><li><name>Keep</name><entries><li><piece>ARIO_LM_CBF_Keep</piece><count>1~1</count><unique>true</unique></li><li><piece>ARIO_LM_CBF_Barracks</piece><count>2~3</count><filler>true</filler></li></entries></li></districts>
+    </li></wards>
+  </CustomBaseFramework.SettlementPlanDef>
+  <!-- Profiles are force-selected by landmark identity, never by generic faction tags. -->
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_CBF_Estate"><defName>ARIO_LM_CBF_Winterfell</defName><label>Winterfell courts</label><coreSize>100~115</coreSize><targetBuilt>0.34</targetBuilt></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_CBF_Estate"><defName>ARIO_LM_CBF_Harrenhal</defName><label>Harrenhal enclosure</label><coreSize>130~155</coreSize><mapSize>300</mapSize><targetBuilt>0.24</targetBuilt></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_CBF_Estate"><defName>ARIO_LM_CBF_KingsLanding</defName><label>King's Landing and the Red Keep</label><coreSize>135~160</coreSize><mapSize>300</mapSize><targetBuilt>0.38</targetBuilt></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_CBF_Estate"><defName>ARIO_LM_CBF_CasterlyRock</defName><label>Casterly Rock defenses</label><coreSize>95~110</coreSize><mountainMantle>8</mountainMantle><targetBuilt>0.28</targetBuilt></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_CBF_Estate"><defName>ARIO_LM_CBF_Eyrie</defName><label>Eyrie mountaintop keep</label><coreSize>60~75</coreSize><mountainMantle>12</mountainMantle><targetBuilt>0.25</targetBuilt></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_CBF_Estate"><defName>ARIO_LM_CBF_Highgarden</defName><label>Highgarden courts</label><coreSize>110~125</coreSize><targetBuilt>0.32</targetBuilt></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_CBF_Estate"><defName>ARIO_LM_CBF_StormsEnd</defName><label>Storm's End curtain defenses</label><coreSize>95~110</coreSize><targetBuilt>0.30</targetBuilt></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_CBF_Estate"><defName>ARIO_LM_CBF_Sunspear</defName><label>Sunspear courts</label><coreSize>85~100</coreSize><targetBuilt>0.30</targetBuilt></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_CBF_Estate"><defName>ARIO_LM_CBF_Dragonstone</defName><label>Dragonstone citadel</label><coreSize>80~95</coreSize><mountainMantle>6</mountainMantle><targetBuilt>0.28</targetBuilt></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_CBF_Estate"><defName>ARIO_LM_CBF_Riverrun</defName><label>Riverrun river defenses</label><coreSize>80~95</coreSize><targetBuilt>0.30</targetBuilt></CustomBaseFramework.SettlementPlanDef>
+</Defs>

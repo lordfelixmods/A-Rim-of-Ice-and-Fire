@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_SettlersTitle>Smallfolk Seek Your Protection</ARIO_SettlersTitle>
+  <ARIO_SettlersBody>Several landless families ask permission to establish a village near your keep. They offer labor and future taxes in exchange for protection and help building their homes.\n\nAccepting begins construction using the duration in Mod Settings (five days by default). The families live in their own village; they do not join your colony. There are no taxes or levies during construction. After completion, the village starts with 2 of 6 soldiers and receives 15 tax-exempt days; exempt taxes are never owed later.\n\nYour House may support up to {0} settler-founded holdings, including those upgraded to towns or garrisons. Captured holdings do not count toward this limit. Further requests follow the smallfolk arrival interval in Mod Settings (5–10 days by default). Extra colonies do not provide free holdings or increase this limit.</ARIO_SettlersBody>
+  <ARIO_AcceptSettlers>Accept — begin construction</ARIO_AcceptSettlers>
+  <ARIO_PostponeSettlers>Postpone — ask again in 5 days</ARIO_PostponeSettlers>
+  <ARIO_DeclineSettlers>Decline — no new requests for 30 days</ARIO_DeclineSettlers>
+  <ARIO_SettlersPending>A smallfolk request awaits your decision.</ARIO_SettlersPending>
+  <ARIO_SettlerSchedule>Settler-founded holdings: {0}/{1}.</ARIO_SettlerSchedule>
+  <ARIO_SettlerCannotFound>A player keep and a free settler-founded holding slot are required.</ARIO_SettlerCannotFound>
+  <ARIO_SettlerNoSpace>No free, passable tile is available 2–3 steps from your keep. Choose another keep or postpone this request.</ARIO_SettlerNoSpace>
+  <ARIO_HoldingNameLabel>Holding name (village, town or garrison is added automatically)</ARIO_HoldingNameLabel>
+  <ARIO_HoldingTypeName>{0} {1}</ARIO_HoldingTypeName>
+  <ARIO_HoldingVillageSuffix>village</ARIO_HoldingVillageSuffix>
+  <ARIO_HoldingTownSuffix>town</ARIO_HoldingTownSuffix>
+  <ARIO_HoldingGarrisonSuffix>garrison</ARIO_HoldingGarrisonSuffix>
+  <ARIO_RandomHoldingNames>Alderwick|Amberfield|Blackbriar|Brackenford|Briar Glen|Coldwater|Crow's Rest|Dunmere|Fairbrook|Foxhollow|Greybank|Harrowfield|Hazelwick|High Meadow|Ironford|King's Brook|Longmere|Lowcross|Mallowfield|Mistwood|Oakrest|Redbrook|Rivermouth|Rosebank|Stonebridge|Summerfield|Thornfield|Willowdale|Windermere|Woodcross</ARIO_RandomHoldingNames>
+  <ARIO_DefaultHoldingName>New Hearth</ARIO_DefaultHoldingName>
+  <ARIO_NumberedHoldingName>{0} {1}</ARIO_NumberedHoldingName>
+  <ARIO_HoldingNameEmpty>Enter a name for this holding.</ARIO_HoldingNameEmpty>
+  <ARIO_HoldingNameDuplicate>Another holding already uses that name.</ARIO_HoldingNameDuplicate>
+  <ARIO_ConstructionTitle>Village construction begins</ARIO_ConstructionTitle>
+  <ARIO_ConstructionBody>The families have begun building {0}. Construction uses the duration in Mod Settings (five days by default). No taxes or levies are available until their homes are complete.</ARIO_ConstructionBody>
+  <ARIO_ConstructionStatus>Under construction: {0} remaining. No taxes or levies.</ARIO_ConstructionStatus>
+  <ARIO_VillageCompletedTitle>A new village</ARIO_VillageCompletedTitle>
+  <ARIO_VillageCompletedBody>{0} is complete. Its local levy starts at 2/6 and replenishes gradually. Taxes are exempt for 15 days and will never be charged retroactively.</ARIO_VillageCompletedBody>
+  <ARIO_ExemptStatus>New village — tax-exempt for {0}. Exempt taxes are never accumulated.</ARIO_ExemptStatus>
+  <ARIO_ExemptionEndedTitle>Village taxation begins</ARIO_ExemptionEndedTitle>
+  <ARIO_ExemptionEndedBody>{0} is now established. Production from this point onward contributes to tax assessments at the interval in Mod Settings (15 days by default). No taxes are owed for its exempt period.</ARIO_ExemptionEndedBody>
+  <ARIO_VillageEstablished>Established village</ARIO_VillageEstablished>
+  <ARIO_TownEstablished>Established town</ARIO_TownEstablished>
+  <ARIO_TownEligibleTitle>A village can become a town</ARIO_TownEligibleTitle>
+  <ARIO_TownEligibleBody>{0} is old enough and has recovered sufficiently to become a town. You can fund the upgrade with {1} silver from its delivery settlement using Establish a Town in the House window or on its world marker.</ARIO_TownEligibleBody>
+  <ARIO_EstablishTown>Establish a Town</ARIO_EstablishTown>
+  <ARIO_TownRequirements>Requires 30 days since village completion, no construction, recovery, devastation, defense alert or loaded encounter, and 1,500 silver at its loaded delivery settlement. No wealth threshold.</ARIO_TownRequirements>
+  <ARIO_TownConfirm>Pay {1} silver to establish {0} as a town?\n\nIts name, location, ownership, taxes and deployed soldiers are preserved. Base tax potential doubles and levy capacity rises from 6 to 12. The extra soldiers replenish gradually; none are granted immediately.</ARIO_TownConfirm>
+  <ARIO_TownEstablishedTitle>A town is established</ARIO_TownEstablishedTitle>
+  <ARIO_TownEstablishedBody>{0} is now a town. Its name and location are unchanged. Tax potential has doubled and levy capacity is now 12. Existing soldiers remain in place; new soldiers must replenish gradually.</ARIO_TownEstablishedBody>
+  <ARIO_GarrisonEstablished>Established garrison</ARIO_GarrisonEstablished>
+  <ARIO_GarrisonEligibleTitle>A town can become a garrison</ARIO_GarrisonEligibleTitle>
+  <ARIO_GarrisonEligibleBody>{0} has been a town long enough to support permanent fortifications and expanded barracks. You can fund the upgrade with {1} silver from its delivery settlement using Establish a Garrison in the House window or on its world marker.</ARIO_GarrisonEligibleBody>
+  <ARIO_EstablishGarrison>Establish a Garrison</ARIO_EstablishGarrison>
+  <ARIO_GarrisonRequirements>Requires 60 days as a town, no construction, recovery, devastation, defense alert or loaded encounter, and 3,000 silver at its loaded delivery settlement. A garrison is military: it does not increase tax potential.</ARIO_GarrisonRequirements>
+  <ARIO_GarrisonConfirm>Pay {1} silver to establish {0} as a garrison?
+
+The town keeps its name, lands, taxes and soldiers. Stone fortifications and expanded barracks raise levy capacity from 12 to 20. New soldiers join gradually, not immediately.\n\nTax potential remains 240 over a standard 15-day production period, with assessments following your chosen interval in Mod Settings.</ARIO_GarrisonConfirm>
+  <ARIO_GarrisonEstablishedTitle>A garrison is established</ARIO_GarrisonEstablishedTitle>
+  <ARIO_GarrisonEstablishedBody>{0} is now a garrison. Its name and location are unchanged, its levy capacity is 20, and future encounter maps are fortified. Tax potential remains that of a town. Existing soldiers remain in place; new soldiers must replenish gradually.</ARIO_GarrisonEstablishedBody>
+  <ARIO_DevelopmentExplanation>Low taxes encourage development and recruitment. Heavy taxes reduce wealth and recruitment; prolonged levy deployments also slow development because workers are absent. Towns improve tax potential; garrisons are a military investment and add capacity and fortifications without increasing taxes.</ARIO_DevelopmentExplanation>
+  <ARIO_DefenseTitle>Raiders approach {0}</ARIO_DefenseTitle>
+  <ARIO_DefenseBody>Scouts report {1} armed raiders approaching {0}. They will arrive in two days.\n\nAutoresolve uses only the garrison still stationed at the holding. If you do not respond before the deadline, the garrison resolves the defense automatically. Defeat devastates the holding and requires five days of recovery; it does not destroy the holding.\n\nChoose manual defense to open the holding map and command its temporary local levies. You may defend with these levies alone, or send colonists and deployed levies by caravan or transport using Reinforce holding on the world map. Reinforcements travel normally and must arrive in time. Raiders arrive at the original deadline; opening the map does not postpone them.\n\nOnce manual defense begins, it cannot be autoresolved. Locals use basic gear, incur no mobilization fee or wages for defending their homes, and return to local service after battle. Removing them from their home map also ends their local service; they cannot be exported as free workers. Ordinary deployed reinforcements retain their existing wages. Evacuate your colonists and wounded after the battle.</ARIO_DefenseBody>
+  <ARIO_DefenseStatus>Incoming raiders: {0}. Arrival in {1}. Taxes and off-map recruitment are suspended during this alert.</ARIO_DefenseStatus>
+  <ARIO_Autoresolve>Autoresolve — {0} garrison, {1} victory chance</ARIO_Autoresolve>
+  <ARIO_AutoresolveShort>Autoresolve defense</ARIO_AutoresolveShort>
+  <ARIO_ManualDefense>Manual defense / view battlefield</ARIO_ManualDefense>
+  <ARIO_ReinforceHolding>Reinforce holding: {0}</ARIO_ReinforceHolding>
+  <ARIO_DefenseBattleTitle>Holding under attack</ARIO_DefenseBattleTitle>
+  <ARIO_DefenseBattleBody>The raiders have reached {0}. Command the local levies and any reinforcements to defend the holding. Colonists and levies may be wounded or killed in this battle.</ARIO_DefenseBattleBody>
+  <ARIO_DefenseWonTitle>Holding defended</ARIO_DefenseWonTitle>
+  <ARIO_DefenseWonBody>{0} has repelled the raid. Local defenders will return home when able; casualties are not replaced instantly. Reinforcements remain under your command. If you fought manually, evacuate your colonists and wounded before leaving the battlefield.</ARIO_DefenseWonBody>
+  <ARIO_DefenseLostTitle>Holding devastated</ARIO_DefenseLostTitle>
+  <ARIO_DefenseLostBody>The defense of {0} failed. Its marker, name and ownership are preserved, but wealth is halved and uncollected taxes are lost. Five days of recovery are required. Recruitment resumes gradually afterward. If you fought manually, evacuate surviving colonists and the wounded from the battlefield.</ARIO_DefenseLostBody>
+  <ARIO_DefenseEvacuateShip>Remove your gravship or grav anchor before reforming a caravan from this holding.</ARIO_DefenseEvacuateShip>
+  <ARIO_BedLevy>Levy</ARIO_BedLevy>
+  <ARIO_LevyBedInspect>For levy use</ARIO_LevyBedInspect>
+  <ARIO_LevyBedDescription>Assign this bed to levies. Only deployed House levies can use it for ordinary sleep; they will not claim ordinary colonist beds. The Levy assignment cannot be combined with medical, prisoner or slave status. Injured levies can still use normal medical beds.</ARIO_LevyBedDescription>
+  <ARIO_LevyBedPrison>Change this room's prisoner beds to colonist beds before assigning levy beds.</ARIO_LevyBedPrison>
+  <ARIO_LevyBedWrongPawn>Only deployed House levies may be assigned levy beds. Use a levy bed, not a colonist bed, for a deployed levy.</ARIO_LevyBedWrongPawn>
+  <ARIO_LevyRestTitle>{0} needs a levy bed</ARIO_LevyRestTitle>
+  <ARIO_LevyRestBody>This levy needs rest. Provide a levy bed or allow them to return home.\n\nSelect a humanlike bed or sleeping spot and choose Levy in its assignment menu. It must be reachable, permitted and have an available sleeping slot. Undraft the levy to allow sleep. You may instead send this soldier home; injured, blocked or travelling soldiers wait until they can depart safely.</ARIO_LevyRestBody>
+  <ARIO_SendLevyHome>Send this levy home</ARIO_SendLevyHome>
+  <ARIO_DarkSisterHolsterGroup>Dark Sister</ARIO_DarkSisterHolsterGroup>
+  <ARIO_ValyrianRelicsHolsterGroup>Valyrian steel relics</ARIO_ValyrianRelicsHolsterGroup>
+  <ARIO_DebugHoldingMissing>Select a controlled, unloaded village or town without an active defense, or ensure at least one exists.</ARIO_DebugHoldingMissing>
+  <ARIO_DebugHoldingAdvanced>Advanced {0}: {1}</ARIO_DebugHoldingAdvanced>
+  <ARIO_DebugNoDefense>No holding defense is active.</ARIO_DebugNoDefense>
+  <ARIO_DebugSettlers>Smallfolk request (test)</ARIO_DebugSettlers>
+  <ARIO_DebugAdvance>Advance holding phase (test)</ARIO_DebugAdvance>
+  <ARIO_DebugDefense>Holding raid warning (test)</ARIO_DebugDefense>
+  <ARIO_DebugDeadline>Resolve raid deadline (test)</ARIO_DebugDeadline>
+  <ARIO_DebugDefenseUnavailable>No eligible holding: needs seven days since completion, no recovery, no loaded map or active defense, and a difficulty that allows violent quests. Advance the village phase first for quick testing.</ARIO_DebugDefenseUnavailable>
+</LanguageData>

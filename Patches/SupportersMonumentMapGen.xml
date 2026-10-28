@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Colony maps only. Base_Player is the generator RimWorld uses when the player settles, so
+       castle sieges, ambushes, caravan camps and other temporary maps never receive one. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/MapGeneratorDef[defName="Base_Player"]/genSteps</xpath>
+    <value>
+      <li>ARIOIAF_SupportersMonument</li>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef ParentName="PlayerFactionBase">
+    <defName>ARIOIAF_PlayerHouse</defName>
+    <label>New House</label>
+    <description>Your House. A newly founded feudal seat, seeking land, title and a name the realm will remember.</description>
+    <isPlayer>true</isPlayer>
+    <categoryTag>Tribal</categoryTag>
+    <pawnSingular>retainer</pawnSingular>
+    <pawnsPlural>retainers</pawnsPlural>
+    <basicMemberKind>Tribesperson</basicMemberKind>
+    <techLevel>Medieval</techLevel>
+    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <allowedCultures><li>Corunan</li></allowedCultures>
+    <disallowedMemes><li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li></disallowedMemes>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+    </disallowedPrecepts>
+    <backstoryFilters><li><categories><li>Tribal</li></categories></li></backstoryFilters>
+    <factionIconPath>UI/Factions/WesterosLevies</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <startingResearchTags><li>TribalStart</li></startingResearchTags>
+    <startingTechprintsResearchTags><li>TribalStart</li><li>TribalStartTechprints</li></startingTechprintsResearchTags>
+    <apparelStuffFilter><thingDefs><li>Cloth</li></thingDefs></apparelStuffFilter>
+    <recipePrerequisiteTags><li>Tribal</li></recipePrerequisiteTags>
+  </FactionDef>
+</Defs>

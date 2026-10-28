@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_RelocateHolding>Relocate holding</ARIO_RelocateHolding>
+  <ARIO_RelocateDescription>Choose a new world-map tile for this holding. Costs {0} silver from its delivery settlement. Existing maps, active defense, deployed levies and incoming parties prevent relocation.</ARIO_RelocateDescription>
+  <ARIO_RelocateConfirm>Relocate {0} to tile {1} for {2} silver from {3}? The holding keeps its people, upgrades, equipment, tax balances and timers.</ARIO_RelocateConfirm>
+  <ARIO_RelocatePick>Choose a new holding tile ({0} silver).</ARIO_RelocatePick>
+  <ARIO_RelocateNotControlled>You must control this holding.</ARIO_RelocateNotControlled>
+  <ARIO_RelocateHasMap>Evacuate and close the holding's generated map before relocating.</ARIO_RelocateHasMap>
+  <ARIO_RelocateDefense>Finish the holding's defense before relocating.</ARIO_RelocateDefense>
+  <ARIO_RelocateLevies>Recall the holding's deployed levies before relocating.</ARIO_RelocateLevies>
+  <ARIO_RelocateParty>Wait for the holding's incoming parties or reserved agreements to finish.</ARIO_RelocateParty>
+  <ARIO_RelocatePayer>The delivery settlement must have a loaded player home map.</ARIO_RelocatePayer>
+  <ARIO_RelocateLand>Choose a valid land tile on the same world layer.</ARIO_RelocateLand>
+  <ARIO_RelocateSameTile>The holding is already on that tile.</ARIO_RelocateSameTile>
+  <ARIO_RelocateTooFar>Choose a tile two or three tiles from the delivery settlement.</ARIO_RelocateTooFar>
+  <ARIO_RelocateOccupied>This tile is unsuitable, occupied or reserved.</ARIO_RelocateOccupied>
+  <ARIO_RelocateStale>The holding changed. Select it again to relocate.</ARIO_RelocateStale>
+  <ARIO_RelocateDone>{0} has relocated.</ARIO_RelocateDone>
+  <ARIO_RelocateBusy>Finish the holding's recovery or pending operations before relocating.</ARIO_RelocateBusy>
+  <ARIO_RelocateHeldFunds>A previous payment is still held safely. Resolve it before relocating again.</ARIO_RelocateHeldFunds>
+  <ARIO_RelocateRecoverPayment>Resolve held payment</ARIO_RelocateRecoverPayment>
+  <ARIO_RelocateRecoverPaymentTip>Return silver from a failed relocation to its delivery settlement, or finish clearing a committed payment. No new silver is created.</ARIO_RelocateRecoverPaymentTip>
+  <ARIO_RelocateRolledBack>The relocation failed. The original location and payment are being restored.</ARIO_RelocateRolledBack>
+  <ARIO_RelocateRollbackFailed>Could not restore the holding's original tile: {0}</ARIO_RelocateRollbackFailed>
+  <ARIO_RelocatePaymentHeld>Committed relocation silver is retained safely until cleanup succeeds: {0}</ARIO_RelocatePaymentHeld>
+  <ARIO_RelocateRefundHeld>Refund silver is retained safely until it can be returned: {0}</ARIO_RelocateRefundHeld>
+  <ARIO_RelocateProviderRefresh>Holding moved, but an optional world-map cache could not refresh: {0}</ARIO_RelocateProviderRefresh>
+  <ARIO_RelocateEscrowRejected>The payment could not be safely reserved.</ARIO_RelocateEscrowRejected>
+  <ARIO_RelocateMoveVetoed>The holding's move was refused.</ARIO_RelocateMoveVetoed>
+  <ARIO_RelocateUnavailable>Holding relocation is unavailable: {0}</ARIO_RelocateUnavailable>
+  <ARIO_RelocateFailed>Holding relocation failed: {0}</ARIO_RelocateFailed>
+</LanguageData>

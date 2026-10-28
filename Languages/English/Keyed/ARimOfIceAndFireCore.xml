@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIOIAF_WesterosBelt_FatBodyRestriction>This belt does not fit the fat body type.</ARIOIAF_WesterosBelt_FatBodyRestriction>
+  <ARIOIAF_WesterosPlateArmor_FatBodyRestriction>This armor does not fit the fat body type.</ARIOIAF_WesterosPlateArmor_FatBodyRestriction>
+  <ARIO_IronbornPlateRestrictionFailed>Ironborn plate armor body-type restriction could not be installed: {0}</ARIO_IronbornPlateRestrictionFailed>
+  <ARIOIAF_WesterosCloak_ValyrianArmorRestriction>The Westeros cloak cannot be worn with Valyrian armor.</ARIOIAF_WesterosCloak_ValyrianArmorRestriction>
+  <ARIOIAF_SevenistLeaderTitleMale>Lord</ARIOIAF_SevenistLeaderTitleMale>
+  <ARIOIAF_SevenistLeaderTitleFemale>Lady</ARIOIAF_SevenistLeaderTitleFemale>
+  <ARIOIAF_SevenistMoralGuideTitle>Septon/Septa</ARIOIAF_SevenistMoralGuideTitle>
+  <ARIOIAF_SevenistMoralGuideTitleMale>Septon</ARIOIAF_SevenistMoralGuideTitleMale>
+  <ARIOIAF_SevenistMoralGuideTitleFemale>Septa</ARIOIAF_SevenistMoralGuideTitleFemale>
+  <ARIOIAF_OldGodsMoralGuideTitle>Elder</ARIOIAF_OldGodsMoralGuideTitle>
+  <ARIOIAF_FaithOfTheSevenName>Faith of The Seven</ARIOIAF_FaithOfTheSevenName>
+  <ARIOIAF_OldGodsName>The Old Gods</ARIOIAF_OldGodsName>
+  <ARIOIAF_OldGodsNarrative>Before septs and crowns, the children of the forest listened to the gods of stream, stone, and wood. The First Men took up their worship, swearing their oaths before the carved faces of the weirwoods. These nameless gods demand neither scripture nor priesthood; their witnesses are the ancient trees, and their temples the quiet godswoods.\n\nAn oath must be kept, a guest beneath one’s roof protected, and the dead remembered. Winter teaches humility: stores must be gathered, kin sheltered, and hardship endured. Beneath the red leaves, the old gods watch in silence.</ARIOIAF_OldGodsNarrative>
+  <ARIOIAF_FaithOfTheSevenNarrative>There is one god with seven faces, each revealing a different truth of mortal life. The Father judges, the Mother grants mercy, and the Warrior lends courage. The Maiden guards innocence, the Smith honors labor, and the Crone lights the path of wisdom. The Stranger waits beyond every life, feared yet never absent.\n\nIn septs great and humble, the faithful light candles and seek guidance through prayer. Septons and septas teach justice tempered by compassion, duty upheld through honest service, and strength used to defend the weak. From a child’s first blessing to the final farewell, the Seven bear witness.</ARIOIAF_FaithOfTheSevenNarrative>
+  <!-- Interface theme picker (foot of realm management in the House window) -->
+  <ARIO_ThemeHeading>Interface theme</ARIO_ThemeHeading>
+  <ARIO_Theme_Dragonstone>Dragonstone</ARIO_Theme_Dragonstone>
+  <ARIO_Theme_Westerlands>Westerlands</ARIO_Theme_Westerlands>
+  <ARIO_Theme_Northmen>The North</ARIO_Theme_Northmen>
+  <ARIO_Theme_Stormlands>Stormlands</ARIO_Theme_Stormlands>
+  <ARIO_Theme_Reach>The Reach</ARIO_Theme_Reach>
+  <!-- Market stockpile system -->
+  <ARIO_MarketAreaLabel>Market area</ARIO_MarketAreaLabel>
+  <ARIO_MarketAreaDesc>Offer the goods stored here for sale. Visitors to your settlement will browse this storage and buy from it. Individual goods can be withheld from sale in the Market section of realm management.</ARIO_MarketAreaDesc>
+  <ARIO_RealmHoldings>Holdings</ARIO_RealmHoldings>
+  <ARIO_MarketSection>Market</ARIO_MarketSection>
+  <ARIO_MarketNoAreas>No market areas are designated. Select a stockpile zone or a storage building and use Market area to offer its contents for sale.</ARIO_MarketNoAreas>
+  <ARIO_MarketEmpty>Your market areas are empty. Haul goods into them to put those goods on offer.</ARIO_MarketEmpty>
+  <ARIO_MarketColItem>Item</ARIO_MarketColItem>
+  <ARIO_MarketColQty>Qty</ARIO_MarketColQty>
+  <ARIO_MarketColQuality>Quality</ARIO_MarketColQuality>
+  <ARIO_MarketColPrice>Price</ARIO_MarketColPrice>
+  <ARIO_MarketColForSale>For sale</ARIO_MarketColForSale>
+  <ARIO_MarketQualityVaries>Varies</ARIO_MarketQualityVaries>
+  <ARIO_MarketEarnedToday>Silver earned today: {0}</ARIO_MarketEarnedToday>
+  <ARIO_MarketEarnedYesterday>Yesterday: {0}</ARIO_MarketEarnedYesterday>
+  <ARIO_MarketRowTip>{0}\n\nWhole stock at current value: {1} silver.\n\nThe for-sale setting applies to every item of this type in every market area.</ARIO_MarketRowTip>
+  <ARIO_MarketUpsellMote>Persuaded +{0}%</ARIO_MarketUpsellMote>
+  <!-- Market interests -->
+  <ARIO_MarketKind_RawResource>raw materials</ARIO_MarketKind_RawResource>
+  <ARIO_MarketKind_WeaponsArmor>weapons and armour</ARIO_MarketKind_WeaponsArmor>
+  <ARIO_MarketKind_Food>food and drink</ARIO_MarketKind_Food>
+  <ARIO_MarketKind_Medicine>medicine</ARIO_MarketKind_Medicine>
+  <ARIO_MarketKind_Household>household goods</ARIO_MarketKind_Household>
+  <ARIO_MarketKind_Farmer>farm goods</ARIO_MarketKind_Farmer>
+  <ARIO_MarketKind_Craftsman>crafting supplies</ARIO_MarketKind_Craftsman>
+
+  <!-- Market rumors -->
+  <ARIO_MarketRumorsHeading>Market rumors</ARIO_MarketRumorsHeading>
+  <ARIO_MarketRumorsNone>No word from the roads yet. Traders will bring news of what sells.</ARIO_MarketRumorsNone>
+  <ARIO_Rumor_Trending>{0} have become fashionable among the nobility and fetch a premium.</ARIO_Rumor_Trending>
+  <ARIO_Rumor_InDemand>Trading parties across the region are actively seeking {0}.</ARIO_Rumor_InDemand>
+  <ARIO_Rumor_Common>{0} are common in nearby markets. Merchants will not pay well for them.</ARIO_Rumor_Common>
+  <ARIO_Rumor_Oversupplied>The region is awash with {0}. Their value has fallen.</ARIO_Rumor_Oversupplied>
+  <ARIO_Rumor_Scarce>Rumor has it {0} are becoming scarce throughout the region.</ARIO_Rumor_Scarce>
+  <ARIO_MarketUnmetDemand>Some visitors could not find reachable {0} they could afford with their remaining silver. Check market-area stock, access and sale settings.</ARIO_MarketUnmetDemand>
+
+  <!-- Trading party arrivals -->
+  <ARIO_MarketUnknownOrigin>parts unknown</ARIO_MarketUnknownOrigin>
+  <ARIO_MarketArrivalLabel_Merchants>Merchant caravan</ARIO_MarketArrivalLabel_Merchants>
+  <ARIO_MarketArrival_Merchants>A merchant caravan from {0} is travelling to inspect your wares.\n\n{1} of them will browse your market for the day before moving on.</ARIO_MarketArrival_Merchants>
+  <ARIO_MarketArrivalLabel_Smallfolk>Smallfolk visitors</ARIO_MarketArrivalLabel_Smallfolk>
+  <ARIO_MarketArrival_Smallfolk>A group of smallfolk from {0} are travelling to your settlement in search of goods for their homes and families.\n\n{1} of them have come. They are looking for ordinary things: food, cloth, tools, a little comfort.</ARIO_MarketArrival_Smallfolk>
+  <ARIO_MarketArrivalLabel_Craftsmen>Visiting craftsmen</ARIO_MarketArrivalLabel_Craftsmen>
+  <ARIO_MarketArrival_Craftsmen>Several craftsmen from {0} have heard of your market and are travelling to inspect your available materials.\n\n{1} of them are on the road.</ARIO_MarketArrival_Craftsmen>
+  <ARIO_WDSettlementChanged>Mission cancelled: its settlement changed during Westeros realm setup.</ARIO_WDSettlementChanged>
+</LanguageData>

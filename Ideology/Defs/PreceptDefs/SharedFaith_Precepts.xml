@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Vanilla supplies only desired and disapproved. No thought comps means
+       this option grants neither mood bonuses nor penalties for skullspikes. -->
+  <PreceptDef>
+    <defName>ARIOIAF_Skullspike_DontCare</defName>
+    <issue>Skullspike</issue>
+    <label>don't care</label>
+    <description>Displaying skulls on spikes is neither admirable nor disturbing.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>5</displayOrderInIssue>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    <requiredMemes>
+      <li>ARIOIAF_Structure_OldGods</li>
+      <li>ARIOIAF_Structure_FaithOfTheSeven</li>
+    </requiredMemes>
+    <associatedMemes>
+      <li>ARIOIAF_Structure_OldGods</li>
+      <li>ARIOIAF_Structure_FaithOfTheSeven</li>
+    </associatedMemes>
+  </PreceptDef>
+</Defs>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Replace the definition, not its identity: existing TLN stacks, crafted
+       equipment, DefOf references and cold-one damage checks remain valid. -->
+  <!-- Keep replacement and CE conversion in one ordered sequence: optional
+       content folders may be loaded before this common Patches/ folder. -->
+  <Operation Class="PatchOperationSequence"><operations>
+  <li Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="TLN_ValyrianSteel"]</xpath>
+    <value>
+      <ThingDef ParentName="ResourceBase">
+        <defName>TLN_ValyrianSteel</defName>
+        <label>Valyrian steel</label>
+        <description>An extraordinarily rare alloy forged with lost Valyrian arts. Dark ripples run through its silvery surface. Lighter, harder, and far more durable than ordinary steel, it makes exceptional armor and weapons. Surviving ingots command a fortune. No known mine or production recipe can replenish them; small quantities sometimes appear with rare-goods traders or as quest rewards.</description>
+        <graphicData><texPath>Things/Resources/ValyrianSteel</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+        <soundInteract>Metal_Drop</soundInteract><soundDrop>Metal_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints><healthAffectsPrice>false</healthAffectsPrice>
+        <stackLimit>75</stackLimit>
+        <generateCommonality>0.02</generateCommonality>
+        <statBases>
+          <MarketValue>150</MarketValue><Mass>0.15</Mass>
+          <StuffPower_Armor_Sharp>2</StuffPower_Armor_Sharp>
+          <StuffPower_Armor_Blunt>1.2</StuffPower_Armor_Blunt>
+          <StuffPower_Armor_Heat>1.2</StuffPower_Armor_Heat>
+          <StuffPower_Insulation_Cold>4</StuffPower_Insulation_Cold>
+          <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+          <SharpDamageMultiplier>2</SharpDamageMultiplier><BluntDamageMultiplier>1.4</BluntDamageMultiplier>
+        </statBases>
+        <thingCategories><li>ResourcesRaw</li></thingCategories>
+        <burnableByRecipe>false</burnableByRecipe><smeltable>false</smeltable>
+        <tradeTags><li>ARIOIAF_RareValyrianSteel</li></tradeTags>
+        <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+        <stuffProps>
+          <categories><li>Metallic</li><li>TLN_ValyrianSteel</li><li>ARIOIAF_ValyrianSteelOnly</li></categories>
+          <appearance>Metal</appearance><commonality>0</commonality>
+          <constructEffect>ConstructMetal</constructEffect><isAirtight>true</isAirtight>
+          <color>(108,116,128)</color>
+          <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+          <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+          <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+          <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+          <statFactors>
+            <MaxHitPoints>8</MaxHitPoints><Beauty>2</Beauty><Flammability>0</Flammability>
+            <WorkToMake>3</WorkToMake><MeleeWeapon_CooldownMultiplier>0.75</MeleeWeapon_CooldownMultiplier>
+          </statFactors>
+        </stuffProps>
+      </ThingDef>
+    </value>
+  </li>
+  <li Class="PatchOperationFindMod">
+    <mods><li>Combat Extended</li></mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="TLN_ValyrianSteel"]/statBases/StuffPower_Armor_Sharp</xpath>
+          <value><StuffPower_Armor_Sharp>4</StuffPower_Armor_Sharp></value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="TLN_ValyrianSteel"]/statBases/StuffPower_Armor_Blunt</xpath>
+          <value><StuffPower_Armor_Blunt>6</StuffPower_Armor_Blunt></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="TLN_ValyrianSteel"]/statBases</xpath>
+          <value><Bulk>0.025</Bulk></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="TLN_ValyrianSteel"]/stuffProps/categories</xpath>
+          <value><li>Metallic_Weapon</li><li>Steeled</li></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="TLN_ValyrianSteel"]/stuffProps/statFactors</xpath>
+          <value><Mass>0.7</Mass><MeleePenetrationFactor>2.5</MeleePenetrationFactor></value>
+        </li>
+      </operations>
+    </match>
+  </li>
+  </operations></Operation>
+</Patch>

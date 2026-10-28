@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RoyalTitleDef Name="ARIOIAF_ValyrianTitleBase" Abstract="True">
+    <tags><li>ARIOIAF_ValyrianTitle</li></tags><awardThought>GainedTitle</awardThought><lostThought>LostTitle</lostThought>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints><canBeInherited>true</canBeInherited><allowDignifiedMeditationFocus>false</allowDignifiedMeditationFocus>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_ValyrianTitleBase">
+    <defName>ARIOIAF_ValyrianTitle_Squire</defName><label>Squire</label>
+    <description>A sworn attendant learning the duties of arms and service. The first honor earned in service to Valyria. These titles confer standing, not psychic powers, and never forbid honest work.</description>
+    <seniority>10</seniority><favorCost>6</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_ValyrianTitleBase">
+    <defName>ARIOIAF_ValyrianTitle_Knight</defName><label>Knight</label>
+    <description>A sworn knight recognized for courage, honorable conduct, and faithful service to the houses of Valyria.</description>
+    <seniority>20</seniority><favorCost>8</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_ValyrianTitleBase">
+    <defName>ARIOIAF_ValyrianTitle_LandedKnight</defName><label>Landed Knight</label>
+    <description>A knight recognized as worthy of a landed household and its duties. This honor grants standing, not a new settlement.</description>
+    <seniority>30</seniority><favorCost>12</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_ValyrianTitleBase">
+    <defName>ARIOIAF_ValyrianTitle_Lord</defName><label>Lord</label><labelFemale>Lady</labelFemale>
+    <description>A recognized head of a Valyrian house, bound to protect its people and honor sworn obligations.</description>
+    <seniority>40</seniority><favorCost>16</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_ValyrianTitleBase">
+    <defName>ARIOIAF_ValyrianTitle_HighLord</defName><label>High Lord</label><labelFemale>Great Lady</labelFemale>
+    <description>A High Lord, also called a Great Lord, commands the respect of lesser houses and carries greater responsibility for Valyria.</description>
+    <seniority>50</seniority><favorCost>24</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_ValyrianTitleBase">
+    <defName>ARIOIAF_ValyrianTitle_LordParamount</defName><label>Lord Paramount</label><labelFemale>Lady Paramount</labelFemale>
+    <description>Valyria's highest honor, recognizing exceptional leadership and service to its great families. It grants your House standing without replacing Valyria's ruler or transferring its lands.</description>
+    <seniority>60</seniority><favorCost>32</favorCost>
+  </RoyalTitleDef>
+</Defs>

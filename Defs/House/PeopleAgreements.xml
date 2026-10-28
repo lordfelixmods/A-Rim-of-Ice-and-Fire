@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>ARIOIAF_HouseWardReturn</defName>
+    <driverClass>ARimOfIceAndFireCore.JobDriver_HouseWardReturn</driverClass>
+    <reportString>returning to my House.</reportString>
+    <casualInterruptible>true</casualInterruptible>
+  </JobDef>
+</Defs>

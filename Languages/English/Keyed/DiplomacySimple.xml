@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_SimpleDiploActions>Diplomatic actions</ARIO_SimpleDiploActions>
+  <ARIO_SimpleDiploAgreements>Agreements ({0})</ARIO_SimpleDiploAgreements>
+  <ARIO_SimpleDiploDetails>House details</ARIO_SimpleDiploDetails>
+  <ARIO_SimpleDiploStart>Select actions, set their terms, then Send deal.</ARIO_SimpleDiploStart>
+  <ARIO_SimpleDiploReduced>Other factions support war, peace and silver only.</ARIO_SimpleDiploReduced>
+  <ARIO_SimpleDiploBasic>Common actions</ARIO_SimpleDiploBasic>
+  <ARIO_SimpleDiploMore>More options</ARIO_SimpleDiploMore>
+  <ARIO_SimpleDiploLess>Hide extra options</ARIO_SimpleDiploLess>
+  <ARIO_SimpleDiploCategory0>War and peace</ARIO_SimpleDiploCategory0>
+  <ARIO_SimpleDiploCategory1>Vassals</ARIO_SimpleDiploCategory1>
+  <ARIO_SimpleDiploCategory2>Trade</ARIO_SimpleDiploCategory2>
+  <ARIO_SimpleDiploCategory3>Silver</ARIO_SimpleDiploCategory3>
+  <ARIO_SimpleDiploCategory4>Soldiers</ARIO_SimpleDiploCategory4>
+  <ARIO_SimpleDiploCategory5>Territory</ARIO_SimpleDiploCategory5>
+  <ARIO_SimpleDiploCategory6>Paid jobs</ARIO_SimpleDiploCategory6>
+  <ARIO_SimpleDiploCategory7>Marriage and wards</ARIO_SimpleDiploCategory7>
+  <ARIO_SimpleDiploCategory8>Prisoners</ARIO_SimpleDiploCategory8>
+  <ARIO_SimpleDiploCategory9>Smallfolk</ARIO_SimpleDiploCategory9>
+  <ARIO_SimpleDiploCategory10>Trial by combat</ARIO_SimpleDiploCategory10>
+  <ARIO_SimpleDiploCategory11>Intrigue</ARIO_SimpleDiploCategory11>
+  <ARIO_SimpleDiploSelected>Selected: {0}</ARIO_SimpleDiploSelected>
+  <ARIO_SimpleDiploRemove>Remove</ARIO_SimpleDiploRemove>
+  <ARIO_SimpleDiploTerms>Set your terms</ARIO_SimpleDiploTerms>
+  <ARIO_SimpleDiploDealWith>Your deal with {0}</ARIO_SimpleDiploDealWith>
+  <ARIO_SimpleDiploReviewHelp>Everything listed below is included. Nothing is sent until you confirm.</ARIO_SimpleDiploReviewHelp>
+  <ARIO_SimpleDiploAgreementHelp>These deals are already signed. View their obligations or end them here.</ARIO_SimpleDiploAgreementHelp>
+  <ARIO_SimpleDiploChance>Chance they agree: {0}</ARIO_SimpleDiploChance>
+  <ARIO_SimpleDiploWarImmediate>War starts immediately. No agreement needed.</ARIO_SimpleDiploWarImmediate>
+  <ARIO_SimpleDiploNothing>No deal selected</ARIO_SimpleDiploNothing>
+  <ARIO_SimpleDiploSend>Send deal</ARIO_SimpleDiploSend>
+  <ARIO_SimpleDiploRisk>Cost / risk: {0}</ARIO_SimpleDiploRisk>
+  <ARIO_SimpleDiploBlockedWar>Remove Declare war to add other terms.</ARIO_SimpleDiploBlockedWar>
+  <ARIO_SimpleDiploBlockedPeace>Make peace with this House first.</ARIO_SimpleDiploBlockedPeace>
+  <ARIO_SimpleDiploBlockedService>A soldier loan is already active with this House.</ARIO_SimpleDiploBlockedService>
+  <ARIO_SimpleDiploBlockedTrade>A trade pact is already active with this House.</ARIO_SimpleDiploBlockedTrade>
+  <ARIO_SimpleDiploBlockedJobs>Both a supply job and an attack job are already active.</ARIO_SimpleDiploBlockedJobs>
+  <ARIO_SimpleDiploBlockedPeople>A marriage or ward agreement is already active with this House.</ARIO_SimpleDiploBlockedPeople>
+  <ARIO_SimpleDiploBlockedMigration>A smallfolk agreement is already active with this House.</ARIO_SimpleDiploBlockedMigration>
+  <ARIO_SimpleDiploBlockedTrial>A trial is already active. Complete or cancel it first.</ARIO_SimpleDiploBlockedTrial>
+  <ARIO_SimpleDiploBlockedCooldown>Available in {0}.</ARIO_SimpleDiploBlockedCooldown>
+  <ARIO_SimpleDiploBlockedSworn>You already serve {0}. Check Agreements.</ARIO_SimpleDiploBlockedSworn>
+  <ARIO_SimpleDiploBlockedBond>A feudal bond already exists with this House.</ARIO_SimpleDiploBlockedBond>
+  <ARIO_SimpleDiploCheckFealty>A feudal bond requires peace and an eligible Westerosi House.</ARIO_SimpleDiploCheckFealty>
+  <ARIO_SimpleDiploNoTraders>This House has no caravan traders.</ARIO_SimpleDiploNoTraders>
+  <ARIO_SimpleDiploNoKeep>Choose your House's keep first.</ARIO_SimpleDiploNoKeep>
+  <ARIO_SimpleDiploHostile>Resolve hostile relations with this House first.</ARIO_SimpleDiploHostile>
+  <ARIO_SimpleDiploIntrigueAttention>Active intrigue: view your agent or the threat</ARIO_SimpleDiploIntrigueAttention>
+  <ARIO_SimpleDiploIntrigueActive>Intrigue (active)</ARIO_SimpleDiploIntrigueActive>
+  <ARIO_SimpleDiploCheckPrisoners>No eligible captive exchange is currently available.</ARIO_SimpleDiploCheckPrisoners>
+  <ARIO_SimpleDiploCheckMigration>Smallfolk agreements are unavailable. Check the four-agreement limit and House relations.</ARIO_SimpleDiploCheckMigration>
+  <ARIO_SimpleDiploCheckTrial>Trials are unavailable. Check House relations and the trial limit.</ARIO_SimpleDiploCheckTrial>
+  <ARIO_SimpleDiploCheckOther>Current requirements are not met. Check signed agreements and House details.</ARIO_SimpleDiploCheckOther>
+
+  <ARIO_SimpleDiploAction_DeclareWar>Declare war</ARIO_SimpleDiploAction_DeclareWar>
+  <ARIO_SimpleDiploAction_OfferPeace>Offer peace</ARIO_SimpleDiploAction_OfferPeace>
+  <ARIO_SimpleDiploAction_DemandPeace>Demand peace</ARIO_SimpleDiploAction_DemandPeace>
+  <ARIO_SimpleDiploAction_SwearOath>Become their vassal</ARIO_SimpleDiploAction_SwearOath>
+  <ARIO_SimpleDiploAction_DemandOath>Make them your vassal</ARIO_SimpleDiploAction_DemandOath>
+  <ARIO_SimpleDiploAction_OfferSilver>Pay silver</ARIO_SimpleDiploAction_OfferSilver>
+  <ARIO_SimpleDiploAction_DemandSilver>Ask for silver</ARIO_SimpleDiploAction_DemandSilver>
+  <ARIO_SimpleDiploAction_OfferLevies>Lend soldiers</ARIO_SimpleDiploAction_OfferLevies>
+  <ARIO_SimpleDiploAction_DemandLevies>Borrow soldiers</ARIO_SimpleDiploAction_DemandLevies>
+  <ARIO_SimpleDiploAction_OfferLand>Give a holding</ARIO_SimpleDiploAction_OfferLand>
+  <ARIO_SimpleDiploAction_DemandLand>Ask for a holding</ARIO_SimpleDiploAction_DemandLand>
+  <ARIO_SimpleDiploAction_TradePact>Arrange trade caravans</ARIO_SimpleDiploAction_TradePact>
+  <ARIO_SimpleDiploAction_AskForJob>Take a paid job</ARIO_SimpleDiploAction_AskForJob>
+  <ARIO_SimpleDiploAction_Prisoners>Exchange or ransom prisoners</ARIO_SimpleDiploAction_Prisoners>
+  <ARIO_SimpleDiploAction_RequestSettlers>Request smallfolk</ARIO_SimpleDiploAction_RequestSettlers>
+  <ARIO_SimpleDiploAction_OfferSettlers>Offer smallfolk</ARIO_SimpleDiploAction_OfferSettlers>
+  <ARIO_SimpleDiploAction_Trial>Arrange trial by combat</ARIO_SimpleDiploAction_Trial>
+  <ARIO_SimpleDiploAction_Marriage>Arrange marriage</ARIO_SimpleDiploAction_Marriage>
+  <ARIO_SimpleDiploAction_Foster>Arrange a ward stay</ARIO_SimpleDiploAction_Foster>
+  <ARIO_SimpleDiploAction_Squire>Arrange squire service</ARIO_SimpleDiploAction_Squire>
+
+  <ARIO_SimpleDiploResult_DeclareWar>This House becomes your enemy immediately.</ARIO_SimpleDiploResult_DeclareWar>
+  <ARIO_SimpleDiploResult_OfferPeace>End the war if they accept your terms.</ARIO_SimpleDiploResult_OfferPeace>
+  <ARIO_SimpleDiploResult_DemandPeace>Ask to end the war on your terms. They can refuse.</ARIO_SimpleDiploResult_DemandPeace>
+  <ARIO_SimpleDiploResult_SwearOath>They become your liege. You owe taxes, supplies and military service.</ARIO_SimpleDiploResult_SwearOath>
+  <ARIO_SimpleDiploResult_DemandOath>They become your vassal and owe you taxes, supplies and service.</ARIO_SimpleDiploResult_DemandOath>
+  <ARIO_SimpleDiploResult_OfferSilver>Give them silver now, or promise a daily payment.</ARIO_SimpleDiploResult_OfferSilver>
+  <ARIO_SimpleDiploResult_DemandSilver>Ask them to pay you now, or make daily payments.</ARIO_SimpleDiploResult_DemandSilver>
+  <ARIO_SimpleDiploResult_OfferLevies>Send soldiers from your holdings to serve them temporarily.</ARIO_SimpleDiploResult_OfferLevies>
+  <ARIO_SimpleDiploResult_DemandLevies>Their soldiers strengthen your holdings for the agreed time.</ARIO_SimpleDiploResult_DemandLevies>
+  <ARIO_SimpleDiploResult_OfferLand>Permanently give them one of your eligible holdings.</ARIO_SimpleDiploResult_OfferLand>
+  <ARIO_SimpleDiploResult_DemandLand>Ask them to permanently give you an eligible holding.</ARIO_SimpleDiploResult_DemandLand>
+  <ARIO_SimpleDiploResult_TradePact>Their trade caravans visit on the schedule you choose.</ARIO_SimpleDiploResult_TradePact>
+  <ARIO_SimpleDiploResult_AskForJob>Earn silver by delivering supplies or attacking a shared enemy.</ARIO_SimpleDiploResult_AskForJob>
+  <ARIO_SimpleDiploResult_Prisoners>Agree a caravan handover of named captives and optional ransom.</ARIO_SimpleDiploResult_Prisoners>
+  <ARIO_SimpleDiploResult_RequestSettlers>Request a transfer of smallfolk from their lands to yours.</ARIO_SimpleDiploResult_RequestSettlers>
+  <ARIO_SimpleDiploResult_OfferSettlers>Offer a transfer of smallfolk from your lands to theirs.</ARIO_SimpleDiploResult_OfferSettlers>
+  <ARIO_SimpleDiploResult_Trial>Choose two champions and arrange a trial at a marked site.</ARIO_SimpleDiploResult_Trial>
+  <ARIO_SimpleDiploResult_Marriage>Arrange a willing adult marriage or a political-only marriage contract.</ARIO_SimpleDiploResult_Marriage>
+  <ARIO_SimpleDiploResult_Foster>Host their child, or send yours, for a temporary ward stay.</ARIO_SimpleDiploResult_Foster>
+  <ARIO_SimpleDiploResult_Squire>Host or send a young person for temporary squire service.</ARIO_SimpleDiploResult_Squire>
+
+  <ARIO_SimpleDiploRisk_DeclareWar>Unjustified war and broken promises reduce Integrity. Battles can kill.</ARIO_SimpleDiploRisk_DeclareWar>
+  <ARIO_SimpleDiploRisk_OfferPeace>Any silver, land or soldier terms you add are part of the same deal.</ARIO_SimpleDiploRisk_OfferPeace>
+  <ARIO_SimpleDiploRisk_DemandPeace>Uses the same acceptance rules as Offer peace; demands do not force agreement.</ARIO_SimpleDiploRisk_DemandPeace>
+  <ARIO_SimpleDiploRisk_SwearOath>You can serve one liege. Leaving or breaking the bond has penalties.</ARIO_SimpleDiploRisk_SwearOath>
+  <ARIO_SimpleDiploRisk_DemandOath>Submission requires acceptance; strength and war exhaustion matter.</ARIO_SimpleDiploRisk_DemandOath>
+  <ARIO_SimpleDiploRisk_OfferSilver>Immediate silver is paid on acceptance. Daily payments continue; missed dues have penalties.</ARIO_SimpleDiploRisk_OfferSilver>
+  <ARIO_SimpleDiploRisk_DemandSilver>Their treasury limits payment. Asking for more lowers acceptance.</ARIO_SimpleDiploRisk_DemandSilver>
+  <ARIO_SimpleDiploRisk_OfferLevies>Your holdings lose these soldiers and their workforce until survivors return.</ARIO_SimpleDiploRisk_OfferLevies>
+  <ARIO_SimpleDiploRisk_DemandLevies>Requires room in your garrisons. These soldiers leave when the term ends.</ARIO_SimpleDiploRisk_DemandLevies>
+  <ARIO_SimpleDiploRisk_OfferLand>The transfer is permanent. You lose its taxes, people and garrison.</ARIO_SimpleDiploRisk_OfferLand>
+  <ARIO_SimpleDiploRisk_DemandLand>The transfer is permanent and difficult to negotiate.</ARIO_SimpleDiploRisk_DemandLand>
+  <ARIO_SimpleDiploRisk_TradePact>More frequent visits are harder to negotiate. War ends the pact.</ARIO_SimpleDiploRisk_TradePact>
+  <ARIO_SimpleDiploRisk_AskForJob>You must do the job. Missing deadlines or abandoning it costs Integrity.</ARIO_SimpleDiploRisk_AskForJob>
+  <ARIO_SimpleDiploRisk_Prisoners>Signing only reserves the exchange. Travel and handover must be completed within 20 days.</ARIO_SimpleDiploRisk_Prisoners>
+  <ARIO_SimpleDiploRisk_RequestSettlers>Complete the signed journey; signing alone does not deliver the smallfolk.</ARIO_SimpleDiploRisk_RequestSettlers>
+  <ARIO_SimpleDiploRisk_OfferSettlers>The transfer removes smallfolk from your lands. Complete the signed journey.</ARIO_SimpleDiploRisk_OfferSettlers>
+  <ARIO_SimpleDiploRisk_Trial>Champions can be wounded or killed. Cancellation costs 8 Integrity.</ARIO_SimpleDiploRisk_Trial>
+  <ARIO_SimpleDiploRisk_Marriage>Signing moves nobody. Consent and dispatch are confirmed separately; a completed marriage transfers the travelling spouse.</ARIO_SimpleDiploRisk_Marriage>
+  <ARIO_SimpleDiploRisk_Foster>Provide food, beds and care. Neglect, captivity or death brings penalties.</ARIO_SimpleDiploRisk_Foster>
+  <ARIO_SimpleDiploRisk_Squire>This is a temporary protected guest, not a recruit or draftable soldier.</ARIO_SimpleDiploRisk_Squire>
+  <ARIO_SimpleDiploIntrigueWarning>Intrigue is separate from your deal. Launching spends silver immediately; discovery can cost Integrity and goodwill.</ARIO_SimpleDiploIntrigueWarning>
+  <ARIO_SimpleDiploUnavailable>[A Rim of Ice and Fire] Simple diplomacy UI unavailable; original panel retained: {0}</ARIO_SimpleDiploUnavailable>
+</LanguageData>

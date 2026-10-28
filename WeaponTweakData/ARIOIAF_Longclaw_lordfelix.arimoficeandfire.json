@@ -1,0 +1,15 @@
+{
+  "TextureModID": "lordfelix.arimoficeandfire",
+  "ItemDefName": "ARIOIAF_Longclaw",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.39,
+  "OffY": 0.0021,
+  "Rotation": 45.0,
+  "ScaleX": 1.11,
+  "ScaleY": 1.11,
+  "HandsMode": 1,
+  "BladeStart": 0.158,
+  "BladeEnd": 1.0185,
+  "MeleeWeaponType": 6
+}

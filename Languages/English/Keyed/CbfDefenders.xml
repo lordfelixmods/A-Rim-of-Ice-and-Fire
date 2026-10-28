@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_CbfDefendersUnavailable>[A Rim of Ice and Fire] Custom Base Framework defender AI could not be connected; landmark and holding defenders keep their original behaviour: {0}</ARIO_CbfDefendersUnavailable>
+  <ARIO_CbfDefendersFailed>[A Rim of Ice and Fire] Custom Base Framework defender posts could not be prepared; the defenders keep their current behaviour: {0}</ARIO_CbfDefendersFailed>
+</LanguageData>

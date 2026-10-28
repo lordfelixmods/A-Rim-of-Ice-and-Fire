@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingCategoryDef>
+    <defName>ARIOIAF_WesterosClothingCategory</defName>
+    <label>Westeros clothing</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>ARIOIAF_WesterosArmoryCategory</defName>
+    <label>Westeros armory</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+</Defs>

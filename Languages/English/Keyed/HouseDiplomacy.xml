@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_DiploTreasuryUnavailable>This House no longer has enough silver to honour the proposal. Adjust the requested amount.</ARIO_DiploTreasuryUnavailable>
+  <!-- Faction list and panel framing -->
+  <ARIO_DiploNoFactions>No other Houses are known to you yet.</ARIO_DiploNoFactions>
+  <ARIO_DiploSelectFaction>Select a House</ARIO_DiploSelectFaction>
+  <ARIO_DiploReducedPanel>This is not a House of Westeros, so oaths, marriages and territorial terms are unavailable. War, peace and payments still apply.</ARIO_DiploReducedPanel>
+  <ARIO_DiploFoundationNote>Territorial NPC diplomacy and intrigue remain future work.</ARIO_DiploFoundationNote>
+
+  <!-- House heads -->
+  <ARIO_DiploNoHead>No head</ARIO_DiploNoHead>
+  <ARIO_DiploHeadTip>{0}\n\nClick to open the family tree.</ARIO_DiploHeadTip>
+
+  <!-- Family tree -->
+  <ARIO_DiploFamilyTree>Family tree — {0}</ARIO_DiploFamilyTree>
+  <ARIO_DiploFamilyHead>Head of the House</ARIO_DiploFamilyHead>
+  <ARIO_DiploFamilyNone>No kin are known to your House.</ARIO_DiploFamilyNone>
+  <ARIO_DiploFamilyUnknownRelation>Kin</ARIO_DiploFamilyUnknownRelation>
+  <ARIO_DiploFamilyAge>{0} years old</ARIO_DiploFamilyAge>
+  <ARIO_DiploFamilyDead>Deceased</ARIO_DiploFamilyDead>
+  <ARIO_FamilyTreeNavigation>Mouse wheel: zoom ({0}%). Left-drag empty space: pan. Click a card to inspect.</ARIO_FamilyTreeNavigation>
+  <ARIO_DiploShowHelmet>Show helmet</ARIO_DiploShowHelmet>
+  <ARIO_DiploHideHelmet>Hide helmet</ARIO_DiploHideHelmet>
+  <ARIO_DiploRelationship>Relationship: {0} ({1})</ARIO_DiploRelationship>
+  <ARIO_DiploIntegrity>House Integrity: {0} / 100</ARIO_DiploIntegrity>
+  <ARIO_DiploAcceptance>Chance they agree: {0}</ARIO_DiploAcceptance>
+  <ARIO_DiploAcceptanceIdle>No proposal</ARIO_DiploAcceptanceIdle>
+
+  <!-- Status -->
+  <ARIO_DiploStatusHeading>Diplomatic status: {0}</ARIO_DiploStatusHeading>
+  <ARIO_DiploStatusPeace>At Peace</ARIO_DiploStatusPeace>
+  <ARIO_DiploStatusLiege>Your Liege</ARIO_DiploStatusLiege>
+  <ARIO_DiploStatusVassal>Your Vassal</ARIO_DiploStatusVassal>
+  <ARIO_DiploStatusWar>At War</ARIO_DiploStatusWar>
+  <ARIO_DiploOurExhaustion>Your war exhaustion: {0}</ARIO_DiploOurExhaustion>
+  <ARIO_DiploTheirExhaustion>Their war exhaustion: {0}</ARIO_DiploTheirExhaustion>
+  <ARIO_DiploExhaustionExplanation>Exhaustion rises the longer a war lasts and jumps after battles, raids and lost holdings. A tired enemy accepts harsher peace terms.</ARIO_DiploExhaustionExplanation>
+
+  <!-- Actions -->
+  <ARIO_DiploAction>Action</ARIO_DiploAction>
+  <ARIO_DiploDeclareWar>Declare War</ARIO_DiploDeclareWar>
+  <ARIO_DiploNegotiatePeace>Negotiate Peace</ARIO_DiploNegotiatePeace>
+  <ARIO_DiploWarWarning>Declaring war needs no agreement. Without a standing grievance it costs House Integrity, and breaking a sworn bond costs far more.</ARIO_DiploWarWarning>
+  <ARIO_DiploSwearOath>Offer Your Fealty</ARIO_DiploSwearOath>
+  <ARIO_DiploDemandOath>Demand to Bend the Knee</ARIO_DiploDemandOath>
+  <ARIO_DiploOathExplanation>Swear fealty to {0}. Your House Head takes the title of Landed Knight, and they become your liege — owed taxes and service, but bound to aid you.</ARIO_DiploOathExplanation>
+  <ARIO_DiploDemandOathExplanation>Demand that {0} bend the knee. A House only submits to a clearly stronger neighbour, or one it is too weary to refuse.</ARIO_DiploDemandOathExplanation>
+  <ARIO_DiploAlreadySworn>Your House is already sworn to {0}. Only one liege may be served at a time.</ARIO_DiploAlreadySworn>
+  <ARIO_DiploCannotSwear>Your House cannot swear fealty to this House right now.</ARIO_DiploCannotSwear>
+  <ARIO_DiploCannotDemandOath>This House cannot be made your vassal right now.</ARIO_DiploCannotDemandOath>
+  <ARIO_DiploLiegeNote>{0} is your liege. They may call your banners, demand taxes and request supplies, and may send aid when your holdings are attacked.</ARIO_DiploLiegeNote>
+  <ARIO_DiploVassalNote>{0} is your vassal. They owe you taxes, supplies and military service.</ARIO_DiploVassalNote>
+
+  <!-- Feudal taxation -->
+  <ARIO_DiploTaxTitle>{0} demands taxes</ARIO_DiploTaxTitle>
+  <ARIO_DiploTaxBody>Collectors from your liege {0} have arrived at your settlement. They require {1} {2}, handed over in person.\n\nThey will wait about two days. Paying strengthens your standing. Refusing will be remembered, and refusing repeatedly will be remembered longer.</ARIO_DiploTaxBody>
+  <ARIO_DiploTaxPay>Pay the taxes</ARIO_DiploTaxPay>
+  <ARIO_DiploTaxPostpone>Ask for three more days</ARIO_DiploTaxPostpone>
+  <ARIO_DiploTaxRefuse>Refuse to pay</ARIO_DiploTaxRefuse>
+  <ARIO_DiploTaxPaid>Your taxes to {0} have been paid.</ARIO_DiploTaxPaid>
+  <ARIO_DiploTaxPaidBy>{2} handed {1} silver to {0}'s collectors.</ARIO_DiploTaxPaidBy>
+  <ARIO_DiploTaxNoCollectors>{0}'s collectors are not here to receive payment.</ARIO_DiploTaxNoCollectors>
+  <ARIO_DiploTaxCollectorsLeft>{0}'s collectors left your settlement empty-handed. Your standing has suffered.</ARIO_DiploTaxCollectorsLeft>
+  <ARIO_DiploTaxPostponed>{0} grants your House three more days.</ARIO_DiploTaxPostponed>
+  <ARIO_DiploTaxRefused>You have refused {0}'s collectors. Your standing has suffered.</ARIO_DiploTaxRefused>
+  <ARIO_DiploTaxCannotPay>Your keep does not hold {0} {1}.</ARIO_DiploTaxCannotPay>
+  <ARIO_DiploTaxOpen>Taxes due: {0} {1}</ARIO_DiploTaxOpen>
+  <ARIO_DiploTaxSchedule>Next collection in {0}.</ARIO_DiploTaxSchedule>
+  <ARIO_DiploVassalPaid>{0} has delivered {1} silver in vassal dues.</ARIO_DiploVassalPaid>
+  <ARIO_DiploVassalDelivered>{0}'s envoys handed {1} silver to {2}.</ARIO_DiploVassalDelivered>
+  <ARIO_DiploVassalPartyTitle>Envoys from {0}</ARIO_DiploVassalPartyTitle>
+  <ARIO_DiploVassalPartyBody>Your vassal {0} has sent envoys to your settlement bearing {1} silver in dues. They will seek out one of your colonists to hand it over.</ARIO_DiploVassalPartyBody>
+
+  <!-- Harm to a visiting party -->
+  <ARIO_DiploPartyHarmedTitle>Blood on your threshold</ARIO_DiploPartyHarmedTitle>
+  <ARIO_DiploPartyKilledBody>Members of {0}'s party died at your settlement. Word of it will travel, and your House Integrity and standing have both suffered badly.\n\nTheir errand is abandoned. They will send another party in about {1} days.</ARIO_DiploPartyKilledBody>
+  <ARIO_DiploPartyHurtBody>Members of {0}'s party were wounded at your settlement. A House that cannot keep its guests whole is not soon trusted, and your standing has suffered.\n\nTheir errand is abandoned. They will send another party in about {1} days.</ARIO_DiploPartyHurtBody>
+
+  <!-- Raise your banners -->
+  <ARIO_DiploBannerTitle>{0} calls your banners</ARIO_DiploBannerTitle>
+  <ARIO_DiploBannerBody>Your liege {0} commands your House to send {1} levies and a commander to war. You have {2} days to answer.\n\nLead a mustered force to a physical battle camp, or send an abstract holding captain and troops for a three-day autoresolved campaign. Refusal, silence or arriving late breaks your obligation.</ARIO_DiploBannerBody>
+  <ARIO_DiploBannerLead>Lead the levy force personally</ARIO_DiploBannerLead>
+  <ARIO_DiploBannerAuto>Send the banners under a captain</ARIO_DiploBannerAuto>
+  <ARIO_DiploBannerRefuse>Refuse the call</ARIO_DiploBannerRefuse>
+  <ARIO_DiploBannerNoSite>No suitable rally site can be found on {0}'s campaign front.</ARIO_DiploBannerNoSite>
+  <ARIO_DiploBannerRallyTitle>The banners are called</ARIO_DiploBannerRallyTitle>
+  <ARIO_DiploBannerRallyBody>Muster at least {1} tracked levies and one free colonist commander, form a caravan, and take them to {0}'s campaign camp within {2} days. The camp follows the war front, not your home. Right-click it and choose the feudal battle option.</ARIO_DiploBannerRallyBody>
+  <ARIO_DiploBannerNotEnough>Your holdings cannot presently commit {0} levies.</ARIO_DiploBannerNotEnough>
+  <ARIO_DiploBannerSent>{0} levies have departed under a holding captain to answer {1}'s call.</ARIO_DiploBannerSent>
+  <ARIO_DiploBannerNeedCommander>requires one free colonist commander</ARIO_DiploBannerNeedCommander>
+  <ARIO_DiploBannerNeedLevies>requires {0} tracked levies; this caravan has {1}</ARIO_DiploBannerNeedLevies>
+  <ARIO_DiploBannerEnter>Answer the banner call at {0}</ARIO_DiploBannerEnter>
+  <ARIO_DiploBannerInspect>Enemy force: about {0}\nBring the demanded tracked levies and a free colonist commander.</ARIO_DiploBannerInspect>
+  <ARIO_DiploBannerWonTitle>Service with honour</ARIO_DiploBannerWonTitle>
+  <ARIO_DiploBannerWonBody>Your force prevailed in {0}'s war. {1} levies were lost. Your liege and the realm will remember that your banners answered.</ARIO_DiploBannerWonBody>
+  <ARIO_DiploBannerLostTitle>The banners bloodied</ARIO_DiploBannerLostTitle>
+  <ARIO_DiploBannerLostBody>Your force was defeated while serving {0}. {1} levies were lost, but your House still answered its oath.</ARIO_DiploBannerLostBody>
+  <ARIO_DiploBannerFailedTitle>The banners unanswered</ARIO_DiploBannerFailedTitle>
+  <ARIO_DiploBannerIgnored>Your House gave no answer when {0} called its banners.</ARIO_DiploBannerIgnored>
+  <ARIO_DiploBannerRefused>Your House refused {0}'s call to war.</ARIO_DiploBannerRefused>
+  <ARIO_DiploBannerLate>Your force failed to reach {0}'s battle camp in time.</ARIO_DiploBannerLate>
+  <ARIO_DiploBannerSiteLost>{0}'s battle camp is no longer reachable.</ARIO_DiploBannerSiteLost>
+  <ARIO_DiploBannerPending>Banner call: {0} levies requested; answer within {1}.</ARIO_DiploBannerPending>
+  <ARIO_DiploBannerAutoStatus>Banner campaign: {0} levies away; resolves in {1}.</ARIO_DiploBannerAutoStatus>
+  <ARIO_DiploBannerManualStatus>Banner campaign: bring {0} levies and a commander to the camp within {1}.</ARIO_DiploBannerManualStatus>
+  <ARIO_DiploBannerNext>Next possible banner call in about {0}.</ARIO_DiploBannerNext>
+  <ARIO_LiegeBattleSizeUnavailable>[A Rim of Ice and Fire] Larger banner-call battles could not be enabled; banner calls keep their original sizes: {0}</ARIO_LiegeBattleSizeUnavailable>
+  <ARIO_BannerCampBeaconTitle>{0}'s battle camp</ARIO_BannerCampBeaconTitle>
+  <ARIO_BannerCampBeaconDeadline>Arrive within {0}</ARIO_BannerCampBeaconDeadline>
+  <ARIO_BannerCampBeaconFighting>Battle under way</ARIO_BannerCampBeaconFighting>
+  <ARIO_BannerCampPointerTip>{0} is off screen. Click to jump to it.</ARIO_BannerCampPointerTip>
+  <ARIO_BannerCampBeaconUnavailable>[A Rim of Ice and Fire] The battle-camp world-map beacon is unavailable; the camp keeps its normal icon: {0}</ARIO_BannerCampBeaconUnavailable>
+  <ARIO_BannerBattleLiegeHostInspect>{0}'s host beside you: about {1}</ARIO_BannerBattleLiegeHostInspect>
+  <ARIO_BannerBattleLiegeHostArrived>{0} has sent {1} soldiers to stand with your banners on the west of the field. The enemy host is mustering in the east; the lines will meet in the middle.</ARIO_BannerBattleLiegeHostArrived>
+  <ARIO_BannerBattleLiegeHostUnavailable>[A Rim of Ice and Fire] {0}'s host could not join the battle camp; you fight with your own force only: {1}</ARIO_BannerBattleLiegeHostUnavailable>
+  <ARIO_BannerBattleLayoutUnavailable>[A Rim of Ice and Fire] The battle camp's eastern muster point could not be applied; the enemy uses Core's random edge.</ARIO_BannerBattleLayoutUnavailable>
+  <ARIO_LiegeBattleLevyCapUnavailable>[A Rim of Ice and Fire] The banner-call levy limit could not be raised; your liege still asks for at most six levies. Battle camps still field the larger enemy force.</ARIO_LiegeBattleLevyCapUnavailable>
+
+  <!-- Liege supply requests -->
+  <ARIO_DiploSupplyTitle>{0} requests supplies</ARIO_DiploSupplyTitle>
+  <ARIO_DiploSupplyBody>Your liege {0} requires {1} {2} delivered by caravan to {3}. If accepted, the caravan must arrive within {4} days.</ARIO_DiploSupplyBody>
+  <ARIO_DiploSupplyAccept>Promise the supplies</ARIO_DiploSupplyAccept>
+  <ARIO_DiploSupplyRefuse>Refuse the request</ARIO_DiploSupplyRefuse>
+  <ARIO_DiploSupplyAccepted>Load {0} {1} into a caravan and deliver it to {2} before the deadline.</ARIO_DiploSupplyAccepted>
+  <ARIO_DiploSupplyDeliver>Deliver feudal supplies to {0}</ARIO_DiploSupplyDeliver>
+  <ARIO_DiploSupplyNeedMore>requires {0} {1}; this caravan has {2}</ARIO_DiploSupplyNeedMore>
+  <ARIO_DiploSupplyFailedTitle>Supplies withheld</ARIO_DiploSupplyFailedTitle>
+  <ARIO_DiploSupplyRefused>Your House refused or ignored {0}'s request for supplies.</ARIO_DiploSupplyRefused>
+  <ARIO_DiploSupplyLate>Your House promised supplies to {0}, but failed to deliver them in time.</ARIO_DiploSupplyLate>
+  <ARIO_DiploSupplyDeliveredTitle>Supplies delivered</ARIO_DiploSupplyDeliveredTitle>
+  <ARIO_DiploSupplyDeliveredBody>Your caravan delivered {0} {1} to {2}. Your liege approves of your faithful service.</ARIO_DiploSupplyDeliveredBody>
+  <ARIO_DiploSupplyPending>Supply request: {0} {1}; answer within {2}.</ARIO_DiploSupplyPending>
+  <ARIO_DiploSupplyAcceptedStatus>Supply promise: deliver {0} {1} to {2} within {3}.</ARIO_DiploSupplyAcceptedStatus>
+  <ARIO_DiploSupplyNext>Next possible supply request in about {0}.</ARIO_DiploSupplyNext>
+
+  <!-- Liege visits -->
+  <ARIO_DiploLiegeVisitTitle>Your liege has arrived</ARIO_DiploLiegeVisitTitle>
+  <ARIO_DiploLiegeVisitBody>{0}, head of {1}, has arrived with an entourage for a stay of about {2} days. Their safety, health, comfort and access to beds will shape how the visit is remembered.</ARIO_DiploLiegeVisitBody>
+  <ARIO_DiploLiegeVisitJudgedTitle>Your liege departs</ARIO_DiploLiegeVisitJudgedTitle>
+  <ARIO_DiploLiegeVisitGreat>{0} leaves greatly pleased with your hospitality. The visit earned a score of {1}.</ARIO_DiploLiegeVisitGreat>
+  <ARIO_DiploLiegeVisitFair>{0} found your hospitality adequate. The visit earned a score of {1}.</ARIO_DiploLiegeVisitFair>
+  <ARIO_DiploLiegeVisitPoor>{0} leaves displeased by the state of your hospitality. The visit earned a score of {1}.</ARIO_DiploLiegeVisitPoor>
+  <ARIO_DiploVisitInProgress>Your liege's visit has about {0} remaining.</ARIO_DiploVisitInProgress>
+  <ARIO_DiploVisitNext>Next possible liege visit in about {0}.</ARIO_DiploVisitNext>
+
+  <!-- Liege defensive assistance -->
+  <ARIO_DiploDefenseAidTitle>{0} answers your call</ARIO_DiploDefenseAidTitle>
+  <ARIO_DiploDefenseAidBody>Your liege {0} has promised {1} fighters to help defend {2}. They strengthen autoresolve immediately, or will appear physically on a manual defense map.</ARIO_DiploDefenseAidBody>
+  <ARIO_DiploDefenseAidArrived>{0}'s fighters have arrived to defend {1}.</ARIO_DiploDefenseAidArrived>
+  <ARIO_DiploAidRecovered>Liege reinforcements could not enter safely. Their aid promise was cancelled without penalty.</ARIO_DiploAidRecovered>
+
+  <!-- Diplomatic fail-safes -->
+  <ARIO_DiploRecoveredTitle>Diplomatic errand recovered</ARIO_DiploRecoveredTitle>
+  <ARIO_DiploRecoveredBody>An errand involving {0} could not continue safely. Any committed holding troops were returned, stale visitors and targets were released, and no penalty was applied. The obligation may be attempted again in about {1} days.</ARIO_DiploRecoveredBody>
+  <ARIO_DiploActionRecovered>The diplomatic action could not finish safely. Its partial state was cleared without applying it twice.</ARIO_DiploActionRecovered>
+
+  <!-- Development test actions -->
+  <ARIO_DebugNoLiege>Your House has no liege.</ARIO_DebugNoLiege>
+  <ARIO_DebugBannerCall>Trigger the next banner call</ARIO_DebugBannerCall>
+  <ARIO_DebugSupplyRequest>Trigger the next supply request</ARIO_DebugSupplyRequest>
+  <!-- Territory terms -->
+  <ARIO_DiploOfferLand>Land offered</ARIO_DiploOfferLand>
+  <ARIO_DiploDemandLand>Land demanded</ARIO_DiploDemandLand>
+  <ARIO_DiploLandNone>No territory</ARIO_DiploLandNone>
+  <ARIO_DiploLandOption>{0} (worth about {1} silver)</ARIO_DiploLandOption>
+  <ARIO_DiploNoLandToGive>You hold no settled, idle holding to hand over. Holdings under construction, under attack, rebuilding or with levies in the field cannot change hands.</ARIO_DiploNoLandToGive>
+  <ARIO_DiploNoLandToTake>This House holds no settled village, town or garrison you could ask for.</ARIO_DiploNoLandToTake>
+  <ARIO_DiploHoldingUnavailable>That holding can no longer change hands. Choose another.</ARIO_DiploHoldingUnavailable>
+  <ARIO_DiploFactorLandPride>Parting with land</ARIO_DiploFactorLandPride>
+  <ARIO_DiploFactorLandLeverage>Pressure over land</ARIO_DiploFactorLandLeverage>
+  <ARIO_DiploConfirmGiveLand>If they accept, {0} passes permanently to {1}.</ARIO_DiploConfirmGiveLand>
+  <ARIO_DiploConfirmTakeLand>If they accept, {0} passes permanently from {1} to your House.</ARIO_DiploConfirmTakeLand>
+  <ARIO_DiploTerritoryGivenTitle>Holding granted</ARIO_DiploTerritoryGivenTitle>
+  <ARIO_DiploTerritoryGivenBody>{0} now answers to {1}. Its smallfolk, garrison and buildings pass with it, and its taxes no longer come to your House.</ARIO_DiploTerritoryGivenBody>
+  <ARIO_DiploTerritoryTakenTitle>Holding ceded to your House</ARIO_DiploTerritoryTakenTitle>
+  <ARIO_DiploTerritoryTakenBody>{0} has been ceded by {1} and now answers to your House. Part of its garrison followed its old lord home, and it pays no taxes while it settles under your banner.</ARIO_DiploTerritoryTakenBody>
+
+  <!-- Contracts -->
+  <ARIO_DiploProposeTrade>Propose a trade pact (caravan every {0} days)</ARIO_DiploProposeTrade>
+  <ARIO_DiploProposeTradeTip>A standing agreement to trade. While it holds, this House sends a real trade caravan to your settlement on the schedule you set, and steady dealings slowly warm the relationship. A frequent schedule is a burden on them and much harder to agree to than a rare one. War ends the pact at once, with no blame on either side.</ARIO_DiploProposeTradeTip>
+  <ARIO_DiploTradeInterval>Caravan every {0} days</ARIO_DiploTradeInterval>
+  <ARIO_DiploFactorTrade>Mutual profit</ARIO_DiploFactorTrade>
+  <ARIO_DiploTradePactTitle>Trade pact agreed</ARIO_DiploTradePactTitle>
+  <ARIO_DiploTradePactBody>Your House and {0} have agreed to trade. Their caravans will visit your settlement every {1} days while the pact holds, and steady custom will slowly warm relations between you.</ARIO_DiploTradePactBody>
+  <ARIO_DiploTradePactActive>Trade pact in force: a caravan every {0} days. The next is due in {1}.</ARIO_DiploTradePactActive>
+  <ARIO_DiploTradePactNone>No trade pact is in force.</ARIO_DiploTradePactNone>
+  <ARIO_DiploTradePactEnd>End the trade pact</ARIO_DiploTradePactEnd>
+  <ARIO_DiploTradePactEndConfirm>End your trade pact with {0}? Walking away from a standing agreement costs your House a little of its name.</ARIO_DiploTradePactEndConfirm>
+  <ARIO_DiploTradePactEnded>Your trade pact with {0} has ended.</ARIO_DiploTradePactEnded>
+
+  <!-- Levy service -->
+  <ARIO_DiploOfferLevies>Soldiers lent: {0} for {1} days</ARIO_DiploOfferLevies>
+  <ARIO_DiploDemandLevies>Soldiers borrowed: {0} for {1} days</ARIO_DiploDemandLevies>
+  <ARIO_DiploLevyAvailable>Your holdings can spare {0} soldiers right now. Lent soldiers leave their holding's garrison and workforce for the whole term.</ARIO_DiploLevyAvailable>
+  <ARIO_DiploLevyNone>No levy service is in force.</ARIO_DiploLevyNone>
+  <ARIO_DiploLevyServing>{0} of your levies serve {1}. They return in {2}.</ARIO_DiploLevyServing>
+  <ARIO_DiploLevyGarrison>{0} of {1}'s soldiers garrison your holdings. They leave in {2}.</ARIO_DiploLevyGarrison>
+  <ARIO_DiploLevyBusy>A levy service agreement with {0} is already in force.</ARIO_DiploLevyBusy>
+  <ARIO_DiploLevyNoTroops>Your holdings cannot spare that many soldiers.</ARIO_DiploLevyNoTroops>
+  <ARIO_DiploLevyNoRoom>Your holdings have no room to garrison hired soldiers.</ARIO_DiploLevyNoRoom>
+  <ARIO_DiploLevySentTitle>Levies march out</ARIO_DiploLevySentTitle>
+  <ARIO_DiploLevySentBody>{0} of your levies now serve {1}. Their holdings lose that strength and workforce for the term, and they are due home in {2}.</ARIO_DiploLevySentBody>
+  <ARIO_DiploLevyHiredTitle>Foreign soldiers arrive</ARIO_DiploLevyHiredTitle>
+  <ARIO_DiploLevyHiredBody>{0} soldiers of {1} have taken up garrison in your holdings, strengthening their defense. They depart in {2}.</ARIO_DiploLevyHiredBody>
+  <ARIO_DiploLevyReturnedTitle>Levies return home</ARIO_DiploLevyReturnedTitle>
+  <ARIO_DiploLevyReturnedBody>{0} of your levies have come home from service with {1}. {2} did not return. Honouring the term has strengthened your House's name.</ARIO_DiploLevyReturnedBody>
+  <ARIO_DiploLevyDeparted>{0} of {1}'s soldiers have left your holdings.</ARIO_DiploLevyDeparted>
+
+  <!-- Faction relations -->
+  <ARIO_DiploRelationsHeading>Relations with other realms</ARIO_DiploRelationsHeading>
+  <ARIO_DiploRelNeutral>Neutral</ARIO_DiploRelNeutral>
+  <ARIO_DiploRelAllies>Allies</ARIO_DiploRelAllies>
+  <ARIO_DiploRelVassals>Vassals</ARIO_DiploRelVassals>
+  <ARIO_DiploRelLiege>Liege</ARIO_DiploRelLiege>
+  <ARIO_DiploRelWar>War</ARIO_DiploRelWar>
+  <ARIO_DiploRelTrade>Trade</ARIO_DiploRelTrade>
+  <ARIO_DiploRelNone>none</ARIO_DiploRelNone>
+  <ARIO_DiploRelTip>{0}\n{1} ({2} goodwill)</ARIO_DiploRelTip>
+
+  <ARIO_DebugLiegeVisit>Trigger the next liege visit</ARIO_DebugLiegeVisit>
+  <ARIO_DebugDiplomacyRecovery>Test diplomatic recovery guard</ARIO_DebugDiplomacyRecovery>
+
+  <!-- Offer columns -->
+  <ARIO_DiploMyOffer>You give</ARIO_DiploMyOffer>
+  <ARIO_DiploTheirOffer>You receive</ARIO_DiploTheirOffer>
+  <ARIO_DiploOfferSilver>Pay now: {0} silver</ARIO_DiploOfferSilver>
+  <ARIO_DiploOfferDaily>Pay per day: {0} silver</ARIO_DiploOfferDaily>
+  <ARIO_DiploDemandSilver>Receive now: {0} silver</ARIO_DiploDemandSilver>
+  <ARIO_DiploDemandDaily>Receive per day: {0} silver</ARIO_DiploDemandDaily>
+  <ARIO_DiploTreasury>Silver at your keep: {0}</ARIO_DiploTreasury>
+  <ARIO_DiploEstimatedTreasury>Estimated faction treasury: {0}</ARIO_DiploEstimatedTreasury>
+
+  <!-- Submission -->
+  <ARIO_DiploSubmit>Send deal</ARIO_DiploSubmit>
+  <ARIO_DiploSubmitWar>Declare War</ARIO_DiploSubmitWar>
+  <ARIO_DiploConfirmWar>Declare war on {0}?\n\nThis turns them hostile immediately and cannot be taken back without a negotiated peace.</ARIO_DiploConfirmWar>
+  <ARIO_DiploConfirmProposal>Send this deal to {0}?\n\nChance they agree: {1}\n\nCheck every term below before confirming.</ARIO_DiploConfirmProposal>
+  <ARIO_DiploAccepted>{0} accepted your proposal.</ARIO_DiploAccepted>
+  <ARIO_DiploRejected>{0} refused your proposal. ({1} chance)</ARIO_DiploRejected>
+  <ARIO_DiploCooldown>{0} will not hear another proposal for {1}.</ARIO_DiploCooldown>
+  <ARIO_DiploCooldownNote>Wait {0} before sending another deal.</ARIO_DiploCooldownNote>
+  <ARIO_DiploNotEnoughSilver>Your keep does not hold {0} silver.</ARIO_DiploNotEnoughSilver>
+
+  <!-- Acceptance breakdown -->
+  <ARIO_DiploFactorBase>Baseline</ARIO_DiploFactorBase>
+  <ARIO_DiploFactorRelationship>Relationship</ARIO_DiploFactorRelationship>
+  <ARIO_DiploFactorIntegrity>House Integrity</ARIO_DiploFactorIntegrity>
+  <ARIO_DiploFactorTheirExhaustion>Their war exhaustion</ARIO_DiploFactorTheirExhaustion>
+  <ARIO_DiploFactorOurExhaustion>Your war exhaustion</ARIO_DiploFactorOurExhaustion>
+  <ARIO_DiploFactorOffer>Value offered</ARIO_DiploFactorOffer>
+  <ARIO_DiploFactorDemand>Value demanded</ARIO_DiploFactorDemand>
+  <ARIO_DiploFactorOfferSilver>Offer {0} silver</ARIO_DiploFactorOfferSilver>
+  <ARIO_DiploFactorDemandSilver>Demand {0} silver</ARIO_DiploFactorDemandSilver>
+  <ARIO_DiploFactorOfferDaily>Offer {0} silver per day</ARIO_DiploFactorOfferDaily>
+  <ARIO_DiploFactorDemandDaily>Demand {0} silver per day</ARIO_DiploFactorDemandDaily>
+  <ARIO_DiploFactorOfferHolding>Offer {0}</ARIO_DiploFactorOfferHolding>
+  <ARIO_DiploFactorDemandHolding>Demand {0}</ARIO_DiploFactorDemandHolding>
+  <ARIO_DiploFactorOfferLevies>Offer {0} levies for {1} days</ARIO_DiploFactorOfferLevies>
+  <ARIO_DiploFactorDemandLevies>Demand {0} levies for {1} days</ARIO_DiploFactorDemandLevies>
+  <ARIO_DiploFactorStrongerMilitary>Stronger military</ARIO_DiploFactorStrongerMilitary>
+  <ARIO_DiploFactorWeakerMilitary>Weaker military</ARIO_DiploFactorWeakerMilitary>
+  <ARIO_DiploFactorLeader>{0}'s disposition</ARIO_DiploFactorLeader>
+  <ARIO_DiploFactorExistingAgreements>Existing agreements and feudal bonds</ARIO_DiploFactorExistingAgreements>
+  <ARIO_DiploFactorSupplyJob>Useful supply service</ARIO_DiploFactorSupplyJob>
+  <ARIO_DiploFactorAttackJob>Shared enemy target</ARIO_DiploFactorAttackJob>
+  <ARIO_DiploFactorTrial>Risk of trial by combat</ARIO_DiploFactorTrial>
+  <ARIO_DiploFactorAfford>Beyond their means (about {0} silver)</ARIO_DiploFactorAfford>
+  <ARIO_DiploFactorOathOffered>A sworn sword offered</ARIO_DiploFactorOathOffered>
+  <ARIO_DiploFactorPride>Pride of an unbowed House</ARIO_DiploFactorPride>
+  <ARIO_DiploFactorStrength>Relative strength</ARIO_DiploFactorStrength>
+
+  <!-- War and peace letters -->
+  <ARIO_DiploWarDeclaredTitle>War declared</ARIO_DiploWarDeclaredTitle>
+  <ARIO_DiploWarDeclaredBody>Your House has declared war on {0}. Their holdings are now open to attack, and their allies may answer the call.</ARIO_DiploWarDeclaredBody>
+  <ARIO_DiploWarUnjustifiedBody>Your House has declared war on {0} without a standing grievance. The realm judges the act harshly and your House Integrity has suffered.</ARIO_DiploWarUnjustifiedBody>
+  <ARIO_DiploPeaceTitle>Peace agreed</ARIO_DiploPeaceTitle>
+  <ARIO_DiploPeaceBody>Your House and {0} have come to terms. The war is over and relations return to neutral.</ARIO_DiploPeaceBody>
+  <ARIO_DiploOathSwornTitle>Fealty sworn</ARIO_DiploOathSwornTitle>
+  <ARIO_DiploOathSwornBody>Your House has sworn fealty to {0}. Your House Head is now a Landed Knight in their service. They may call your banners and collect taxes, and may answer when your holdings are threatened.</ARIO_DiploOathSwornBody>
+  <ARIO_DiploVassalTitle>A new vassal</ARIO_DiploVassalTitle>
+  <ARIO_DiploVassalBody>{0} has bent the knee to your House. They owe you taxes, supplies and service in war.</ARIO_DiploVassalBody>
+  <ARIO_DiploOathBrokenTitle>Oath broken</ARIO_DiploOathBrokenTitle>
+  <ARIO_DiploOathBrokenBody>Your House has turned on {0}, a House bound to yours by oath. The realm will not soon forget it, and your House Integrity has fallen sharply.</ARIO_DiploOathBrokenBody>
+
+  <!-- Tribute -->
+  <ARIO_DiploTributeMissed>Your keep could not pay {1} silver in tribute to {0}. House Integrity has suffered.</ARIO_DiploTributeMissed>
+  <ARIO_DiploTributeCancelled>{0} has torn up your tribute agreement after repeated missed payments.</ARIO_DiploTributeCancelled>
+</LanguageData>

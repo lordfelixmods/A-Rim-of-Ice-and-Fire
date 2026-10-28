@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Castle residents must be neutral to both attackers and defenders. This hidden faction is
+       created lazily, owns no settlements and has every relation pinned to Neutral. -->
+  <FactionDef ParentName="FactionBase">
+    <defName>ARIOIAF_CastleTownsfolk</defName>
+    <label>castle townsfolk</label>
+    <description>Unarmed servants, artisans and smallfolk living within Westerosi castles. They are non-combatants and take no side in a battle for the holding.</description>
+    <pawnSingular>castle resident</pawnSingular>
+    <pawnsPlural>castle residents</pawnsPlural>
+    <hidden>true</hidden>
+    <humanlikeFaction>true</humanlikeFaction>
+    <canMakeRandomly>false</canMakeRandomly>
+    <permanentEnemy>false</permanentEnemy>
+    <techLevel>Medieval</techLevel>
+    <canSiege>false</canSiege>
+    <canStageAttacks>false</canStageAttacks>
+    <autoFlee>false</autoFlee>
+    <settlementGenerationWeight>0</settlementGenerationWeight>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <backstoryFilters>
+      <li><categories><li>Outlander</li></categories></li>
+    </backstoryFilters>
+    <basicMemberKind>Villager</basicMemberKind>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+  </FactionDef>
+</Defs>

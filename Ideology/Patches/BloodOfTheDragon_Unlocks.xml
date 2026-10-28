@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!--
+    requiredMemes is an OR list. Royalty: exalted and Rightful rule: essential are gated to
+    Feudalism, but Blood of the Dragon now requires the former and suggests the latter, so it
+    must also be a route to them. Without this the meme would demand a precept the ideoligion
+    is not permitted to take - the same failure mode that made Feudalism unselectable alongside
+    Winter Is Coming.
+  -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PreceptDef[defName="ARIOIAF_Royalty_Exalted"]/requiredMemes</xpath>
+    <value><li>ARIOIAF_BloodOfTheDragon</li></value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PreceptDef[defName="ARIOIAF_RightfulRule_Essential"]/requiredMemes</xpath>
+    <value><li>ARIOIAF_BloodOfTheDragon</li></value>
+  </Operation>
+</Patch>

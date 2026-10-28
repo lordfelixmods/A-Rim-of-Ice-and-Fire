@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- All fifteen named Valyrian blades.
+       Coordinates are raw texture-local hilt/stock positions measured from opaque artwork.
+       Do NOT pre-multiply them: SMYH applies graphicData.drawSize itself when Reposition Hands
+       is enabled. Melee Animation owns animated hands; a conditional patch removes SMYH's
+       support hand while MA is active so the two systems never double-draw. -->
+  <WHands.ClutterHandsTDef>
+    <defName>ARIOIAF_ValyrianSteelHands</defName>
+    <label>Valyrian steel hand settings</label>
+    <thingClass>Thing</thingClass>
+    <WeaponCompLoader>
+      <li>
+        <MainHand>(-0.305, 0.100, -0.306)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_Blackfyre</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.261, 0.100, -0.263)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_Brightroar</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.268, 0.100, -0.270)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_DarkSister</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.256, 0.100, -0.258)</MainHand>
+        <MainRotation>24</MainRotation>
+        <SecHand>(-0.354, -0.100, -0.354)</SecHand>
+        <SecRotation>24</SecRotation>
+        <ThingTargets><li>ARIOIAF_Heartsbane</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.270, 0.100, -0.272)</MainHand>
+        <MainRotation>24</MainRotation>
+        <SecHand>(-0.363, -0.100, -0.363)</SecHand>
+        <SecRotation>24</SecRotation>
+        <ThingTargets><li>ARIOIAF_Ice</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.267, 0.100, -0.269)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_LadyForlorn</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.248, 0.100, -0.250)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_Lamentation</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.247, 0.100, -0.250)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_Longclaw</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.255, 0.100, -0.256)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_Nightfall</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.262, 0.100, -0.265)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_Oathkeeper</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.261, 0.100, -0.264)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_OrphanMaker</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.239, 0.100, -0.242)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_RedRain</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.256, 0.100, -0.258)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_Truth</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.248, 0.100, -0.250)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_Vigilance</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.245, 0.100, -0.247)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_WidowsWail</li></ThingTargets>
+      </li>
+    </WeaponCompLoader>
+  </WHands.ClutterHandsTDef>
+</Defs>

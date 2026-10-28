@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_HouseSecondaryCrestColor>Secondary colour (crest)</ARIO_HouseSecondaryCrestColor>
+  <ARIO_HouseSecondaryCrestColorTip>Primary colors the cloth; secondary colors the crest. Dye affects cloth only. Regional crests keep their colors. Match primary uses one color for both.</ARIO_HouseSecondaryCrestColorTip>
+  <ARIO_HouseSecondaryMatchPrimary>Match primary</ARIO_HouseSecondaryMatchPrimary>
+  <ARIO_HouseSecondaryPaletteUnavailable>[A Rim of Ice and Fire] Secondary House crest palette could not be installed; existing primary/legacy heraldry remains available: {0}</ARIO_HouseSecondaryPaletteUnavailable>
+  <ARIO_HouseSecondaryCommitFailed>[A Rim of Ice and Fire] The native House identity was applied, but the secondary crest choice or its visual refresh could not finish: {0}</ARIO_HouseSecondaryCommitFailed>
+</LanguageData>

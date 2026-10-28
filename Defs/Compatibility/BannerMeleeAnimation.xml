@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Use the native greatsword/colossal pose family, independently of damage tools. -->
+  <AM.MeleeAnimationAdjustmentDef MayRequire="co.uk.epicguru.meleeanimation">
+    <defName>ARIOIAF_BannerSpearAnimation</defName>
+    <weaponAdjustments>
+      <li>
+        <key>ARIOIAF_WesterosBannerSpear</key>
+        <value><overrideSize>Colossal</overrideSize></value>
+      </li>
+    </weaponAdjustments>
+  </AM.MeleeAnimationAdjustmentDef>
+</Defs>

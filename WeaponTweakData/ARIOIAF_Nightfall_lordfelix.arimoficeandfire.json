@@ -1,0 +1,15 @@
+{
+  "TextureModID": "lordfelix.arimoficeandfire",
+  "ItemDefName": "ARIOIAF_Nightfall",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.3902,
+  "OffY": 0.0015,
+  "Rotation": 45.0,
+  "ScaleX": 1.08,
+  "ScaleY": 1.08,
+  "HandsMode": 1,
+  "BladeStart": 0.1212,
+  "BladeEnd": 0.9749,
+  "MeleeWeaponType": 6
+}

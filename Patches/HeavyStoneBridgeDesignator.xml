@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Vanilla BridgeBase belongs to Structure, not Floors. Keep its stone counterpart beside
+       the wooden bridge in the Architect's Structure tab. Its automatic command is disabled:
+       this single custom designator supplies the selected stone to the blueprint/frame. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/DesignationCategoryDef[defName="Structure"]/specialDesignatorClasses</xpath>
+    <value><li>ARimOfIceAndFire.Castles.Designator_HeavyStoneBridge</li></value>
+  </Operation>
+</Patch>

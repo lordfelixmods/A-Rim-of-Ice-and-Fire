@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_GarrisonReadyEventStory>{0} is ready for stronger walls and permanent barracks. Establish a garrison to defend your lands.</ARIO_GarrisonReadyEventStory>
+  <ARIO_GarrisonCompletedEventStory>Stone walls guard {0}. Its new garrison can support a larger levy.</ARIO_GarrisonCompletedEventStory>
+  <ARIO_HoldingRaidEventStory>Raiders approach {0}. Your smallfolk look to their lord for protection.</ARIO_HoldingRaidEventStory>
+  <ARIO_HoldingRaidEventUnavailable>[A Rim of Ice and Fire] The illustrated holding raid event is unavailable; standard warnings remain available: {0}</ARIO_HoldingRaidEventUnavailable>
+  <ARIO_HoldingRaidEventFailed>[A Rim of Ice and Fire] The holding raid picture could not open; the defense warning remains available: {0}</ARIO_HoldingRaidEventFailed>
+</LanguageData>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <XenotypeDef>
+    <defName>ARIOIAF_Valyrian</defName>
+    <label>Valyrian</label>
+    <description>An ancient Valyrian bloodline, known for pale skin, silver hair, violet eyes and remarkable beauty. In Valyria it is chiefly found among lords, ladies and the higher nobility.\n\nAdults inherit a standard male or female build and an average-width head. Consenting adult blood relatives may form romantic relationships without the usual kinship taboo; attraction and inherited pregnancy risks still apply.</description>
+    <descriptionShort>Pale, silver-haired, violet-eyed and beautiful hereditary nobility.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/ARIOIAF_Valyrian</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li>ARIOIAF_ValyrianPaleSkin</li>
+      <li>ARIOIAF_ValyrianSilverHair</li>
+      <li>ARIOIAF_ValyrianPurpleEyes</li>
+      <li>ARIOIAF_ValyrianForm</li>
+      <li>ARIOIAF_ValyrianKinship</li>
+      <li>Beauty_Beautiful</li>
+    </genes>
+  </XenotypeDef>
+  <GeneDef Name="ARIOIAF_ValyrianGeneBase" Abstract="True">
+    <displayCategory>Cosmetic</displayCategory>
+    <biostatCpx>1</biostatCpx><biostatMet>0</biostatMet>
+    <selectionWeight>0</selectionWeight><canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <passOnDirectly>true</passOnDirectly>
+  </GeneDef>
+  <GeneDef ParentName="ARIOIAF_ValyrianGeneBase">
+    <defName>ARIOIAF_ValyrianPaleSkin</defName><label>Valyrian pale skin</label>
+    <description>The pale, softly white complexion associated with old Valyrian blood. A change in appearance only, with no added sensitivity to sunlight.</description>
+    <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+    <skinColorBase>(0.96,0.93,0.92,1)</skinColorBase>
+    <skinColorOverride>(0.96,0.93,0.92,1)</skinColorOverride>
+    <endogeneCategory>Melanin</endogeneCategory>
+    <exclusionTags><li>SkinColor</li><li>SkinColorOverride</li></exclusionTags>
+  </GeneDef>
+  <GeneDef ParentName="ARIOIAF_ValyrianGeneBase">
+    <defName>ARIOIAF_ValyrianSilverHair</defName><label>Valyrian silver hair</label>
+    <description>Carriers have naturally silver-white hair that retains its color with age.</description>
+    <iconPath>UI/Icons/Genes/Gene_HairColor</iconPath>
+    <hairColorOverride>(0.90,0.91,0.95,1)</hairColorOverride><neverGrayHair>true</neverGrayHair>
+    <endogeneCategory>HairColor</endogeneCategory>
+    <exclusionTags><li>HairColor</li></exclusionTags>
+  </GeneDef>
+  <GeneDef ParentName="ARIOIAF_ValyrianGeneBase">
+    <defName>ARIOIAF_ValyrianPurpleEyes</defName><label>Valyrian purple eyes</label>
+    <description>Violet irises, a striking sign of Valyrian ancestry. Visible eye color is supported by the optional [NL] Facial Animation and UNAGI packs.</description>
+    <iconPath>UI/Icons/Genes/ARIOIAF_ValyrianEyes</iconPath>
+    <exclusionTags><li>EyeColor</li></exclusionTags>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>ARimOfIceAndFireCore.ValyrianEyeRenderWorker</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/GrayEyes/Male/GrayEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/GrayEyes/Female/GrayEyes_Female</texPathFemale>
+        <color>(0.58,0.26,0.82,1)</color>
+        <anchorTag>RightEye</anchorTag><rotDrawMode>Fresh, Rotting</rotDrawMode><parentTagDef>Head</parentTagDef><drawSize>0.2</drawSize><side>Right</side>
+        <drawData><defaultData><layer>54</layer><offset>(0,0,-0.25)</offset></defaultData></drawData>
+      </li>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>ARimOfIceAndFireCore.ValyrianEyeRenderWorker</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/GrayEyes/Male/GrayEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/GrayEyes/Female/GrayEyes_Female</texPathFemale>
+        <color>(0.58,0.26,0.82,1)</color>
+        <anchorTag>LeftEye</anchorTag><rotDrawMode>Fresh, Rotting</rotDrawMode><parentTagDef>Head</parentTagDef><drawSize>0.2</drawSize><side>Left</side>
+        <drawData><defaultData><layer>54</layer><offset>(0,0,-0.25)</offset><flip>true</flip></defaultData><dataWest><flip>false</flip></dataWest></drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="ARIOIAF_ValyrianGeneBase">
+    <defName>ARIOIAF_ValyrianForm</defName><label>Valyrian form</label>
+    <description>This bloodline favors a standard male or female build and an average-width head in adulthood, rather than thin, fat, hulk or unusually shaped forms. Children keep bodies appropriate to their age.</description>
+    <iconPath>UI/Icons/Xenotypes/ARIOIAF_Valyrian</iconPath>
+    <bodyType>Standard</bodyType>
+    <forcedHeadTypes><li>Male_AverageNormal</li><li>Female_AverageNormal</li></forcedHeadTypes>
+    <exclusionTags><li>BodyType</li><li>HeadType</li></exclusionTags>
+  </GeneDef>
+  <GeneDef ParentName="ARIOIAF_ValyrianGeneBase">
+    <defName>ARIOIAF_ValyrianKinship</defName><label>Valyrian kinship</label>
+    <description>Blood ties do not stand in the way of a consenting adult romance among carriers of this bloodline. Both partners must be at least 18 biological years old; attraction, acceptance and marriage remain matters of choice. Inherited pregnancy risks are unchanged, and eligible adult kin couples do not face disapproval from other carriers.</description>
+    <displayCategory>Miscellaneous</displayCategory>
+    <iconPath>UI/Icons/Xenotypes/ARIOIAF_Valyrian</iconPath>
+  </GeneDef>
+</Defs>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIOIAF_TestDisableLassos>Disable lassos (this test)</ARIOIAF_TestDisableLassos>
+  <ARIOIAF_TestLassosDisabled>Lassos are disabled for this test: no new random lasso equipment and no new grapple targets. Existing lasso items and saved mod settings are unchanged. Start a new game or load a save to restore normal behavior. Activate this before spawning the test armies.</ARIOIAF_TestLassosDisabled>
+  <ARIOIAF_TestLassosUnavailable>The test-only lasso control is unavailable. It requires Melee Animation with its supported generation and grapple APIs; check the debug log if that mod is loaded.</ARIOIAF_TestLassosUnavailable>
+  <ARIOIAF_TridentWaitForAnimations>Some Trident test troops are still in a Melee Animation scene. Unpause and let it finish, then use Clear Trident test troops again.</ARIOIAF_TridentWaitForAnimations>
+  <ARIO_ShieldHandsShowMeFailed>[A Rim of Ice and Fire] Show Me Your Hands shield compatibility could not be installed: {0}</ARIO_ShieldHandsShowMeFailed>
+  <ARIO_ShieldHandsMeleeFailed>[A Rim of Ice and Fire] Melee Animation shield compatibility could not be installed: {0}</ARIO_ShieldHandsMeleeFailed>
+  <ARIO_ShieldHandsRuntimeFailed>[A Rim of Ice and Fire] A shield hand could not be hidden during animation: {0}</ARIO_ShieldHandsRuntimeFailed>
+</LanguageData>

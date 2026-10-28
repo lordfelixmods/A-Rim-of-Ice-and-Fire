@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PreceptDef[defName="RoughLiving_Welcomed"]/requiredMemes</xpath>
+    <value>
+      <li>ARIOIAF_Structure_OldGods</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PreceptDef[defName="RoughLiving_Welcomed"]/associatedMemes</xpath>
+    <value>
+      <li>ARIOIAF_Structure_OldGods</li>
+    </value>
+  </Operation>
+</Patch>

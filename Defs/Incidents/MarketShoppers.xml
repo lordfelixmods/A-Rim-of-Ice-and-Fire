@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Fired by the market's own daily coin flip rather than the storyteller, but kept
+       as a real IncidentDef so it stays debug-triggerable. -->
+  <IncidentDef>
+    <defName>ARIO_MarketShoppers</defName>
+    <label>trading party</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>ARimOfIceAndFire.MarketUI.IncidentWorker_ScheduledMarketShoppers</workerClass>
+    <baseChance>0</baseChance>
+    <pointsScaleable>false</pointsScaleable>
+  </IncidentDef>
+</Defs>

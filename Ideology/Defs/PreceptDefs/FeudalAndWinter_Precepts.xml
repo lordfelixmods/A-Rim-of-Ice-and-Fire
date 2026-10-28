@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IssueDef>
+    <defName>ARIOIAF_TitleInheritance</defName>
+    <label>titles</label>
+    <iconPath>UI/Issues/TitlesPrecept</iconPath>
+  </IssueDef>
+  <IssueDef>
+    <defName>ARIOIAF_PermitCooldown</defName>
+    <label>permit cooldown</label>
+    <iconPath>UI/Issues/PermitCooldown</iconPath>
+  </IssueDef>
+  <IssueDef>
+    <defName>ARIOIAF_PermitHonorCost</defName>
+    <label>permit cost</label>
+    <iconPath>UI/Issues/PermitCost</iconPath>
+  </IssueDef>
+  <IssueDef>
+    <defName>ARIOIAF_LeaderSelection</defName>
+    <label>leader</label>
+    <iconPath>UI/Issues/Leader</iconPath>
+  </IssueDef>
+  <IssueDef>
+    <defName>ARIOIAF_Death</defName>
+    <label>death</label>
+    <iconPath>UI/Issues/Death</iconPath>
+  </IssueDef>
+  <IssueDef>
+    <defName>ARIOIAF_Expectations</defName>
+    <label>expectations</label>
+    <iconPath>UI/Issues/Expectations</iconPath>
+  </IssueDef>
+  <IssueDef>
+    <defName>ARIOIAF_Royalty</defName>
+    <label>royalty</label>
+    <iconPath>UI/Issues/RoyaltyPrecept</iconPath>
+  </IssueDef>
+
+  <PreceptDef>
+    <defName>ARIOIAF_TitleInheritance_Inherited</defName>
+    <issue>ARIOIAF_TitleInheritance</issue>
+    <label>inherited</label>
+    <description>Noble titles pass through blood. When a titled parent dies, the eldest living biological child is designated heir before the realm resolves succession.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>50</displayOrderInIssue>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    <requiredMemes><li>ARIOIAF_Feudalism</li></requiredMemes>
+    <associatedMemes><li>ARIOIAF_Feudalism</li></associatedMemes>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>ARIOIAF_PermitCooldown_Lowered</defName>
+    <issue>ARIOIAF_PermitCooldown</issue>
+    <label>lowered</label>
+    <description>Royal obligations demand a swift answer. Royal permit cooldowns are reduced to seventy percent of their normal duration.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>50</displayOrderInIssue>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    <requiredMemes><li>ARIOIAF_Feudalism</li></requiredMemes>
+    <associatedMemes><li>ARIOIAF_Feudalism</li></associatedMemes>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>ARIOIAF_PermitHonorCost_Halved</defName>
+    <issue>ARIOIAF_PermitHonorCost</issue>
+    <label>halved</label>
+    <description>Sworn allies answer their lord's call at half the usual honor cost.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>50</displayOrderInIssue>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    <requiredMemes><li>ARIOIAF_Feudalism</li></requiredMemes>
+    <associatedMemes><li>ARIOIAF_Feudalism</li></associatedMemes>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>ARIOIAF_Leader_HighestTitle</defName>
+    <issue>ARIOIAF_LeaderSelection</issue>
+    <label>highest title</label>
+    <description>The leader must be an eligible member of the ideology who holds its most senior royal title.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>50</displayOrderInIssue>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    <requiredMemes><li>ARIOIAF_Feudalism</li></requiredMemes>
+    <associatedMemes><li>ARIOIAF_Feudalism</li></associatedMemes>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>ARIOIAF_Death_DontCare</defName>
+    <issue>ARIOIAF_Death</issue>
+    <label>don't care</label>
+    <description>Death is inevitable. Followers do not suffer the usual memories for losing or witnessing the death of an ally.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>50</displayOrderInIssue>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    <requiredMemes><li>ARIOIAF_WinterIsComing</li></requiredMemes>
+    <associatedMemes><li>ARIOIAF_WinterIsComing</li></associatedMemes>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>ARIOIAF_Expectations_Low</defName>
+    <issue>ARIOIAF_Expectations</issue>
+    <label>low</label>
+    <description>Life is harsh, and comfort is never owed. Followers have expectations one tier lower than usual, but not below the lowest tier.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>30</displayOrderInIssue>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    <requiredMemes><li>ARIOIAF_WinterIsComing</li></requiredMemes>
+    <associatedMemes><li>ARIOIAF_WinterIsComing</li></associatedMemes>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>ARIOIAF_FungusEating_DontCare</defName>
+    <issue>FungusEating</issue>
+    <label>don't care</label>
+    <description>Fungus is simply food: neither offensive nor especially desirable.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>5</displayOrderInIssue>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    <requiredMemes><li>ARIOIAF_WinterIsComing</li></requiredMemes>
+    <associatedMemes><li>ARIOIAF_WinterIsComing</li></associatedMemes>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>ARIOIAF_Royalty_Exalted</defName>
+    <issue>ARIOIAF_Royalty</issue>
+    <label>exalted</label>
+    <description>Royal rank deserves increasing veneration. Opinion rises with the seniority of a person's highest title.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>50</displayOrderInIssue>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    <requiredMemes><li>ARIOIAF_Feudalism</li></requiredMemes>
+    <associatedMemes><li>ARIOIAF_Feudalism</li></associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought"><thought>ARIOIAF_Royalty_Exalted</thought></li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>ARIOIAF_Royalty_Respected</defName>
+    <issue>ARIOIAF_Royalty</issue>
+    <label>respected</label>
+    <description>Any royal title marks burdens shouldered for the realm and earns uniform respect.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>40</displayOrderInIssue>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    <requiredMemes><li>ARIOIAF_Feudalism</li></requiredMemes>
+    <associatedMemes><li>ARIOIAF_Feudalism</li></associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought"><thought>ARIOIAF_Royalty_Respected</thought></li>
+    </comps>
+  </PreceptDef>
+
+  <ThoughtDef>
+    <defName>ARIOIAF_Royalty_Exalted</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>ARimOfIceAndFire.ThoughtWorker_RoyaltyExalted</workerClass>
+    <stages>
+      <li><label>minor royalty</label><baseOpinionOffset>5</baseOpinionOffset></li>
+      <li><label>recognized royalty</label><baseOpinionOffset>15</baseOpinionOffset></li>
+      <li><label>senior royalty</label><baseOpinionOffset>25</baseOpinionOffset></li>
+      <li><label>high royalty</label><baseOpinionOffset>40</baseOpinionOffset></li>
+      <li><label>exalted royalty</label><baseOpinionOffset>60</baseOpinionOffset></li>
+      <li><label>supreme royalty</label><baseOpinionOffset>90</baseOpinionOffset></li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>ARIOIAF_Royalty_Respected</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>ARimOfIceAndFire.ThoughtWorker_RoyaltyRespected</workerClass>
+    <stages><li><label>royalty</label><baseOpinionOffset>25</baseOpinionOffset></li></stages>
+  </ThoughtDef>
+</Defs>

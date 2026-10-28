@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_RealmLongNightTab>The Long Night</ARIO_RealmLongNightTab>
+  <ARIO_RealmTabsUnavailable>This Realm page is temporarily unavailable. Close and reopen the House window.</ARIO_RealmTabsUnavailable>
+  <ARIO_RealmKitHeading>Realm levy equipment</ARIO_RealmKitHeading>
+  <ARIO_RealmKitArms>Arms</ARIO_RealmKitArms>
+  <ARIO_RealmKitProtection>Protection</ARIO_RealmKitProtection>
+  <ARIO_RealmKitPreview>Levy preview</ARIO_RealmKitPreview>
+  <ARIO_RealmKitDraftStatus>Draft — not applied</ARIO_RealmKitDraftStatus>
+  <ARIO_RealmKitAppliedStatus>Applied</ARIO_RealmKitAppliedStatus>
+  <ARIO_RealmKitDefaults>Reset kit to defaults</ARIO_RealmKitDefaults>
+  <ARIO_RealmKitUnitCost>Equipment per levy: {0} silver</ARIO_RealmKitUnitCost>
+  <ARIO_RealmKitCostTip>Equipment only. The main window shows the full muster quote, including the levy fee. Nothing is charged here.</ARIO_RealmKitCostTip>
+  <ARIO_RealmKitRevert>Revert</ARIO_RealmKitRevert>
+  <ARIO_RealmKitApply>Apply</ARIO_RealmKitApply>
+  <ARIO_RealmKitConfirm>Apply this kit and apparel colour to all {0} controlled holdings and any gained later? Only newly mustered levies receive it. Existing soldiers keep their equipment.</ARIO_RealmKitConfirm>
+  <ARIO_RealmKitApplied>Realm levy equipment applied.</ARIO_RealmKitApplied>
+  <ARIO_RealmKitCannotApply>The kit is no longer valid or this editor is outdated. Revert and check research and equipment compatibility.</ARIO_RealmKitCannotApply>
+  <ARIO_RealmKitStale>The applied kit changed elsewhere. Revert before applying this draft.</ARIO_RealmKitStale>
+  <ARIO_RealmKitHoldingSummary>New levies use the shared realm kit. Existing soldiers keep their equipment.</ARIO_RealmKitHoldingSummary>
+  <ARIO_RealmKitUnconfigured>No shared kit has been applied yet. Existing holding kits remain in use.</ARIO_RealmKitUnconfigured>
+  <ARIO_RealmKitOpen>Edit realm levy equipment</ARIO_RealmKitOpen>
+</LanguageData>

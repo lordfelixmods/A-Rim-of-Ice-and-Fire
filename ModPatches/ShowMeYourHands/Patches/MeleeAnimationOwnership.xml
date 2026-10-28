@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- SMYH suppresses its primary melee hand when Melee Animation is active, but not the support
+       hand attached to that same weapon. Remove only our two-handed melee SecHand mappings in that
+       combination: MA then owns both animated hands, while SMYH keeps both hands when used alone. -->
+  <Operation Class="PatchOperationFindMod">
+    <mods><li>Melee Animation</li></mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/WHands.ClutterHandsTDef[defName="ARIOIAF_WesterosMeleeHands"]/WeaponCompLoader/li[ThingTargets/li="ARIOIAF_TwoHandedWarSword"]/SecHand</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/WHands.ClutterHandsTDef[defName="ARIOIAF_WesterosMeleeHands"]/WeaponCompLoader/li[ThingTargets/li="ARIOIAF_WesterosBannerSpear"]/SecHand</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/WHands.ClutterHandsTDef[defName="ARIOIAF_ValyrianSteelHands"]/WeaponCompLoader/li[ThingTargets/li="ARIOIAF_Heartsbane"]/SecHand</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/WHands.ClutterHandsTDef[defName="ARIOIAF_ValyrianSteelHands"]/WeaponCompLoader/li[ThingTargets/li="ARIOIAF_Ice"]/SecHand</xpath>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

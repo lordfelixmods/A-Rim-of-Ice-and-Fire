@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Mirrors the installed CE 1.6 VAE chainmail treatment (1.341, 10/5 bulk,
+       -0.1 dodge), not vanilla percentage armor. No dependency on VAE itself.
+       Steeled matches the rest of this mod's CE metal armory. Base recipe/art,
+       body coverage, mass and crafting-only generation policy remain unchanged. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosChainmail"]/statBases/StuffEffectMultiplierArmor</xpath>
+    <value><StuffEffectMultiplierArmor>1.341</StuffEffectMultiplierArmor></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosChainmail"]/statBases</xpath>
+    <value>
+      <Bulk>10</Bulk>
+      <WornBulk>5</WornBulk>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosChainmail"]/stuffCategories</xpath>
+    <value><stuffCategories><li>Steeled</li></stuffCategories></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosChainmail"]/equippedStatOffsets</xpath>
+    <value><equippedStatOffsets><MeleeDodgeChance>-0.1</MeleeDodgeChance></equippedStatOffsets></value>
+  </Operation>
+</Patch>

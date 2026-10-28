@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- The credited supporters. Adding a name is a single line here; the monument's window and its
+       translations pick it up automatically. -->
+  <ARimOfIceAndFire.SupportersDef>
+    <defName>ARIOIAF_Supporters</defName>
+    <supporters>
+      <li>Prime Strategus</li>
+      <li>Niek_Alexander</li>
+      <li>Fabricator General</li>
+    </supporters>
+  </ARimOfIceAndFire.SupportersDef>
+</Defs>

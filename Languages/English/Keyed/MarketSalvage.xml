@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_SalvageInspect>Battlefield salvage - market resale: 25%</ARIO_SalvageInspect>
+  <ARIO_SalvageDescription>This gear is battlefield salvage. Market shoppers pay 25% of its normal market sale price, with the usual condition, quality and shopper modifiers. Repairing, hauling, wearing or capturing it does not remove its origin. Other traders and the item's normal stats are unchanged.</ARIO_SalvageDescription>
+  <ARIO_SalvageMark>Mark as salvage</ARIO_SalvageMark>
+  <ARIO_SalvageUnmark>Remove manual salvage mark</ARIO_SalvageUnmark>
+  <ARIO_SalvageManualDesc>Mark selected weapons and apparel as older battlefield loot. Market resale falls to 25%. You can correct a manual mark later; automatic raider marks cannot be removed. No item is moved or changed physically.</ARIO_SalvageManualDesc>
+  <ARIO_SalvageAutomatic>Battlefield salvage</ARIO_SalvageAutomatic>
+  <ARIO_SalvageAutomaticDesc>Gear taken from enemy raiders fetches only 25% of its usual resale value. Buyers are wary of battlefield spoils.</ARIO_SalvageAutomaticDesc>
+  <ARIO_SalvageLocked>Automatic raider origin cannot be removed.</ARIO_SalvageLocked>
+  <ARIO_SalvageName>{0} [salvage]</ARIO_SalvageName>
+  <ARIO_SalvageMixedName>{0} [{1} salvage]</ARIO_SalvageMixedName>
+  <ARIO_SalvageDisplayTip>{0} of {1} displayed items are battlefield salvage and use the 25% rate. Market sale base for all displayed stacks of this type: {2} silver. Shopper modifiers still apply.</ARIO_SalvageDisplayTip>
+  <ARIO_SalvagePrice>Salvage sale base: {0} silver / item (25%)</ARIO_SalvagePrice>
+  <ARIO_MarketSaleBase>Market sale base: {0} silver / item</ARIO_MarketSaleBase>
+  <ARIO_SalvageInstallFailed>[A Rim of Ice and Fire] Raider salvage tracking or pricing could not be installed: {0}</ARIO_SalvageInstallFailed>
+</LanguageData>

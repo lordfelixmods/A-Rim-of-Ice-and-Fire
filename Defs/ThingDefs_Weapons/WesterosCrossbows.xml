@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Standalone vanilla profiles; CE replaces firing behavior and uses its native
+       AmmoSet_CrossbowBolt when active. -->
+  <ThingDef Name="ARIOIAF_WesterosCrossbowBase" ParentName="BaseWeaponNeolithic" Abstract="True">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <ignoreThingDrawColor>true</ignoreThingDrawColor>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <relicChance>0</relicChance>
+    <smeltable>true</smeltable>
+    <!-- The supplied art is drawn diagonally (stock lower-left, prod upper-right).
+         Straightening it by 45 degrees makes the weapon point along the shot line
+         when aiming and carry like any other ranged weapon. -->
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <weaponTags Inherit="False" />
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities><li>Blunt</li><li>Poke</li></capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <rotateInShelves>false</rotateInShelves>
+  </ThingDef>
+
+  <ThingDef ParentName="ARIOIAF_WesterosCrossbowBase">
+    <defName>ARIOIAF_LightWoodenCrossbow</defName>
+    <label>light wooden crossbow</label>
+    <description>A light wooden crossbow that can be spanned by hand. It is quick to ready and easy for an inexperienced shooter to hold on target, but lacks the range and armor-breaking force of heavier bows.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/WesterosCrossbows/LightWoodenCrossbow</texPath>
+      <drawSize>(1.15,1.15)</drawSize>
+    </graphicData>
+    <soundInteract>Bow_Recurve</soundInteract>
+    <costList><WoodLog>45</WoodLog><Steel>8</Steel></costList>
+    <statBases>
+      <WorkToMake>7000</WorkToMake><Mass>1.8</Mass>
+      <AccuracyTouch>0.78</AccuracyTouch><AccuracyShort>0.82</AccuracyShort><AccuracyMedium>0.64</AccuracyMedium><AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags><li>ARIOIAF_WesterosCrossbowLight</li></weaponTags>
+    <weaponClasses Inherit="False"><li>Ranged</li><li>RangedLight</li></weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>RecurveBow</researchPrerequisite>
+      <skillRequirements><Crafting>4</Crafting></skillRequirements>
+      <displayPriority>531</displayPriority>
+    </recipeMaker>
+    <verbs><li>
+      <verbClass>Verb_Shoot</verbClass><hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>ARIOIAF_Bolt_LightCrossbow</defaultProjectile>
+      <warmupTime>1</warmupTime><range>22.9</range><soundCast>Bow_Recurve</soundCast>
+    </li></verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="ARIOIAF_WesterosCrossbowBase">
+    <defName>ARIOIAF_SoldiersCrossbow</defName>
+    <label>soldier's crossbow</label>
+    <description>A military crossbow built with a reinforced stock and stronger prod. It drives a bolt hard enough to threaten mail while remaining manageable for a line of trained foot soldiers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/WesterosCrossbows/SoldiersCrossbow</texPath>
+      <drawSize>(1.25,1.25)</drawSize>
+    </graphicData>
+    <soundInteract>Bow_Large</soundInteract>
+    <costList><WoodLog>50</WoodLog><Steel>20</Steel></costList>
+    <statBases>
+      <WorkToMake>14000</WorkToMake><Mass>2.7</Mass>
+      <AccuracyTouch>0.8</AccuracyTouch><AccuracyShort>0.88</AccuracyShort><AccuracyMedium>0.74</AccuracyMedium><AccuracyLong>0.46</AccuracyLong>
+      <RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets><ShootingAccuracyPawn>1</ShootingAccuracyPawn></equippedStatOffsets>
+    <weaponTags><li>ARIOIAF_WesterosCrossbowMilitary</li></weaponTags>
+    <weaponClasses Inherit="False"><li>Ranged</li><li>RangedHeavy</li></weaponClasses>
+    <recipeMaker>
+      <researchPrerequisites><li>RecurveBow</li><li>Smithing</li></researchPrerequisites>
+      <skillRequirements><Crafting>5</Crafting></skillRequirements>
+      <displayPriority>532</displayPriority>
+    </recipeMaker>
+    <verbs><li>
+      <verbClass>Verb_Shoot</verbClass><hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>ARIOIAF_Bolt_SoldiersCrossbow</defaultProjectile>
+      <warmupTime>1.2</warmupTime><range>26.9</range><soundCast>Bow_Large</soundCast>
+    </li></verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="ARIOIAF_WesterosCrossbowBase">
+    <defName>ARIOIAF_HeavyArbalest</defName>
+    <label>heavy arbalest</label>
+    <description>A massive steel-braced arbalest spanned with a mechanical aid. Slow and cumbersome, it rewards prepared firing lines with exceptional range and bolts capable of punching through heavy armor.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/WesterosCrossbows/HeavyArbalest</texPath>
+      <drawSize>(1.35,1.35)</drawSize>
+    </graphicData>
+    <soundInteract>Bow_Large</soundInteract>
+    <costList><WoodLog>60</WoodLog><Steel>35</Steel></costList>
+    <statBases>
+      <WorkToMake>20000</WorkToMake><Mass>4.5</Mass>
+      <AccuracyTouch>0.72</AccuracyTouch><AccuracyShort>0.9</AccuracyShort><AccuracyMedium>0.8</AccuracyMedium><AccuracyLong>0.62</AccuracyLong>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets><ShootingAccuracyPawn>2</ShootingAccuracyPawn></equippedStatOffsets>
+    <weaponTags><li>ARIOIAF_WesterosArbalest</li></weaponTags>
+    <weaponClasses Inherit="False"><li>Ranged</li><li>RangedHeavy</li><li>LongShots</li></weaponClasses>
+    <recipeMaker>
+      <researchPrerequisites><li>RecurveBow</li><li>ARIOIAF_WesterosArmory</li></researchPrerequisites>
+      <skillRequirements><Crafting>7</Crafting></skillRequirements>
+      <displayPriority>533</displayPriority>
+    </recipeMaker>
+    <verbs><li>
+      <verbClass>Verb_Shoot</verbClass><hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>ARIOIAF_Bolt_HeavyArbalest</defaultProjectile>
+      <warmupTime>1.5</warmupTime><range>30.9</range><soundCast>Bow_Large</soundCast>
+    </li></verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>ARIOIAF_Bolt_LightCrossbow</defName><label>light crossbow bolt</label>
+    <graphicData><texPath>Things/Projectile/Arrow_Small</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <projectile><damageDef>ArrowHighVelocity</damageDef><damageAmountBase>14</damageAmountBase><stoppingPower>0.8</stoppingPower><armorPenetrationBase>0.08</armorPenetrationBase><speed>58</speed></projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>ARIOIAF_Bolt_SoldiersCrossbow</defName><label>military crossbow bolt</label>
+    <graphicData><texPath>Things/Projectile/Arrow_Small</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <projectile><damageDef>ArrowHighVelocity</damageDef><damageAmountBase>18</damageAmountBase><stoppingPower>1.3</stoppingPower><armorPenetrationBase>0.2</armorPenetrationBase><speed>65</speed></projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>ARIOIAF_Bolt_HeavyArbalest</defName><label>heavy arbalest bolt</label>
+    <graphicData><texPath>Things/Projectile/Arrow_Small</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <projectile><damageDef>ArrowHighVelocity</damageDef><damageAmountBase>24</damageAmountBase><stoppingPower>2</stoppingPower><armorPenetrationBase>0.35</armorPenetrationBase><speed>70</speed></projectile>
+  </ThingDef>
+</Defs>

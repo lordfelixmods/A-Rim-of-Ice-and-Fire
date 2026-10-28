@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PreceptDef Name="ARIOIAF_SelectableValyrianRelicBase" Abstract="True">
+    <issue>IdeoRelic</issue>
+    <preceptClass>ARimOfIceAndFireCore.ValyrianRelic</preceptClass>
+    <workerClass>ARimOfIceAndFireCore.ValyrianRelicWorker</workerClass>
+    <nameMaker>NamerIdeoRelic</nameMaker>
+    <impact>Medium</impact>
+    <!-- These defs provide canonical, individually selectable blades in the editor. Random
+         Westerosi faiths use vanilla's single IdeoRelic def and normal 2–3 relic curve, with
+         ValyrianRelicPolicy restricting its candidates and preserving each blade's proper name. -->
+    <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+    <canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+    <canUseAlreadyUsedThingDef>false</canUseAlreadyUsedThingDef>
+    <useChoicesFromBuildingDefs>true</useChoicesFromBuildingDefs>
+    <!-- Westerosi faiths only: a named Valyrian blade is meaningless to an unrelated
+         ideoligion, and this keeps the swap scoped to this mod's own religions. -->
+    <requiredMemes>
+      <li>ARIOIAF_Structure_OldGods</li>
+      <li>ARIOIAF_Structure_FaithOfTheSeven</li>
+      <li>ARIOIAF_Structure_DrownedGod</li>
+    </requiredMemes>
+  </PreceptDef>
+
+  <PreceptDef ParentName="ARIOIAF_SelectableValyrianRelicBase">
+    <defName>ARIOIAF_BlackfyreRelic</defName><label>Blackfyre</label>
+    <description>Blackfyre is a unique named Valyrian-steel relic. Its legendary-quality blade may be recovered through a relic-hunt quest; destruction or loss never creates a replacement.</description>
+    <modExtensions><li Class="ARimOfIceAndFireCore.ValyrianRelicPreceptExtension"><thingDef>ARIOIAF_Blackfyre</thingDef></li></modExtensions>
+  </PreceptDef>
+  <PreceptDef ParentName="ARIOIAF_SelectableValyrianRelicBase">
+    <defName>ARIOIAF_BrightroarRelic</defName><label>Brightroar</label>
+    <description>Brightroar is a unique named Valyrian-steel relic. Its legendary-quality blade may be recovered through a relic-hunt quest; destruction or loss never creates a replacement.</description>
+    <modExtensions><li Class="ARimOfIceAndFireCore.ValyrianRelicPreceptExtension"><thingDef>ARIOIAF_Brightroar</thingDef></li></modExtensions>
+  </PreceptDef>
+  <PreceptDef ParentName="ARIOIAF_SelectableValyrianRelicBase">
+    <defName>ARIOIAF_HeartsbaneRelic</defName><label>Heartsbane</label>
+    <description>Heartsbane is a unique named Valyrian-steel relic. Its legendary-quality blade may be recovered through a relic-hunt quest; destruction or loss never creates a replacement.</description>
+    <modExtensions><li Class="ARimOfIceAndFireCore.ValyrianRelicPreceptExtension"><thingDef>ARIOIAF_Heartsbane</thingDef></li></modExtensions>
+  </PreceptDef>
+  <PreceptDef ParentName="ARIOIAF_SelectableValyrianRelicBase">
+    <defName>ARIOIAF_IceRelic</defName><label>Ice</label>
+    <description>Ice is a unique named Valyrian-steel relic. Its legendary-quality blade may be recovered through a relic-hunt quest; destruction or loss never creates a replacement.</description>
+    <modExtensions><li Class="ARimOfIceAndFireCore.ValyrianRelicPreceptExtension"><thingDef>ARIOIAF_Ice</thingDef></li></modExtensions>
+  </PreceptDef>
+  <PreceptDef ParentName="ARIOIAF_SelectableValyrianRelicBase">
+    <defName>ARIOIAF_LadyForlornRelic</defName><label>Lady Forlorn</label>
+    <description>Lady Forlorn is a unique named Valyrian-steel relic. Its legendary-quality blade may be recovered through a relic-hunt quest; destruction or loss never creates a replacement.</description>
+    <modExtensions><li Class="ARimOfIceAndFireCore.ValyrianRelicPreceptExtension"><thingDef>ARIOIAF_LadyForlorn</thingDef></li></modExtensions>
+  </PreceptDef>
+  <PreceptDef ParentName="ARIOIAF_SelectableValyrianRelicBase">
+    <defName>ARIOIAF_LamentationRelic</defName><label>Lamentation</label>
+    <description>Lamentation is a unique named Valyrian-steel relic. Its legendary-quality blade may be recovered through a relic-hunt quest; destruction or loss never creates a replacement.</description>
+    <modExtensions><li Class="ARimOfIceAndFireCore.ValyrianRelicPreceptExtension"><thingDef>ARIOIAF_Lamentation</thingDef></li></modExtensions>
+  </PreceptDef>
+  <PreceptDef ParentName="ARIOIAF_SelectableValyrianRelicBase">
+    <defName>ARIOIAF_LongclawRelic</defName><label>Longclaw</label>
+    <description>Longclaw is a unique named Valyrian-steel relic. Its legendary-quality blade may be recovered through a relic-hunt quest; destruction or loss never creates a replacement.</description>
+    <modExtensions><li Class="ARimOfIceAndFireCore.ValyrianRelicPreceptExtension"><thingDef>ARIOIAF_Longclaw</thingDef></li></modExtensions>
+  </PreceptDef>
+  <PreceptDef ParentName="ARIOIAF_SelectableValyrianRelicBase">
+    <defName>ARIOIAF_NightfallRelic</defName><label>Nightfall</label>
+    <description>Nightfall is a unique named Valyrian-steel relic. Its legendary-quality blade may be recovered through a relic-hunt quest; destruction or loss never creates a replacement.</description>
+    <modExtensions><li Class="ARimOfIceAndFireCore.ValyrianRelicPreceptExtension"><thingDef>ARIOIAF_Nightfall</thingDef></li></modExtensions>
+  </PreceptDef>
+  <PreceptDef ParentName="ARIOIAF_SelectableValyrianRelicBase">
+    <defName>ARIOIAF_OathkeeperRelic</defName><label>Oathkeeper</label>
+    <description>Oathkeeper is a unique named Valyrian-steel relic. Its legendary-quality blade may be recovered through a relic-hunt quest; destruction or loss never creates a replacement.</description>
+    <modExtensions><li Class="ARimOfIceAndFireCore.ValyrianRelicPreceptExtension"><thingDef>ARIOIAF_Oathkeeper</thingDef></li></modExtensions>
+  </PreceptDef>
+  <PreceptDef ParentName="ARIOIAF_SelectableValyrianRelicBase">
+    <defName>ARIOIAF_OrphanMakerRelic</defName><label>Orphan-Maker</label>
+    <description>Orphan-Maker is a unique named Valyrian-steel relic. Its legendary-quality blade may be recovered through a relic-hunt quest; destruction or loss never creates a replacement.</description>
+    <modExtensions><li Class="ARimOfIceAndFireCore.ValyrianRelicPreceptExtension"><thingDef>ARIOIAF_OrphanMaker</thingDef></li></modExtensions>
+  </PreceptDef>
+  <PreceptDef ParentName="ARIOIAF_SelectableValyrianRelicBase">
+    <defName>ARIOIAF_RedRainRelic</defName><label>Red Rain</label>
+    <description>Red Rain is a unique named Valyrian-steel relic. Its legendary-quality blade may be recovered through a relic-hunt quest; destruction or loss never creates a replacement.</description>
+    <modExtensions><li Class="ARimOfIceAndFireCore.ValyrianRelicPreceptExtension"><thingDef>ARIOIAF_RedRain</thingDef></li></modExtensions>
+  </PreceptDef>
+  <PreceptDef ParentName="ARIOIAF_SelectableValyrianRelicBase">
+    <defName>ARIOIAF_TruthRelic</defName><label>Truth</label>
+    <description>Truth is a unique named Valyrian-steel relic. Its legendary-quality blade may be recovered through a relic-hunt quest; destruction or loss never creates a replacement.</description>
+    <modExtensions><li Class="ARimOfIceAndFireCore.ValyrianRelicPreceptExtension"><thingDef>ARIOIAF_Truth</thingDef></li></modExtensions>
+  </PreceptDef>
+  <PreceptDef ParentName="ARIOIAF_SelectableValyrianRelicBase">
+    <defName>ARIOIAF_VigilanceRelic</defName><label>Vigilance</label>
+    <description>Vigilance is a unique named Valyrian-steel relic. Its legendary-quality blade may be recovered through a relic-hunt quest; destruction or loss never creates a replacement.</description>
+    <modExtensions><li Class="ARimOfIceAndFireCore.ValyrianRelicPreceptExtension"><thingDef>ARIOIAF_Vigilance</thingDef></li></modExtensions>
+  </PreceptDef>
+  <PreceptDef ParentName="ARIOIAF_SelectableValyrianRelicBase">
+    <defName>ARIOIAF_WidowsWailRelic</defName><label>Widow's Wail</label>
+    <description>Widow's Wail is a unique named Valyrian-steel relic. Its legendary-quality blade may be recovered through a relic-hunt quest; destruction or loss never creates a replacement.</description>
+    <modExtensions><li Class="ARimOfIceAndFireCore.ValyrianRelicPreceptExtension"><thingDef>ARIOIAF_WidowsWail</thingDef></li></modExtensions>
+  </PreceptDef>
+</Defs>

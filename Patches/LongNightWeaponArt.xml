@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- The Long Night is optional. Replace only the walker's crystal sword;
+       the supplied sprite has its own icy palette and must not be tinted blue. -->
+  <Operation Class="PatchOperationFindMod">
+    <mods><li>The Long Night</li></mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="TLN_Weapon_CrystalSword"]/graphicData/texPath</xpath>
+          <value><texPath>Things/Item/Equipment/WeaponMelee/ARIO/LongNight/IceSword</texPath></value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="TLN_Weapon_CrystalSword"]/graphicData/color</xpath>
+          <value><color>(255,255,255)</color></value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

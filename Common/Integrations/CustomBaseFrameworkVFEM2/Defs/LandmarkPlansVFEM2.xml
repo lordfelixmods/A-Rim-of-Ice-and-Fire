@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Native CBF VFE Medieval 2 pieces, never CBF's industrial/autocannon pools. -->
+  <CustomBaseFramework.StyleDef><defName>ARIO_LM_CBF_VFEM2Style</defName><label>Westerosi Medieval 2 fortress</label></CustomBaseFramework.StyleDef>
+  <CustomBaseFramework.WallProfileDef><defName>ARIO_LM_CBF_VFEM2WallFive</defName><label>Medieval 2 landmark curtain</label><style>ARIO_LM_CBF_VFEM2Style</style><depth>5</depth><segments><li>CBF_VFEM2_TownWall_1x5</li></segments><tower>CBF_VFEM2_FortressTower_A</tower><gatehouse>CBF_VFEM2_FortressGate_A</gatehouse><gatehouseOutward>West</gatehouseOutward></CustomBaseFramework.WallProfileDef>
+  <CustomBaseFramework.WallProfileDef><defName>ARIO_LM_CBF_VFEM2WallThree</defName><label>Medieval 2 landmark town wall</label><style>ARIO_LM_CBF_VFEM2Style</style><depth>3</depth><segments><li>CBF_VFEM2_TownWall</li></segments><tower>CBF_VFEM2_TownTower_A</tower><gatehouse>CBF_VFEM2_Gatehouse_A</gatehouse><gatehouseOutward>West</gatehouseOutward></CustomBaseFramework.WallProfileDef>
+  <CustomBaseFramework.SettlementPlanDef Name="ARIO_LM_VFEM2_Base" Abstract="True">
+    <kind>MedievalTown</kind><materialList>CBF_VFEM2_MaterialList</materialList><styles><li>ARIO_LM_CBF_VFEM2Style</li></styles>
+    <mapSize>250</mapSize><coreSize>85~100</coreSize><roadMain>2</roadMain><roadLane>2</roadLane><minBuildingGap>2</minBuildingGap><targetBuilt>0.36</targetBuilt>
+    <towerCorner>9</towerCorner><noWdLoot>true</noWdLoot><forAllFactions>false</forAllFactions><factionTags><li>ARIO_HistoricalLandmarkForceOnly</li></factionTags><techLevels><li>Medieval</li></techLevels>
+    <emplacements><li><tag>CBF_VFEM2_FortressTower</tag><count>2~4</count></li></emplacements><gatehouses><li><tag>CBF_VFEM2_FortressGate</tag><count>1~2</count></li></gatehouses>
+  </CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef Name="ARIO_LM_VFEM2_Fortress" ParentName="ARIO_LM_VFEM2_Base" Abstract="True">
+    <wards><li><name>Citadel</name><kind>Town</kind><supply>1.1</supply><roads><li>FlagstoneGranite</li></roads>
+      <walls><li><piece>CBF_VFEM2_TownWall_1x5</piece></li></walls>
+      <emplacements><li><tag>CBF_VFEM2_FortressTower</tag><count>2~4</count></li></emplacements><gatehouses><li><tag>CBF_VFEM2_FortressGate</tag><count>1~2</count></li></gatehouses>
+      <districts><li><name>Castle</name><entries>
+        <li><tag>CBF_VFEM2_FortressKeep</tag><count>1~1</count><unique>true</unique><priority>Important</priority></li>
+        <li><tag>CBF_VFEM2_Barracks</tag><count>1~2</count></li><li><tag>CBF_VFEM2_Armory</tag><count>1~1</count></li><li><tag>CBF_VFEM2_Armoury</tag><count>1~1</count></li>
+        <li><piece>CBF_VFEM2_Dungeon</piece><count>0~1</count></li><li><tag>CBF_VFEM2_WallAccess</tag><count>1~2</count></li>
+      </entries></li><li><name>Household</name><entries>
+        <li><tag>CBF_VFEM2_NobleHouse</tag><count>1~2</count></li><li><tag>CBF_VFEM2_Smithy</tag><count>1~1</count></li><li><tag>CBF_VFEM2_Warehouse</tag><count>1~1</count></li>
+        <li><tag>CBF_VFEM2_Tavern</tag><count>0~1</count></li><li><tag>CBF_VFEM2_GapYard</tag><count>0~2</count><filler>true</filler></li>
+      </entries></li></districts>
+    </li></wards>
+  </CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef Name="ARIO_LM_VFEM2_City" ParentName="ARIO_LM_VFEM2_Base" Abstract="True">
+    <mapSize>250</mapSize><coreSize>100~120</coreSize><targetBuilt>0.38</targetBuilt>
+    <harbor><entries><li><tag>CBF_VFEM2_Harbormaster</tag><count>1~1</count></li><li><tag>CBF_VFEM2_HarborStore</tag><count>1~1</count></li><li><tag>CBF_VFEM2_Jetty</tag><count>1~2</count></li></entries></harbor>
+    <wards>
+      <li><name>RoyalCourt</name><kind>Town</kind><supply>1.1</supply><roads><li>FlagstoneGranite</li></roads>
+        <walls><li><piece>CBF_VFEM2_TownWall_1x5</piece></li></walls><emplacements><li><tag>CBF_VFEM2_FortressTower</tag><count>3~4</count></li></emplacements><gatehouses><li><tag>CBF_VFEM2_FortressGate</tag><count>1~2</count></li></gatehouses>
+        <districts><li><name>Keep</name><entries>
+          <li><tag>CBF_VFEM2_FortressKeep</tag><count>1~1</count><unique>true</unique><priority>Important</priority></li><li><tag>CBF_VFEM2_Armoury</tag><count>1~1</count></li>
+          <li><tag>CBF_VFEM2_Barracks</tag><count>1~2</count></li><li><tag>CBF_VFEM2_Armory</tag><count>1~1</count></li><li><piece>CBF_VFEM2_Dungeon</piece><count>1~1</count></li>
+          <li><tag>CBF_VFEM2_WallAccess</tag><count>1~2</count></li>
+        </entries></li><li><name>NobleCourt</name><entries>
+          <li><tag>CBF_VFEM2_NobleHouse</tag><count>1~3</count></li><li><tag>CBF_VFEM2_Library</tag><count>0~1</count></li><li><tag>CBF_VFEM2_Church</tag><count>1~1</count></li>
+        </entries></li></districts>
+      </li>
+      <li><name>MarketWard</name><kind>Suburb</kind><supply>1.1</supply><roads><li>FlagstoneGranite</li></roads>
+        <walls><li><piece>CBF_VFEM2_TownWall</piece></li></walls><emplacements><li><tag>CBF_VFEM2_TownTower</tag><count>2~3</count></li></emplacements><gatehouses><li><tag>CBF_VFEM2_Gatehouse</tag><count>1~2</count></li></gatehouses>
+        <districts><li><name>Market</name><entries>
+          <li><tag>CBF_VFEM2_MarketSquare</tag><count>1~2</count></li><li><tag>CBF_VFEM2_Guild</tag><count>1~1</count></li><li><tag>CBF_VFEM2_Tavern</tag><count>1~2</count></li>
+          <li><tag>CBF_VFEM2_BurgherHouse</tag><count>3~6</count><filler>true</filler></li><li><tag>CBF_VFEM2_GapYard</tag><count>0~2</count><filler>true</filler></li>
+        </entries></li><li><name>Trades</name><entries>
+          <li><tag>CBF_VFEM2_Smithy</tag><count>1~1</count></li><li><tag>CBF_VFEM2_Warehouse</tag><count>1~2</count></li><li><tag>CBF_VFEM2_Bakery</tag><count>1~1</count></li>
+          <li><tag>CBF_VFEM2_Workshop</tag><count>1~2</count></li><li><tag>CBF_VFEM2_Hut</tag><count>2~4</count><filler>true</filler></li>
+        </entries></li></districts>
+      </li>
+    </wards>
+  </CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef Name="ARIO_LM_VFEM2_GardenEstate" ParentName="ARIO_LM_VFEM2_Fortress" Abstract="True">
+    <treeShare>0.45</treeShare><wards><li><name>EstateFarms</name><kind>Rural</kind><supply>1.2</supply><districts>
+      <li><name>Farms</name><entries><li><tag>CBF_VFEM2_Farmstead</tag><count>2~3</count></li><li><tag>CBF_VFEM2_Barn</tag><count>1~1</count></li><li><tag>CBF_VFEM2_Warehouse</tag><count>1~1</count></li></entries>
+        <fields><li><count>2~3</count><fence>true</fence><weight>1</weight><plants><li>Plant_Corn</li><li>Plant_Haygrass</li></plants><tags><li>CBF_VFEM2_Farmstead</li></tags></li></fields>
+      </li><li><name>EstateCourt</name><entries><li><tag>CBF_VFEM2_NobleHouse</tag><count>1~2</count></li><li><tag>CBF_VFEM2_Winery</tag><count>1~1</count></li><li><tag>CBF_VFEM2_Monument</tag><count>0~1</count></li></entries></li>
+    </districts></li></wards>
+  </CustomBaseFramework.SettlementPlanDef>
+
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_VFEM2_Fortress"><defName>ARIO_LM_CBF_VFEM2_Winterfell</defName><label>Winterfell — Medieval 2 fortress courts</label><coreSize>100~115</coreSize><treeShare>0.25</treeShare></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_VFEM2_Fortress"><defName>ARIO_LM_CBF_VFEM2_Harrenhal</defName><label>Harrenhal — vast Medieval 2 enclosure</label><mapSize>300</mapSize><coreSize>130~150</coreSize><targetBuilt>0.25</targetBuilt></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_VFEM2_City"><defName>ARIO_LM_CBF_VFEM2_KingsLanding</defName><label>King's Landing — Medieval 2 capital and keep</label><mapSize>300</mapSize><coreSize>115~135</coreSize></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_VFEM2_Fortress"><defName>ARIO_LM_CBF_VFEM2_CasterlyRock</defName><label>Casterly Rock — Medieval 2 mountain fortress</label><coreSize>85~100</coreSize><mountainMantle>8</mountainMantle></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_VFEM2_Fortress"><defName>ARIO_LM_CBF_VFEM2_Eyrie</defName><label>Eyrie — compact Medieval 2 mountain keep</label><coreSize>70~82</coreSize><mountainMantle>12</mountainMantle><targetBuilt>0.30</targetBuilt></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_VFEM2_GardenEstate"><defName>ARIO_LM_CBF_VFEM2_Highgarden</defName><label>Highgarden — Medieval 2 court and fertile estate</label><coreSize>100~115</coreSize><targetBuilt>0.32</targetBuilt></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_VFEM2_Fortress"><defName>ARIO_LM_CBF_VFEM2_StormsEnd</defName><label>Storm's End — Medieval 2 coastal fortress</label><coreSize>90~105</coreSize></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_VFEM2_City"><defName>ARIO_LM_CBF_VFEM2_Sunspear</defName><label>Sunspear — Medieval 2 palace and market wards</label><coreSize>85~100</coreSize><targetBuilt>0.32</targetBuilt></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_VFEM2_Fortress"><defName>ARIO_LM_CBF_VFEM2_Riverrun</defName><label>Riverrun — Medieval 2 river fortress</label><coreSize>80~95</coreSize></CustomBaseFramework.SettlementPlanDef>
+  <CustomBaseFramework.SettlementPlanDef ParentName="ARIO_LM_VFEM2_Fortress"><defName>ARIO_LM_CBF_VFEM2_Dragonstone</defName><label>Dragonstone — Medieval 2 island citadel</label><coreSize>75~90</coreSize><mountainMantle>6</mountainMantle><targetBuilt>0.32</targetBuilt><harbor><entries><li><tag>CBF_VFEM2_Jetty</tag><count>1~1</count></li><li><tag>CBF_VFEM2_Boathouse</tag><count>0~1</count></li></entries></harbor></CustomBaseFramework.SettlementPlanDef>
+</Defs>

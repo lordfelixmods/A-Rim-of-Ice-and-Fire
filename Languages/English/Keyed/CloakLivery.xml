@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_CloakLiveryTargetMissing>[A Rim of Ice and Fire] The house livery renderer could not be found. The original apparel patterns will remain in use.</ARIO_CloakLiveryTargetMissing>
+  <ARIO_CloakLiveryInstallFailed>[A Rim of Ice and Fire] Could not enable the revised house livery patterns. Original livery remains available. Details: {0}</ARIO_CloakLiveryInstallFailed>
+  <ARIO_GambesonPatternLabel>Gambeson livery</ARIO_GambesonPatternLabel>
+  <ARIO_CloakPatternDescription>Choose plain or checkered House livery for this gambeson. The pattern stays with the garment, and checkered cloth uses subdued House colors. Cloaks keep their solid colors; gambesons do not display a crest.</ARIO_CloakPatternDescription>
+  <ARIO_CloakPatternInspect>Gambeson livery: {0}</ARIO_CloakPatternInspect>
+  <ARIO_CloakPatternCurrent>Current livery: {0}</ARIO_CloakPatternCurrent>
+  <ARIO_CloakPatternSelection>Applies to {0} selected gambeson(s).</ARIO_CloakPatternSelection>
+  <ARIO_CloakPatternMixed>Mixed</ARIO_CloakPatternMixed>
+  <ARIO_LiveryCheckered>Checkered</ARIO_LiveryCheckered>
+  <ARIO_LiveryPlain>Plain</ARIO_LiveryPlain>
+  <ARIO_LiveryCrestRemovalFailed>[A Rim of Ice and Fire] Could not disable drawn apparel crests. Details: {0}</ARIO_LiveryCrestRemovalFailed>
+</LanguageData>

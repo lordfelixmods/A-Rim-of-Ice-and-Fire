@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_EquipmentTrayHelp>Equipment appearance
+
+Change heraldry, cloth colors, gambeson patterns or tabard order. Plant carried banners. Only available equipment options are shown.</ARIO_EquipmentTrayHelp>
+  <ARIO_EquipmentTrayDyeTip>Remove the tabard's applied dye and restore its regional or automatic House colors. Its chosen crest stays the same.</ARIO_EquipmentTrayDyeTip>
+  <ARIO_TabardOverGorget>Tabard in front of gorget</ARIO_TabardOverGorget>
+  <ARIO_TabardUnderGorget>Tabard behind gorget</ARIO_TabardUnderGorget>
+  <ARIO_TabardGorgetMixed>Mixed tabard order</ARIO_TabardGorgetMixed>
+  <ARIO_TabardGorgetToggleTip>Show the tabard over or under a gorget. This changes appearance, not protection. Cloaks always cover it. Mixed selections switch to front first.</ARIO_TabardGorgetToggleTip>
+  <ARIO_EquipmentTrayPlantPawn>Plant banner: {0}</ARIO_EquipmentTrayPlantPawn>
+</LanguageData>

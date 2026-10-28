@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- All four are earned through wartime incidents only. commonality 0 keeps them out of
+       ordinary pawn generation, so they always mean the pawn actually fought. -->
+
+  <TraitDef>
+    <defName>ARIO_Warrior</defName>
+    <commonality>0</commonality>
+    <degreeDatas>
+      <li>
+        <label>warrior</label>
+        <description>[PAWN_nameDef] has stood in a shield wall and come out the other side. [PAWN_pronoun] no longer freezes when the fighting starts.</description>
+        <statOffsets>
+          <MeleeHitChance>2</MeleeHitChance>
+          <MeleeDodgeChance>1</MeleeDodgeChance>
+          <MentalBreakThreshold>-0.02</MentalBreakThreshold>
+        </statOffsets>
+        <skillGains>
+          <Melee>2</Melee>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>ARIO_Veteran</defName>
+    <commonality>0</commonality>
+    <degreeDatas>
+      <li>
+        <label>veteran</label>
+        <description>[PAWN_nameDef] has survived battle after battle. Younger soldiers watch how [PAWN_pronoun] moves, and listen when [PAWN_pronoun] speaks.</description>
+        <statOffsets>
+          <MeleeHitChance>3</MeleeHitChance>
+          <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+          <MentalBreakThreshold>-0.05</MentalBreakThreshold>
+          <SocialImpact>0.15</SocialImpact>
+        </statOffsets>
+        <statFactors>
+          <AimingDelayFactor>0.9</AimingDelayFactor>
+        </statFactors>
+        <skillGains>
+          <Melee>3</Melee>
+          <Shooting>3</Shooting>
+        </skillGains>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>ARIO_Scarred</defName>
+    <commonality>0</commonality>
+    <degreeDatas>
+      <li>
+        <label>battle-scarred</label>
+        <description>[PAWN_nameDef] carries the war on [PAWN_possessive] skin. The wounds healed badly, but few people care to argue with [PAWN_objective].</description>
+        <statOffsets>
+          <PainShockThreshold>0.12</PainShockThreshold>
+          <SocialImpact>0.1</SocialImpact>
+        </statOffsets>
+        <statFactors>
+          <Beauty>0.8</Beauty>
+        </statFactors>
+        <painFactor>0.85</painFactor>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>ARIO_Traumatized</defName>
+    <commonality>0</commonality>
+    <degreeDatas>
+      <li>
+        <label>war-shaken</label>
+        <description>[PAWN_nameDef] saw too much of the field. The noise of it has not left [PAWN_objective], and [PAWN_pronoun] flinches from the thought of going back.</description>
+        <statOffsets>
+          <MentalBreakThreshold>0.07</MentalBreakThreshold>
+          <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
+        </statOffsets>
+        <socialFightChanceFactor>1.4</socialFightChanceFactor>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+</Defs>

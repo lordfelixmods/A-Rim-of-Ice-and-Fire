@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- requiredMemes is an OR list. Retain every vanilla route to corpse
+       neutrality while also allowing either of our faith structures. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PreceptDef[defName="Corpses_DontCare"]/requiredMemes</xpath>
+    <value>
+      <li>ARIOIAF_Structure_OldGods</li>
+      <li>ARIOIAF_Structure_FaithOfTheSeven</li>
+      <li>ARIOIAF_WinterIsComing</li>
+    </value>
+  </Operation>
+  <!-- Rough living: welcomed is normally locked behind Tree Connection/Pain Is
+       Virtue. Winter Is Coming is another explicit route to that same precept. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PreceptDef[defName="RoughLiving_Welcomed"]/requiredMemes</xpath>
+    <value><li>ARIOIAF_WinterIsComing</li></value>
+  </Operation>
+</Patch>

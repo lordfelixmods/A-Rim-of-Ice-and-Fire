@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Only a selected fresh existing-House start may switch its OWN landmark
+       WorldObject to this Def. Other nine sites and old visited saves keep
+       ARIO_HistoricalLandmark: a remote estate, never a free colony. -->
+  <WorldObjectDef ParentName="Settlement">
+    <defName>ARIO_ExistingHousePlayerLandmark</defName>
+    <label>House landmark</label>
+    <description>The ancestral seat of a player-controlled Westerosi House.</description>
+    <worldObjectClass>ARimOfIceAndFire.Landmarks.LandmarkSettlement</worldObjectClass>
+    <expandingIcon>true</expandingIcon>
+    <canHaveFaction>true</canHaveFaction>
+    <canBePlayerHome>true</canBePlayerHome>
+    <mapGenerator>Base_Player</mapGenerator>
+  </WorldObjectDef>
+  <!-- Existing authored castles often already ARE ordinary Settlement objects.
+       Match that exact runtime type; never recreate the world object or point a
+       base Settlement at a Def that will deserialize as LandmarkSettlement. -->
+  <WorldObjectDef ParentName="Settlement">
+    <defName>ARIO_ExistingHousePlayerSettlement</defName>
+    <label>House seat</label>
+    <description>The ancestral seat of a player-controlled Westerosi House.</description>
+    <worldObjectClass>Settlement</worldObjectClass>
+    <expandingIcon>true</expandingIcon>
+    <canHaveFaction>true</canHaveFaction>
+    <canBePlayerHome>true</canBePlayerHome>
+    <mapGenerator>Base_Player</mapGenerator>
+  </WorldObjectDef>
+</Defs>

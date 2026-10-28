@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScenPartDef>
+    <defName>ARIOIAF_StartingResearch</defName>
+    <label>starting research</label>
+    <scenPartClass>ARimOfIceAndFire.Scenarios.ScenPart_ARIOIAF_StartingResearch</scenPartClass>
+    <!-- Must match RimWorld.ScenPartCategory exactly; an unknown value fails to parse, which
+         drops the whole ScenPartDef and leaves the scenario part with a null def.
+         StartingImportant + summaryPriority 400 mirror vanilla's own StartingResearch part. -->
+    <category>StartingImportant</category>
+    <summaryPriority>400</summaryPriority>
+    <!-- Never randomly added to other scenarios. -->
+    <selectionWeight>0</selectionWeight>
+  </ScenPartDef>
+
+  <ScenPartDef>
+    <defName>ARIOIAF_FounderBastard</defName>
+    <label>bastard founder</label>
+    <description>The first starting colonist is the bastard founder of the new House.</description>
+    <scenPartClass>ARimOfIceAndFireCore.ScenPart_FounderBastard</scenPartClass>
+    <category>Fixed</category>
+    <summaryPriority>470</summaryPriority>
+    <canBeRandomlyAdded>false</canBeRandomlyAdded>
+    <canBePlayerAddedRemoved>false</canBePlayerAddedRemoved>
+  </ScenPartDef>
+
+  <ScenPartDef>
+    <defName>ARIOIAF_HouseStartingApparel</defName>
+    <label>House clothing</label>
+    <description>Starting colonists wear the Westeros tunic.</description>
+    <scenPartClass>ARimOfIceAndFireCore.ScenPart_HouseStartingApparel</scenPartClass>
+    <category>Fixed</category>
+    <summaryPriority>465</summaryPriority>
+    <canBeRandomlyAdded>false</canBeRandomlyAdded>
+    <canBePlayerAddedRemoved>false</canBePlayerAddedRemoved>
+  </ScenPartDef>
+
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>ARIOIAF_HouseOfYourOwn</defName>
+    <label>A House of Your Own</label>
+    <description>You were born a bastard, with no lands, no inheritance, and little chance of ever carrying a name of your own.\n\nRather than spend your life beneath another House&apos;s banner, you left with your friends who chose to follow you. Together, you traveled beyond the settled lands with a few weapons, some supplies, and enough silver to begin again.\n\nThere is no castle waiting for you. No village. No title worth boasting of.\n\nOnly three companions, open land, and a banner for a House that does not yet exist.\n\nBuild your home, gather settlers, and make a name the realm will remember.\n\nNot yet.</description>
+    <scenario>
+      <summary>Three companions found a new House in the unsettled wilderness.</summary>
+      <playerFaction><factionDef>ARIOIAF_PlayerHouse</factionDef></playerFaction>
+      <parts>
+        <li Class="ARimOfIceAndFire.Scenarios.ScenPart_ConfigPage_HousePawns">
+          <def>ConfigPage_ConfigureStartingPawns</def><pawnCount>3</pawnCount><pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def><method>Standing</method>
+        </li>
+        <li Class="ARimOfIceAndFireCore.ScenPart_FounderBastard">
+          <def>ARIOIAF_FounderBastard</def>
+        </li>
+        <li Class="ARimOfIceAndFireCore.ScenPart_HouseStartingApparel">
+          <def>ARIOIAF_HouseStartingApparel</def>
+          <chance>1</chance>
+          <context>PlayerStarter</context>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>MealSurvivalPack</thingDef><count>45</count></li>
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>WoodLog</thingDef><count>300</count></li>
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>Steel</thingDef><count>100</count></li>
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>Silver</thingDef><count>50</count></li>
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>MedicineHerbal</thingDef><count>6</count></li>
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>Bedroll</thingDef><stuff>Cloth</stuff><quality>Normal</quality><count>5</count></li>
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>MeleeWeapon_Spear</thingDef><stuff>WoodLog</stuff><count>2</count></li>
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>MeleeWeapon_Club</thingDef><stuff>WoodLog</stuff><count>1</count></li>
+        <!-- Starting research. A House is an established seat, not a crash-landed crew, so
+             beginning with nothing unlocked made the opening hours a grind with no medieval
+             kit available. This grants the craft base a Westerosi holdfast would already have
+             and stops short of anything industrial, so the medieval ceiling is untouched:
+             smithing and stonecutting for forge and masonry, long blades and plate for a
+             knightly panoply, cloth/leather working, and brewing for a hall worth drinking in. -->
+        <li Class="ARimOfIceAndFire.Scenarios.ScenPart_ARIOIAF_StartingResearch">
+          <def>ARIOIAF_StartingResearch</def>
+          <projects>
+            <li>Smithing</li>
+            <li>Stonecutting</li>
+            <li>ComplexClothing</li>
+            <li>Brewing</li>
+          </projects>
+        </li>
+        <li Class="ScenPart_GameStartDialog"><def>GameStartDialog</def><textKey>ARIOIAF_HouseOfYourOwnGameStart</textKey><closeSound>GameStartSting</closeSound></li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+</Defs>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Used only by A House of Your Own. The override guarantees that character-selection
+       candidates draw both childhood and adulthood from this mod's Westerosi backstories,
+       without giving them the armor and weapons carried by military faction pawn kinds. -->
+  <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>ARIOIAF_HouseStarter</defName>
+    <label>House companion</label>
+    <race>Human</race>
+    <defaultFactionDef>ARIOIAF_PlayerHouse</defaultFactionDef>
+    <minGenerationAge>18</minGenerationAge>
+    <maxGenerationAge>65</maxGenerationAge>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <apparelTags><li>Neolithic</li></apparelTags>
+    <apparelMoney>200~200</apparelMoney>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <initialResistanceRange>9~15</initialResistanceRange>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>ARIOIAF_Backstory_Crownlands</li>
+          <li>ARIOIAF_Backstory_Dorne</li>
+          <li>ARIOIAF_Backstory_FreeFolk</li>
+          <li>ARIOIAF_Backstory_IronIslands</li>
+          <li>ARIOIAF_Backstory_North</li>
+          <li>ARIOIAF_Backstory_Reach</li>
+          <li>ARIOIAF_Backstory_Riverlands</li>
+          <li>ARIOIAF_Backstory_Stormlands</li>
+          <li>ARIOIAF_Backstory_Vale</li>
+          <li>ARIOIAF_Backstory_Valyria</li>
+          <li>ARIOIAF_Backstory_Westerlands</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+</Defs>

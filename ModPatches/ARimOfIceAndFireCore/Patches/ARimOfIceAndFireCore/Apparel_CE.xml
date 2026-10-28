@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Match CE's current treatment of full-body, stuffable textile clothing. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosTunic" or defName="ARIOIAF_NobleTunic"]/statBases/StuffEffectMultiplierArmor</xpath>
+    <value>
+      <StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
+    </value>
+  </Operation>
+
+  <!-- Westeros Gambeson: match CE Armors 1.6 gambeson protection and encumbrance. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosGambeson"]/statBases</xpath>
+    <value>
+      <statBases>
+        <MaxHitPoints>150</MaxHitPoints>
+        <WorkToMake>6000</WorkToMake>
+        <Mass>3</Mass>
+        <Bulk>8</Bulk>
+        <WornBulk>3</WornBulk>
+        <StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+        <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+        <ArmorRating_Blunt>1</ArmorRating_Blunt>
+        <!-- Must track the base def; this block replaces statBases wholesale. -->
+        <StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+        <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+        <EquipDelay>4</EquipDelay>
+      </statBases>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosGambeson"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+            <parts>
+              <li>Foot</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+            <parts>
+              <li>Foot</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+
+  <!-- Helmets: follow CE's simple metallic helmet scaling. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosHelmet" or defName="ARIOIAF_IronbornKettleHelm" or defName="ARIOIAF_LannisterHelmet" or defName="ARIOIAF_ReachHelmet" or defName="ARIOIAF_RiverlandsHelmet" or defName="ARIOIAF_StormlandsHelmet" or defName="ARIOIAF_NorthmenHelmet" or defName="ARIOIAF_ValyrianHelmet"]/statBases/StuffEffectMultiplierArmor</xpath>
+    <value>
+      <StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+      <Bulk>3</Bulk>
+      <WornBulk>1</WornBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosHelmet" or defName="ARIOIAF_IronbornKettleHelm" or defName="ARIOIAF_LannisterHelmet" or defName="ARIOIAF_ReachHelmet" or defName="ARIOIAF_RiverlandsHelmet" or defName="ARIOIAF_StormlandsHelmet" or defName="ARIOIAF_NorthmenHelmet" or defName="ARIOIAF_ValyrianHelmet"]/stuffCategories/li[.="Metallic"]</xpath>
+    <value>
+      <li>Steeled</li>
+    </value>
+  </Operation>
+
+  <!-- North Cloak: follow CE's stuffable cape scaling. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_NorthCloak"]/statBases/StuffEffectMultiplierArmor</xpath>
+    <value>
+      <StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+      <Bulk>5</Bulk>
+      <WornBulk>1.5</WornBulk>
+    </value>
+  </Operation>
+
+  <!-- Westeros Cloak: use the same CE stuffable-cape protection and encumbrance. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosCloak"]/statBases/StuffEffectMultiplierArmor</xpath>
+    <value>
+      <StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+      <Bulk>5</Bulk>
+      <WornBulk>1.5</WornBulk>
+    </value>
+  </Operation>
+
+  <!-- Gorgets: follow CE's conservative plate-gorget scaling. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_NorthernGorget" or defName="ARIOIAF_StormlanderGorget" or defName="ARIOIAF_IronbornGorget" or defName="ARIOIAF_WesterosGorget" or defName="ARIOIAF_LannisterGorget" or defName="ARIOIAF_HouseArrynGorget"]/statBases/StuffEffectMultiplierArmor</xpath>
+    <value>
+      <StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
+      <Bulk>3</Bulk>
+      <WornBulk>0.75</WornBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_NorthernGorget" or defName="ARIOIAF_StormlanderGorget" or defName="ARIOIAF_IronbornGorget" or defName="ARIOIAF_WesterosGorget" or defName="ARIOIAF_LannisterGorget" or defName="ARIOIAF_HouseArrynGorget"]/stuffCategories/li[.="Metallic"]</xpath>
+    <value>
+      <li>Steeled</li>
+    </value>
+  </Operation>
+
+  <!-- Northern Heavy Gorget: reinforced protection with extra bulk. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_NorthernHeavyGorget"]/statBases/StuffEffectMultiplierArmor</xpath>
+    <value>
+      <StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+      <Bulk>5</Bulk>
+      <WornBulk>1.5</WornBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_NorthernHeavyGorget"]/stuffCategories/li[.="Metallic"]</xpath>
+    <value>
+      <li>Steeled</li>
+    </value>
+  </Operation>
+
+  <!-- Westeros, Ironborn and Lannister Plate Armor: torso-and-shoulder plate protection. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosPlateArmor" or defName="ARIOIAF_IronbornPlateArmor" or defName="ARIOIAF_LannisterArmor"]/statBases/StuffEffectMultiplierArmor</xpath>
+    <value>
+      <StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
+      <Bulk>70</Bulk>
+      <WornBulk>7</WornBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosPlateArmor" or defName="ARIOIAF_IronbornPlateArmor" or defName="ARIOIAF_LannisterArmor"]/stuffCategories/li[.="Metallic"]</xpath>
+    <value>
+      <li>Steeled</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosPlateArmor" or defName="ARIOIAF_IronbornPlateArmor" or defName="ARIOIAF_LannisterArmor"]/equippedStatOffsets/MoveSpeed</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosPlateArmor" or defName="ARIOIAF_IronbornPlateArmor" or defName="ARIOIAF_LannisterArmor"]/equippedStatOffsets</xpath>
+    <value>
+      <MeleeDodgeChance>-0.1</MeleeDodgeChance>
+    </value>
+  </Operation>
+
+  <!-- Riverlands Scale Armor: lighter lamellar protection below full plate. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_RiverlandsScaleArmor"]/statBases/StuffEffectMultiplierArmor</xpath>
+    <value>
+      <StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+      <Bulk>25</Bulk>
+      <WornBulk>5</WornBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_RiverlandsScaleArmor"]/stuffCategories/li[.="Metallic"]</xpath>
+    <value>
+      <li>Steeled</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_RiverlandsScaleArmor"]/equippedStatOffsets/MoveSpeed</xpath>
+  </Operation>
+
+  <!-- Valyrian Armor: high-quality plated leather with flat steel-plate protection. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_ValyrianArmor"]/statBases/StuffEffectMultiplierArmor</xpath>
+    <value>
+      <StuffEffectMultiplierArmor>1.3</StuffEffectMultiplierArmor>
+      <Bulk>40</Bulk>
+      <WornBulk>6</WornBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_ValyrianArmor"]/statBases/ArmorRating_Sharp</xpath>
+    <value>
+      <ArmorRating_Sharp>2</ArmorRating_Sharp>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_ValyrianArmor"]/statBases/ArmorRating_Blunt</xpath>
+    <value>
+      <ArmorRating_Blunt>2</ArmorRating_Blunt>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_ValyrianArmor"]/equippedStatOffsets/MoveSpeed</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_ValyrianArmor"]/equippedStatOffsets</xpath>
+    <value>
+      <MeleeDodgeChance>-0.05</MeleeDodgeChance>
+    </value>
+  </Operation>
+
+  <!-- Westeros Belt: CE inventory capacity replaces vanilla carrying capacity. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosBelt" or defName="ARIOIAF_WesterosBlackBelt"]/statBases</xpath>
+    <value>
+      <Bulk>1</Bulk>
+      <WornBulk>0.5</WornBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_WesterosBelt" or defName="ARIOIAF_WesterosBlackBelt"]/equippedStatOffsets/CarryingCapacity</xpath>
+    <value>
+      <CarryWeight>10</CarryWeight>
+      <CarryBulk>10</CarryBulk>
+    </value>
+  </Operation>
+
+</Patch>

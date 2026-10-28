@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RoyalTitleDef Name="ARIOIAF_NorthernTitleBase" Abstract="True">
+    <tags><li>ARIOIAF_NorthernTitle</li></tags>
+    <awardThought>GainedTitle</awardThought>
+    <lostThought>LostTitle</lostThought>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <canBeInherited>true</canBeInherited>
+    <allowDignifiedMeditationFocus>false</allowDignifiedMeditationFocus>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_NorthernTitleBase">
+    <defName>ARIOIAF_Title_Squire</defName><label>Squire</label>
+    <description>A sworn attendant learning the duties of arms and service. The first honor earned in service to the North. Northern titles confer standing, not psychic powers, and never forbid honest work.</description>
+    <seniority>10</seniority><favorCost>6</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_NorthernTitleBase">
+    <defName>ARIOIAF_Title_HedgeKnight</defName><label>Hedge Knight</label>
+    <description>A landless knight whose courage and kept promises have earned recognition from the North.</description>
+    <seniority>20</seniority><favorCost>8</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_NorthernTitleBase">
+    <defName>ARIOIAF_Title_LandedKnight</defName><label>Landed Knight</label>
+    <description>A knight recognized as worthy of a landed household and its duties. This honor grants standing, not a new settlement.</description>
+    <seniority>30</seniority><favorCost>12</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_NorthernTitleBase">
+    <defName>ARIOIAF_Title_Lord</defName><label>Lord</label><labelFemale>Lady</labelFemale>
+    <description>A recognized head of a northern house, bound to protect the people and honor sworn obligations.</description>
+    <seniority>40</seniority><favorCost>16</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_NorthernTitleBase">
+    <defName>ARIOIAF_Title_HighLord</defName><label>High Lord</label><labelFemale>Great Lady</labelFemale>
+    <description>A High Lord, also called a Great Lord, commands the respect of lesser houses and carries greater responsibility for the North.</description>
+    <seniority>50</seniority><favorCost>24</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_NorthernTitleBase">
+    <defName>ARIOIAF_Title_LordParamount</defName><label>Lord Paramount</label><labelFemale>Lady Paramount</labelFemale>
+    <description>A paramount ruler, honored above the great houses for exceptional service and leadership.</description>
+    <seniority>60</seniority><favorCost>32</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_NorthernTitleBase">
+    <defName>ARIOIAF_Title_WardenOfTheNorth</defName><label>Warden of the North</label>
+    <description>The North's highest military guardian, entrusted with its defense against the threats beyond its borders.</description>
+    <seniority>70</seniority><favorCost>40</favorCost>
+  </RoyalTitleDef>
+  <RoyalTitleDef ParentName="ARIOIAF_NorthernTitleBase">
+    <defName>ARIOIAF_Title_KingInTheNorth</defName><label>King in the North</label><labelFemale>Queen in the North</labelFemale>
+    <description>The greatest honor the North can bestow: recognition as King or Queen in the North. It raises your House's standing, but the North's existing ruler and lands remain their own.</description>
+    <seniority>80</seniority><favorCost>60</favorCost>
+  </RoyalTitleDef>
+</Defs>

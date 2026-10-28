@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+    The ideoligion icon is chosen from IdeoIconDefs at generation time and has nothing to do
+    with a meme's iconPath, which is why the Drowned God was picking a random vanilla symbol
+    even though its memes had the right art. This def wraps the faith icon so the generator can
+    be pointed at it; WesterosFaiths assigns it directly.
+
+    The <memes> list is the real restriction mechanism: IdeoSymbolPartDef.CanBeChosenForIdeo
+    returns true only for ideoligions holding one of the listed memes, so no unrelated faith can
+    roll the Drowned God's own sigil. (There is no hiddenInUI field on IdeoIconDef.)
+  -->
+  <IdeoIconDef>
+    <defName>ARIOIAF_Icon_DrownedGod</defName>
+    <label>drowned god</label>
+    <iconPath>UI/Ideology/DrownedGod</iconPath>
+    <memes>
+      <li>ARIOIAF_Structure_DrownedGod</li>
+    </memes>
+  </IdeoIconDef>
+</Defs>

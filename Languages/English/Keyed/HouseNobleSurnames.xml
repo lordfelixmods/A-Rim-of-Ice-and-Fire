@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_HouseNobleNamesUnavailable>House-family surnames could not be initialized: {0}. Existing pawn names are unchanged.</ARIO_HouseNobleNamesUnavailable>
+</LanguageData>

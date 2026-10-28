@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef Name="ARIOIAF_SevenistMemoryBase" Abstract="True">
+    <thoughtClass>ARimOfIceAndFireCore.Thought_Memory_Sevenist</thoughtClass>
+    <stackLimit>1</stackLimit>
+  </ThoughtDef>
+  <ThoughtDef ParentName="ARIOIAF_SevenistMemoryBase">
+    <defName>ARIOIAF_ProtectedAlly</defName><durationDays>3</durationDays>
+    <stages><li><label>protected an ally</label><description>I carried a fallen ally to safety. Protecting those in need is an honorable duty.</description><baseMoodEffect>4</baseMoodEffect></li></stages>
+  </ThoughtDef>
+  <ThoughtDef ParentName="ARIOIAF_SevenistMemoryBase">
+    <defName>ARIOIAF_HonorableVictory</defName><durationDays>2</durationDays>
+    <stages><li><label>honorable victory</label><description>I defeated a standing enemy in open combat, not a helpless captive.</description><baseMoodEffect>3</baseMoodEffect></li></stages>
+  </ThoughtDef>
+  <ThoughtDef ParentName="ARIOIAF_SevenistMemoryBase">
+    <defName>ARIOIAF_SevenistOathBroken</defName><durationDays>6</durationDays>
+    <stages><li><label>our House broke its oath</label><description>Our House failed a sworn obligation. What worth is our word if we do not keep it?</description><baseMoodEffect>-10</baseMoodEffect></li></stages>
+  </ThoughtDef>
+  <ThoughtDef ParentName="ARIOIAF_SevenistMemoryBase">
+    <defName>ARIOIAF_FeudalDutyFulfilled</defName><durationDays>4</durationDays>
+    <stages><li><label>feudal duty fulfilled</label><description>Our House served its liege and fulfilled its obligation. We have earned respect through service.</description><baseMoodEffect>4</baseMoodEffect></li></stages>
+  </ThoughtDef>
+  <ThoughtDef ParentName="ARIOIAF_SevenistMemoryBase">
+    <defName>ARIOIAF_LawfulSuccession</defName><durationDays>4</durationDays>
+    <stages><li><label>lawful succession</label><description>The rightful successor has inherited the leadership and dignity of our House. Our line endures.</description><baseMoodEffect>4</baseMoodEffect></li></stages>
+  </ThoughtDef>
+  <ThoughtDef ParentName="ARIOIAF_SevenistMemoryBase">
+    <defName>ARIOIAF_RightfulRuleViolated</defName><durationDays>6</durationDays>
+    <stages><li><label>rightful rule violated</label><description>Our House displaced its living ruler or passed over the lawful successor. Titles and succession must mean something.</description><baseMoodEffect>-8</baseMoodEffect></li></stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>ARIOIAF_RespectedAuthority</defName>
+    <workerClass>ARimOfIceAndFireCore.ThoughtWorker_RespectedAuthority</workerClass>
+    <stages>
+      <li><label>recognized House authority</label><description>A living, free head leads our House. Their office deserves respect.</description><baseMoodEffect>2</baseMoodEffect></li>
+      <li><label>House authority in doubt</label><description>Our House has no living, free head to lead it.</description><baseMoodEffect>-2</baseMoodEffect></li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>ARIOIAF_RuleVacant</defName>
+    <workerClass>ARimOfIceAndFireCore.ThoughtWorker_RightfulRule</workerClass>
+    <stages><li><label>no rightful House head</label><description>Our House needs a living, free ruler. We must recognize a successor or restore our captive head.</description><baseMoodEffect>-6</baseMoodEffect></li></stages>
+  </ThoughtDef>
+</Defs>

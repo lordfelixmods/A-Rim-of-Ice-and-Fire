@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GenStepDef>
+    <defName>ARIO_ExistingHouseCastle</defName>
+    <order>840</order>
+    <genStep Class="ARimOfIceAndFire.Scenarios.GenStep_ExistingHouseCastle" />
+  </GenStepDef>
+</Defs>

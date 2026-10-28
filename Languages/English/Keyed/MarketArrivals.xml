@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_ArrivalStatus_Prefix>Trading parties: {0}</ARIO_ArrivalStatus_Prefix>
+  <ARIO_ArrivalStatus_Unavailable>Arrival scheduler unavailable; check the log.</ARIO_ArrivalStatus_Unavailable>
+  <ARIO_ArrivalStatus_NotHome>Trading parties only visit player home maps.</ARIO_ArrivalStatus_NotHome>
+  <ARIO_ArrivalStatus_Disabled>Shopper arrivals are disabled on this map.</ARIO_ArrivalStatus_Disabled>
+  <ARIO_ArrivalStatus_Initializing>Preparing the next daily check.</ARIO_ArrivalStatus_Initializing>
+  <ARIO_ArrivalStatus_NextRoll>Next daily 50% check in {0} hours (06:00 local time).</ARIO_ArrivalStatus_NextRoll>
+  <ARIO_ArrivalStatus_NoShoppers>No trading parties today. Next daily check in {0} hours.</ARIO_ArrivalStatus_NoShoppers>
+  <ARIO_ArrivalStatus_NextParty>Next party in {0} hours: {1} people.</ARIO_ArrivalStatus_NextParty>
+  <ARIO_ArrivalStatus_Delayed>Delayed: {0} Retry in {1} hours.</ARIO_ArrivalStatus_Delayed>
+  <ARIO_ArrivalStatus_Progress>{0}/{1} parties arrived. {2}</ARIO_ArrivalStatus_Progress>
+  <ARIO_ArrivalStatus_Finished>{0}/{1} planned parties arrived. Next daily check in {2} hours.</ARIO_ArrivalStatus_Finished>
+  <ARIO_ArrivalStatus_Rules>When shopper arrivals are on, a designated market gets one 50% roll at 06:00 local time each day. A successful roll schedules 1–5 trading parties of 2–5 people between 08:00 and 22:00. Parties arrive at least two in-game hours apart and visit for roughly eight hours. Visits can overlap.\n\nBlocked parties retry every 15 in-game minutes, keeping their planned size and the two-hour arrival gap. Parties still unable to arrive expire at midnight. The map's shopper switch and arrival schedules survive saving and loading. Turning shoppers off cancels pending groups but never ejects parties already visiting; turning them back on waits for the next normal 06:00 roll, with no catch-up burst.\n\nA market opened or first updated after 06:00 starts at the next morning's check. Ordinary visitors and player-negotiated trades are unaffected by the shopper-arrival switch. Each scheduled trading party shares 5000–8000 silver for its entire visit; ordinary visitors share 1000–2000 and trader caravans 2000–3000. Rare wealthy patrons can have more. Remaining budgets survive saving and loading. Select a shopping visitor to see the shared balance. Hovering this status shows today's planned local arrival times.</ARIO_ArrivalStatus_Rules>
+  <ARIO_ArrivalStatus_PartyDetail>Party {0}: {1} people, planned {2} — {3}</ARIO_ArrivalStatus_PartyDetail>
+  <ARIO_ArrivalParty_Pending>pending</ARIO_ArrivalParty_Pending>
+  <ARIO_ArrivalParty_Arrived>arrived</ARIO_ArrivalParty_Arrived>
+  <ARIO_ArrivalParty_Missed>could not arrive before midnight</ARIO_ArrivalParty_Missed>
+  <ARIO_ArrivalParty_Failed>generation or spawning failed; see log</ARIO_ArrivalParty_Failed>
+  <ARIO_ArrivalParty_Cancelled>cancelled when shopper arrivals were disabled</ARIO_ArrivalParty_Cancelled>
+  <ARIO_ArrivalBlock_None>Ready.</ARIO_ArrivalBlock_None>
+  <ARIO_ArrivalBlock_NoMarket>No market area is designated.</ARIO_ArrivalBlock_NoMarket>
+  <ARIO_ArrivalBlock_NoStock>No merchandise is for sale. Silver is currency, not merchandise.</ARIO_ArrivalBlock_NoStock>
+  <ARIO_ArrivalBlock_NoAffordableStock>No spawned goods priced within a visiting group's possible budget are available for shopping.</ARIO_ArrivalBlock_NoAffordableStock>
+  <ARIO_ArrivalBlock_NoFaction>No eligible nonhostile faction can send a trading party.</ARIO_ArrivalBlock_NoFaction>
+  <ARIO_ArrivalBlock_Temperature>Current or seasonal temperatures are outside the available factions' arrival limits.</ARIO_ArrivalBlock_Temperature>
+  <ARIO_ArrivalBlock_Unsafe>Hostile forces are preventing the available factions from visiting.</ARIO_ArrivalBlock_Unsafe>
+  <ARIO_ArrivalBlock_Conditions>An active map condition prevents neutral visitors.</ARIO_ArrivalBlock_Conditions>
+  <ARIO_ArrivalBlock_NoEntry>No valid map-edge entry could be found.</ARIO_ArrivalBlock_NoEntry>
+  <ARIO_ArrivalBlock_NoRoute>No walkable route from the entry to the market could be found.</ARIO_ArrivalBlock_NoRoute>
+  <ARIO_ArrivalBlock_IncidentRule>An incident or map-layer rule rejected this arrival; consult the arrival diagnostics.</ARIO_ArrivalBlock_IncidentRule>
+  <ARIO_ArrivalBlock_GenerationFailed>Trading party generation failed; this party will not be repeated. See log.</ARIO_ArrivalBlock_GenerationFailed>
+  <ARIO_ArrivalBlock_SpawnFailed>Trading party spawning failed; this party will not be repeated. See log.</ARIO_ArrivalBlock_SpawnFailed>
+  <ARIO_ArrivalBlock_Disabled>Shopper arrivals are disabled on this map.</ARIO_ArrivalBlock_Disabled>
+  <ARIO_ArrivalLetter_Title>Trading party arrives</ARIO_ArrivalLetter_Title>
+  <ARIO_ArrivalLetter_Body>A trading party of {0} people from {1}, representing {2}, has arrived to browse your market.\n\nThe party includes: {3}.\n\nThey intend to stay for roughly eight hours, buy goods that interest them, and carry their purchases home. Danger or unsafe temperatures may make them leave early.</ARIO_ArrivalLetter_Body>
+  <ARIO_ArrivalMessage>A trading party of {0} from {1} has arrived to browse your market.</ARIO_ArrivalMessage>
+  <ARIO_ArrivalDebug_Scheduled>Debug trading parties scheduled. See Market's arrival status for party times; the first party is at least two in-game hours away.</ARIO_ArrivalDebug_Scheduled>
+</LanguageData>

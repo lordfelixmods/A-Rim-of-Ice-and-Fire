@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!--
+    Faction - Elves 1.6 marks Shipborn as requiring Ideology on three faction defs, but
+    Shipborn belongs to Odyssey. With Ideology active and Odyssey absent those nodes survive
+    MayRequire filtering and then fail cross-reference resolution.
+
+    If Odyssey supplied Shipborn, change nothing. If it did not, remove only the three malformed
+    Elves references. WildElvishTribe already uses the correct Odyssey guard and is deliberately
+    untouched.
+  -->
+  <Operation Class="PatchOperationFindMod">
+    <!-- PatchOperationFindMod matches the active mod's display name, not its packageId. -->
+    <mods>
+      <li>Faction - Elves</li>
+    </mods>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/MemeDef[defName="Shipborn"]</xpath>
+      <nomatch Class="PatchOperationRemove">
+        <xpath>/Defs/FactionDef[(defName="HighElvishKingdom" or defName="DarkElvishKingdom" or defName="CelestiaElvishEmpire")]/disallowedMemes/li[text()="Shipborn"]</xpath>
+      </nomatch>
+    </match>
+  </Operation>
+</Patch>

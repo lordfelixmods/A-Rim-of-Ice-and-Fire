@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_CadetChoiceLabel>How will your House be founded?</ARIO_CadetChoiceLabel>
+  <ARIO_CadetIndependent>Found an independent House</ARIO_CadetIndependent>
+  <ARIO_CadetOf>Claim a cadet branch of {0}</ARIO_CadetOf>
+  <ARIO_CadetMenuEntry>{0} — {1}</ARIO_CadetMenuEntry>
+  <ARIO_CadetChoiceTip>A cadet branch keeps its own name and banner. Choose a living parent House, then give the branch a distinct name above. Claiming this lineage does not transfer land, create biological relatives, grant a title or change diplomatic relations.</ARIO_CadetChoiceTip>
+  <ARIO_CadetInvalid>Choose a living parent and give the branch a name different from its parent.</ARIO_CadetInvalid>
+  <ARIO_CadetUnavailable>Cadet-branch founding is unavailable; normal House founding is unchanged: {0}</ARIO_CadetUnavailable>
+  <ARIO_CadetParentLabel>Claimed cadet parent</ARIO_CadetParentLabel>
+</LanguageData>

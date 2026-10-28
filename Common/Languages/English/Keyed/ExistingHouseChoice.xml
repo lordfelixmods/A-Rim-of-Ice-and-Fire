@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_ExistingHouseScenarioSummary>Choose the House whose banner you will raise.</ARIO_ExistingHouseScenarioSummary>
+  <ARIO_ExistingHouseFactionSummary>Your faction will be the House you choose.</ARIO_ExistingHouseFactionSummary>
+  <ARIO_ExistingHouseFactionChosen>You will lead {0}.</ARIO_ExistingHouseFactionChosen>
+  <ARIO_ExistingHouseChooseTitle>Choose your House</ARIO_ExistingHouseChooseTitle>
+  <ARIO_ExistingHouseChooseDesc>From northern keeps to southern courts, choose the banner you will carry. Your House has a seat and a ruler; the rest of its story is yours to write.</ARIO_ExistingHouseChooseDesc>
+  <ARIO_ExistingHouseChoice>{0} — {1}</ARIO_ExistingHouseChoice>
+  <ARIO_ExistingHouseSelected>  (selected)</ARIO_ExistingHouseSelected>
+  <ARIO_ExistingHouseChooseFirst>Choose a House before continuing.</ARIO_ExistingHouseChooseFirst>
+  <ARIO_ExistingHouseAutoStartTitle>Preparing your House</ARIO_ExistingHouseAutoStartTitle>
+  <ARIO_ExistingHouseAutoStartPreparing>Preparing your chosen House and its original seat...</ARIO_ExistingHouseAutoStartPreparing>
+  <ARIO_ExistingHouseAutoStartUnavailable>The chosen House, original seat or game-start handoff is not ready. Go back and regenerate the world; no substitute settlement was created.</ARIO_ExistingHouseAutoStartUnavailable>
+  <ARIO_ExistingHouseAutoStartRetry>Retry start</ARIO_ExistingHouseAutoStartRetry>
+  <ARIO_ExistingHouseAutoStartReady>Starting {0} at its original seat, {1}.</ARIO_ExistingHouseAutoStartReady>
+  <ARIO_ExistingHouseAutoStartBranchMissing>The realm chooser's {0} world-setup branch could not be found.</ARIO_ExistingHouseAutoStartBranchMissing>
+  <ARIO_ExistingHouseAutoStartBranchCount>The House start requires one realm chooser with two world-setup branches.</ARIO_ExistingHouseAutoStartBranchCount>
+  <ARIO_ExistingHouseAutoStartDuplicate>The House start contains more than one automatic-start page.</ARIO_ExistingHouseAutoStartDuplicate>
+  <ARIO_ExistingHouseAutoStartHandoffMissing>The House start could not find its starting-site step to replace.</ARIO_ExistingHouseAutoStartHandoffMissing>
+  <ARIO_ExistingHouseAutoStartBranchUnexpected>An unexpected configuration page follows the realm's world setup. It was not removed.</ARIO_ExistingHouseAutoStartBranchUnexpected>
+  <ARIO_ExistingHouseNotReady>This House cannot be chosen in this world: {0}. Your choice has not been applied.</ARIO_ExistingHouseNotReady>
+  <ARIO_ExistingHouseSeatOnly>This start must use your existing House seat at {0}. Select that seat to continue.</ARIO_ExistingHouseSeatOnly>
+  <ARIO_ExistingHouseLandmarkPending>The ancestral seat is not yet safely ready as a player home. Choose another House or return to world selection.</ARIO_ExistingHouseLandmarkPending>
+  <ARIO_ExistingHouseLandmarkFailure>The chosen seat could not become a player home: {0}. Its original owner and map type were restored.</ARIO_ExistingHouseLandmarkFailure>
+  <ARIO_ExistingHouseAdoptBlocked>{0} cannot start at {1}: {2}. No substitute House or settlement was created.</ARIO_ExistingHouseAdoptBlocked>
+  <ARIO_ExistingHouseAdoptDiagnostic>{0}\nHouse-start check [{1}]: {2}</ARIO_ExistingHouseAdoptDiagnostic>
+  <ARIO_ExistingHouseAdopt_NoSeat>the House owns no settlement and no landmark stands on its seat</ARIO_ExistingHouseAdopt_NoSeat>
+  <ARIO_ExistingHouseAdopt_LandmarkClaimant>the landmark on this seat is not historically claimed by this House</ARIO_ExistingHouseAdopt_LandmarkClaimant>
+  <ARIO_ExistingHouseAdopt_LandmarkUnavailable>the landmark on this seat is owned, visited, garrisoned or contested</ARIO_ExistingHouseAdopt_LandmarkUnavailable>
+  <ARIO_ExistingHouseAdopt_LandmarkAmbiguous>more than one landmark matches this seat</ARIO_ExistingHouseAdopt_LandmarkAmbiguous>
+  <ARIO_ExistingHouseAdopt_SeatAmbiguous>the House owns more than one settlement on this seat</ARIO_ExistingHouseAdopt_SeatAmbiguous>
+  <ARIO_ExistingHouseAdopt_SeatVisited>the seat already has a map</ARIO_ExistingHouseAdopt_SeatVisited>
+  <ARIO_ExistingHouseAdopt_RulerMissing>the House has no ruler</ARIO_ExistingHouseAdopt_RulerMissing>
+  <ARIO_ExistingHouseAdopt_RulerDead>the House's ruler is dead</ARIO_ExistingHouseAdopt_RulerDead>
+  <ARIO_ExistingHouseAdopt_RulerFaction>the House's ruler belongs to another faction</ARIO_ExistingHouseAdopt_RulerFaction>
+  <ARIO_ExistingHouseAdopt_RulerSpawned>the House's ruler is already on a map</ARIO_ExistingHouseAdopt_RulerSpawned>
+  <ARIO_ExistingHouseLandmarkBlocked>{0} cannot start at {1}: {2}. The seat has not been transferred.</ARIO_ExistingHouseLandmarkBlocked>
+  <ARIO_ExistingHouseLandmarkDiagnostic>{0}\nHouse-seat check [{1}]: {2}</ARIO_ExistingHouseLandmarkDiagnostic>
+  <ARIO_ExistingHouseLandmarkReady>{0}'s selected seat at {1} is ready for player-home map generation. {2}</ARIO_ExistingHouseLandmarkReady>
+  <ARIO_ExistingHouseGate_Selection>the chosen House, ruler or seat is no longer valid</ARIO_ExistingHouseGate_Selection>
+  <ARIO_ExistingHouseGate_WorldPending>the world's unclaimed landmarks have not finished initialization</ARIO_ExistingHouseGate_WorldPending>
+  <ARIO_ExistingHouseGate_Registration>the original landmark is not registered in this world</ARIO_ExistingHouseGate_Registration>
+  <ARIO_ExistingHouseGate_Ownership>the seat is no longer unclaimed under its original custodians</ARIO_ExistingHouseGate_Ownership>
+  <ARIO_ExistingHouseGate_Visited>the seat already has a map or a physical garrison</ARIO_ExistingHouseGate_Visited>
+  <ARIO_ExistingHouseGate_Conflict>the landmark is involved in a conflict</ARIO_ExistingHouseGate_Conflict>
+  <ARIO_ExistingHouseGate_OriginalType>the seat's original definition no longer matches its world-object type</ARIO_ExistingHouseGate_OriginalType>
+  <ARIO_ExistingHouseGate_UnsupportedType>this settlement type has no supported player-home conversion</ARIO_ExistingHouseGate_UnsupportedType>
+  <ARIO_ExistingHouseGate_HomeDef>the matching player-home definition is missing or incompatible</ARIO_ExistingHouseGate_HomeDef>
+  <ARIO_ExistingHouseGate_Populated>the castle already contains a generated household</ARIO_ExistingHouseGate_Populated>
+  <ARIO_ExistingHouseGate_Generator>The selected seat did not activate its player-home map generator.</ARIO_ExistingHouseGate_Generator>
+  <ARIO_ExistingHouseNeedsThrones>Playing an existing House requires the Westeros/Thrones world. Choose that realm to continue.</ARIO_ExistingHouseNeedsThrones>
+  <ARIO_ExistingHouseSpeechMissing>This House's leader speech could not be prepared: {0}. Its unusable speech button will be hidden; the House and its other abilities remain unchanged.</ARIO_ExistingHouseSpeechMissing>
+  <ARIO_ExistingHouseSpeechShared>This House's leader speech has no matching ritual in its faith. Its unusable button is hidden; other Houses' faiths are unchanged.</ARIO_ExistingHouseSpeechShared>
+  <ARIO_ExistingHouseRitualUnavailable>This House's ruler has no matching {0} ritual in their faith. Only their unusable ability button is hidden; other Houses' faiths and abilities are unchanged.</ARIO_ExistingHouseRitualUnavailable>
+  <ARIO_ExistingHouseRoleRitualMissing>This House's faith has no usable role-change ritual. Only the role-change control is hidden; the rest of the Social tab remains available.</ARIO_ExistingHouseRoleRitualMissing>
+  <ARIO_ExistingHouseSocialRoleGuardUnavailable>Could not guard this House's role-change control: {0}.</ARIO_ExistingHouseSocialRoleGuardUnavailable>
+  <ARIO_ExistingHouseSpeechIdeoMismatch>The selected ruler does not follow the House's primary ideology; its leader speech was not changed.</ARIO_ExistingHouseSpeechIdeoMismatch>
+  <ARIO_ExistingHouseFamilyNoRoster>This House or its starting roster is no longer available.</ARIO_ExistingHouseFamilyNoRoster>
+  <ARIO_ExistingHouseFamilyChanged>The House family changed after confirmation. Return to House selection and try again.</ARIO_ExistingHouseFamilyChanged>
+  <ARIO_ExistingHouseFamilyBusy>Another pawn has already entered the starting roster.</ARIO_ExistingHouseFamilyBusy>
+  <ARIO_ExistingHouseFamilyFailed>The House family could not assemble safely: {0}.</ARIO_ExistingHouseFamilyFailed>
+  <ARIO_ExistingHouseFamilyCleanupFailed>A failed House-family start left a relative that could not be safely released: {0}.</ARIO_ExistingHouseFamilyCleanupFailed>
+  <ARIO_ExistingHouseFamilyGearUnavailable>A new House relative could not be dressed in House livery: {0}. Their existing clothes were kept.</ARIO_ExistingHouseFamilyGearUnavailable>
+  <ARIO_ExistingHouseFamilyDressFailed>Could not prepare {0}'s House clothing: {1}.</ARIO_ExistingHouseFamilyDressFailed>
+  <ARIO_ExistingHouseFamilySurnameMissing>The starting family's House surname could not be resolved.</ARIO_ExistingHouseFamilySurnameMissing>
+  <ARIO_ExistingHouseFamilyCannotWear>required garment {0} is missing or cannot be worn</ARIO_ExistingHouseFamilyCannotWear>
+  <ARIO_ExistingHouseFamilyNoFabric>no suitable ordinary fabric is available for {0}</ARIO_ExistingHouseFamilyNoFabric>
+  <ARIO_ExistingHouseFamilyGearConflict>{0} cannot safely be replaced to wear {1}</ARIO_ExistingHouseFamilyGearConflict>
+  <ARIO_ExistingHouseFamilyPackFailed>the original {0} could not be stored safely</ARIO_ExistingHouseFamilyPackFailed>
+  <ARIO_ExistingHouseFamilyOutfitMissing>{0}'s starting outfit is missing {1}. The family was not sent to the map.</ARIO_ExistingHouseFamilyOutfitMissing>
+  <ARIO_ExistingHouseFamilyDressRollbackFailed>Could not fully restore {0}'s original clothing after a failed family setup: {1}.</ARIO_ExistingHouseFamilyDressRollbackFailed>
+  <ARIO_ExistingHouseFamilyReady>House starting pawn: {0}; kind: {1}; worn clothing: {2}.</ARIO_ExistingHouseFamilyReady>
+  <ARIO_ExistingHouseMapChoice>{0} — {1}</ARIO_ExistingHouseMapChoice>
+  <ARIO_ExistingHouseMapRuler>Ruler: {0}</ARIO_ExistingHouseMapRuler>
+  <ARIO_ExistingHouseMapSelected>This is your House.</ARIO_ExistingHouseMapSelected>
+  <ARIO_ExistingHouseMapRule>Play as {0}</ARIO_ExistingHouseMapRule>
+  <ARIO_ExistingHouseMapConfirm>Take up the banner of {0} at {1}? Your current House will return to its place in the realm before this House becomes yours.</ARIO_ExistingHouseMapConfirm>
+  <ARIO_ExistingHouseSwitchUnavailable>Choose a living House at an available seat before your family departs.</ARIO_ExistingHouseSwitchUnavailable>
+  <ARIO_ExistingHouseSwitchFailed>Could not change Houses safely: {0}. Check the log if your original choice was not restored.</ARIO_ExistingHouseSwitchFailed>
+  <ARIO_ExistingHouseRecoveryFailed>The original House could not be restored after changing the world-map choice: {0}.</ARIO_ExistingHouseRecoveryFailed>
+</LanguageData>

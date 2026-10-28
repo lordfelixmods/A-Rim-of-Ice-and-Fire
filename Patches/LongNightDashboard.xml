@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Keep the Long Night MainButtonDef registered: its HUD and signal pyre call
+       Find.MainTabsRoot.SetCurrentTab on this exact def. Move only the visible
+       button into the House dashboard when both mods are loaded. -->
+  <Operation Class="PatchOperationFindMod">
+    <mods><li>The Long Night</li></mods>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/MainButtonDef[defName="TLN_CampaignStatus"]</xpath>
+      <value><buttonVisible>false</buttonVisible></value>
+    </match>
+  </Operation>
+</Patch>

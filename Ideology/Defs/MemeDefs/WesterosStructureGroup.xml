@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+    Dialog_ChooseMemes already has a native grouping system for structure memes. Memes sharing a
+    MemeGroupDef are drawn inside one highlighted box by DrawMemeGroup, retaining vanilla click,
+    selection, tooltip, accessibility and scrolling behaviour. Use that instead of owning or
+    patching the chooser window.
+
+    Three memes render as one horizontal row. The earlier maxRows=2 arrangement produced an
+    awkward pyramid (Drowned God centred over Seven/Old Gods) and made this group twice as tall as
+    it needed to be. The group's draw offset anchors it at the left; the two vanilla theist
+    clusters are shifted right in WesterosStructureGroup_Layout.xml so all three fit cleanly.
+  -->
+  <MemeGroupDef>
+    <defName>ARIOIAF_WesterosiFaiths</defName>
+    <label>Westerosi faiths</label>
+    <drawOffset>(0, 0)</drawOffset>
+    <maxRows>1</maxRows>
+    <renderOrder>-100</renderOrder>
+  </MemeGroupDef>
+
+  <!--
+    Normal-meme groups are rendered differently from structure groups: vanilla keeps every meme
+    in the group contiguous and inserts a visible gap at group boundaries, but does not draw a
+    shaded frame or title. A custom full-window renderer merely for a border would be brittle, so
+    this uses that native grouping and puts all Westerosi traditions first within each impact tier.
+    renderWithGap restores the ordinary 8px breathing room between members of the same group;
+    without it grouped meme cards touch edge-to-edge.
+  -->
+  <MemeGroupDef>
+    <defName>ARIOIAF_WesterosiTraditions</defName>
+    <label>Westerosi traditions</label>
+    <renderOrder>-100</renderOrder>
+    <renderWithGap>true</renderWithGap>
+  </MemeGroupDef>
+</Defs>

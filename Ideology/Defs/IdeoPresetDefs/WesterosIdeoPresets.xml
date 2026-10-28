@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--
+    Westerosi faiths offered alongside RimWorld's own presets when you build an ideoligion.
+    Each mirrors the memes the matching regional faction already requires, so a colony that
+    picks one here believes exactly what that culture's Houses believe.
+  -->
+
+  <IdeoPresetDef>
+    <defName>ARIOIAF_Preset_FaithOfTheSeven</defName>
+    <label>faith of the Seven</label>
+    <description>One god with seven faces: Father, Mother, Warrior, Maiden, Smith, Crone and Stranger. The faith of the Andals and of most of the Seven Kingdoms — septs, septons and a knighthood sworn to protect the weak.\n\nYour colonists keep the rites of the Seven, honour their vows of knighthood, and accept that every soul has its place in the feudal order.</description>
+    <categoryDef>ARIOIAF_Westeros</categoryDef>
+    <memes>
+      <li>ARIOIAF_Structure_FaithOfTheSeven</li>
+      <li>ARIOIAF_ChivalricHonor</li>
+      <li>ARIOIAF_Feudalism</li>
+    </memes>
+  </IdeoPresetDef>
+
+  <IdeoPresetDef>
+    <defName>ARIOIAF_Preset_OldGods</defName>
+    <label>the old gods</label>
+    <description>The nameless gods of the First Men, worshipped in the silence of the godswood before a weirwood's carved face. No septs, no septons and no prayers — only the trees, which are said to remember.\n\nYour colonists swear their oaths before a heart tree, hold an oathbreaker to be the worst of men, and know that winter is always coming.</description>
+    <categoryDef>ARIOIAF_Westeros</categoryDef>
+    <memes>
+      <li>ARIOIAF_Structure_OldGods</li>
+      <li>ARIOIAF_SacredOaths</li>
+      <li>ARIOIAF_WinterIsComing</li>
+      <li>ARIOIAF_Feudalism</li>
+    </memes>
+  </IdeoPresetDef>
+
+  <IdeoPresetDef>
+    <defName>ARIOIAF_Preset_BloodOfTheDragon</defName>
+    <label>blood of the dragon</label>
+    <description>The creed of the old Valyrian dragonlords. They keep the forms of the Seven, but hold their own blood to be something apart from and above common men — a bloodline to be guarded, not diluted.\n\nYour colonists observe the faith and the feudal order, and believe their line was born to rule.</description>
+    <categoryDef>ARIOIAF_Westeros</categoryDef>
+    <memes>
+      <li>ARIOIAF_Structure_FaithOfTheSeven</li>
+      <li>ARIOIAF_BloodOfTheDragon</li>
+      <li>ARIOIAF_Feudalism</li>
+    </memes>
+  </IdeoPresetDef>
+
+  <!--
+    Player-selectable only. Unlike the other presets, no FactionDef lists these memes, so no
+    generated faction can ever be given this faith. Ironborn factions can be added later.
+  -->
+  <IdeoPresetDef>
+    <defName>ARIOIAF_Preset_DrownedGod</defName>
+    <label>the drowned god</label>
+    <description>The faith of the Iron Islands. The Drowned God made the Ironborn to reave and rove, and drowned the first of them so they might rise again harder than the sea. His priests are drowned men, twice-born and salt-soaked.\n\nYour colonists pay the iron price, give their dead back to the waves, and hold that what is dead may never die.</description>
+    <categoryDef>ARIOIAF_Westeros</categoryDef>
+    <memes>
+      <li>ARIOIAF_Structure_DrownedGod</li>
+      <li>ARIOIAF_TheOldWay</li>
+      <li>ARIOIAF_ChildrenOfTheSea</li>
+      <li>ARIOIAF_Feudalism</li>
+    </memes>
+  </IdeoPresetDef>
+
+</Defs>

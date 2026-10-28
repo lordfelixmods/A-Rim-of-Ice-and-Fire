@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef ParentName="FactionBase">
+    <defName>ARIOIAF_Ironborn</defName>
+    <label>Ironborn</label>
+    <description>Sea-raiders of the Iron Islands who keep the Drowned God and the Old Way. Their warbands favor hard infantry, boarding axes and armor paid for with the iron price. They begin hostile and raid often, but are not permanent enemies and can be brought into diplomacy.</description>
+    <fixedName>Ironborn</fixedName>
+    <pawnSingular>ironborn</pawnSingular>
+    <pawnsPlural>ironborn</pawnsPlural>
+    <categoryTag>ARIOIAF_Ironborn</categoryTag>
+    <techLevel>Medieval</techLevel>
+    <basicMemberKind>ARIOIAF_Ironborn_Levy</basicMemberKind>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>76</configurationListOrderPriority>
+    <naturalEnemy>true</naturalEnemy>
+    <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <canRequestTraders>false</canRequestTraders>
+    <canRequestMilitaryAid>false</canRequestMilitaryAid>
+    <leaderTitle>Lord Reaper</leaderTitle>
+    <leaderTitleFemale>Lady Reaper</leaderTitleFemale>
+    <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+    <fixedLeaderKinds><li>ARIOIAF_Ironborn_LordReaper</li></fixedLeaderKinds>
+    <factionIconPath>UI/Factions/Houses/Ironborn</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <colorSpectrum><li>(0.22,0.25,0.28)</li><li>(0.34,0.38,0.40)</li></colorSpectrum>
+    <allowedArrivalTemperatureRange>-35~38</allowedArrivalTemperatureRange>
+    <backstoryFilters><li><categories><li>Tribal</li></categories></li></backstoryFilters>
+    <apparelStuffFilter>
+      <thingDefs><li>Cloth</li><li>WoolSheep</li><li>Leather_Plain</li><li>Leather_Heavy</li><li>Steel</li></thingDefs>
+    </apparelStuffFilter>
+    <allowedCultures><li>Rustican</li></allowedCultures>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_Structure_DrownedGod</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_TheOldWay</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_ChildrenOfTheSea</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_Feudalism</li>
+    </requiredMemes>
+    <allowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_Structure_DrownedGod</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_TheOldWay</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_ChildrenOfTheSea</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ARIOIAF_Feudalism</li>
+    </allowedMemes>
+    <structureMemeWeights><ARIOIAF_Structure_DrownedGod MayRequire="Ludeon.RimWorld.Ideology">1</ARIOIAF_Structure_DrownedGod></structureMemeWeights>
+    <maxPawnCostPerTotalPointsCurve>
+      <points><li>(0,50)</li><li>(150,100)</li><li>(400,155)</li><li>(700,220)</li><li>(2000,10000)</li></points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options><ARIOIAF_Ironborn_Levy>3</ARIOIAF_Ironborn_Levy><ARIOIAF_Ironborn_DeckArcher>3</ARIOIAF_Ironborn_DeckArcher><ARIOIAF_Ironborn_Reaver>8</ARIOIAF_Ironborn_Reaver><ARIOIAF_Ironborn_Houseguard>3</ARIOIAF_Ironborn_Houseguard><ARIOIAF_Ironborn_Captain>1</ARIOIAF_Ironborn_Captain></options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>40</commonality>
+        <disallowedStrategies><li>Siege</li></disallowedStrategies>
+        <options><ARIOIAF_Ironborn_Reaver>10</ARIOIAF_Ironborn_Reaver><ARIOIAF_Ironborn_Houseguard>3</ARIOIAF_Ironborn_Houseguard><ARIOIAF_Ironborn_Captain>1</ARIOIAF_Ironborn_Captain></options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options><ARIOIAF_Ironborn_Levy>5</ARIOIAF_Ironborn_Levy><ARIOIAF_Ironborn_DeckArcher>3</ARIOIAF_Ironborn_DeckArcher><ARIOIAF_Ironborn_Captain>1</ARIOIAF_Ironborn_Captain></options>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options><ARIOIAF_Ironborn_Levy>2</ARIOIAF_Ironborn_Levy><ARIOIAF_Ironborn_DeckArcher>2</ARIOIAF_Ironborn_DeckArcher><ARIOIAF_Ironborn_Reaver>7</ARIOIAF_Ironborn_Reaver><ARIOIAF_Ironborn_Houseguard>4</ARIOIAF_Ironborn_Houseguard><ARIOIAF_Ironborn_Captain>1</ARIOIAF_Ironborn_Captain></options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+</Defs>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_CampaignHooksUnavailable>Optional army integration was not installed because the native API contract changed. Normal AROIAF behavior is retained; an army provider must not enroll new forces. Details: {0}</ARIO_CampaignHooksUnavailable>
+  <ARIO_CampaignProviderFailure>An optional army provider failed. Its affected reservations remain blocked rather than reused. Details: {0}</ARIO_CampaignProviderFailure>
+  <ARIO_CampaignArchiveQuarantined>AROIAF preserved an unreadable campaign transaction archive. New army transfers are disabled; no troops or funds were reset. Restore a backup or report the save.</ARIO_CampaignArchiveQuarantined>
+</LanguageData>

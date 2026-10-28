@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_MarriageInstallFailed>[A Rim of Ice and Fire] Marriage improvements could not install; original rules retained: {0}</ARIO_MarriageInstallFailed>
+  <ARIO_MarriageHookFailed>[A Rim of Ice and Fire] Marriage feedback could not update; original agreement retained: {0}</ARIO_MarriageHookFailed>
+  <ARIO_MarriagePoliticalKind>Political marriage contract</ARIO_MarriagePoliticalKind>
+  <ARIO_MarriageCouple>{0} and {1}</ARIO_MarriageCouple>
+  <ARIO_MarriagePoliticalActive>Political contract signed. Both remain with their birth House. No romantic relationship, travel, or dowry payment is created by this contract. An adult marriage requires a separate willing confirmation; it never happens automatically.</ARIO_MarriagePoliticalActive>
+  <ARIO_MarriagePoliticalDraftHelp>A political marriage contract reserves the match without creating romance or moving anyone. Both must be at least 8 biologically, with an age gap of at most ten years. It can remain political after adulthood. Adult marriage and travel require both people to satisfy the adult willingness rules.</ARIO_MarriagePoliticalDraftHelp>
+  <ARIO_MarriageUseAdultDraft>Use adult marriage when eligible</ARIO_MarriageUseAdultDraft>
+  <ARIO_MarriageUsePoliticalDraft>Use political contract only</ARIO_MarriageUsePoliticalDraft>
+  <ARIO_MarriageDispatchDeadline>Confirm dispatch within: {0} (this is not an arrival timer)</ARIO_MarriageDispatchDeadline>
+  <ARIO_MarriageEscortDeadline>Escort delivery deadline: {0}</ARIO_MarriageEscortDeadline>
+  <ARIO_MarriageArrivalEta>Arrival due in: {0}; blocked arrivals wait for the listed requirement</ARIO_MarriageArrivalEta>
+  <ARIO_MarriageStayEnds>Agreed stay ends in: {0}</ARIO_MarriageStayEnds>
+  <ARIO_MarriageReturnEta>Return due in: {0}</ARIO_MarriageReturnEta>
+  <ARIO_MarriageStagePledged>Signed; awaiting explicit dispatch confirmation.</ARIO_MarriageStagePledged>
+  <ARIO_MarriageStageAwaitingEscort>Awaiting a real caravan escort to the foreign seat.</ARIO_MarriageStageAwaitingEscort>
+  <ARIO_MarriageStageTravellingIn>Travelling to your keep.</ARIO_MarriageStageTravellingIn>
+  <ARIO_MarriageStageVisiting>Present at your keep; completion or safe recovery pending.</ARIO_MarriageStageVisiting>
+  <ARIO_MarriageStageAbroad>At the foreign seat; completion or safe recovery pending.</ARIO_MarriageStageAbroad>
+  <ARIO_MarriageStageReturning>Returning; awaiting safe arrival.</ARIO_MarriageStageReturning>
+  <ARIO_MarriageStageLeaving>Cancelled; awaiting safe departure.</ARIO_MarriageStageLeaving>
+  <ARIO_MarriageStageFinished>Concluded. See marriage history.</ARIO_MarriageStageFinished>
+  <ARIO_MarriageReady>Ready for explicit dispatch confirmation.</ARIO_MarriageReady>
+  <ARIO_MarriageBlocked>Requirement: {0}</ARIO_MarriageBlocked>
+  <ARIO_MarriageMissingPerson>One participant is missing, dead, destroyed, or no longer a living humanlike person.</ARIO_MarriageMissingPerson>
+  <ARIO_MarriageCaptive>A participant is a prisoner or slave. Release them before attempting adult marriage; no one is teleported from custody.</ARIO_MarriageCaptive>
+  <ARIO_MarriageMentalState>A participant is in a mental state. Wait for recovery.</ARIO_MarriageMentalState>
+  <ARIO_MarriagePoliticalWait>Both people must be 18 or older biologically and chronologically before adult marriage. Until then the political contract stays non-romantic, with both at their birth House.</ARIO_MarriagePoliticalWait>
+  <ARIO_MarriageOtherPartner>A participant has another romantic partner. This agreement does not break that relationship.</ARIO_MarriageOtherPartner>
+  <ARIO_MarriageRelationsMissing>A participant has no usable relationship tracker.</ARIO_MarriageRelationsMissing>
+  <ARIO_MarriageOpinion>One participant has a negative opinion of the other. Both opinions must be non-negative for adult marriage.</ARIO_MarriageOpinion>
+  <ARIO_MarriageAttraction>The pair does not pass the adult mutual-attraction check. A political contract is not permission to force romance.</ARIO_MarriageAttraction>
+  <ARIO_MarriageHouseLost>The foreign House is missing or defeated.</ARIO_MarriageHouseLost>
+  <ARIO_MarriageWar>The foreign House is hostile to your House.</ARIO_MarriageWar>
+  <ARIO_MarriageSeatLost>The agreed foreign seat is missing, removed, or belongs to a different faction.</ARIO_MarriageSeatLost>
+  <ARIO_MarriageFactionChanged>A participant no longer belongs to the agreed House.</ARIO_MarriageFactionChanged>
+  <ARIO_MarriageForeignBusy>The foreign participant is on a loaded map or in another holder/caravan. They must become an available world pawn before this journey can start or arrive.</ARIO_MarriageForeignBusy>
+  <ARIO_MarriageForeignUnavailable>The foreign participant is not currently available in the world's pawn roster. No replacement pawn is generated.</ARIO_MarriageForeignUnavailable>
+  <ARIO_MarriageKeepMissing>Your designated keep must still belong to you and have a loaded map.</ARIO_MarriageKeepMissing>
+  <ARIO_MarriagePartnerAway>The incoming spouse's intended partner must be present on the designated keep map.</ARIO_MarriagePartnerAway>
+  <ARIO_MarriageHeadHeir>The House head or designated heir cannot be sent abroad. Choose a successor or an incoming arrangement.</ARIO_MarriageHeadHeir>
+  <ARIO_MarriageFunds>The loaded keep lacks accessible silver for the agreed dowry escrow.</ARIO_MarriageFunds>
+  <ARIO_MarriageEntryBlocked>No usable unfogged, standable map-edge entry reaches your colony. Open a route and wait for the next hourly arrival attempt.</ARIO_MarriageEntryBlocked>
+  <ARIO_MarriageInactive>This agreement has already finished or been cancelled.</ARIO_MarriageInactive>
+  <ARIO_MarriageAlreadyDispatched>This agreement has already been dispatched.</ARIO_MarriageAlreadyDispatched>
+  <ARIO_MarriageCancelledByPlayer>Cancelled or recalled by your House.</ARIO_MarriageCancelledByPlayer>
+  <ARIO_MarriageInvalidState>This agreement could not continue because its progress or deadline could not be confirmed. It has been sent for recovery.</ARIO_MarriageInvalidState>
+  <ARIO_MarriageExpired>The signing or escort deadline expired before the required action was completed.</ARIO_MarriageExpired>
+  <ARIO_MarriageRecovery>The original agreement entered a recovery or cancellation path without a more specific recorded cause.</ARIO_MarriageRecovery>
+  <ARIO_MarriageDispatchNotStarted>Dispatch did not commit. The agreement remains unchanged; no arrival timer has started.</ARIO_MarriageDispatchNotStarted>
+  <ARIO_MarriageEscortHelp>Form a caravan containing the travelling spouse and at least one other eligible free adult. At the agreed foreign seat choose Escort agreed person. Waiting two days does not deliver an outgoing spouse.</ARIO_MarriageEscortHelp>
+  <ARIO_MarriageCompleted>Adult marriage completed. The travelling spouse joined the agreed House and the dowry was paid.</ARIO_MarriageCompleted>
+  <ARIO_MarriageEscrow>Silver currently held by the agreement: {0}</ARIO_MarriageEscrow>
+  <ARIO_MarriageNoEscrow>No silver remains held by this agreement.</ARIO_MarriageNoEscrow>
+  <ARIO_MarriageRefundCredit>Refund handed to the existing delivery system: {0} silver (queued or already delivered; not paid twice).</ARIO_MarriageRefundCredit>
+  <ARIO_MarriageSignedTitle>Marriage agreement: next step</ARIO_MarriageSignedTitle>
+  <ARIO_MarriageDispatchTerms>Direction: {1}
+
+Dispatch will set aside {0} silver from your keep. Incoming adult spouses are due after two days and wait if blocked. Outgoing spouses require a real caravan escort. Completion permanently transfers the travelling spouse and creates the adult spouse relationship; original family relations remain. Closing this prompt leaves the signed terms in place without spending money or starting travel.</ARIO_MarriageDispatchTerms>
+  <ARIO_MarriageReviewAdult>Confirm adult marriage and dispatch</ARIO_MarriageReviewAdult>
+  <ARIO_MarriageDispatchNow>Confirm consent and dispatch</ARIO_MarriageDispatchNow>
+  <ARIO_MarriageLater>Keep signed; decide later</ARIO_MarriageLater>
+  <ARIO_MarriageDispatched>Dispatch started.
+{0}</ARIO_MarriageDispatched>
+  <ARIO_MarriageCancelledTitle>Marriage agreement cancelled</ARIO_MarriageCancelledTitle>
+  <ARIO_MarriageCancelledBody>{0} and {1}: agreement with {2} cancelled.
+
+Reason: {3}
+
+{4}
+
+No marriage, injury, death, or custody is undone. Anyone already abroad follows the original safe-return rules. The outcome remains in marriage history.</ARIO_MarriageCancelledBody>
+  <ARIO_MarriageWaitingTitle>Marriage journey waiting</ARIO_MarriageWaitingTitle>
+  <ARIO_MarriageWaitingBody>{0} and {1}: the journey cannot arrive yet.
+
+Requirement: {2}
+
+The existing participant and funds remain subject to the agreement. No substitute or teleport is used. Check the agreement for its current status.</ARIO_MarriageWaitingBody>
+  <ARIO_MarriageSeatLoaded>The foreign seat has a loaded encounter map. Finish or leave that encounter before signing or delivering the arrangement.</ARIO_MarriageSeatLoaded>
+  <ARIO_MarriageProposalRefused>The proposal was not accepted or could not be committed. Sending a proposal is not the same as a signed agreement; the original diplomacy result explains acceptance, cooldown or payment.</ARIO_MarriageProposalRefused>
+  <ARIO_MarriageNotSigned>No marriage agreement was created. {0}</ARIO_MarriageNotSigned>
+  <ARIO_MarriageChoosePeople>Choose both participants.</ARIO_MarriageChoosePeople>
+  <ARIO_MarriageReserved>A participant is already reserved by another people agreement.</ARIO_MarriageReserved>
+  <ARIO_MarriageHouseAgreementBusy>A people agreement is already active with this House. Complete or cancel it first.</ARIO_MarriageHouseAgreementBusy>
+  <ARIO_MarriageAgreementLimit>Four people agreements are already active. Complete or cancel one first.</ARIO_MarriageAgreementLimit>
+  <ARIO_MarriageForeignLeader>The foreign House leader is not an available travelling dynasty member.</ARIO_MarriageForeignLeader>
+  <ARIO_MarriageProtectedService>Your participant is a quest lodger or serving levy, not an eligible household participant.</ARIO_MarriageProtectedService>
+  <ARIO_MarriagePoliticalAges>Political contracts require both participants to be at least 8 biologically, with an age gap of at most ten years.</ARIO_MarriagePoliticalAges>
+  <ARIO_MarriageDraftInvalid>The original eligibility rules reject this pair or these terms. Check dynasty membership, existing spouses, reservations, seat, stay limits (15–60 days) and dowry (0–1500 silver).</ARIO_MarriageDraftInvalid>
+  <ARIO_MarriageHistoryHeading>Marriage history</ARIO_MarriageHistoryHeading>
+  <ARIO_MarriageHistoryOpen>View marriage history ({0})</ARIO_MarriageHistoryOpen>
+  <ARIO_MarriageHistoryEntry>{0} and {1} — {2}
+{3}
+{4}</ARIO_MarriageHistoryEntry>
+</LanguageData>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Same conservative profile as this mod's ordinary CE metal gorgets.
+       Keep crafting-only generation, supplied artwork and native coverage/layer. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_TargaryenGorget"]/statBases/StuffEffectMultiplierArmor</xpath>
+    <value><StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_TargaryenGorget"]/statBases</xpath>
+    <value><Bulk>3</Bulk><WornBulk>0.75</WornBulk></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_TargaryenGorget"]/stuffCategories/li[.="Metallic"]</xpath>
+    <value><li>Steeled</li></value>
+  </Operation>
+</Patch>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_HoldingApplyTaxAll>Apply tax settings to all holdings</ARIO_HoldingApplyTaxAll>
+  <ARIO_HoldingApplyEquipmentAll>Apply levy equipment to all holdings</ARIO_HoldingApplyEquipmentAll>
+  <ARIO_HoldingApplyTaxTitle>Apply tax settings</ARIO_HoldingApplyTaxTitle>
+  <ARIO_HoldingApplyEquipmentTitle>Apply levy equipment</ARIO_HoldingApplyEquipmentTitle>
+  <ARIO_HouseConfirmAction>Confirm</ARIO_HouseConfirmAction>
+  <ARIO_HoldingApplyTaxConfirmOne>Copy this holding's tax rate, payment type and chosen resources to the other controlled holding?</ARIO_HoldingApplyTaxConfirmOne>
+  <ARIO_HoldingApplyTaxConfirm>Copy this holding's tax rate, payment type and chosen resources to {0} other controlled holdings?</ARIO_HoldingApplyTaxConfirm>
+  <ARIO_HoldingApplyEquipmentConfirmOne>Replace the levy equipment kit in the other controlled holding with this holding's kit? Research requirements still apply.</ARIO_HoldingApplyEquipmentConfirmOne>
+  <ARIO_HoldingApplyEquipmentConfirm>Replace the levy equipment kits in {0} other controlled holdings with this holding's kit? Research requirements still apply.</ARIO_HoldingApplyEquipmentConfirm>
+  <ARIO_HoldingApplyNone>You control no other holdings to update.</ARIO_HoldingApplyNone>
+  <ARIO_HoldingApplyDone>Updated {0} holdings.</ARIO_HoldingApplyDone>
+</LanguageData>

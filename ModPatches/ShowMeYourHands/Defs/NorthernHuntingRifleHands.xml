@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Source 512x512: rear wooden grip (172,254), forward stock (325,242).
+       Center-origin X/Z normalized; equippedAngleOffset=0; SMYH applies drawSize once.
+       Main rotation matches the installed bolt-action rifle's native palm orientation. -->
+  <WHands.ClutterHandsTDef MayRequire="Mlie.ShowMeYourHands">
+    <defName>ARIOIAF_NorthernHuntingRifleHands</defName>
+    <label>northern hunting rifle hand settings</label>
+    <thingClass>Thing</thingClass>
+    <WeaponCompLoader><li>
+      <MainHand>(-0.1640625, 0.100, 0.00390625)</MainHand>
+      <MainRotation>-42</MainRotation>
+      <SecHand>(0.134765625, -0.100, 0.02734375)</SecHand>
+      <SecRotation>0</SecRotation>
+      <ThingTargets><li>ARIOIAF_NorthernHuntingRifle</li></ThingTargets>
+    </li></WeaponCompLoader>
+  </WHands.ClutterHandsTDef>
+</Defs>

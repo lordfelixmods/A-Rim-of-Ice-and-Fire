@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_TreatyHeading>Treaties and peace settlement</ARIO_TreatyHeading>
+  <ARIO_TreatyNone>No signed treaty is active.</ARIO_TreatyNone>
+  <ARIO_TreatyAlliance>Alliance</ARIO_TreatyAlliance>
+  <ARIO_TreatyNonAggression>Non-aggression / ceasefire</ARIO_TreatyNonAggression>
+  <ARIO_TreatyStatus>{0} — {1} remaining.</ARIO_TreatyStatus>
+  <ARIO_TreatyDuration>Treaty duration: {0} days</ARIO_TreatyDuration>
+  <ARIO_TreatyExplanation>Treaties last 15–60 days. An alliance establishes allied relations and allows you to request help. Breaking a signed treaty costs 10 Integrity.\n\nA promise is not protection from every quarrel: attacks and other events can still damage goodwill or cause war. When a treaty expires, existing goodwill and other agreements remain.</ARIO_TreatyExplanation>
+  <ARIO_TreatyConfirm>{0} for {1} days. Breaking this promise costs 10 Integrity.</ARIO_TreatyConfirm>
+  <ARIO_TreatyFactor>Treaty and peace oath</ARIO_TreatyFactor>
+  <ARIO_TreatyEnd>Break the treaty</ARIO_TreatyEnd>
+  <ARIO_TreatyBreakConfirm>End the treaty with {0}? This breaks your promise and costs 10 Integrity. Existing goodwill is not erased.</ARIO_TreatyBreakConfirm>
+  <ARIO_TreatyEnded>The treaty with {0} has ended. Integrity lost: {1}.</ARIO_TreatyEnded>
+  <ARIO_RenounceFealty>Renounce the feudal bond</ARIO_RenounceFealty>
+  <ARIO_RenounceConfirm>Renounce your feudal bond with {0}? Your House loses 15 Integrity and 20 goodwill. Its obligations end and committed levies return. This is not a declaration of war, though damaged relations may turn hostile.</ARIO_RenounceConfirm>
+  <ARIO_PeaceNoOath>Peace: no change of fealty</ARIO_PeaceNoOath>
+  <ARIO_PeaceBecomeVassal>Peace: become their vassal</ARIO_PeaceBecomeVassal>
+  <ARIO_PeaceReceiveVassal>Peace: require their vassalage</ARIO_PeaceReceiveVassal>
+  <ARIO_TermsUnavailable>These terms no longer qualify. Check war status, existing agreements, targets and requirements before submitting again.</ARIO_TermsUnavailable>
+  <ARIO_PaidContracts>Paid supply and attack contracts</ARIO_PaidContracts>
+  <ARIO_ContractPropose>Propose a standing supply contract</ARIO_ContractPropose>
+  <ARIO_ContractResource>Choose contracted cargo</ARIO_ContractResource>
+  <ARIO_ContractDestination>Choose delivery settlement</ARIO_ContractDestination>
+  <ARIO_ContractDraft>{0} units every {1} days; payment {2} silver per delivery.</ARIO_ContractDraft>
+  <ARIO_ContractActive>Deliver {0} {1} to {2}. Payment: {3} silver. Deadline: {4}.</ARIO_ContractActive>
+  <ARIO_ContractExplanation>Carry the cargo in a real caravan. Delivery opens during the final three days of each 10–30 day cycle; select Deliver contracted supplies on the destination. Each successful delivery pays a fixed 85% of cargo market value to your keep and earns 1 Integrity. Missing a deadline costs 2 Integrity; three misses end the agreement. No back-pay or extra deliveries accrue during time skips.</ARIO_ContractExplanation>
+  <ARIO_ContractConfirm>Commit to delivering {0} {1} to {2} every {3} days for {4} silver per delivery? Cargo is physically consumed at the destination. Missing deadlines damages Integrity. Voluntary cancellation costs 4 Integrity.</ARIO_ContractConfirm>
+  <ARIO_ContractDeliver>Deliver contracted supplies: {0}</ARIO_ContractDeliver>
+  <ARIO_ContractDelivered>Supplies delivered to {0}. {1} silver is credited for delivery to your keep.</ARIO_ContractDelivered>
+  <ARIO_ContractCredit>Earned contract payment awaiting delivery to your keep: {0} silver.</ARIO_ContractCredit>
+  <ARIO_ContractMissed>Your supply deadline for {0} was missed. Your House loses 2 Integrity; the next cycle begins now.</ARIO_ContractMissed>
+  <ARIO_ContractCancel>Cancel the supply contract</ARIO_ContractCancel>
+  <ARIO_AttackCancel>Abandon the attack contract</ARIO_AttackCancel>
+  <ARIO_ContractCancelConfirm>Abandon this signed contract? Voluntary cancellation costs 4 Integrity. Earned payments are retained.</ARIO_ContractCancelConfirm>
+  <ARIO_ContractCancelled>The contract with {0} has ended. Integrity lost: {1}.</ARIO_ContractCancelled>
+  <ARIO_AttackChoose>Choose a shared enemy settlement</ARIO_AttackChoose>
+  <ARIO_AttackReward>Reward: {0} silver</ARIO_AttackReward>
+  <ARIO_AttackExplanation>Attack contracts target an existing settlement belonging to an enemy of both Houses. Defeat its defenders in a real caravan assault within 30 days for 1,000 silver, 3 Integrity and 8 goodwill. Native combat and raid consequences apply: wounds and death are real. A target cannot serve multiple contracts. Each patron commissions at most one contract every 30 days.</ARIO_AttackExplanation>
+  <ARIO_AttackActive>Assault {0}. Reward: {1} silver. Time remaining: {2}.</ARIO_AttackActive>
+  <ARIO_AttackConfirm>Accept the assault on {0}, held by {1}? Defeat the defenders in a real battle within 30 days for 1,000 silver. Pawns may be injured or killed. Normal raid consequences apply. Abandoning or missing the deadline costs 4 Integrity.</ARIO_AttackConfirm>
+  <ARIO_AttackPaidTitle>Attack contract fulfilled</ARIO_AttackPaidTitle>
+  <ARIO_AttackPaidBody>Your expedition defeated the defenders of {0}. {1} credits your House {2} silver, payable at your keep. Your House gains 3 Integrity and 8 goodwill. Survivors, prisoners and loot remain on the battlefield under normal rules.</ARIO_AttackPaidBody>
+  <ARIO_TreatyAid>Request allied defense</ARIO_TreatyAid>
+  <ARIO_TreatyAidConfirm>Request allied fighters to defend your keep? You must be under threat, on allied terms, and have received no aid in the past 15 days. If the force arrives, it costs 25 goodwill. The allies fight the threat and leave when their work is done.</ARIO_TreatyAidConfirm>
+  <ARIO_TreatyAidUnavailable>Allied aid is unavailable. You need an active alliance, allied relations, a threatened keep whose map is loaded, and at least 15 days since your last aid.</ARIO_TreatyAidUnavailable>
+  <ARIO_PoliticsTitle>Ravens from Westeros</ARIO_PoliticsTitle>
+  <ARIO_PoliticsAccord>Envoys report an accord between {0} and {1}. Their relationship is now {2}. Your House's own treaties and goodwill are unchanged.</ARIO_PoliticsAccord>
+  <ARIO_PoliticsFeud>A border dispute has divided {0} and {1}. Their relationship is now {2}. Your House's own treaties and goodwill are unchanged.</ARIO_PoliticsFeud>
+</LanguageData>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_StallOpen>Open market stalls</ARIO_StallOpen>
+  <ARIO_StallOpenDesc>Choose this stall and place stocking orders in the House market.</ARIO_StallOpenDesc>
+  <ARIO_StallInspect>Display: {0}/{1} stacks</ARIO_StallInspect>
+  <ARIO_StallNoMap>No colony map is selected.</ARIO_StallNoMap>
+  <ARIO_StallSources>Drag rows to select or deselect; pictures open item details.</ARIO_StallSources>
+  <ARIO_StallClearSelected>Clear selection</ARIO_StallClearSelected>
+  <ARIO_StallBatchSummary>{0} stacks selected - {1} items</ARIO_StallBatchSummary>
+  <ARIO_StallQuantityFor>{0}: {1} / {2}</ARIO_StallQuantityFor>
+  <ARIO_StallQueueMany>Stock selected ({0})</ARIO_StallQueueMany>
+  <ARIO_StallTransferTitle>Stock transfer</ARIO_StallTransferTitle>
+  <ARIO_StallAvailable>{0} available to order</ARIO_StallAvailable>
+  <ARIO_StallSelectSource>Choose a stack on the left</ARIO_StallSelectSource>
+  <ARIO_StallQuantity>Quantity</ARIO_StallQuantity>
+  <ARIO_StallAllReserved>All of this stack is ordered.</ARIO_StallAllReserved>
+  <ARIO_StallNoDestination>Build or choose a stall.</ARIO_StallNoDestination>
+  <ARIO_StallClear>Clear</ARIO_StallClear>
+  <ARIO_StallSelected>{0} - {1} available</ARIO_StallSelected>
+  <ARIO_StallMinusTen>-10</ARIO_StallMinusTen>
+  <ARIO_StallMinusOne>-1</ARIO_StallMinusOne>
+  <ARIO_StallPlusOne>+1</ARIO_StallPlusOne>
+  <ARIO_StallMax>Max</ARIO_StallMax>
+  <ARIO_StallQueue>Stock stall</ARIO_StallQueue>
+  <ARIO_StallQueueShort>Stock</ARIO_StallQueueShort>
+  <ARIO_StallNeedSpace>Select a built market stall first.</ARIO_StallNeedSpace>
+  <ARIO_StallSourceCount>Available stockpiles ({0} stacks)</ARIO_StallSourceCount>
+  <ARIO_StallChoose>Choose stall</ARIO_StallChoose>
+  <ARIO_StallDestinationTitle>Selected stall</ARIO_StallDestinationTitle>
+  <ARIO_StallDefaultName>Market stall ({0}, {1})</ARIO_StallDefaultName>
+  <ARIO_StallRename>Name stall</ARIO_StallRename>
+  <ARIO_StallRenameDesc>Give this stall a name for the market selector and inspector.</ARIO_StallRenameDesc>
+  <ARIO_StallNameHint>Enter a name (up to 32 characters).</ARIO_StallNameHint>
+  <ARIO_StallSaveName>Save name</ARIO_StallSaveName>
+  <ARIO_StallNameRequired>Enter a stall name.</ARIO_StallNameRequired>
+  <ARIO_StallNameTaken>Another stall already has that name.</ARIO_StallNameTaken>
+  <ARIO_StallNone>Build a market stall to begin selling. Existing stockpiles and their items are untouched.</ARIO_StallNone>
+  <ARIO_StallHeading>{0}/{1} stacks on display</ARIO_StallHeading>
+  <ARIO_StallOrders>Stocking orders ({0})</ARIO_StallOrders>
+  <ARIO_StallNoPending>No hauls pending.</ARIO_StallNoPending>
+  <ARIO_StallNoWorkGiver>Stocking work is unavailable; check the mod load.</ARIO_StallNoWorkGiver>
+  <ARIO_StallNoActiveHaulers>Enable Hauling for a free colonist to stock this stall.</ARIO_StallNoActiveHaulers>
+  <ARIO_StallNoReachableHauls>Idle haulers cannot reserve or reach the goods and stall. Check allowed areas.</ARIO_StallNoReachableHauls>
+  <ARIO_StallAllHaulersBusy>Haulers are occupied with other work; stocking is waiting.</ARIO_StallAllHaulersBusy>
+  <ARIO_StallHaulersWorking>Hauling work is available; idle haulers will stock this stall.</ARIO_StallHaulersWorking>
+  <ARIO_StallEmptyDisplay>No goods on display. Select a stockpile stack and stock this stall.</ARIO_StallEmptyDisplay>
+  <ARIO_StallPending>{0} - {1} to haul</ARIO_StallPending>
+  <ARIO_StallCancel>Cancel</ARIO_StallCancel>
+  <ARIO_StallMoreOrders>...and {0} more queued</ARIO_StallMoreOrders>
+  <ARIO_StallOnDisplay>On display ({0} types); drag over sale buttons to mark several.</ARIO_StallOnDisplay>
+  <ARIO_StallSaleOn>Sell</ARIO_StallSaleOn>
+  <ARIO_StallSaleOff>Hold</ARIO_StallSaleOff>
+  <ARIO_StallSaleTip>Sell/hold applies to this item type at every stall. Only delivered goods can be purchased. Drag across rows to apply the same sale status; click an item picture for details.</ARIO_StallSaleTip>
+  <ARIO_StallBrowse>Browse goods</ARIO_StallBrowse>
+  <ARIO_StallManage>Manage stall</ARIO_StallManage>
+  <ARIO_StallBrowseHeading>Colony goods - {0} stacks</ARIO_StallBrowseHeading>
+  <ARIO_StallCategoryPicker>Category: {0}</ARIO_StallCategoryPicker>
+  <ARIO_StallSearchPlaceholder>Search goods...</ARIO_StallSearchPlaceholder>
+  <ARIO_StallSearchTip>Search by item name. Changing the search or category keeps your selection.</ARIO_StallSearchTip>
+  <ARIO_StallSelectVisible>Select visible</ARIO_StallSelectVisible>
+  <ARIO_StallSelectVisibleTip>Add all available stacks matching this view, including rows below the scroll. Existing selections and their quantities are kept.</ARIO_StallSelectVisibleTip>
+  <ARIO_StallSelectedOnly>Selected only</ARIO_StallSelectedOnly>
+  <ARIO_StallResetFilters>Reset filters</ARIO_StallResetFilters>
+  <ARIO_StallNoSelected>No selected stacks match this view. Turn off Selected only or clear your filters to browse more goods.</ARIO_StallNoSelected>
+  <ARIO_StallRequestedCount>{0} / {1}</ARIO_StallRequestedCount>
+  <ARIO_StallAvailableCount>{0} free</ARIO_StallAvailableCount>
+  <ARIO_StallRowTip>{0}\n{1} available to order / {2} in this physical stack.\nClick or drag rows to select or deselect. Pictures open item details and quantity controls without changing selection.</ARIO_StallRowTip>
+  <ARIO_StallPreviewEmpty>Item preview\n\nClick an item or its picture to inspect it here. Selected stacks keep their own quantities when you browse.</ARIO_StallPreviewEmpty>
+  <ARIO_StallPreviewCondition>{0}  |  Condition {1}/{2}</ARIO_StallPreviewCondition>
+  <ARIO_StallPreviewValue>Market value: {0} silver each (before trading modifiers)</ARIO_StallPreviewValue>
+  <ARIO_StallPreviewQuantity>Quantity to stock: {0} / {1} available</ARIO_StallPreviewQuantity>
+  <ARIO_StallDetails>Details</ARIO_StallDetails>
+  <ARIO_StallSelectStack>Select this stack</ARIO_StallSelectStack>
+  <ARIO_StallDestination>Destination: {0} - change</ARIO_StallDestination>
+  <ARIO_StallPickerEntry>{0} ({1}/{2} stacks)</ARIO_StallPickerEntry>
+  <ARIO_StallBatchTip>Queue real hauling jobs for every selected stack, including selections hidden by filters. Goods become available for sale only after delivery. Full stalls wait for space.</ARIO_StallBatchTip>
+  <ARIO_StallDisplayedTab>Displayed ({0})</ARIO_StallDisplayedTab>
+  <ARIO_StallPendingTab>Pending hauls ({0})</ARIO_StallPendingTab>
+  <ARIO_StallSaleHint>Sell / Hold by item type. Drag to change several.</ARIO_StallSaleHint>
+  <ARIO_StallSummaryToday>Earned today</ARIO_StallSummaryToday>
+  <ARIO_StallSummaryYesterday>Yesterday</ARIO_StallSummaryYesterday>
+  <ARIO_StallSummaryVisitors>Shoppers</ARIO_StallSummaryVisitors>
+  <ARIO_StallSummaryRumors>Market rumours</ARIO_StallSummaryRumors>
+  <ARIO_StallSilver>{0} silver</ARIO_StallSilver>
+</LanguageData>

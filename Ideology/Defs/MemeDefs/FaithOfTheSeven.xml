@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <MemeDef>
+    <defName>ARIOIAF_Structure_FaithOfTheSeven</defName>
+    <label>Faith of The Seven</label>
+    <description>The Seven are seven faces of one divinity: the Father judges, the Mother gives mercy, the Warrior defends, the Maiden guards innocence, the Smith hallows honest labor, the Crone grants wisdom, and the Stranger receives the dead.</description>
+    <category>Structure</category>
+    <groupDef>ARIOIAF_WesterosiFaiths</groupDef>
+    <iconPath>UI/Ideology/FaithOfTheSeven</iconPath>
+    <impact>0</impact>
+    <worshipRoomLabel>Sept</worshipRoomLabel>
+    <deityCount>7</deityCount>
+    <allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+    <symbolPackOverride>true</symbolPackOverride>
+    <generalRules>
+      <rulesStrings>
+        <li>memeCreed-&gt;faith</li>
+        <li>memeConcept-&gt;the Seven</li>
+        <li>memeConcept-&gt;duty</li>
+        <li>memeConcept-&gt;mercy</li>
+        <li>memeLeaderNoun-&gt;lord</li>
+        <li>memeMoralist-&gt;septon</li>
+        <li>memeMoralist-&gt;septa</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <patterns>
+        <li><def>TheistMyth</def></li>
+        <li><def>TheistFounder</def></li>
+      </patterns>
+      <constants>
+        <li><key>structure_theist</key><value>true</value></li>
+        <li><key>structure_theistAbstract</key><value>true</value></li>
+      </constants>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <ideoName>Faith of The Seven</ideoName>
+        <theme>the Seven</theme>
+        <adjective>Sevenist</adjective>
+        <member>Faithful</member>
+      </li>
+    </symbolPacks>
+    <fixedDeityNameTypes>
+      <li><name>Father</name><type>Aspect of justice, judgment, and responsible leadership</type></li>
+      <li><name>Mother</name><type>Aspect of mercy, motherhood, healing, and charity</type></li>
+      <li><name>Warrior</name><type>Aspect of courage, protection, and honorable combat</type></li>
+      <li><name>Maiden</name><type>Aspect of innocence, chastity, and protecting the young</type></li>
+      <li><name>Smith</name><type>Aspect of honest work, craftsmanship, and construction</type></li>
+      <li><name>Crone</name><type>Aspect of wisdom, learning, and guidance</type></li>
+      <li><name>Stranger</name><type>Aspect of death, mourning, and guiding the departed</type></li>
+    </fixedDeityNameTypes>
+    <!-- Doctrine is required by Chivalric Honor and Feudalism below, not by
+         a second, conflicting set of structure-level requirements. -->
+    <requiredRituals>
+      <li>
+        <precept>ARIOIAF_GatheringOfTheSeven</precept>
+        <pattern>CelebrationPartyChat</pattern>
+      </li>
+      <li>
+        <precept>ARIOIAF_MothersMercy</precept>
+        <pattern>CelebrationPartyChat</pattern>
+      </li>
+      <li>
+        <precept>ARIOIAF_StrangersFarewell</precept>
+        <pattern>FuneralStandard</pattern>
+      </li>
+    </requiredRituals>
+  </MemeDef>
+
+  <MemeDef>
+    <defName>ARIOIAF_ChivalricHonor</defName>
+    <label>Chivalric Honor</label>
+    <description>Power carries duties. The honorable defend the helpless, keep their sworn word and reserve violence for just causes.\n\nRescuing a downed colonist or allied human grants +4 mood for 3 days. Personally defeating a standing hostile human grants +3 for 2 days. If the House breaks a sworn obligation, followers suffer -10 mood for 6 days. Prisoners, slaves, executions and already-downed enemies never count as honorable victories.</description>
+    <iconPath>UI/Memes/ChivalricHonor</iconPath>
+    <groupDef>ARIOIAF_WesterosiTraditions</groupDef>
+    <impact>2</impact>
+    <renderOrder>74</renderOrder>
+    <!-- Identity-defining only (was 6). Charity, lovin' and apostasy are personal morality
+         rather than knighthood; they are suggested via associatedMemes instead. -->
+    <requireOne>
+      <li><li>ARIOIAF_KnightlyConduct_Honorable</li></li>
+      <li><li>ARIOIAF_Oathkeeping_Required</li></li>
+      <li><li>Execution_HorribleIfInnocent</li></li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective-&gt;chivalric</li>
+        <li>memeAdjective-&gt;honorable</li>
+        <li>memeConcept-&gt;honor</li>
+        <li>memeConcept-&gt;valor</li>
+        <li>memeLeaderNoun-&gt;champion</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <rules>
+        <rulesStrings>
+          <li>lesson(tag=meme_ARIOIAF_ChivalricHonor)-&gt;strength without mercy is mere brutality</li>
+          <li>lessonReinforcement(tag=meme_ARIOIAF_ChivalricHonor)-&gt;Let every sword be drawn in defense of those who cannot defend themselves.</li>
+        </rulesStrings>
+      </rules>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <theme>honor</theme>
+        <adjective>chivalric</adjective>
+        <member>sworn shield</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+
+  <MemeDef>
+    <defName>ARIOIAF_Feudalism</defName>
+    <label>Feudalism</label>
+    <description>Society is a chain of sworn obligations. Lords owe protection and justice; followers owe loyalty, labor and service.\n\nAfter a House is founded, a living free House head gives +2 mood while a vacant or captive head gives -2. Titles pass to the eldest living biological child, the highest royal title determines leadership, and titled pawns receive social respect. Fulfilled feudal duties and lawful succession are strongly favored.</description>
+    <iconPath>UI/Memes/Feudalism</iconPath>
+    <groupDef>ARIOIAF_WesterosiTraditions</groupDef>
+    <impact>2</impact>
+    <renderOrder>75</renderOrder>
+    <!-- Identity-defining only. Slavery is deliberately NOT required: the Seven Kingdoms
+         outlaw it, and demanding Slavery_Acceptable here made Feudalism mutually exclusive
+         with Winter Is Coming, which requires Slavery_Abhorrent (one precept per issue).
+         The former requirements below are now strongly suggested via associatedMemes. -->
+    <requireOne>
+      <li><li>ARIOIAF_Authority_Respected</li></li>
+      <li><li>ARIOIAF_TitleInheritance_Inherited</li></li>
+      <li><li>ARIOIAF_Leader_HighestTitle</li></li>
+      <li>
+        <li>ARIOIAF_Royalty_Exalted</li>
+        <li>ARIOIAF_Royalty_Respected</li>
+      </li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective-&gt;feudal</li>
+        <li>memeAdjective-&gt;sworn</li>
+        <li>memeConcept-&gt;fealty</li>
+        <li>memeConcept-&gt;duty</li>
+        <li>memeLeaderNoun-&gt;lord</li>
+        <li>memeMoralist-&gt;chaplain</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <rules>
+        <rulesStrings>
+          <li>lesson(tag=meme_ARIOIAF_Feudalism)-&gt;every oath binds both the ruler and the ruled</li>
+          <li>lessonReinforcement(tag=meme_ARIOIAF_Feudalism)-&gt;A worthy lord protects the realm, and worthy followers keep faith with their lord.</li>
+        </rulesStrings>
+      </rules>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <theme>fealty</theme>
+        <adjective>feudal</adjective>
+        <member>vassal</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+</Defs>

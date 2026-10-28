@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PreceptDef ParentName="ProselytizingBase">
+    <defName>ARIOIAF_Proselytizing_Occasionally</defName>
+    <label>occasional</label>
+    <description>Those who know the teachings of the Seven should share them when the time and company are appropriate.</description>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <requiredMemes Inherit="False">
+      <li>ARIOIAF_Structure_FaithOfTheSeven</li>
+    </requiredMemes>
+    <associatedMemes Inherit="False">
+      <li>ARIOIAF_Structure_FaithOfTheSeven</li>
+    </associatedMemes>
+    <statFactors>
+      <SocialIdeoSpreadFrequencyFactor>3</SocialIdeoSpreadFrequencyFactor>
+    </statFactors>
+  </PreceptDef>
+
+  <PreceptDef ParentName="FestivalBase">
+    <defName>ARIOIAF_GatheringOfTheSeven</defName>
+    <label>Gathering of the Seven</label>
+    <description>A worship gathering in which the Faithful invoke each of the Seven, hear words of guidance, and celebrate together.</description>
+    <allowDuplicates>false</allowDuplicates>
+    <allowOptionalRitualObligations>true</allowOptionalRitualObligations>
+    <requiredMemes>
+      <li>ARIOIAF_Structure_FaithOfTheSeven</li>
+    </requiredMemes>
+  </PreceptDef>
+
+  <PreceptDef ParentName="FestivalBase">
+    <defName>ARIOIAF_MothersMercy</defName>
+    <label>Mother's Mercy</label>
+    <description>A charity-themed gathering honoring the Mother's mercy through fellowship, promises of aid, and care for those in need.</description>
+    <allowDuplicates>false</allowDuplicates>
+    <allowOptionalRitualObligations>true</allowOptionalRitualObligations>
+    <requiredMemes>
+      <li>ARIOIAF_Structure_FaithOfTheSeven</li>
+    </requiredMemes>
+  </PreceptDef>
+
+  <PreceptDef ParentName="FuneralBase">
+    <defName>ARIOIAF_StrangersFarewell</defName>
+    <label>Stranger's Farewell</label>
+    <description>The Faithful gather at a believer's grave to mourn, commend the departed to the Stranger, and say their final farewells. If the body is lost, an empty grave may be used.</description>
+    <extraTextPawnDeathLetter>{PAWN_nameDef} should be buried and given the Stranger's Farewell so the Faithful may mourn and commend {PAWN_objective} to the Stranger.</extraTextPawnDeathLetter>
+    <requiredMemes>
+      <li>ARIOIAF_Structure_FaithOfTheSeven</li>
+    </requiredMemes>
+  </PreceptDef>
+</Defs>

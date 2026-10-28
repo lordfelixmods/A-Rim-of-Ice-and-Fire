@@ -1,0 +1,15 @@
+{
+  "TextureModID": "lordfelix.arimoficeandfire",
+  "ItemDefName": "ARIOIAF_Truth",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.392,
+  "OffY": 0.0015,
+  "Rotation": 45.0,
+  "ScaleX": 1.08,
+  "ScaleY": 1.08,
+  "HandsMode": 1,
+  "BladeStart": 0.1209,
+  "BladeEnd": 0.9618,
+  "MeleeWeaponType": 6
+}

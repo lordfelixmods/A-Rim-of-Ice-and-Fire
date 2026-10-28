@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>ARIOIAF_WesterosTabard</defName>
+    <label>Westeros tabard</label>
+    <description>A tabard bearing House or regional arms on the chest and back. Primary color tints the cloth; secondary tints the crest. Applied dye overrides cloth only.\n\nThe equipment appearance tray sets heraldry and gorget order. In front is the default; cloaks always cover it. Westerosi belts stay hidden but retain their carrying benefit. Fits all adult body types.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/WesterosTabard/WesterosTabard_Male_south</texPath>
+      <graphicClass>ARimOfIceAndFire.Graphic_TabardGround</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <ignoreThingDrawColor>true</ignoreThingDrawColor>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <!-- Explicit fresh regional military outfit only; never generic/trader/environment pools. -->
+    <generateCommonality>0</generateCommonality>
+    <generateAllowChance>0</generateAllowChance>
+    <!-- Do not activate native colorable state from an inherited random generator. -->
+    <colorGenerator IsNull="True" />
+    <stuffCategories><li>Fabric</li></stuffCategories>
+    <costStuffCount>40</costStuffCount>
+    <thingCategories><li>ARIOIAF_WesterosArmoryCategory</li></thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>2400</WorkToMake>
+      <Mass>0.7</Mass>
+      <StuffEffectMultiplierArmor>0.08</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <recipeMaker>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <researchPrerequisite>ARIOIAF_WesterosArmory</researchPrerequisite>
+      <skillRequirements><Crafting>3</Crafting></skillRequirements>
+      <displayPriority>255</displayPriority>
+      <recipeUsers Inherit="False"><li>ARIOIAF_WesterosiArmorersBench</li></recipeUsers>
+    </recipeMaker>
+    <tradeTags Inherit="False" />
+    <apparel>
+      <bodyPartGroups><li>Torso</li><li>Shoulders</li></bodyPartGroups>
+      <layers><li>ARIOIAF_TabardLayer</li></layers>
+      <!-- Declared nodes replace the stock worn-path node; no Harmony needed. -->
+      <wornGraphicPath />
+      <renderNodeProperties>
+        <li Class="ARimOfIceAndFire.WesterosGarmentNodeProperties">
+          <nodeClass>ARimOfIceAndFire.PawnRenderNode_WesterosGarment</nodeClass>
+          <workerClass>ARimOfIceAndFire.PawnRenderNodeWorker_TabardCloth</workerClass>
+          <parentTagDef>ApparelBody</parentTagDef>
+          <!-- Workers derive actual rank from native worn apparel nodes and facing.
+               Logical order215 stays between belt210 and cloak220/gorget225. -->
+          <textureStem>Things/Pawn/Humanlike/Apparel/WesterosTabard/WesterosTabard</textureStem>
+        </li>
+        <li Class="ARimOfIceAndFire.TabardHeraldryNodeProperties">
+          <nodeClass>ARimOfIceAndFire.PawnRenderNode_TabardHeraldry</nodeClass>
+          <workerClass>ARimOfIceAndFire.PawnRenderNodeWorker_TabardHeraldry</workerClass>
+          <parentTagDef>ApparelBody</parentTagDef>
+          <outline>true</outline>
+        </li>
+        <li Class="ARimOfIceAndFire.TabardHeraldryNodeProperties">
+          <nodeClass>ARimOfIceAndFire.PawnRenderNode_TabardHeraldry</nodeClass>
+          <workerClass>ARimOfIceAndFire.PawnRenderNodeWorker_TabardHeraldry</workerClass>
+          <parentTagDef>ApparelBody</parentTagDef>
+        </li>
+      </renderNodeProperties>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <tags Inherit="False" />
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyVacuumResistance>false</canBeGeneratedToSatisfyVacuumResistance>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <defaultOutfitTags><li>Worker</li><li>Soldier</li></defaultOutfitTags>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <comps Inherit="False">
+      <li Class="CompProperties_Forbiddable" />
+      <li><compClass>CompQuality</compClass></li>
+      <li Class="CompProperties_Styleable" />
+      <li Class="ARimOfIceAndFire.CompProperties_TabardHeraldry" />
+      <li><compClass>ARimOfIceAndFire.CompColorable_Tabard</compClass></li>
+    </comps>
+  </ThingDef>
+</Defs>

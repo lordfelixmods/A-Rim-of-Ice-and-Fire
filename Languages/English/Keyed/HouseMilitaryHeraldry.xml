@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_HouseMilitaryApparelUnavailable>[A Rim of Ice and Fire] Regional military mail/tabard distribution could not complete safely; existing gear remains unchanged: {0}</ARIO_HouseMilitaryApparelUnavailable>
+  <ARIO_HouseMilitaryHeraldryUnavailable>[A Rim of Ice and Fire] Lesser-House heraldry could not be prepared; existing regional/player/manual fallbacks remain: {0}</ARIO_HouseMilitaryHeraldryUnavailable>
+</LanguageData>

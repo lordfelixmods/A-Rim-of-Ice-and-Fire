@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_NpcWarAnsweredTitle>Your House answers a war call</ARIO_NpcWarAnsweredTitle>
+  <ARIO_NpcWarDeclinedTitle>Your House declines a war call</ARIO_NpcWarDeclinedTitle>
+  <ARIO_CampPlacementUnavailable>[A Rim of Ice and Fire] Local battle-camp placement is unavailable: {0}</ARIO_CampPlacementUnavailable>
+  <ARIO_FeudalCallPacingUnavailable>[A Rim of Ice and Fire] War invitation pacing is unavailable; native invitations are retained: {0}</ARIO_FeudalCallPacingUnavailable>
+</LanguageData>

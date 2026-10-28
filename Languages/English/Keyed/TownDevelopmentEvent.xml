@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_TownReadyEventStory>{0} has grown. Its smallfolk are ready for the workshops and market streets of a town.</ARIO_TownReadyEventStory>
+  <ARIO_TownCompletedEventStory>{0} is now a town. New trades and a larger levy strengthen your lands.</ARIO_TownCompletedEventStory>
+  <ARIO_TownEventView>View holding</ARIO_TownEventView>
+  <ARIO_TownEventLater>Not now</ARIO_TownEventLater>
+  <ARIO_TownEventConfirmTip>Review the usual upgrade cost and requirements before paying. Nothing is spent until you confirm.</ARIO_TownEventConfirmTip>
+  <ARIO_TownEventUnavailable>[A Rim of Ice and Fire] The town upgrade confirmation is unavailable; use the holding controls: {0}</ARIO_TownEventUnavailable>
+</LanguageData>

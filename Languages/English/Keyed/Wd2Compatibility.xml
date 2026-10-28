@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_WDCoreApiInstalled>[A Rim of Ice and Fire] WD2 House boundaries verified after startup; {0} complete signatures adapted. Temporary lookup adapter removed.</ARIO_WDCoreApiInstalled>
+  <ARIO_WDCoreApiUnavailable>[A Rim of Ice and Fire] WD2 House compatibility is unavailable. Unsupported binding or missing hooks: {0}. Core's House protections are not active; consult the log before using WD2 outpost transfers.</ARIO_WDCoreApiUnavailable>
+  <ARIO_WDSettlementInstalled>[A Rim of Ice and Fire] World Domination 2 settlement reconciliation installed.</ARIO_WDSettlementInstalled>
+  <ARIO_WDSettlementUnavailable>[A Rim of Ice and Fire] World Domination 2 settlement reconciliation not installed (unsupported API): {0}</ARIO_WDSettlementUnavailable>
+  <ARIO_WDSettlementResynchronized>[A Rim of Ice and Fire] WD2 settlement state resynchronized; {0} stale traveler mission(s) cancelled.</ARIO_WDSettlementResynchronized>
+  <ARIO_WDSettlementFailed>[A Rim of Ice and Fire] WD2 settlement resynchronization failed safely: {0}</ARIO_WDSettlementFailed>
+</LanguageData>

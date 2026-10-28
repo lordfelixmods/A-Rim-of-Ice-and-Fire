@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_PrisonerAction>Prisoner exchange / ransom</ARIO_PrisonerAction>
+  <ARIO_PrisonerExplanation>Exchange a captive of this House for one of your kidnapped colonists, offer ransom to recover someone, or demand ransom for a captive you release. Choose either or both people. Signing reserves them for 20 days; bring the named captive and any ransom silver in a caravan to the agreed seat. A free permanent adult escort must remain. Exchanges work during war without declaring peace or granting general caravan immunity.</ARIO_PrisonerExplanation>
+  <ARIO_PrisonerRelease>Prisoner you will release</ARIO_PrisonerRelease>
+  <ARIO_PrisonerRecover>Kidnapped colonist you will recover</ARIO_PrisonerRecover>
+  <ARIO_PrisonerCandidate>{0} · age {1}</ARIO_PrisonerCandidate>
+  <ARIO_PrisonerNoneHeld>No eligible captive of this House is held on your maps or in your caravans. Slaves, quest-tagged people and people reserved by another agreement are excluded.</ARIO_PrisonerNoneHeld>
+  <ARIO_PrisonerNoneKidnapped>This House holds no kidnapped colonist available for exchange. People already free, traveling, dead, involved in a quest or promised in another agreement cannot be recovered here.</ARIO_PrisonerNoneKidnapped>
+  <ARIO_PrisonerSeat>Choose exchange settlement</ARIO_PrisonerSeat>
+  <ARIO_PrisonerPay>Ransom you bring: {0} silver</ARIO_PrisonerPay>
+  <ARIO_PrisonerReceive>Ransom you receive: {0} silver · maximum {1}</ARIO_PrisonerReceive>
+  <ARIO_PrisonerTerms>Release: {0}\nRecover: {1}\nYou pay {2} silver; you receive {3} silver at handover.</ARIO_PrisonerTerms>
+  <ARIO_PrisonerFactor>Prisoners and ransom</ARIO_PrisonerFactor>
+  <ARIO_PrisonerBundleWarning>Ransom is paid from the caravan only at handover. Other selected silver, land, peace or service terms take effect when the proposal is accepted and are NOT rolled back if the later exchange fails. One exchange per House, four active exchanges in total. Ransom may flow in only one direction per exchange.</ARIO_PrisonerBundleWarning>
+  <ARIO_PrisonerSigningConfirm>Agree to exchange these captives at {0} within 20 days? They stay where they are until you reach the meeting place and confirm the handover.\n\nCancelling or missing the deadline costs 4 Integrity. If a captive dies, escapes or is recruited, or circumstances make the exchange impossible, it ends without a penalty.</ARIO_PrisonerSigningConfirm>
+  <ARIO_PrisonerSigned>{0} has agreed to the exchange. Form a caravan carrying the promised prisoner and ransom, then right-click the signed settlement and choose the prisoner exchange arrival option. You will confirm the final handover on arrival.\n\n{1}</ARIO_PrisonerSigned>
+  <ARIO_PrisonerDue>Destination: {0} · time remaining: {1}</ARIO_PrisonerDue>
+  <ARIO_PrisonerTravel>Exchange prisoners at {0}</ARIO_PrisonerTravel>
+  <ARIO_PrisonerHandover>Confirm handover</ARIO_PrisonerHandover>
+  <ARIO_PrisonerHandoverConfirm>{0}\n\nComplete the exchange at {1}? Your recovered colonist joins this caravan with their current injuries and belongings; the captive you release returns to their House. The handover is permanent. Any silver that cannot be delivered immediately remains owed.</ARIO_PrisonerHandoverConfirm>
+  <ARIO_PrisonerUnavailable>The exchange is no longer available. Check the exact captive identities, current custody, unoccupied destination, deadline, permanent adult escort and caravan silver. No new transfer was started.</ARIO_PrisonerUnavailable>
+  <ARIO_PrisonerReserved>This captive is reserved by a House exchange. Complete or cancel that agreement in House → Diplomacy before using another ransom offer.</ARIO_PrisonerReserved>
+  <ARIO_PrisonerCompleted>The exchange is complete. Any silver not yet delivered remains owed.</ARIO_PrisonerCompleted>
+  <ARIO_PrisonerCancelled>Exchange cancelled. Any collected but unspent ransom is refundable.</ARIO_PrisonerCancelled>
+  <ARIO_PrisonerSuccess>The prisoner handover with {0} is complete. Your House gains 2 Integrity; a peaceful House also gains 6 goodwill. A wartime exchange does not make peace.\n\n{1}</ARIO_PrisonerSuccess>
+  <ARIO_PrisonerCancel>Cancel exchange</ARIO_PrisonerCancel>
+  <ARIO_PrisonerCancelConfirm>Cancel the signed exchange for 4 Integrity? Captives stay where they currently are. Any collected but unspent ransom is returned, but other terms of the accepted diplomatic package remain in force.</ARIO_PrisonerCancelConfirm>
+  <ARIO_PrisonerBroken>The agreement with {0} was cancelled or its deadline passed. Your House loses 4 Integrity.\n\n{1}</ARIO_PrisonerBroken>
+  <ARIO_PrisonerNeutral>The prisoner exchange with {0} could not be completed. It has been cancelled without loss of Integrity or goodwill. Prisoners already handed over stay with their new captors. Unspent ransom returns to your caravan, or to your keep if the caravan is gone.\n\n{1}</ARIO_PrisonerNeutral>
+  <ARIO_PrisonerDebugPair>House: create prisoner exchange test pair</ARIO_PrisonerDebugPair>
+  <ARIO_PrisonerDebugUnavailable>A player-home map and a living Westerosi House with an unloaded settlement are required.</ARIO_PrisonerDebugUnavailable>
+  <ARIO_PrisonerDebugCreated>Exchange test pair for {0}: you hold {1}; their native kidnapping tracker holds the newly generated colonist {2}. Existing colonists and faction relations were untouched. Open House → Diplomacy and choose these pawns in Prisoner exchange / ransom.</ARIO_PrisonerDebugCreated>
+</LanguageData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- First-stage catalogue only. No ScenarioDef is registered until exact-instance,
+       real-seat and native generated-leader handoff are safe and tested. -->
+  <ScenPartDef>
+    <defName>ARIO_ExistingHouseChoice</defName>
+    <label>choose existing Westerosi House</label>
+    <scenPartClass>ARimOfIceAndFire.Scenarios.ScenPart_ExistingHouseChoice</scenPartClass>
+    <category>Fixed</category>
+    <canBeRandomlyAdded>false</canBeRandomlyAdded>
+    <canBePlayerAddedRemoved>false</canBePlayerAddedRemoved>
+    <selectionWeight>0</selectionWeight>
+  </ScenPartDef>
+</Defs>

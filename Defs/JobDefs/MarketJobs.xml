@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>ARIO_MarketShop</defName>
+    <driverClass>ARimOfIceAndFireCore.JobDriver_MarketShop</driverClass>
+    <reportString>browsing the market.</reportString>
+    <casualInterruptible>true</casualInterruptible>
+    <playerInterruptible>true</playerInterruptible>
+  </JobDef>
+
+  <JobDef>
+    <defName>ARIO_MarketUpsell</defName>
+    <driverClass>ARimOfIceAndFireCore.JobDriver_MarketUpsell</driverClass>
+    <reportString>talking up the wares to TargetA.</reportString>
+    <casualInterruptible>true</casualInterruptible>
+    <playerInterruptible>true</playerInterruptible>
+  </JobDef>
+</Defs>

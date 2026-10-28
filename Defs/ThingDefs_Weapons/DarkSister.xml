@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <StuffCategoryDef>
+    <defName>ARIOIAF_ValyrianSteelOnly</defName>
+    <label>Valyrian steel</label>
+  </StuffCategoryDef>
+  <ThingDef Name="ARIOIAF_ValyrianRelicWeaponBase" ParentName="BaseWeapon" Abstract="True">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <!-- Named Valyrian blades retain their painted artwork, without material,
+           faction or secondary mask colours. -->
+      <shaderType>Cutout</shaderType>
+      <color>(1,1,1,1)</color>
+      <colorTwo>(1,1,1,1)</colorTwo>
+      <ignoreThingDrawColor>true</ignoreThingDrawColor>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <!-- Def-based icons bypass the weapon's white DrawColor override. -->
+    <colorPerStuff>
+      <li>
+        <stuff>TLN_ValyrianSteel</stuff>
+        <color>(1,1,1,1)</color>
+      </li>
+    </colorPerStuff>
+    <!-- Kept for existing-save type identity; this class now serves every named blade. -->
+    <thingClass>ARimOfIceAndFireCore.DarkSisterWeapon</thingClass>
+    <techLevel>Medieval</techLevel>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <thingCategories><li>WeaponsMelee</li></thingCategories>
+    <comps><li><compClass>CompQuality</compClass></li></comps>
+    <generateCommonality>0</generateCommonality>
+    <tradeability>None</tradeability>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <stackLimit>1</stackLimit>
+    <costStuffCount>60</costStuffCount>
+    <stuffCategories Inherit="False"><li>ARIOIAF_ValyrianSteelOnly</li></stuffCategories>
+    <weaponTags Inherit="False" />
+    <weaponClasses Inherit="False"><li>Melee</li><li>MeleePiercer</li></weaponClasses>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>1.4</Mass>
+      <WorkToMake>60000</WorkToMake>
+    </statBases>
+    <tools>
+      <li><label>edge</label><capacities><li>Cut</li></capacities><power>25</power><cooldownTime>1.8</cooldownTime></li>
+      <li><label>point</label><capacities><li>Stab</li></capacities><power>23</power><cooldownTime>1.8</cooldownTime></li>
+      <li><label>hilt</label><capacities><li>Blunt</li></capacities><power>9</power><cooldownTime>2</cooldownTime></li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="ARIOIAF_ValyrianRelicWeaponBase">
+    <defName>ARIOIAF_DarkSister</defName>
+    <label>Dark Sister</label>
+    <description>A slender Valyrian-steel longsword, its dark ripples revealing a craft lost with Valyria. Light, enduring, and extraordinarily keen, Dark Sister is a singular heirloom that can only be recovered through a relic hunt; it cannot be forged anew.</description>
+    <graphicData><texPath>Things/Weapons/DarkSister</texPath><drawSize>(1.06,1.06)</drawSize></graphicData>
+    <!-- Available to Westerosi faiths through the shared Valyrian relic pool. -->
+    <relicChance>3</relicChance>
+  </ThingDef>
+</Defs>

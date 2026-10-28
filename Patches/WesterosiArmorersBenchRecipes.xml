@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Every craftable Westerosi product is exclusive to the dedicated bench. Remove
+       explicit vanilla hosts first; the new Inherit=False list also replaces hosts
+       inherited from vanilla apparel/weapon parents. Named Valyrian blades have no
+       recipeMaker and are deliberately absent. -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/ThingDef[
+      defName="ARIOIAF_DragonriderArmor" or defName="ARIOIAF_DragonriderGorget" or defName="ARIOIAF_DragonriderHelmet" or
+      defName="ARIOIAF_HouseArrynGorget" or defName="ARIOIAF_IronbornGorget" or defName="ARIOIAF_IronbornKettleHelm" or defName="ARIOIAF_IronbornPlateArmor" or
+      defName="ARIOIAF_LannisterArmor" or defName="ARIOIAF_LannisterGorget" or defName="ARIOIAF_LannisterHelmet" or
+      defName="ARIOIAF_NobleTunic" or defName="ARIOIAF_NorthCloak" or defName="ARIOIAF_NorthernGorget" or defName="ARIOIAF_NorthernHeavyGorget" or defName="ARIOIAF_NorthmenHelmet" or
+      defName="ARIOIAF_ReachHelmet" or defName="ARIOIAF_RiverlandsHelmet" or defName="ARIOIAF_RiverlandsScaleArmor" or
+      defName="ARIOIAF_StormlanderGorget" or defName="ARIOIAF_StormlandsHelmet" or
+      defName="ARIOIAF_ValyrianArmor" or defName="ARIOIAF_ValyrianHelmet" or
+      defName="ARIOIAF_WesterosBelt" or defName="ARIOIAF_WesterosBlackBelt" or defName="ARIOIAF_WesterosCloak" or defName="ARIOIAF_WesterosFaceWrap" or defName="ARIOIAF_WesterosGambeson" or defName="ARIOIAF_WesterosGorget" or defName="ARIOIAF_WesterosHelmet" or defName="ARIOIAF_WesterosPlateArmor" or defName="ARIOIAF_WesterosTunic" or
+      defName="ARIOIAF_WesterosBannerSpear" or
+      defName="ARIOIAF_SoldiersShortSword" or defName="ARIOIAF_FootmansSword" or defName="ARIOIAF_BallMace" or defName="ARIOIAF_KnightsShortSword" or defName="ARIOIAF_CavalrySword" or defName="ARIOIAF_FlangedMace" or defName="ARIOIAF_SpikedMace" or defName="ARIOIAF_TwoHandedWarSword"
+      or defName="ARIOIAF_WesterosChainmail" or defName="ARIOIAF_WesterosTabard" or defName="ARIOIAF_TargaryenGorget" or defName="ARIOIAF_BlackfyreGorget" or defName="ARIOIAF_TargaryenHelmet"
+    ]/recipeMaker/recipeUsers</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[
+      defName="ARIOIAF_DragonriderArmor" or defName="ARIOIAF_DragonriderGorget" or defName="ARIOIAF_DragonriderHelmet" or
+      defName="ARIOIAF_HouseArrynGorget" or defName="ARIOIAF_IronbornGorget" or defName="ARIOIAF_IronbornKettleHelm" or defName="ARIOIAF_IronbornPlateArmor" or
+      defName="ARIOIAF_LannisterArmor" or defName="ARIOIAF_LannisterGorget" or defName="ARIOIAF_LannisterHelmet" or
+      defName="ARIOIAF_NobleTunic" or defName="ARIOIAF_NorthCloak" or defName="ARIOIAF_NorthernGorget" or defName="ARIOIAF_NorthernHeavyGorget" or defName="ARIOIAF_NorthmenHelmet" or
+      defName="ARIOIAF_ReachHelmet" or defName="ARIOIAF_RiverlandsHelmet" or defName="ARIOIAF_RiverlandsScaleArmor" or
+      defName="ARIOIAF_StormlanderGorget" or defName="ARIOIAF_StormlandsHelmet" or
+      defName="ARIOIAF_ValyrianArmor" or defName="ARIOIAF_ValyrianHelmet" or
+      defName="ARIOIAF_WesterosBelt" or defName="ARIOIAF_WesterosBlackBelt" or defName="ARIOIAF_WesterosCloak" or defName="ARIOIAF_WesterosFaceWrap" or defName="ARIOIAF_WesterosGambeson" or defName="ARIOIAF_WesterosGorget" or defName="ARIOIAF_WesterosHelmet" or defName="ARIOIAF_WesterosPlateArmor" or defName="ARIOIAF_WesterosTunic" or
+      defName="ARIOIAF_WesterosBannerSpear" or
+      defName="ARIOIAF_SoldiersShortSword" or defName="ARIOIAF_FootmansSword" or defName="ARIOIAF_BallMace" or defName="ARIOIAF_KnightsShortSword" or defName="ARIOIAF_CavalrySword" or defName="ARIOIAF_FlangedMace" or defName="ARIOIAF_SpikedMace" or defName="ARIOIAF_TwoHandedWarSword"
+      or defName="ARIOIAF_WesterosChainmail" or defName="ARIOIAF_WesterosTabard" or defName="ARIOIAF_TargaryenGorget" or defName="ARIOIAF_BlackfyreGorget" or defName="ARIOIAF_TargaryenHelmet"
+    ]/recipeMaker</xpath>
+    <value>
+      <recipeUsers Inherit="False"><li>ARIOIAF_WesterosiArmorersBench</li></recipeUsers>
+    </value>
+  </Operation>
+
+  <!-- Crossbows inherit vanilla smithy users, so an explicit non-inheriting list
+       makes the Westerosi bench their only host as well. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="ARIOIAF_LightWoodenCrossbow" or defName="ARIOIAF_SoldiersCrossbow" or defName="ARIOIAF_HeavyArbalest"]/recipeMaker</xpath>
+    <value>
+      <recipeUsers Inherit="False"><li>ARIOIAF_WesterosiArmorersBench</li></recipeUsers>
+    </value>
+  </Operation>
+
+  <!-- Recipe hosting controls which bills appear, but WorkGiver_DoBill separately accepts only
+       buildings listed on its workgiver. Register this combined bench for both skill families so
+       smiths and tailors can actually take the visible jobs. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/WorkGiverDef[defName="DoBillsMakeWeapons"]/fixedBillGiverDefs</xpath>
+    <value><li>ARIOIAF_WesterosiArmorersBench</li></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/WorkGiverDef[defName="DoBillsMakeApparel"]/fixedBillGiverDefs</xpath>
+    <value><li>ARIOIAF_WesterosiArmorersBench</li></value>
+  </Operation>
+</Patch>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--
+    Rituals of the Drowned God. Three in total, which is also the cap FaithRituals enforces
+    on Westerosi faiths.
+
+    Each is paired with a <pattern> in its meme's requiredRituals. That pattern is what
+    populates Precept_Ritual.behavior; without it the ritual loads but every tooltip throws
+    a NullReferenceException in RolesDescription(). A parent's ritualPatternBase is NOT a
+    substitute for it.
+
+    None of the patterns used here require a ritual building. Patterns such
+    as BurnCircle demand a specific ritual building (effigy / pyre / sacrificial flag); a faith
+    that lacks one is blocked at the ideoligion screen with a red warning, which is exactly the
+    failure Symbol Burning caused. FestivalBase needs no building.
+  -->
+
+  <PreceptDef ParentName="FestivalBase">
+    <defName>ARIOIAF_DrowningRite</defName>
+    <label>drowning rite</label>
+    <description>The faithful gather at the water's edge and give one of their own to the sea, drawing them back and breathing life into them again. Those who rise are counted twice-born; what is dead may never die.</description>
+    <allowDuplicates>false</allowDuplicates>
+    <allowOptionalRitualObligations>true</allowOptionalRitualObligations>
+    <requiredMemes>
+      <li>ARIOIAF_Structure_DrownedGod</li>
+    </requiredMemes>
+  </PreceptDef>
+
+  <PreceptDef ParentName="FuneralBase">
+    <defName>ARIOIAF_SeaBurial</defName>
+    <label>sea burial</label>
+    <description>The dead are given back to the Drowned God in his own halls beneath the waves, weighted and slipped over the side, so that they may feast at his table until the world is unmade.</description>
+    <allowDuplicates>false</allowDuplicates>
+    <allowOptionalRitualObligations>true</allowOptionalRitualObligations>
+    <requiredMemes>
+      <li>ARIOIAF_Structure_DrownedGod</li>
+    </requiredMemes>
+  </PreceptDef>
+
+  <PreceptDef ParentName="FestivalBase">
+    <defName>ARIOIAF_ReavingFeast</defName>
+    <label>reaving feast</label>
+    <description>Longships come home heavy and the hall is opened. Plunder is heaped where all can see it, the captain's share is given out, and the taking is told and retold until it becomes a song.</description>
+    <allowDuplicates>false</allowDuplicates>
+    <allowOptionalRitualObligations>true</allowOptionalRitualObligations>
+    <requiredMemes>
+      <li>ARIOIAF_TheOldWay</li>
+    </requiredMemes>
+  </PreceptDef>
+
+</Defs>

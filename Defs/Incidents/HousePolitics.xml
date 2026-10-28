@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IncidentDef>
+    <defName>ARIOIAF_HousePoliticalShift</defName>
+    <label>Westerosi diplomatic shift</label>
+    <workerClass>ARimOfIceAndFireCore.IncidentWorker_HousePoliticalShift</workerClass>
+    <category>Misc</category>
+    <targetTags><li>Map_PlayerHome</li></targetTags>
+    <baseChance>0.3</baseChance>
+    <earliestDay>30</earliestDay>
+  </IncidentDef>
+</Defs>

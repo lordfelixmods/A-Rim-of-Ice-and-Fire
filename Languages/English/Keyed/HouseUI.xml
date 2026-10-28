@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Section bands. Each groups several rows, so it earns its heading. -->
+  <ARIO_UIRulers>Rulers</ARIO_UIRulers>
+  <ARIO_UINames>Names</ARIO_UINames>
+  <ARIO_UIHousehold>Household</ARIO_UIHousehold>
+
+  <!-- Dynasty label column. -->
+  <ARIO_UIHead>Head</ARIO_UIHead>
+  <ARIO_UIHeir>Heir</ARIO_UIHeir>
+  <ARIO_UIFounder>Founder</ARIO_UIFounder>
+  <ARIO_UIHouseName>House</ARIO_UIHouseName>
+  <ARIO_UISeat>Seat</ARIO_UISeat>
+  <ARIO_UISettlers>Settlers</ARIO_UISettlers>
+  <ARIO_UIMaester>Maester</ARIO_UIMaester>
+  <ARIO_UIFaithLeader>Faith leader</ARIO_UIFaithLeader>
+  <ARIO_UINone>Not chosen</ARIO_UINone>
+  <ARIO_UISeatTip>Which of your settlements is the seat of the House. The field beside it renames that settlement.</ARIO_UISeatTip>
+  <ARIO_UIDynastyLocked>You are not yet eligible to found a house</ARIO_UIDynastyLocked>
+  <ARIO_UIHoldingsLocked>Gain control of a holding before opening Holdings.</ARIO_UIHoldingsLocked>
+
+  <!-- Diplomacy first-open notice. -->
+  <ARIO_DiplomacyBetaTitle>Diplomacy</ARIO_DiplomacyBetaTitle>
+  <ARIO_DiplomacyBetaBadge>BETA</ARIO_DiplomacyBetaBadge>
+  <ARIO_DiplomacyBetaLead>This system is playable, but still being built.</ARIO_DiplomacyBetaLead>
+  <ARIO_DiplomacyBetaPoint1>Agreements and vassal terms may behave unexpectedly.</ARIO_DiplomacyBetaPoint1>
+  <ARIO_DiplomacyBetaPoint2>Costs, goodwill and war outcomes are not final balance.</ARIO_DiplomacyBetaPoint2>
+  <ARIO_DiplomacyBetaPoint3>Your save stays safe — nothing here can corrupt it.</ARIO_DiplomacyBetaPoint3>
+  <ARIO_DiplomacyBetaFooter>Shown once per save.</ARIO_DiplomacyBetaFooter>
+  <ARIO_DiplomacyBetaAcknowledge>Understood</ARIO_DiplomacyBetaAcknowledge>
+
+  <!-- Realm management label column. -->
+  <ARIO_UIStrength>Strength</ARIO_UIStrength>
+  <ARIO_UIWealth>Wealth</ARIO_UIWealth>
+  <ARIO_UIDevelopment>Development</ARIO_UIDevelopment>
+  <ARIO_UIPopulation>Population</ARIO_UIPopulation>
+  <ARIO_UIName>Name</ARIO_UIName>
+  <ARIO_UIDefence>Under attack</ARIO_UIDefence>
+  <ARIO_UIUpgrade>Upgrade</ARIO_UIUpgrade>
+  <ARIO_UITaxRate>Rate</ARIO_UITaxRate>
+  <ARIO_UITaxPaid>Paid in</ARIO_UITaxPaid>
+  <ARIO_UITaxResource>Resource</ARIO_UITaxResource>
+  <ARIO_UITaxDue>Next due</ARIO_UITaxDue>
+  <ARIO_UIMood>Mood</ARIO_UIMood>
+  <ARIO_UIWorkforce>Workforce</ARIO_UIWorkforce>
+  <ARIO_UIMuster>Muster</ARIO_UIMuster>
+
+  <!-- Install diagnostics. Each panel falls back to the original layout on its own. -->
+  <ARIO_HouseUIFailed>[A Rim of Ice and Fire] House panel redesign could not install: {0}</ARIO_HouseUIFailed>
+  <ARIO_HouseUIDynastySkipped>[A Rim of Ice and Fire] Dynasty tab keeps its original layout; core member not found: {0}</ARIO_HouseUIDynastySkipped>
+  <ARIO_HouseUIHoldingSkipped>[A Rim of Ice and Fire] Realm management keeps its original layout; core member not found: {0}</ARIO_HouseUIHoldingSkipped>
+  <ARIO_HouseProgressionGateUnavailable>[A Rim of Ice and Fire] House progression gates could not be installed: {0}</ARIO_HouseProgressionGateUnavailable>
+
+</LanguageData>

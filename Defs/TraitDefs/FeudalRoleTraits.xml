@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraitDef>
+    <defName>ARIOIAF_Trait_Levy</defName>
+    <commonality>0</commonality>
+    <exclusionTags><li>ARIOIAF_FeudalRole</li></exclusionTags>
+    <degreeDatas><li><label>levy</label><description>A commoner called to arms by their liege, given only basic weapons training before being sent to fight.</description><skillGains><Melee>1</Melee><Shooting>1</Shooting></skillGains></li></degreeDatas>
+  </TraitDef>
+  <TraitDef>
+    <defName>ARIOIAF_Trait_ManAtArms</defName>
+    <commonality>0</commonality>
+    <exclusionTags><li>ARIOIAF_FeudalRole</li></exclusionTags>
+    <degreeDatas><li><label>man-at-arms</label><description>A professional soldier who serves a noble House as a guard, warrior, and retainer.</description><skillGains><Melee>2</Melee><Shooting>2</Shooting></skillGains></li></degreeDatas>
+  </TraitDef>
+  <TraitDef>
+    <defName>ARIOIAF_Trait_HedgeKnight</defName>
+    <commonality>0</commonality>
+    <exclusionTags><li>ARIOIAF_FeudalRole</li></exclusionTags>
+    <degreeDatas><li><label>hedge knight</label><description>A landless knight who travels between Houses, tournaments, and wars in search of employment and coin.</description><skillGains><Melee>3</Melee><Animals>1</Animals></skillGains></li></degreeDatas>
+  </TraitDef>
+  <TraitDef>
+    <defName>ARIOIAF_Trait_Knight</defName>
+    <commonality>0</commonality>
+    <exclusionTags><li>ARIOIAF_FeudalRole</li></exclusionTags>
+    <degreeDatas><li><label>knight</label><description>A formally trained and anointed warrior skilled in arms, horsemanship, and the customs of chivalry.</description><skillGains><Melee>4</Melee><Animals>2</Animals><Social>1</Social></skillGains></li></degreeDatas>
+  </TraitDef>
+  <TraitDef>
+    <defName>ARIOIAF_Trait_LandedKnight</defName>
+    <commonality>0</commonality>
+    <exclusionTags><li>ARIOIAF_FeudalRole</li></exclusionTags>
+    <degreeDatas><li><label>landed knight</label><description>A knight granted a small holding, giving them responsibilities over both warfare and the people living on their land.</description><skillGains><Melee>3</Melee><Social>2</Social><Intellectual>1</Intellectual></skillGains></li></degreeDatas>
+  </TraitDef>
+  <TraitDef>
+    <defName>ARIOIAF_Trait_LordLady</defName>
+    <commonality>0</commonality>
+    <exclusionTags><li>ARIOIAF_FeudalRole</li></exclusionTags>
+    <degreeDatas><li><label>lord / lady</label><labelMale>lord</labelMale><labelFemale>lady</labelFemale><description>A member of the nobility raised to govern lands, manage a household, and deal with the politics of other Houses.</description><skillGains><Social>4</Social><Intellectual>3</Intellectual></skillGains></li></degreeDatas>
+  </TraitDef>
+  <TraitDef>
+    <defName>ARIOIAF_Trait_SeptonSepta</defName>
+    <commonality>0</commonality>
+    <exclusionTags><li>ARIOIAF_FeudalRole</li></exclusionTags>
+    <degreeDatas><li><label>septon / septa</label><labelMale>septon</labelMale><labelFemale>septa</labelFemale><description>A devoted servant of the Faith of the Seven who provides religious guidance, education, and basic care for the faithful.</description><skillGains><Social>3</Social><Intellectual>2</Intellectual><Medicine>1</Medicine></skillGains></li></degreeDatas>
+  </TraitDef>
+  <TraitDef>
+    <defName>ARIOIAF_Trait_Fanatic</defName>
+    <commonality>0</commonality>
+    <exclusionTags><li>ARIOIAF_FeudalRole</li></exclusionTags>
+    <degreeDatas><li><label>fanatic</label><description>A fiercely devoted believer whose faith shapes nearly every decision they make and drives them to defend it without hesitation.</description><skillGains><Melee>2</Melee><Social>2</Social><Intellectual>1</Intellectual></skillGains></li></degreeDatas>
+  </TraitDef>
+  <TraitDef>
+    <defName>ARIOIAF_Trait_Bastard</defName>
+    <commonality>0</commonality>
+    <exclusionTags><li>ARIOIAF_BirthStatus</li></exclusionTags>
+    <degreeDatas><li><label>bastard</label><description>Born outside lawful marriage, this pawn carries noble blood but lacks the full rights and standing of a legitimate heir.</description><skillGains><Social>1</Social><Melee>1</Melee></skillGains></li></degreeDatas>
+  </TraitDef>
+  <TraitDef>
+    <defName>ARIOIAF_Trait_LegitimisedBastard</defName>
+    <commonality>0</commonality>
+    <exclusionTags><li>ARIOIAF_BirthStatus</li></exclusionTags>
+    <degreeDatas><li><label>legitimised bastard</label><description>Once born outside lawful marriage, this pawn has been formally recognised as legitimate and may now inherit lands, titles, and the name of their House.</description><skillGains><Social>2</Social><Intellectual>1</Intellectual></skillGains></li></degreeDatas>
+  </TraitDef>
+</Defs>

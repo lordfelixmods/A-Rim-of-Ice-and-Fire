@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--
+    The cost attached to Blood of the Dragon.
+
+    That meme is otherwise pure upside: both of the core assembly's patches REMOVE penalties
+    (DragonBloodRomancePatch restores a full romance chance between adult blood kin, and
+    DragonBloodOpinionPatch strips the incest opinion hit); the supplementary follower gate
+    also lets this precept work without the Faith of the Seven structure. Its requirement was
+    Royalty: exalted - a precept a Feudalism ideo generally wanted anyway, since it also
+    satisfies that meme's "one of exalted/respected".
+
+    This precept turns "you MAY marry kin" into "you are EXPECTED to", which is both the
+    Valyrian lore and an actual constraint: pairing a colonist off outside the bloodline now
+    carries a standing mood penalty, so who marries whom becomes a decision with a cost.
+
+    A mod-owned issue needs its own icon - none of these exist in vanilla, and Precept.cs
+    draws issue.Icon unconditionally, so omitting it is a null reference rather than a blank.
+  -->
+  <IssueDef>
+    <defName>ARIOIAF_Lineage</defName>
+    <label>lineage</label>
+    <iconPath>UI/Issues/Lineage</iconPath>
+  </IssueDef>
+
+  <PreceptDef>
+    <defName>ARIOIAF_Lineage_Pure</defName>
+    <issue>ARIOIAF_Lineage</issue>
+    <label>kept pure</label>
+    <description>The blood of the dragon must not be thinned. Consenting adult blood relatives may form romantic partnerships; attraction and ordinary choice still matter. A match within the bloodline preserves what generations were bred to keep, while marrying outside it is a quiet failure of duty to one's ancestors.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>50</displayOrderInIssue>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    <requiredMemes><li>ARIOIAF_BloodOfTheDragon</li></requiredMemes>
+    <associatedMemes><li>ARIOIAF_BloodOfTheDragon</li></associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought"><thought>ARIOIAF_Lineage_Pure</thought></li>
+    </comps>
+  </PreceptDef>
+
+  <!--
+    Situational rather than a memory on the wedding: the belief is about the state of the
+    match, not the moment it was made, so it should lift if the partner dies or the pair
+    separates. Stage 0 is the penalty so a missing stage can never silently reward the player.
+  -->
+  <ThoughtDef>
+    <defName>ARIOIAF_Lineage_Pure</defName>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <workerClass>ARimOfIceAndFire.ThoughtWorker_LineagePurity</workerClass>
+    <stages>
+      <li>
+        <label>blood thinned</label>
+        <description>I took a partner from outside the blood. Whatever my ancestors were, my children will be a little less of it.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <li>
+        <label>blood kept pure</label>
+        <description>My partner shares my blood. The line runs on undiluted, as it was always meant to.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

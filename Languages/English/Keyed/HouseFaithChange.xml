@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_HouseHonor>House Honour</ARIO_HouseHonor>
+  <ARIO_HouseHonorUnavailable>Requires Royalty and a House head</ARIO_HouseHonorUnavailable>
+  <ARIO_FaithChangeTitle>Change House faith</ARIO_FaithChangeTitle>
+  <ARIO_FaithChangeTip>Adopt one of the three Westerosi faiths. Costs 5 House Honour and can be done once every 60 days. The player faction and its pawns adopt the chosen faith.</ARIO_FaithChangeTip>
+  <ARIO_FaithChangeConfirm>Convert the House and its people to {0}? This costs 5 House Honour and begins a 60-day cooldown.</ARIO_FaithChangeConfirm>
+  <ARIO_FaithChangeDone>Your House has adopted {0}. Five Honour was paid.</ARIO_FaithChangeDone>
+  <ARIO_FaithChangeNeedsIdeology>Requires Ideology.</ARIO_FaithChangeNeedsIdeology>
+  <ARIO_FaithChangeNeedsRoyalty>Requires Royalty to pay the Honour cost.</ARIO_FaithChangeNeedsRoyalty>
+  <ARIO_FaithChangeNeedsHead>Appoint a living House head first.</ARIO_FaithChangeNeedsHead>
+  <ARIO_FaithChangeNeedsHonor>Five House Honour is required.</ARIO_FaithChangeNeedsHonor>
+  <ARIO_FaithChangeCooldown>You can change House faith again in {0} days.</ARIO_FaithChangeCooldown>
+</LanguageData>

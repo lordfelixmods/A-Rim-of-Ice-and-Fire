@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Match installed CE's Core bolt-action rifle (Lee-Enfield/.303 British) balance.
+       Private weapon tag only: no new generic NPC/trader weapon distribution. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ARIOIAF_NorthernHuntingRifle"]/tools</xpath>
+    <value><tools>
+      <li Class="CombatExtended.ToolCE"><label>stock</label><capacities><li>Blunt</li></capacities><power>8</power><cooldownTime>1.55</cooldownTime><chanceFactor>1.5</chanceFactor><armorPenetrationBlunt>2.755</armorPenetrationBlunt><linkedBodyPartsGroup>Stock</linkedBodyPartsGroup></li>
+      <li Class="CombatExtended.ToolCE"><label>barrel</label><capacities><li>Blunt</li></capacities><power>5</power><cooldownTime>2.02</cooldownTime><armorPenetrationBlunt>1.630</armorPenetrationBlunt><linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup></li>
+      <li Class="CombatExtended.ToolCE"><label>muzzle</label><capacities><li>Poke</li></capacities><power>8</power><cooldownTime>1.55</cooldownTime><armorPenetrationBlunt>2.755</armorPenetrationBlunt><linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup></li>
+    </tools></value>
+  </Operation>
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>ARIOIAF_NorthernHuntingRifle</defName>
+    <statBases>
+      <Mass>4.19</Mass><RangedWeapon_Cooldown>1.17</RangedWeapon_Cooldown>
+      <SightsEfficiency>1</SightsEfficiency><ShotSpread>0.02</ShotSpread>
+      <SwayFactor>1.68</SwayFactor><Bulk>12.60</Bulk><WorkToMake>12000</WorkToMake>
+    </statBases>
+    <costList><Steel>55</Steel><WoodLog>15</WoodLog><ComponentIndustrial>1</ComponentIndustrial></costList>
+    <Properties>
+      <recoilAmount>2.04</recoilAmount><verbClass>CombatExtended.Verb_ShootCE</verbClass>
+      <hasStandardCommand>true</hasStandardCommand><defaultProjectile>Bullet_303British_FMJ</defaultProjectile>
+      <warmupTime>1.1</warmupTime><range>55</range><soundCast>Shot_BoltActionRifle</soundCast>
+      <soundCastTail>GunTail_Heavy</soundCastTail><muzzleFlashScale>9</muzzleFlashScale>
+    </Properties>
+    <AmmoUser><magazineSize>10</magazineSize><reloadTime>4.3</reloadTime><ammoSet>AmmoSet_303British</ammoSet></AmmoUser>
+    <FireModes><aiAimMode>AimedShot</aiAimMode></FireModes>
+    <weaponTags><li>ARIO_IndustrialWesteros</li></weaponTags>
+    <!-- CE replaces this single prerequisite only; the root recipe's plural
+         Westeros armory requirement and exclusive bench remain in place. -->
+    <researchPrerequisite>Gunsmithing</researchPrerequisite>
+    <AllowWithRunAndGun>false</AllowWithRunAndGun>
+  </Operation>
+</Patch>

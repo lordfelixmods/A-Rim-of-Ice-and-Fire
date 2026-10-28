@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIOIAF_DebugTrident>Battle of the trident (test)</ARIOIAF_DebugTrident>
+  <ARIOIAF_DebugTridentClear>Clear Trident test troops</ARIOIAF_DebugTridentClear>
+  <ARIOIAF_TridentAlreadyPresent>A Trident battle or surviving test troops are still on this map. Use Clear Trident test troops before starting another.</ARIOIAF_TridentAlreadyPresent>
+  <ARIOIAF_TridentNoSpace>Choose the center of a large, revealed clearing, roughly 60 cells wide and 25 cells tall. Each formation needs 100 free, walkable cells connected to the center, away from buildings, fire, and other pawns.</ARIOIAF_TridentNoSpace>
+  <ARIOIAF_TridentMissingFaction>Battle canceled: {0} is absent or defeated in this world. No troops were spawned.</ARIOIAF_TridentMissingFaction>
+  <ARIOIAF_TridentBadRoster>Battle canceled: {0} has no valid combat roster for this test. No troops were spawned.</ARIOIAF_TridentBadRoster>
+  <ARIOIAF_TridentFactionName>{0} — Trident test</ARIOIAF_TridentFactionName>
+  <ARIOIAF_TridentSideA>Valyria, Westerlanders, and Reachmen</ARIOIAF_TridentSideA>
+  <ARIOIAF_TridentSideB>Riverlanders, Northmen, Valemen, and Stormlanders</ARIOIAF_TridentSideB>
+  <ARIOIAF_TridentDraw>Neither side</ARIOIAF_TridentDraw>
+  <ARIOIAF_TridentStarted>Battle of the trident: 100 versus 100 ready. West: 34 Valyria, 33 Westerlanders, 33 Reachmen. East: 25 Riverlanders, 25 Northmen, 25 Valemen, 25 Stormlanders. Unpause to begin; press Esc to leave the placement tool. Normal faction diplomacy is unchanged. Keep colonists away from stray arrows.</ARIOIAF_TridentStarted>
+  <ARIOIAF_TridentFinished>Battle of the trident finished. Standing side: {0}. Mobile survivors will leave the map. Downed soldiers, bodies, dropped equipment, and battle damage remain.</ARIOIAF_TridentFinished>
+  <ARIOIAF_TridentFailed>Trident battle generation failed. Generated test troops were cleared; see the debug log for the cause.</ARIOIAF_TridentFailed>
+  <ARIOIAF_TridentCleared>Trident test troops and their bodies on this map were cleared. Recruited colonists, colony prisoners, departed pawns, dropped loot, and battle damage were left untouched.</ARIOIAF_TridentCleared>
+</LanguageData>

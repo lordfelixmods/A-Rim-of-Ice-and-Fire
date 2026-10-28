@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ApparelLayerDef>
+    <defName>ARIOIAF_TabardLayer</defName>
+    <label>tabard</label>
+    <drawOrder>215</drawOrder>
+  </ApparelLayerDef>
+</Defs>

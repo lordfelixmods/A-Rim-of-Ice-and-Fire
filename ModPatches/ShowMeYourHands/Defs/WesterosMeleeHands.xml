@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Ordinary Westerosi arms and the banner spear.
+       Coordinates are raw texture-local grip positions measured from the actual artwork.
+       Maces use their wrapped handles, not the shaft above the grip. The war sword uses
+       upper/lower leather grip sections rather than placing its support hand on a metal collar.
+       Do NOT pre-multiply them: SMYH applies graphicData.drawSize itself when Reposition Hands
+       is enabled. Melee Animation owns animated hands; a conditional patch removes SMYH's
+       support hand while MA is active so the two systems never double-draw. -->
+  <WHands.ClutterHandsTDef>
+    <defName>ARIOIAF_WesterosMeleeHands</defName>
+    <label>Westerosi melee hand settings</label>
+    <thingClass>Thing</thingClass>
+    <WeaponCompLoader>
+      <li>
+        <MainHand>(-0.207, 0.100, -0.209)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_SoldiersShortSword</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.273, 0.100, -0.274)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_FootmansSword</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.242, 0.100, -0.240)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_BallMace</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.219, 0.100, -0.221)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_KnightsShortSword</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.299, 0.100, -0.297)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_NarrowThrustingSword</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.303, 0.100, -0.304)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_CavalrySword</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.246, 0.100, -0.246)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_FlangedMace</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.236, 0.100, -0.238)</MainHand>
+        <MainRotation>24</MainRotation>
+        <ThingTargets><li>ARIOIAF_SpikedMace</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.246, 0.100, -0.248)</MainHand>
+        <MainRotation>24</MainRotation>
+        <SecHand>(-0.328, -0.100, -0.330)</SecHand>
+        <SecRotation>24</SecRotation>
+        <ThingTargets><li>ARIOIAF_TwoHandedWarSword</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.285, 0.100, -0.275)</MainHand>
+        <MainRotation>18</MainRotation>
+        <SecHand>(-0.360, -0.100, -0.350)</SecHand>
+        <SecRotation>18</SecRotation>
+        <ThingTargets><li>ARIOIAF_WesterosBannerSpear</li></ThingTargets>
+      </li>
+    </WeaponCompLoader>
+  </WHands.ClutterHandsTDef>
+</Defs>

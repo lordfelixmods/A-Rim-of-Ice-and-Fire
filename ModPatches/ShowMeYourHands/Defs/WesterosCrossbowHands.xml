@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Crossbows: main palm on the rear wooden grip beside the trigger, not the metal lever;
+       support hand on the forward wooden stock. Measured pixel anchors are recorded separately
+       in Tests/smyh_grip_calibration.json; only grip positions change.
+       The artwork is authored on a 45-degree diagonal and the ThingDefs straighten it with
+       equippedAngleOffset=45. SMYH rotates hand offsets by that angle too, so measured texture
+       points must first be transformed into the straightened weapon frame. Do NOT pre-multiply
+       them by drawSize: SMYH does that itself when Reposition Hands is enabled. -->
+  <WHands.ClutterHandsTDef>
+    <defName>ARIOIAF_WesterosCrossbowHands</defName>
+    <label>Westerosi crossbow hand settings</label>
+    <thingClass>Thing</thingClass>
+    <WeaponCompLoader>
+      <li>
+        <MainHand>(-0.116, 0.100, 0.017)</MainHand>
+        <MainRotation>0</MainRotation>
+        <SecHand>(0.141, -0.100, 0.021)</SecHand>
+        <SecRotation>0</SecRotation>
+        <ThingTargets><li>ARIOIAF_LightWoodenCrossbow</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.110, 0.100, 0.017)</MainHand>
+        <MainRotation>0</MainRotation>
+        <SecHand>(0.148, -0.100, 0.021)</SecHand>
+        <SecRotation>0</SecRotation>
+        <ThingTargets><li>ARIOIAF_SoldiersCrossbow</li></ThingTargets>
+      </li>
+      <li>
+        <MainHand>(-0.116, 0.100, 0.022)</MainHand>
+        <MainRotation>0</MainRotation>
+        <SecHand>(0.159, -0.100, 0.018)</SecHand>
+        <SecRotation>0</SecRotation>
+        <ThingTargets><li>ARIOIAF_HeavyArbalest</li></ThingTargets>
+      </li>
+    </WeaponCompLoader>
+  </WHands.ClutterHandsTDef>
+</Defs>

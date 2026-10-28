@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>ARIOIAF_PlantedWesterosBanner</defName>
+    <label>planted Westeros banner</label>
+    <description>A planted banner spear, retaining its material, quality, condition and heraldry. Uninstall to move the standard; deconstruct to recover the same spear.</description>
+    <thingClass>ARimOfIceAndFireCore.Building_PlantedBanner</thingClass>
+    <!-- Vanilla minification deep-saves this exact building instance. Its nested ThingOwner then
+         carries the original spear too, preserving stuff, quality, damage and heraldry. -->
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <!-- Required by vanilla for every minifiable building; also places packed standards with furniture. -->
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <designationCategory>Furniture</designationCategory>
+    <drawerType>RealtimeOnly</drawerType>
+    <!-- The planted standard is upright regardless of placement rotation. Its
+         runtime renderer already straightens the diagonal weapon art by -45 degrees. -->
+    <rotatable>false</rotatable>
+    <useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+    <!-- Legacy fail-closed fallback only: if the upright renderer cannot install, the preserved
+         core straightens the carried diagonal spear by -45 degrees. Its 1.207 canvas-edge alpha
+         extent x 1.88 = 2.27 tiles, with the same +0.63 lift and 1x1 footprint. -->
+    <graphicData>
+      <texPath>Things/Item/Equipment/WesterosBannerSpear/Banner</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.88,1.88)</drawSize>
+      <drawOffset>(0,0,0.63)</drawOffset>
+      <ignoreThingDrawColor>true</ignoreThingDrawColor>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/Building/WesterosPlantedBanner/WesterosSpearBanner_Swallowtail_north</uiIconPath>
+    <!-- The supplied upright art fills 75.4% of its canvas height and sits 7.2% above centre.
+         Scale 1.25 fills 94% of the button; the offset recentres the scaled artwork. -->
+    <uiIconScale>1.25</uiIconScale>
+    <uiIconOffset>(0,0.09)</uiIconOffset>
+    <!-- Matches MO's banners: draws over walls, floors and most furniture instead of being
+         swallowed by the wall it is planted against. -->
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>8</pathCost>
+    <fillPercent>0.1</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToBuild>300</WorkToBuild>
+      <Mass>2.5</Mass>
+      <Flammability>0.5</Flammability>
+      <Beauty>8</Beauty>
+    </statBases>
+    <costList>
+      <ARIOIAF_WesterosBannerSpear>1</ARIOIAF_WesterosBannerSpear>
+    </costList>
+    <building>
+      <isInert>true</isInert>
+      <!-- Placement ghosts and blueprints do not call Building_PlantedBanner.DrawAt. They use the
+           same upright art, draw size and lift as the planted standard for an exact preview. -->
+      <blueprintGraphicData>
+        <texPath>Things/Building/WesterosPlantedBanner/WesterosSpearBanner_Swallowtail_north</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>EdgeDetect</shaderType>
+        <drawSize>(3,3)</drawSize>
+        <drawOffset>(0,0,0.41)</drawOffset>
+        <drawRotated>false</drawRotated>
+      </blueprintGraphicData>
+    </building>
+    <modExtensions>
+      <!-- Supplied 512px upright swallowtail. Opaque art spans 75.4% of the canvas height:
+           3.0 x 0.754 = 2.26 tiles tall. Lift 0.41 places it at z -0.50 to +1.76, the same
+           footing/height as before; width is 1.45 tiles, matching Medieval Overhaul banners.
+           Red mask pixels receive heraldic cloth colour and crest; black pole/metal stays painted.
+           Crest UVs use bottom-left origin and stay inside the measured cloth. -->
+      <li Class="ARimOfIceAndFire.UprightPlantedBannerExtension">
+        <graphicData>
+          <texPath>Things/Building/WesterosPlantedBanner/WesterosSpearBanner_Swallowtail_north</texPath>
+          <maskPath>Things/Building/WesterosPlantedBanner/WesterosSpearBanner_Swallowtail_northm</maskPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(3,3)</drawSize>
+          <drawOffset>(0,0,0.41)</drawOffset>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <crestCenter>(0.5,0.668)</crestCenter>
+        <crestSize>0.2</crestSize>
+        <minifiedScale>0.45</minifiedScale>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

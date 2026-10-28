@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_OutsiderPlacementUnavailable>[A Rim of Ice and Fire] Supported mod factions will not be resettled; core map API not found: {0}</ARIO_OutsiderPlacementUnavailable>
+  <ARIO_KeepListHeader>Select supported factions to keep</ARIO_KeepListHeader>
+  <ARIO_KeepListOfficialSource>Core / DLC</ARIO_KeepListOfficialSource>
+  <ARIO_KeepListOfficialTip>Keep this required Core or DLC faction.</ARIO_KeepListOfficialTip>
+  <ARIO_KeepListSupportedTip>Keep this faction from {0}.</ARIO_KeepListSupportedTip>
+  <ARIO_KeepListHidden>Hidden</ARIO_KeepListHidden>
+  <ARIO_KeepListDragTip>Click a row, then drag through other rows to apply the same choice.</ARIO_KeepListDragTip>
+  <ARIO_KeepListSettlements>Settlements per selected faction: {0}</ARIO_KeepListSettlements>
+  <ARIO_KeepListSettlementsTip>Give every checked supported faction exactly this many settlements in its assigned Westeros region. Required Core and DLC machinery is not affected.</ARIO_KeepListSettlementsTip>
+  <ARIO_FactionRepairPruned>[A Rim of Ice and Fire] Removed {0} faction relation entries that pointed at a faction which no longer exists in this save.</ARIO_FactionRepairPruned>
+  <ARIO_FactionRepairMirrored>[A Rim of Ice and Fire] Restored {0} missing faction relations so both sides of each pair agree.</ARIO_FactionRepairMirrored>
+  <ARIO_FactionRepairUnavailable>[A Rim of Ice and Fire] Faction reference repair skipped: {0}</ARIO_FactionRepairUnavailable>
+  <ARIO_OutsiderSettlementTextureFallback>[A Rim of Ice and Fire] Selected faction {0} had no settlement texture; using safe vanilla fallback {1}.</ARIO_OutsiderSettlementTextureFallback>
+</LanguageData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARIO_BannerOffensiveOperation>Advance against {0}: muster from {1} toward {2}.</ARIO_BannerOffensiveOperation>
+  <ARIO_BannerDefensiveOperation>Defend {2} against {0}: muster on the threatened approach from {1}.</ARIO_BannerDefensiveOperation>
+  <ARIO_BannerTravelAllowance>Estimated foot-caravan journey: {0}. Personal attendance allows {1} days from acceptance, including preparation and travel reserve. Your actual army's speed, supplies and weather still matter.</ARIO_BannerTravelAllowance>
+  <ARIO_BannerNoCampaign>There is no reachable campaign front for this summons. You have not accepted an obligation; no refusal penalty has been applied.</ARIO_BannerNoCampaign>
+  <ARIO_BannerNoLandRoute>No foot-caravan route from your home to this front is available. Personal attendance is unavailable from this home; send the banners under a captain instead.</ARIO_BannerNoLandRoute>
+  <ARIO_BannerRallyBlocked>The pinned campaign rally tile is no longer available. Your force has not departed; no refusal penalty has been applied.</ARIO_BannerRallyBlocked>
+  <ARIO_BannerOrdersWithdrawn>This campaign's orders have been withdrawn.</ARIO_BannerOrdersWithdrawn>
+  <ARIO_BannerWithdrawnTitle>Campaign summons withdrawn</ARIO_BannerWithdrawnTitle>
+  <ARIO_BannerWithdrawnBody>{0}'s campaign against {1} no longer needs this muster: the war ended, the front changed hands, or a participating House fell. Your obligation is cancelled without dishonour or a goodwill penalty. Any troops committed under a captain are released by the normal muster system.</ARIO_BannerWithdrawnBody>
+  <ARIO_BannerUnknownHouse>an unknown House</ARIO_BannerUnknownHouse>
+  <ARIO_BannerUnknownObjective>an unknown estate</ARIO_BannerUnknownObjective>
+</LanguageData>

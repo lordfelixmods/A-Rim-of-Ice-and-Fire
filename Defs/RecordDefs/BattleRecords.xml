@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Vanilla pawn records persist automatically and travel with the pawn across maps and
+       caravans, so battle history needs no custom Scribe of its own. -->
+
+  <RecordDef>
+    <defName>ARIO_BattlesFought</defName>
+    <label>battles fought</label>
+    <description>The number of wartime engagements I have taken part in.</description>
+    <type>Int</type>
+    <displayOrder>520</displayOrder>
+  </RecordDef>
+
+  <RecordDef>
+    <defName>ARIO_BattlesWon</defName>
+    <label>battles won</label>
+    <description>The number of wartime engagements I survived on the winning side.</description>
+    <type>Int</type>
+    <displayOrder>521</displayOrder>
+  </RecordDef>
+
+</Defs>
